@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>phinz</string>
+	<key>authorLongName</key>
+	<string>Phil Hinz</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/welcome</string>
+	<key>content</key>
+	<string>
+&lt;h2&gt;INDEX&lt;/h2&gt;&lt;br class="" /&gt;Clio is a 1-5 micron imager, coronagraph, and low spectral resolution spectrometer built to exploit the unique sensitivity and resolution of deformable secondary AO systems. It was used from 2006-2011 on the MMT. In 2012, it was moved to Magellan, to be used with the &lt;a href="http://magao.as.arizona.edu"&gt;MagAO&lt;/a&gt; system.&lt;br class="" /&gt;
+&lt;div class="wiki_entry"&gt; 
+ &lt;p&gt;Clio2 was upgraded with a new 512x1024 HAWAII-1 array in May 2010. The camera is currently available on a collaborative basis. Inquiries into the availability of the instrument should be made to Phil Hinz, Laird Close, or Katie Morzinski.&lt;/p&gt; 
+ &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;p&gt;Download the entire manual in PDF form (as of Nov. 2014), thanks to Alycia Weinberger:&lt;img src="/groups/clio2usermanual/wiki/welcome/attachments/1e717/Clio2ManualPDFall.pdf.png" alt="Download file &amp;quot;Clio2ManualPDFall.pdf&amp;quot;" title="Download file &amp;quot;Clio2ManualPDFall.pdf&amp;quot;" longdesc="/groups/clio2usermanual/wiki/welcome/attachments/1e717/Clio2ManualPDFall.pdf" class="attachment_handle_img quicklookable" /&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;p&gt;&lt;/p&gt; 
+ &lt;h1&gt;&lt;a href="/groups/clio2usermanual/wiki/3bdd4/Observing_Pages.html"&gt;Observing Pages/Pages for Observers&lt;br class="" /&gt;&lt;/a&gt;&lt;/h1&gt; 
+ &lt;p&gt;What's here:&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;ul&gt;
+   
+  &lt;li&gt;Info for taking your observations:&lt;/li&gt;
+   
+  
+  &lt;ul&gt;
+    
+   &lt;li&gt;Checklists, cookbooks, camera operation, scripts, etc.&lt;/li&gt;
+    
+   &lt;li&gt;Resources: Magellan weather info, etc.&lt;/li&gt;
+    
+  &lt;/ul&gt;
+   
+  &lt;li&gt;Info for reducing data: &lt;/li&gt;
+   
+  
+  &lt;ul&gt;
+    
+   &lt;li&gt;Calibration data, filters info, how to rotate your images to get North up, etc.&lt;/li&gt;
+    
+  &lt;/ul&gt;
+   
+ &lt;/ul&gt; 
+ &lt;p&gt;&lt;/p&gt; 
+ &lt;h1&gt;&lt;a href="/groups/clio2usermanual/wiki/48d8b/Engineering_Pages.html"&gt;Engineering Pages&lt;/a&gt;&lt;/h1&gt; 
+ &lt;p&gt;What's here:&lt;/p&gt; 
+ &lt;ul&gt;
+   
+  &lt;li&gt;Info for helping with observing:&lt;/li&gt;
+   
+  
+  &lt;ul&gt;
+    
+   &lt;li&gt;How to align the Narrow and Wide cameras, software, etc.&lt;/li&gt;
+    
+  &lt;/ul&gt;
+   
+  &lt;li&gt;Info for maintenance:&lt;/li&gt;
+   
+  
+  &lt;ul&gt;
+    
+   &lt;li&gt;Setting up, cool down, filter exchange, etc.&lt;/li&gt;
+    
+  &lt;/ul&gt;
+   
+ &lt;/ul&gt; 
+ &lt;p&gt;&lt;/p&gt; 
+ &lt;h1&gt;&lt;a href="/groups/clio2usermanual/wiki/66709/Troubleshooting_Pages.html"&gt;Troubleshooting Pages&lt;/a&gt;&lt;/h1&gt; 
+ &lt;p&gt;&lt;/p&gt; 
+ &lt;h1&gt;&lt;a href="/groups/clio2usermanual/wiki/5c677/Historical_Pages.html"&gt;Historical Pages&lt;/a&gt;&lt;/h1&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt; 
+ &lt;div&gt; 
+  &lt;p&gt; &lt;/p&gt;&lt;a href="/groups/clio2usermanual/wiki/8653e/Clio2_User_Manual_Old_Home_Page.html"&gt;Clio2 User Manual Old Home Page (2014/04/14 and earlier)&lt;/a&gt;&lt;br class="" /&gt;&lt;/div&gt;&lt;/div&gt;</string>
+	<key>createdDate</key>
+	<string>2010-10-07 18:10:24.479266+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2015-01-27 18:11:09</string>
+	<key>lastVersion</key>
+	<string>132</string>
+	<key>latestVersion</key>
+	<string>131</string>
+	<key>listable</key>
+	<false/>
+	<key>modifiedDate</key>
+	<date>2015-01-27T18:11:55Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Clio2 User Manual</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/welcome</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

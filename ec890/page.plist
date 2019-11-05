@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>Manny</string>
+	<key>authorLongName</key>
+	<string>Manny Montoya</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/ec890</string>
+	<key>content</key>
+	<string>
+&lt;div class="wiki_entry"&gt; 
+ &lt;p&gt;&lt;/p&gt; 
+ &lt;p class="MsoNormal"&gt;&lt;/p&gt; 
+ &lt;p class="MsoNormal"&gt; &lt;/p&gt; 
+ &lt;p class="MsoListParagraphCxSpFirst"&gt;Nov. 7, 2012 Initial Draft by Manny Montoya and Richard Sosa&lt;span&gt;&lt;br class="" /&gt;&lt;/span&gt;&lt;/p&gt; 
+ &lt;p class="MsoListParagraphCxSpFirst"&gt;Nov. 20, 2012 Revision during initial install. Phil Hinz&lt;/p&gt; 
+ &lt;h2&gt;Prepare the instrument for transport&lt;/h2&gt; 
+ &lt;p class="MsoListParagraphCxSpFirst"&gt; &lt;/p&gt; 
+ &lt;ol&gt;
+   
+  &lt;li&gt;Turn off the computer in rack (if rack is on)&lt;/li&gt;
+   
+  &lt;li&gt;Unplug electronics rack from the AC outlet, if connected.&lt;/li&gt;
+   
+  &lt;li&gt;Disconnect all fibers, cables, hoses, AC from
+Clio cryostat.&lt;/li&gt;
+   
+  
+  &lt;ol&gt;
+    
+   &lt;li&gt;Disconnect orange fiber from gold box.&lt;/li&gt;
+    
+   &lt;li&gt;Disconnect AC cord from grey box.&lt;/li&gt;
+    
+   &lt;li&gt;Remove tube from the solid nitrogen vessel&lt;/li&gt;
+    
+   &lt;li&gt;Unscrew two screws that hold the cable strain relief
+to Clio cryostat.&lt;/li&gt;
+    
+  &lt;/ol&gt;
+   
+  
+  &lt;p&gt;&lt;/p&gt;
+   
+  
+  &lt;p&gt;&lt;/p&gt;
+   
+  &lt;li&gt;Coil the black umbilical cable on the lectronics rack.&lt;/li&gt;
+   
+  &lt;li&gt;Check for any loose equipment in rack or on cryostat cart.&lt;/li&gt;
+   
+  
+  &lt;p&gt;&lt;/p&gt;
+   
+ &lt;/ol&gt; 
+ &lt;p&gt;&lt;/p&gt;Clio is now ready to be transported to the telescope. 
+ &lt;p class="MsoListParagraphCxSpFirst"&gt; &lt;/p&gt; 
+ &lt;h2&gt;Transport to the Telescope Platform&lt;/h2&gt; 
+ &lt;ol&gt;
+   
+  
+  &lt;p&gt;&lt;/p&gt;
+   
+  
+  &lt;p&gt;&lt;/p&gt;
+   
+  &lt;li&gt;Transport electronics rack and cryostat to telescope on flatbed truck. &lt;/li&gt;
+   
+  
+  &lt;ol&gt;
+    
+   &lt;li&gt;Secure to equipment for transport via straps.&lt;/li&gt;
+    
+  &lt;/ol&gt;
+   
+  &lt;li&gt;Transfer the equipment to the Nasmyth platform via elevator&lt;/li&gt;
+   
+  &lt;li&gt;Place electronics rack to the left of the Nasmyth ring, away from the telescope.&lt;/li&gt;
+   
+  
+  &lt;p&gt;&lt;/p&gt;
+   
+ &lt;/ol&gt; 
+ &lt;h2&gt;Attach Cryostat to the Telescope&lt;/h2&gt; 
+ &lt;div&gt; 
+  &lt;ol&gt;
+    
+   &lt;li&gt;Position cryostat in front of the NAS assembly&lt;/li&gt;
+    
+   &lt;li&gt;Screw in two Clio pins on NAS assembly at 12 o'clock and 6 o'clock position.&lt;/li&gt;
+    
+   &lt;li&gt;Attach lifting straps to cryostat at its two lift points&lt;/li&gt;
+    
+   &lt;li&gt;Loosen two knobs on Clio cart to allow cryostat to be lifted off the cart&lt;/li&gt;
+    
+   &lt;li&gt;Use crane to lift the cryostat&lt;/li&gt;
+    
+   &lt;li&gt;Remove the window cover before installing (Caution: exposed glass)&lt;/li&gt;
+    
+   &lt;li&gt;Guide cryostat two align witht the two pins&lt;/li&gt;
+    
+   &lt;li&gt;Gently slide cryostat on the pins until the ring is flush with the NAS assembly.&lt;/li&gt;
+    
+   &lt;li&gt;Install X bolts on the ring. Pins can be left in place.&lt;/li&gt;
+    
+   &lt;li&gt;Torque all bolts to 55 ft.-lbs. (74 N-m)&lt;/li&gt;
+    
+   &lt;li&gt;Release cryostat from crane and remove straps.&lt;/li&gt;
+    
+  &lt;/ol&gt; 
+  &lt;h2&gt;Attach Cables to Instrument and Facility&lt;/h2&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;ol&gt;
+    
+   &lt;li&gt;Hook up cooling to the electronics rack&lt;/li&gt;
+    
+   &lt;li&gt;Plug in network cable from the electronics rack.&lt;/li&gt;
+    
+   &lt;li&gt;Plug in clean and dirty power to the electronics rack.&lt;/li&gt;
+    
+   
+   &lt;ol&gt;
+     
+    &lt;li&gt;White is dirty power. Yellow is clean power.&lt;/li&gt;
+     
+   &lt;/ol&gt;
+    
+   &lt;li&gt;Uncoil black umbilical cord from electronics rack and route to cryostat.&lt;/li&gt;
+    
+   &lt;li&gt;Attach triangular strain relief assembly to the post at the back of cryostat with two screws.&lt;/li&gt;
+    
+   &lt;li&gt;Plug in circular connector containing home/limits and temperature lines.&lt;/li&gt;
+    
+   &lt;li&gt;Plug in orange fiber to gold SDSU controller box.&lt;/li&gt;
+    
+   &lt;li&gt;Plug in AC cord to SDSU power supply (grey box).&lt;/li&gt;
+    
+   &lt;li&gt;Attach clear vacuum hose to inner solid N2 vessel with hose clamp.&lt;/li&gt;
+   
+   &lt;li&gt;Plug in the 6 motor cables from the umbilical cord to the stepper motor cables on the cryostat.&lt;/li&gt;
+    
+  &lt;/ol&gt;&lt;/div&gt; 
+ &lt;p class="MsoListParagraphCxSpLast"&gt; &lt;/p&gt;&lt;/div&gt;</string>
+	<key>createdDate</key>
+	<string>2012-11-07 14:33:02.468252+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>phinz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2012-11-24 05:29:12</string>
+	<key>lastVersion</key>
+	<string>11</string>
+	<key>latestVersion</key>
+	<string>10</string>
+	<key>modifiedDate</key>
+	<date>2014-10-29T03:16:06Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Mounting Clio to Telescope</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/ec890</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

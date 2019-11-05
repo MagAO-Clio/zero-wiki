@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>phinz</string>
+	<key>authorLongName</key>
+	<string>Phil Hinz</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/1c01a</string>
+	<key>content</key>
+	<string>
+&lt;div class="wiki_entry"&gt;
+ &lt;p class="loc"&gt;This is placeholder text for your new wiki page. Replace it with your own.&lt;/p&gt;&lt;/div&gt;</string>
+	<key>createdDate</key>
+	<string>2010-10-07 18:12:52.727437+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>phinz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>phinz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2010-10-07 18:12:52</string>
+	<key>lastVersion</key>
+	<string>2</string>
+	<key>latestVersion</key>
+	<string>1</string>
+	<key>modifiedDate</key>
+	<date>2010-10-07T18:37:07Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Camera Operation</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/1c01a</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

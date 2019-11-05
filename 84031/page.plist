@@ -1,0 +1,1132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>phinz</string>
+	<key>authorLongName</key>
+	<string>Phil Hinz</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/84031</string>
+	<key>content</key>
+	<string>
+&lt;div class="wiki_entry"&gt; 
+ &lt;p&gt;&lt;span class="Apple-style-span"&gt; &lt;/span&gt;&lt;/p&gt; 
+ &lt;div class="page"&gt; 
+  &lt;h2 class="wiki_unbold"&gt;Photometric Sensitivity&lt;/h2&gt; 
+  &lt;div class="level2"&gt; 
+   &lt;p&gt;Sensitivities calculated from approximate sky, telescope and detector background are the following. &lt;/p&gt; 
+   &lt;p&gt;&lt;strong&gt;5 sigma limiting magnitudes (point-source) (Vega magnitudes)&lt;/strong&gt;&lt;/p&gt; 
+   &lt;table class="inline __useTableEditor data"&gt;&lt;tbody&gt;
+     &lt;tr&gt;
+      
+      &lt;td&gt;Filters&lt;/td&gt;
+      
+      &lt;td&gt;5 min.&lt;/td&gt;
+      
+      &lt;td&gt;60 min.&lt;/td&gt;
+      
+     &lt;/tr&gt;
+     &lt;tr&gt;
+      
+      &lt;td&gt;Ks&lt;/td&gt;
+      
+      &lt;td&gt;--&lt;/td&gt;
+      
+      &lt;td&gt;20-21 (Rodigas, based on 2 s image from 4/2011&lt;/td&gt;
+      
+     &lt;/tr&gt;
+     &lt;tr&gt;
+      
+      &lt;td&gt;3.1 um&lt;/td&gt;
+      
+      &lt;td&gt;--&lt;/td&gt;
+      
+      &lt;td&gt;18.8 (Rodigas, based on 6.5 s image from 6/2010&lt;/td&gt;
+      
+     &lt;/tr&gt;
+     &lt;tr&gt;
+      
+      &lt;td&gt;3.3 um&lt;/td&gt;
+      
+      &lt;td&gt;--&lt;/td&gt;
+      
+      &lt;td&gt;17.25 (Hinz HR 8799 paper 2010)&lt;/td&gt;
+      
+     &lt;/tr&gt;
+     &lt;tr&gt;
+      
+      &lt;td&gt;L’&lt;/td&gt;
+      
+      &lt;td&gt;16.1&lt;/td&gt;
+      
+      &lt;td&gt;16.5-17 (depends on season)&lt;/td&gt;
+      
+     &lt;/tr&gt;
+     &lt;tr&gt;
+      
+      &lt;td&gt;M&lt;/td&gt;
+      
+      &lt;td&gt;12.5&lt;/td&gt;
+      
+      &lt;td&gt;13.5-14.0 (Heinze2008)&lt;/td&gt;
+      
+     &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br class="" /&gt; 
+   &lt;p&gt;&lt;strong&gt;5 sigma AO surface brightness limits (Vega magnitudes/sq. arcsec)&lt;/strong&gt;&lt;/p&gt; 
+   &lt;table class="inline __useTableEditor data"&gt;&lt;tbody&gt; 
+     &lt;tr&gt;
+       
+      &lt;td&gt;Filters&lt;/td&gt;
+       
+      &lt;td&gt;5 min.&lt;/td&gt;
+       
+      &lt;td&gt;60 min.&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td&gt;Ks&lt;/td&gt;
+       
+      &lt;td&gt;13.0 (?)&lt;/td&gt;
+       
+      &lt;td&gt;14 (Rodigas, based on above)&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td&gt;3.1 um&lt;/td&gt;
+       
+      &lt;td&gt;--&lt;/td&gt;
+       
+      &lt;td&gt;13.5 (Rodigas, based on above)&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td&gt;L’&lt;/td&gt;
+       
+      &lt;td&gt;11.5&lt;/td&gt;
+       
+      &lt;td&gt;12&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td&gt;M&lt;/td&gt;
+       
+      &lt;td&gt;9.7&lt;/td&gt;
+       
+      &lt;td&gt;11.0&lt;/td&gt;
+       
+     &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br class="" /&gt; 
+   &lt;p&gt;If we are not using AO we are limited to the following under median seeing&lt;/p&gt; 
+   &lt;p&gt;&lt;strong&gt;5 sigma non-AO point source limits (Vega magnitudes)&lt;/strong&gt;&lt;/p&gt; 
+   &lt;table class="inline"&gt;&lt;tbody&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;Filters&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;5 min.&lt;/td&gt;
+       
+      &lt;td class="rightalign"&gt;60 min.&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;Ks&lt;/td&gt;
+       
+      &lt;td class="rightalign"&gt;&lt;/td&gt;
+       
+      &lt;td class="rightalign"&gt;&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;L’&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;13.6&lt;/td&gt;
+       
+      &lt;td class="rightalign"&gt;&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;M&lt;/td&gt;
+       
+      &lt;td class="rightalign"&gt;&lt;/td&gt;
+       
+      &lt;td class="rightalign"&gt;&lt;/td&gt;
+       
+     &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br class="" /&gt; 
+   &lt;p&gt;&lt;strong&gt;April 2006 photometric calibration, in brief:&lt;/strong&gt;&lt;/p&gt; 
+   &lt;p&gt;We give the photometric calibration in terms of the counts per second received from a star of magnitude 10.0. The errors on these calibrations, given in magnitudes, are the sum in quadrature of the error on our own measurements and the photometric uncertainties on the Legget et al (2003) standard stars we have used.&lt;/p&gt; 
+   &lt;p&gt;&lt;strong&gt;April 2006 photometric calibration&lt;/strong&gt;&lt;/p&gt; 
+   &lt;table class="inline"&gt;&lt;tbody&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;Filter&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;Phot. Apert.&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10th mag cts/sec&lt;/td&gt;
+       
+      &lt;td&gt;uncertainty&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;L’&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;30.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;16825&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.016 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;L’&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;14349&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.029 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;M&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;30.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;5067&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.098 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;M&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;4317&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.046 mag&lt;/td&gt;
+       
+     &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br class="" /&gt; 
+   &lt;p&gt;Estimated throughput:&lt;/p&gt; 
+   &lt;p&gt;L’: T = 0.67&lt;/p&gt; 
+   &lt;p&gt;M: T = 0.42&lt;/p&gt; 
+   &lt;p&gt;&lt;strong&gt;April 2006 photometric calibration, in more detail:&lt;/strong&gt;&lt;/p&gt; 
+   &lt;p&gt;Note: to see the June 2006 photometric calibration, scroll down past all April results.&lt;/p&gt; 
+   &lt;p&gt;On the night of April 8, 2006, the star HD 106965 was observed in L’ and M bands for photometric calibration, and on the night of April 10 the star HD 162208 was observed for the same purpose. Eight images of HD 106965 with 15 coadds, and 1.0596 sec of true exposure per coadd, were obtained in the L’ band, while 8 exposures of 150 coadds with 0.1596 sec of true exposure per coadd were obtained in M band. For HD 162208, the data consisted of 8 exposures in L’ of 10 coadds with 1.0596 sec of true exposure per coadd, and 8 exposures in M band with 90 coadds and a true exposure of 0.1596 sec per coadd. There was light patchy cloud in the sky at the time of the HD 106965 measurements on April 8, although the target appeared to be cloud-free throughout the observations. There was some concern, notwithstanding, that invisible faint cloud could have affected the measurements of HD 106965. This concern is not borne out by the data. The images of HD 162208, made in very clear conditions, show unusually bad AO correction, which is probably indicative of bad seeing. The photometry of this star does show evidence of an unusually wide halo.&lt;/p&gt; 
+   &lt;p&gt;Legget et al 2003 record HD 106965 to have a brightness of L’ = 7.311 +/- 0.010 and M’ = 7.32 +/- 0.04. For HD 162208 they give L’ = 7.125 +/- 0.011 and M’ = 7.05 +/- 0.02. We reduced our data and obtained photometry with apertures of 30.0 pixel and 10.0 pixel radii. We standardized the calibration to counts/sec for a star of mag 10.0. The results are as follows, where the errors given are the image-to-image rms, and do not take into account the Legget et al photometric uncertainties:&lt;/p&gt; 
+   &lt;p&gt;&lt;strong&gt;April photometric calibration, normalized to cts/sec for star of mag = 10.0&lt;/strong&gt;&lt;/p&gt; 
+   &lt;table class="inline"&gt;&lt;tbody&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;Filter&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;Phot. Apert.&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;HD 106965&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;HD162208&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;L’&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;30.0 pix&lt;/td&gt;
+       
+      &lt;td class="rightalign"&gt;16673 +/- 368&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;16825 +/- 182&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;L’&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10.0 pix&lt;/td&gt;
+       
+      &lt;td class="rightalign"&gt;14349 +/- 366&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;12772 +/- 573&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;M&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;30.0 pix&lt;/td&gt;
+       
+      &lt;td class="rightalign"&gt;4887 +/- 473&lt;/td&gt;
+       
+      &lt;td class="rightalign"&gt;6028 +/- 1093&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;M&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;4317 +/- 89&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;4107 +/- 173&lt;/td&gt;
+       
+     &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br class="" /&gt; 
+   &lt;p&gt;Note that we have made the approximation that any color term between M and M’ is negligible. This is true. The actual value of the color term for different stellar spectral types is given in Legget et al; it is usually less than 0.005 mag.&lt;/p&gt; 
+   &lt;p&gt;Examining the table above, we see that the 30.0 pixel radius photometry in L’ is very consistent, and both measurements have low fractional rms, indicating that there are no invisible clouds affecting HD 106965, and that, bad though the seeing was during the HD 162208, it is not bad enough to throw much light outside a 30.0 pixel radius. Thus either value can be adopted as a good calibration for measuring L’ magnitudes with a 30.0 pixel radius. We choose the HD 162208 value because of its lower noise.&lt;/p&gt; 
+   &lt;p&gt;The L’ calibrations with the 10.0 pixel radius show the effect of the very bad seeing during the HD 162208 observations: the smaller radius photometry has a large fractional rms and is too low to be consitent with the HD 106965 result. Thus, for L’ photometry with a 10.0 pixel radius, we prefer the HD 106965 measurement.&lt;/p&gt; 
+   &lt;p&gt;The M band calibrations with the 30.0 pixel radius are marginally consistent, but both have a very large fractional rms. This is because these stars are fairly faint at M band, and intense noise from the bright sky introduces significant error into the large aperture measurements. Thus we do not recommend trying to perform photometry at M band using a 30.0 pixel aperture. If, for some reason, a 30.0 pixel aperture is required, we recommend using the weighted average of the HD 106965 and HD 162208 values: 5067 +/- 434.&lt;/p&gt; 
+   &lt;p&gt;The M band calibrations with the 10.0 pixel radius have much lower fractional noise. The seeing at M band is always much better than at L’, so the HD 162208 10.0 pixel measurement may be fairly good. Still, we adopt the HD 106965 result because it has lower noise and is slightly brighter, suggesting the HD 162208 one may still be slightly affected by noise.&lt;/p&gt; 
+   &lt;p&gt;These choices result in the table of final photometric calibrations given under the heading ‘April 2006 photometric calibration, in brief’ above.&lt;/p&gt; 
+   &lt;p&gt;&lt;strong&gt;Measured Photometric Sensitivity from images of GJ450:&lt;/strong&gt;&lt;/p&gt; 
+   &lt;p&gt;Using an April 2006 integration on GJ450 that lasted 5355 sec, we obtain a background-limited, 5-sigma point source detection limit of about &lt;strong&gt;L’ = 17.1 - 17.65&lt;/strong&gt;. This is based on the HD 166208 calibration mentioned above.&lt;/p&gt; 
+   &lt;p&gt;Scaling this to 1 hour we get &lt;strong&gt;L’ = 16.67 - 17.22&lt;/strong&gt;.&lt;/p&gt; 
+   &lt;p&gt;&lt;strong&gt;June 2006 photometric calibration, in brief:&lt;/strong&gt;&lt;/p&gt; 
+   &lt;p&gt;We give the photometric calibration in terms of the counts per second received from a star of magnitude 10.0. The errors on these calibrations, given in magnitudes, are the sum in quadrature of the error on our own measurements and the photometric uncertainties on the Legget et al (2003) standard stars we have used.&lt;/p&gt; 
+   &lt;p&gt;&lt;strong&gt;June 2006 photometric calibration&lt;/strong&gt;&lt;/p&gt; 
+   &lt;table class="inline"&gt;&lt;tbody&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;Filter&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;Phot. Apert.&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10th mag cts/sec&lt;/td&gt;
+       
+      &lt;td&gt;uncertainty&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;Ks&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;30.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;27231&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.044 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;Ks&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;22281&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.046 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;L’&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;30.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;13135&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.033 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;L’&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10787&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.027 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;M’&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;30.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;1696&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.191 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;M’&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;1434&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.037 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;M&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;30.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;3308&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.186 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;M&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;3044&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.057 mag&lt;/td&gt;
+       
+     &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br class="" /&gt; 
+   &lt;p&gt;&lt;strong&gt;June 2006 photometric calibration, in more detail:&lt;/strong&gt; The only star on which the above calibration is based is HD 162208, observed in good seeing and clear weather. The reason for the reduced counts relative to the April calibration is a pupil misalignment problem that plagued almost all of the June data. It is not certain that the degree of the pupil misalignment remained constant, but there is evidence that it was not zero on any of the science observations made before it was identified and fixed, and there is no evidence that it changed. I think a long integration on Altair by Eric Mamajek at the very end of the June run is the only good science data that was taken after the misalignment was identified and fixed. This misaligment reduced our sensitivity and slightly broadened our psf in one dimension, but other than that did not cause any harm. That is, the data remain good scientifically, albeit somewhat less sensitive than they might have been.&lt;/p&gt; 
+   &lt;p&gt;The Ks band calibration is based on the L’ magnitude in Legget et al. HD 162208 is an A0 star, so the assumption that Ks-L’ = 0.0 is not unreasonable. Allen’s Astrophysical Quantities gives Ks-L’ = 0.0 for an A0 star.&lt;/p&gt; 
+   &lt;p&gt;&lt;strong&gt;July 2006 photometric calibration, in brief:&lt;/strong&gt;&lt;/p&gt; 
+   &lt;p&gt;We give the photometric calibration and its uncertainties using the same convention described above. Two photometric standard stars were measured during the July run, HD ?? on the night of July 11, and HD 203856 on the night of July 12. Only the July 12 data has been analyzed so far.&lt;/p&gt; 
+   &lt;p&gt;&lt;strong&gt;July 12, 2006, photometric calibration based on star HD 203856&lt;/strong&gt;&lt;/p&gt; 
+   &lt;table class="inline"&gt;&lt;tbody&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;Filter&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;Phot. Apert.&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10th mag cts/sec&lt;/td&gt;
+       
+      &lt;td&gt;uncertainty&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;L’&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;30.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;14204&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.021 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;L’&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;11971&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.020 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;M’&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;30.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;1642&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.496 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;M’&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;1386&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.091 mag&lt;/td&gt;
+       
+     &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br class="" /&gt; 
+   &lt;p&gt;&lt;strong&gt;September 2006 photometric calibration, in brief:&lt;/strong&gt;&lt;/p&gt; 
+   &lt;p&gt;We give the photometric calibration and its uncertainties using the same convention described above. A single photometric standard star was measured during the September run, HD 203856 on the night of September 10.&lt;/p&gt; 
+   &lt;p&gt;&lt;strong&gt;September 2006 photometric calibration based on star HD 203856&lt;/strong&gt;&lt;/p&gt; 
+   &lt;table class="inline"&gt;&lt;tbody&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;Filter&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;Phot. Apert.&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10th mag cts/sec&lt;/td&gt;
+       
+      &lt;td&gt;uncertainty&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;Ks&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;30.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;26715&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.022 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;Ks&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;22816&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.035 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;L’&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;30.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;14258&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.020 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;L’&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;12742&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.022 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;M&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;30.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;3576&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.191 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;M&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;3148&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.053 mag&lt;/td&gt;
+       
+     &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br class="" /&gt; 
+   &lt;p&gt;&lt;strong&gt;December 2006 photometric calibration, in brief:&lt;/strong&gt;&lt;/p&gt; 
+   &lt;p&gt;Calibration based on star HD 22686, observed on the night of Nov 30.&lt;/p&gt; 
+   &lt;p&gt;&lt;strong&gt;December 2006 photometric calibration based on star HD 22686&lt;/strong&gt;&lt;/p&gt; 
+   &lt;table class="inline"&gt;&lt;tbody&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;Filter&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;Phot. Apert.&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10th mag cts/sec&lt;/td&gt;
+       
+      &lt;td&gt;uncertainty&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;Ks&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;30.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;26396&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.017 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;Ks&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;18398&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.055 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;L’&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;30.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;14917&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.021 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;L’&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10851&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.054 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;M&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;30.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;4526&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.300 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;M&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;3654&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.060 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;M’&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;30.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;2024&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.130 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;M’&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;1461&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.060 mag&lt;/td&gt;
+       
+     &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br class="" /&gt; 
+   &lt;p&gt;&lt;strong&gt;January 2007 photometric calibration, in brief:&lt;/strong&gt;&lt;/p&gt; 
+   &lt;p&gt;Calibration based on star HD 22686, observed on the night of January 3.&lt;/p&gt; 
+   &lt;p&gt;&lt;strong&gt;January 2007 photometric calibration based on star HD 22686&lt;/strong&gt;&lt;/p&gt; 
+   &lt;table class="inline"&gt;&lt;tbody&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;Filter&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;Phot. Apert.&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10th mag cts/sec&lt;/td&gt;
+       
+      &lt;td&gt;uncertainty&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;Ks&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;30.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;30768&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.042 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;Ks&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;24077&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.048 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;L’&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;30.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;15614&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.044 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;L’&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;12853&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.037 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;M&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;30.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;4480&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.512 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;M&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;3580&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.093 mag&lt;/td&gt;
+       
+     &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br class="" /&gt; 
+   &lt;p&gt;During the January run atmospheric extinction calibrations were also performed for the L’ and M-bands.&lt;/p&gt; 
+   &lt;p&gt;&lt;strong&gt;January 2007 extinction calibrations in units of mag/airmass&lt;/strong&gt;&lt;/p&gt; 
+   &lt;table class="inline"&gt;&lt;tbody&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;Filter&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;Extinction&lt;/td&gt;
+       
+      &lt;td&gt;uncertainty&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;L’&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.086&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.020&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;M&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.287&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.110&lt;/td&gt;
+       
+     &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br class="" /&gt; 
+   &lt;p&gt;&lt;strong&gt;April 2007 photometric calibration, in brief:&lt;/strong&gt; The stars HD 106965 and HD 136754 were observed on the night of April 10, 2007. A new dichroic was installed in Clio before this run, apparently improving the throughput noticeably. The mean values in the table below are straight averages of the values from the two stars observed, corrected to a consistent airmass of 1.03 using the January airmass slope values and assuming the Ks slope is the same as that for L’. The uncertainties on the mean values are set equal to the mean square sum of the individual errors, or the difference between the values for the two stars, whichever is greater.&lt;/p&gt; 
+   &lt;p&gt;&lt;strong&gt;April 2007 photometric calibration&lt;/strong&gt;&lt;/p&gt; 
+   &lt;table class="inline"&gt;&lt;tbody&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;Star&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;Filter&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;Mean Airmass&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;Phot. Apert.&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10th mag cts/sec&lt;/td&gt;
+       
+      &lt;td&gt;uncertainty&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td&gt;HD 106965&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;Ks&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;1.157&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;30.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;28956&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.026 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td&gt;HD 106965&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;Ks&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;1.157&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;22956&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.032 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td&gt;HD 106965&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;L’&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;1.157&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;30.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;15613&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.021 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td&gt;HD 106965&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;L’&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;1.157&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;13825&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.020 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td&gt;HD 106965&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;M&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;1.157&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;30.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;4556&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.116 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td&gt;HD 106965&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;M&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;1.157&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;3746&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.045 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td&gt;HD 136754&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;Ks&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;1.035&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;30.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;29820&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.023 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td&gt;HD 136754&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;Ks&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;1.035&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;24212&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.046 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td&gt;HD 136754&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;L’&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;1.025&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;30.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;16316&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.016 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td&gt;HD 136754&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;L’&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;1.025&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;14079&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.035 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td&gt;HD 136754&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;M&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;1.031&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;30.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;4691&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.113 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td&gt;HD 136754&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;M&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;1.031&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;4213&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.043 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;Mean&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;Ks&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;1.030&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;30.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;29540&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.021 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;Mean&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;Ks&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;1.030&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;23705&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.047 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;Mean&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;L’&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;1.030&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;30.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;16041&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.036 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;Mean&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;L’&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;1.030&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;13747&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.052 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;Mean&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;M&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;1.030&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;30.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;4702&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.081 mag&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;Mean&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;M&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;1.030&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;10.0 pix&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;4043&lt;/td&gt;
+       
+      &lt;td class="centeralign"&gt;0.091 mag&lt;/td&gt;
+       
+     &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br class="" /&gt; 
+   &lt;p&gt;Even though, remarkably, the 30 pixel M-band result shows a lower uncertainty than the 10 pixel result, we still recommend using a 10-pixel aperture for M-band photometry, unless the source is very bright. For L’ and Ks, as usual, we recommend a 30.0 pixel aperture.&lt;/p&gt;&lt;/div&gt; 
+  &lt;div class="secedit"&gt;&lt;/div&gt;&lt;a name="emissivity_measurements"&gt;&lt;/a&gt; 
+  &lt;h2 class="wiki_unbold"&gt;Emissivity Measurements&lt;/h2&gt; 
+  &lt;div class="level2"&gt; 
+   &lt;p&gt;During the April 2006 run, crude measurements of the sky and instrument emissivity in L’ and M were carried out. Dome flats and 2 airmass sky flats (which include thermal emission from telescope structure and instrument) were taken along with corresponding darks to subtract off the zeropoint. The emissivity was estimated by finding the ratio between the sky flux and the dome flux since the dome has an approximate emissivity of 1. To disentangle the sky from instrument emissivity a science exposure with an airmass of 1.15 was used. Note, however, the darks were right taken after sky and dome flats, so even though the science exposure was closest in time to the darks, the zeropoint may have shifted significantly. Therefore the emissivity measurements are good to about 10%. The preliminary results are shown below:&lt;/p&gt; 
+   &lt;p&gt;&lt;strong&gt;Emissivity Measurements&lt;/strong&gt;&lt;/p&gt; 
+   &lt;table class="inline"&gt;&lt;tbody&gt; 
+     &lt;tr&gt;
+       
+      &lt;td&gt;Band&lt;/td&gt;
+       
+      &lt;td&gt;Airmass&lt;/td&gt;
+       
+      &lt;td&gt;Emissivity&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td&gt;L’&lt;/td&gt;
+       
+      &lt;td&gt;1.15×0.17&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td&gt;L’&lt;/td&gt;
+       
+      &lt;td&gt;2.00×0.21&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td&gt;M&lt;/td&gt;
+       
+      &lt;td&gt;1.15×0.31&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td&gt;M&lt;/td&gt;
+       
+      &lt;td&gt;2.00×0.37&lt;/td&gt;
+       
+     &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br class="" /&gt; 
+   &lt;p&gt;From the L’ data, one can estimate the instrument emissivity to be 10%, if the L’ sky emissivity is 6%. However, the M-band data is not consistent with the above emissivity. M-band data implies a sky emissivity of only ~10%, which gives an instrument emissivity of 20%, when the expected value is 15-20%. One explanation for this is the saturation of atmospheric lines at higher airmasses where the atmosphere is no longer optically thin. The simple minded assumption that the emissivity scales as airmass is no longer true. Therefore, since the L’ window is devoid of strong lines, the L’ emissivity measurements are likely to be closer to the truth.&lt;/p&gt;&lt;/div&gt; 
+  &lt;div class="secedit"&gt;&lt;/div&gt;&lt;a name="contrast_estimate"&gt;&lt;/a&gt; 
+  &lt;h2 class="wiki_unbold"&gt;Contrast Estimate&lt;/h2&gt; 
+  &lt;div class="level2"&gt;&lt;/div&gt; 
+  &lt;div class="secedit"&gt;&lt;/div&gt;&lt;/div&gt; 
+ &lt;div class="clearer"&gt; &lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div class="stylefoot"&gt; 
+  &lt;div class="meta"&gt; 
+   &lt;div class="user"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt; 
+ &lt;p&gt;&lt;/p&gt;&lt;/div&gt;</string>
+	<key>createdDate</key>
+	<string>2010-10-07 18:13:49.757506+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>rodigas</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>rodigas</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2011-09-12 21:56:42</string>
+	<key>lastVersion</key>
+	<string>9</string>
+	<key>latestVersion</key>
+	<string>8</string>
+	<key>modifiedDate</key>
+	<date>2011-09-12T21:58:54Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Sensitivity</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/84031</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

@@ -1,0 +1,257 @@
+
+<h1>Troubleshooting</h1>
+<div class="wiki_entry"> 
+ <div><br class="" /></div> 
+ <div> 
+  <div><b><u>1. Reset Clio Component GUI</u></b></div></div> 
+ <div><span>Each button will restart the corresponding component (e.g. Camera Control, Motor Control, and Star Nudger).</span></div> 
+ <div><b><u>2. killclio</u></b><span><br class="" /></span></div> 
+ <div>Typed into the Terminal connected to clio1.lco.cl; this will shutdown all of the Clio GUIs. Type<i> runclio </i>to start them all again.</div> 
+ <div><b><u>3. Reboot clio1.lco.cl<br class="" /></u></b></div> 
+ <div><span>From the Terminal, type:<br class="" /></span> 
+  <ul>
+    
+   <li><span>su</span></li>
+    
+   <li>reboot<span></span></li>
+    
+   <li><span>ping clio1.lco.cl <i>until it comes back up again (Will switch from saying &quot;Request timeout&quot; and counting u<i>p to ~50-60;</i> to &quot;64 bytes from 200....&quot;)</i></span></li>
+    
+   <li><span></span>ssh -Y obs@clio1.lco.cl</li>
+    
+   <li>runclio</li>
+    
+  </ul></div><br class="" />Sometimes you have to Reset the electronics. Then you also must hit Init before you can restart.<br class="" /><br class="" />The white button on the back of the Clio electronics rack resets the PCI card and you can also try that if it is having a hard time writing to memory.<br class="" /><br class="" /><br class="" /> 
+ <h1>Problems and solutions<br class="" /></h1><br class="" /> 
+ <table class="data __useTableEditor"><thead> 
+   <tr>
+     
+    <th>Problem</th>
+     
+    <th>Symptoms</th>
+     
+    <th>Solution</th>
+     
+   </tr></thead><tbody> 
+   <tr>
+     
+    <td>First connecting Clio -- camera cannot initialize</td>
+     
+    <td>You type &quot;runclio&quot; and it comes up all red -- you hit reset and init and keep getting POF errors</td>
+     
+    <td>Check to see if you turned on the power to the grey power supply box on the right support arm of Clio</td>
+     
+   </tr> 
+   <tr>
+     
+    <td>At start of run, cannot turn on pulizzi power</td>
+     
+    <td>You toggle the power switch in hardware in the cabinet, or in software with &quot;wish pulizzi_power.tcl&quot;, and you can't get the Pulizzi LEDs to light up or the LEDs of the communications on the Clio Cryostat</td>
+     
+    <td>Edit the USB port numbers that are dynamically allocated in pulizzi_power.tcl, to swap the 1 and 0</td>
+     
+   </tr> 
+   <tr>
+     
+    <td>At start of run, camera can't reset/init</td>
+     
+    <td>You keep hitting Reset and Init, and it keeps saying it needs to be Reset. You hit the white button and black button a lot, but neither one works.</td>
+     
+    <td>It worked to turn on the power to the camera by hand in wish pulizzi_power.tcl - the problem was that the power wasn't being turned on to the AC. Check the box &quot;CLIO Controller&quot; to be powered on and leave it always checked.</td>
+     
+   </tr> 
+   <tr>
+     
+    <td>When you take a test image, you keep getting xauth errors</td>
+     
+    <td>Error pops up - claiming must use xauth-style authentication -- line is in the NImg command where TCL is running a send command. This is the exact error:<br class="" /><br class="" />X server insecure (must use xauth-style authorization); command ignored<br class="" />X server insecure (must use xauth-style authorization); command ignored<br class="" /> while executing<br class="" />&quot;send MOVEBAYSIDES changefocus 28&quot;<br class="" /> (file &quot;/home/obs/Programs/ObsScripts/focus.tcl&quot; line 34)<br class="" /> invoked from within<br class="" />&quot;source $filetext&quot;<br class="" /> (procedure &quot;RunScript2&quot; line 4)<br class="" /> invoked from within<br class="" />&quot;RunScript2&quot;<br class="" /> invoked from within<br class="" />&quot;.tj2 invoke&quot;<br class="" /> (&quot;uplevel&quot; body line 1)<br class="" /> invoked from within<br class="" />&quot;uplevel #0 [list $w invoke]&quot;<br class="" /> (procedure &quot;tk::ButtonUp&quot; line 22)<br class="" /> invoked from within<br class="" />&quot;tk::ButtonUp .tj2&quot;<br class="" /> (command bound to event)</td>
+     
+    <td>killclio<br class="" />tcltksucks<br class="" />(This shell script deletes all the xauth hosts so TCL will quit complaining).</td>
+     
+   </tr> 
+   <tr>
+     
+    <td>When doing &quot;runclio&quot; get syntax error in tempread.tcl or CLIOmotors</td>
+     
+    <td>Error in startup script: Syntax error in expression...<br class="" />While executing &quot;expr $htrmult * $pw&quot;<br class="" />templog.tcl</td>
+     
+    <td>Edit the USB port numbers that are dynamically allocated, <br class="" />#set port [open ... ttyUSB0]<br class="" />set port [open ... ttyUSB1]<br class="" />You have to swap all the 0's and 1's in the tempread.tcl and CLIOmotors.tcl.<br class="" />Longer-term solution would be to figure out how to statically allocate the USB ports.<br class="" />The CLIOmotors.tcl and pulizzi_power.tcl are both talking to the Pulizzi so they should both be the same USB port. The tempread.tcl should be the other USB port.</td>
+     
+   </tr> 
+   <tr>
+     
+    <td>POF -1<br class="" />Could not write to memory</td>
+     
+    <td>Tells you Init failed and you need to Reset the electronics, but you keep doing that and keep getting the same message.</td>
+     
+    <td>Try running from a different computer. If that works, then Guanaco is the problem and needs to be restarted.</td>
+     
+   </tr> 
+   <tr>
+     
+    <td>AO_com.log not connecting</td>
+     
+    <td>Error about AO_com.log</td>
+     
+    <td>Solution 1: killclio; Retry.<br class="" />Solution 2: Close Camera Control with the X; Restart MMTI; then re-open Camera Control with the &quot;Restart Clio Component&quot;</td>
+     
+   </tr> 
+   <tr>
+     
+    <td>Internal network goes down, Lose weather/DIMM data, Can't get AO header values</td>
+     
+    <td>Querying AO system for header values.<br class="" /> Size: (1024,512), Coadds: 10, File: /home/obs/Data/clio_20150504_05/a1_deeppsf00016.fit<br class="" /> Int: 5000, Use dark: True, Nod: beam 0, ra -6.00, dec 0.00<br class="" /> Use data cube: True, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod<br class="" /><br class="" />Enter Selection: nnod_abba<br class="" />1<br class="" />1<br class="" /><br class="" />Enter the number of images to take per nod: Enter the number of nod pairs (abba) to take: Error: unable to connect with AO server.</td>
+     
+    <td>Someone from LCO team has to fix internal network (e.g. Emilio)</td>
+     
+   </tr> 
+   <tr>
+     
+    <td>Test image at beginning of night won't save</td>
+     
+    <td>You take a test image, and the counter (for counting coadds) counts down and the incrementer (&quot;Name of next file: test00002.fit&quot;) increments up, <b>and the timing seems right as if it did finish taking the image</b>, but the FITS file isn't there. You also might get an Xauth error message.</td>
+     
+    <td>This is an error with Xauth -- Restart Guanaco (the computer we're ssh'ing in to Clio from)</td>
+     
+   </tr> 
+   <tr>
+     
+    <td>Test image at beginning of night won't save unless you uncheck &quot;Tel info in header&quot;</td>
+     
+    <td>You take a test image, and the counter (for counting coadds) counts down and the incrementer (&quot;Name of next file: test00002.fit&quot;) increments up, <b>but the terminal with feedback on image progress (where it counts coadds) just looks like it's hanging</b>, and also the FITS file isn't there</td>
+     
+    <td>Restart the MMTI process in Adsec -&gt; System Process, then also restart Clio software (killclio; runclio)</td>
+     
+   </tr> 
+   <tr>
+     
+    <td>Unable to take n image</td>
+     
+    <td>Error in query AO</td>
+     
+    <td>Restart the MMTI process</td>
+     
+   </tr> 
+   <tr>
+     
+    <td>Cannot take test image at start of night - Receiver-Interpreter error</td>
+     
+    <td>receiver never heard of interpreter &quot;CLIOMOTORS&quot;<br class="" />receiver never heard of interpreter &quot;CLIOMOTORS&quot;<br class="" /> while executing<br class="" />&quot;send CLIOMOTORS getpowerstatus&quot;<br class="" /> (procedure &quot;NImg&quot; line 9)<br class="" /> invoked from within<br class="" />&quot;NImg&quot;<br class="" /> invoked from within<br class="" />&quot;.focuswin.row4.goodfocus invoke&quot;<br class="" /> (&quot;uplevel&quot; body line 1)<br class="" /> invoked from within<br class="" />&quot;uplevel #0 [list $w invoke]&quot;<br class="" /> (procedure &quot;tk::ButtonUp&quot; line 22)<br class="" /> invoked from within<br class="" />&quot;tk::ButtonUp .focuswin.row4.goodfocus&quot;<br class="" /> (command bound to event)</td>
+     
+    <td>regarding tcl/tk send commands—&gt; restart clio software several times. If that fails, restart the Clio computer (su on the command line, then type reboot). Try restarting the Clio software again. Repeat as needed (this has happened twice and both times the solution was as written above).</td>
+     
+   </tr> 
+   <tr>
+     
+    <td>CLIO Motor Control freezing after changing filters</td>
+     
+    <td>You change a filter and hit Move Motors; It goes all the way to Power Down Successful but the buttons stay Yellow instead of turning good Green. You try hitting buttons like Next CW on CLIO Motor Control and find that it is frozen.</td>
+     
+    <td>Do a Top. It could be StarNudger is taking up all the CPU (don't know why). Restart StarNudger.</td>
+     
+   </tr> 
+   <tr>
+     
+    <td>Cannot change filter wheels after restarting the computer</td>
+     
+    <td>You try to change a filter and the advanced gui says that AC power is on but nothing moves -- This happens after restarting the computer which sometimes changes the USB ports. One of the symptoms of the Pulizzi power being on the wrong USB port is that the little TCL window that says &quot;CLIO Controller CLIO Motors&quot; comes up when you do a &quot;runclio&quot; the wrong window size -- meaning the window opens and then after several seconds it shrinks down to the small size and then has the text. Whereas if everything is working fine, then it immediately pops up at the right size and with the text.</td>
+     
+    <td>Have to edit USB ports (all of them) in CLIOmotors.tcl (4 places) AND pulizzi_power.tcl (1 place). The CLIOmotors.tcl and pulizzi_power.tcl are both talking to the Pulizzi so they should both be the same USB port. The tempread.tcl should be the other USB port.</td>
+     
+   </tr> 
+   <tr>
+     
+    <td>Transfer files slows you down</td>
+     
+    <td>Slow readout when taking very fast data (like for Key Project)</td>
+     
+    <td>Stop the Transfer Files program (hit the X in upper left corner of window) during the data taking. Restart it when resuming normal observations by going to Restart Clio Components -&gt; FileBackup</td>
+     
+   </tr> 
+   <tr>
+     
+    <td>Timeout/Readout errors</td>
+     
+    <td>Possibly a memory issue, although could also be an issue with the PCI card. Error message says: &quot;Error: timeout while waiting for image readout. 7920000 of 8000000&quot;... &quot;Warning: failed acquisition. Trying again . . .&quot;</td>
+     
+    <td>Try killing some of the memory-heavy processes: starnudger, transfer_files.<br class="" />If that doesn't work, possibly the PCI card (white button) or power supply (black button on grey box) need to be reset but I'm not sure, haven't tried this yet. ???</td>
+     
+   </tr> 
+   <tr>
+     
+    <td>File increments but doesn't save</td>
+     
+    <td>To see if this one is happening, make sure the FITS files are being saved as you take data</td>
+     
+    <td>If not, there will be a message printed to the x11 window about AO_com.log errors -- follow directions above for Error about AO_com.log</td>
+     
+   </tr> 
+   <tr>
+     
+    <td>Video or Quick Video fails spontaneously</td>
+     
+    <td>Press to exit video mode<br class="" /> 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 Error: timeout while waiting for image readout. 522752 of 524288<br class="" />Warning: failed acquisition. Trying again . . . <br class="" />Error: SEX command returns &quot;0&quot;Error: failed to take image.</td>
+     
+    <td>Reset the power supply as follows: 1. killclio; 2. Go out on platform and hit black button on the grey power supply box attached to top right of Clio; 3. runclio</td>
+     
+   </tr> 
+   <tr>
+     
+    <td>Binary characters in file name</td>
+     
+    <td>This happened after an Abort -- the next time we got started up again, file names had binary characters rather than just ASCII in the Prefix.</td>
+     
+    <td>The only fix was to delete the Binary file names (by coming up with creative ways to do a wildcard since you can't type the Binary, like this &quot;rm n*0004*.fit&quot; and then restart the Clio1 computer</td>
+     
+   </tr></tbody></table></div>
+<div><br class="" /></div>
+<h1>Restarting the internet:</h1>su<br class="" />/etc/init.d/network restart<br class="" />ping www.google.com<br class="" /><br class="" />
+<div>-----------------------------------------------------------------</div>
+<div>
+ <div>Here is the code to /home/obs/bin/tcltksucks:</div>
+ <div>(Replace the [/t] with tab)</div>
+ <div><br class="" /></div>
+ <div>#!/bin/sh</div>
+ <div>for host in $(xhost | sed 1d) ; do</div>
+ <div>[\t] echo removing $host from access control list</div>
+ <div>[\t] xhost -$host</div>
+ <div>done</div>
+ <div>echo removing general access from access control list</div>
+ <div>xhost -</div></div>
+<div>
+ <div>-----------------------------------------------------------------</div>
+ <div></div></div>
+<h1><br class="" /></h1>
+<h1>Specific Problem Pages:</h1>
+<div> 
+ <ul>
+   
+  <li><a href="groups/clio2usermanual/wiki/4a92d/AO_comm_errors.html">AO comm errors</a></li>
+   
+  <li><a href="groups/clio2usermanual/wiki/18bf3/StartExposure_error.html">StartExposure SEX command errors</a></li>
+   
+ </ul></div>
+<div> 
+ <div><br class="" /></div> 
+ <div>
+  <div>
+   <div>-----------------------------------------------------------------</div>
+   <div></div></div></div> 
+ <div>2015/11/22-23 XQuartz quit unexpectedly from Zorro</div> 
+ <div>Trouble page:</div> 
+ <div><a href="groups/clio2usermanual/wiki/b704d/Zorro_XQuartz_Quit_Unexpectedly.html">Zorro XQuartz Quit Unexpectedly</a></div> 
+ <div> 
+  <div> 
+   <div><br class="" /></div></div></div> 
+ <div> 
+  <div> 
+   <div>-----------------------------------------------------------------</div> 
+   <div></div></div></div>
+ <div><br class="" /></div>
+ <div>Clio <a href="groups/clio2usermanual/wiki/05b9b/Image_Elongation.html">image elongation</a> related to motor troubles?</div>
+ <div><br class="" /></div>
+ <div>
+  <div>-----------------------------------------------------------------</div>
+  <div></div></div>
+ <div><br class="" /></div>
+ <div><br class="" /></div>-Katie Morzinski, created 2014/04/21 (continuously updated)</div><a href="/www.pinterest.com/pin/create/extension/"></a>

@@ -1,0 +1,200 @@
+<html>
+<head><title>Readout_Efficiency</title><base href="../"/></head>
+<div class="wiki_entry">
+<h1>Readout Efficiency Tests</h1>For the Key Project we are interested in temporal sampling of the PSF. So here we did some efficiency tests of the various combinations of Integration time, Coadds, and Cubes to see which mode to use to jointly optimize temporal sampling and efficiency. First let's explain the different options in ways to save Coadds and Cubes.<br class=""/><br class=""/>
+<h2>Clio Data Sequence Options:</h2>Between Coadds, Nimgs, and Cubes, there are a few options for temporal sampling and resultant image size for how to take a sequence of Clio data. <span class="custom_forecolor_emphasis">If you are using Cubes, then the Coadds are not added but are saved as individual frames within a 3-dimensional data cube.</span> The Cube will be saved as a single .fit file and so it will have only 1 FITS header. Thus, while the temporal sampling of the data is higher, the temporal sampling of the FITS header (not listed here) is per .fit written. Also, the FITS header will state the # of Coadds only if they are added, so if you are saving in Cubes, asking for "10 coadds saved in cubes" gives you 1 coadd in 10 frames in a data cube.<br class=""/><br class=""/>The Table explains it with an example:<br class=""/>
+<table class="data __useTableEditor"><thead>
+<tr>
+<th>Nimgs</th>
+<th>Integration Time [ms]</th>
+<th>Coadds</th>
+<th>Cubes</th>
+<th>What Will the FITS Header Say for # of Coadds</th>
+<th>Result</th>
+<th>FITS dimensions (Example for Full Frame)</th>
+<th>Total Integration Time [sec] = Nimg x IntTime x Coadds</th>
+<th>Temporal Sampling of Images [sec]</th>
+</tr></thead><tbody>
+<tr>
+<td>10</td>
+<td>1000</td>
+<td>1</td>
+<td>No</td>
+<td>1</td>
+<td>10 2-d FITS files, no coadds</td>
+<td>1024 x 512</td>
+<td>10</td>
+<td>1</td>
+</tr>
+<tr>
+<td>10</td>
+<td>1000</td>
+<td>10</td>
+<td>No</td>
+<td>10</td>
+<td>10 2-d FITS files, each with 10 frames coadded (the total duration is 10x longer than the above line)</td>
+<td>1024 x 512</td>
+<td>100</td>
+<td>10</td>
+</tr>
+<tr>
+<td>10</td>
+<td>1000</td>
+<td>1</td>
+<td>Yes</td>
+<td>1</td>
+<td>10 "3-d" FITS files, with the coadds saved in cubes except that since there is only 1 coadd, the 3rd dimension has nothing in it</td>
+<td>1024 x 512 x 1</td>
+<td>10</td>
+<td>1</td>
+</tr>
+<tr>
+<td>10</td>
+<td>1000</td>
+<td>10</td>
+<td>Yes</td>
+<td>1</td>
+<td>10 3-d FITS files, each with 10 frames in a 3-d Cube</td>
+<td>1024 x 512 x 10</td>
+<td>100</td>
+<td>1</td>
+</tr></tbody></table><br class=""/><br class=""/><br class=""/><br class=""/>And here are the readout efficiency tests:<br class=""/><br class=""/>(Also a quick note about taking data at a very high temporal sampling. To save computer processing speed, you may want to stop the Transfer Files program (hit the X in upper left corner of window) during the data taking. Restart it when resuming normal observations by going to Restart Clio Components -&gt; FileBackup)<br class=""/><br class=""/><br class=""/>
+<h2>Strip Mode Tests:</h2> <img alt="Strip Mode" class="aligncenter thumbnail" longdesc="/groups/clio2usermanual/wiki/6d927/images/c0809.png#655.1563469027485x331.6579016189005" name="/groups/clio2usermanual/wiki/6d927/images/c0809.png#655.1563469027485x331.6579016189005" role="button" src="6d927/images/__thumbs__/c0809.png" tabindex="0" title="Strip Mode"/><br class=""/>
+<table class="data __useTableEditor"><thead>
+<tr>
+<th>Integration time [ms]</th>
+<th># Coadds</th>
+<th>Cubes or 2-d FITS?</th>
+<th># Frames</th>
+<th>Images ID</th>
+<th>Total Clock Time Elapsed [min:sec] / [sec]</th>
+<th>Total Integration [sec]</th>
+<th>% Efficiency = 100 x Total Integration / Clock Time Elapsed</th>
+<th>Temporal Sampling of Images [sec]</th>
+</tr></thead><tbody>
+<tr>
+<td>164</td>
+<td>40</td>
+<td>Cubes</td>
+<td>15</td>
+<td>n140410 test 1-15</td>
+<td>3:39.5 / 219.5</td>
+<td>98.4</td>
+<td>44.8 %</td>
+<td>0.164</td>
+</tr>
+<tr>
+<td>164</td>
+<td>40</td>
+<td>2-d FITS</td>
+<td>15</td>
+<td>n140410 test 16-30</td>
+<td>3:33.3 / 213.3</td>
+<td>98.4</td>
+<td>46.1 %</td>
+<td>6.56</td>
+</tr>
+<tr>
+<td>164</td>
+<td>1</td>
+<td>2-d FITS</td>
+<td>600</td>
+<td>n140410 test 31-630</td>
+<td>6:30.0 / 390.0</td>
+<td>98.4</td>
+<td>25.2 %</td>
+<td>0.164</td>
+</tr>
+<tr>
+<td>164</td>
+<td>6</td>
+<td>Cubes</td>
+<td>100</td>
+<td>n140410 test 631-730</td>
+<td>4:10.8 / 250.8</td>
+<td>98.4</td>
+<td>39.2 %</td>
+<td>0.164</td>
+</tr></tbody></table><br class=""/><br class=""/><br class=""/>
+<h2>Stamp Mode Tests:</h2><img alt="Stamp Mode" class="aligncenter thumbnail" longdesc="/groups/clio2usermanual/wiki/6d927/images/f4702.png#655.1563469027485x331.6579016189005" name="/groups/clio2usermanual/wiki/6d927/images/f4702.png#655.1563469027485x331.6579016189005" role="button" src="6d927/images/__thumbs__/f4702.png" tabindex="0" title="Stamp Mode"/>
+<div class="__tableContainer">
+<table class="data __useTableEditor"><thead>
+<tr>
+<th>Integration time [ms]</th>
+<th># Coadds</th>
+<th>Cubes or 2-d FITS?</th>
+<th># Frames</th>
+<th>Images ID</th>
+<th>Total Clock Time Elapsed [min:sec] / [sec]</th>
+<th>Total Integration [sec]</th>
+<th>% Efficiency = 100 x Total Integration / Clock Time Elapsed</th>
+<th>Temporal Sampling of Images [sec]</th>
+</tr></thead><tbody>
+<tr>
+<td>1000</td>
+<td>10</td>
+<td>2-d FITS</td>
+<td>10</td>
+<td>n140406 AlphaCen 1-10</td>
+<td>2:14.2 / 134.2</td>
+<td>100</td>
+<td>74.5 %</td>
+<td>10</td>
+</tr>
+<tr>
+<td>10000</td>
+<td>1</td>
+<td>2-d FITS</td>
+<td>10</td>
+<td>n140406 AlphaCen 11-20</td>
+<td>1:47.8 / 107.8</td>
+<td>100</td>
+<td>92.8 %</td>
+<td>10</td>
+</tr>
+<tr>
+<td>1000</td>
+<td>1</td>
+<td>2-d FITS</td>
+<td>100</td>
+<td>n140406 AlphaCen 21-120</td>
+<td>2:50.0 / 170.0</td>
+<td>100</td>
+<td>58.8 %</td>
+<td>1</td>
+</tr>
+<tr>
+<td>43</td>
+<td>100</td>
+<td>2-d FITS</td>
+<td>10</td>
+<td>n140406 AlphaCen 121-130</td>
+<td>1:47.4 / 107.4</td>
+<td>43</td>
+<td>40.0 %</td>
+<td>4.3</td>
+</tr>
+<tr>
+<td>43</td>
+<td>10</td>
+<td>2-d FITS</td>
+<td>100</td>
+<td>n140406 AlphaCen 131-230</td>
+<td>2:08.6 / 128.6</td>
+<td>43</td>
+<td>33.4 %</td>
+<td>0.43</td>
+</tr>
+<tr>
+<td>43</td>
+<td>25</td>
+<td>2-d FITS</td>
+<td>40</td>
+<td>n140407 AlphaCenTest 1-40</td>
+<td>1:57.4 / 117.4</td>
+<td>43</td>
+<td>36.6 %</td>
+<td>1.075</td>
+</tr></tbody></table></div><br class=""/><br class=""/>
+<h2><br class=""/></h2><br class=""/><br class=""/>
+<p>-Katie Morzinski, 2014/07/17, tested 2014/04/06-10<br class=""/></p> </div><a href="6d927/images/__thumbs__/f4702.png"></a><a href="6d927/images/__thumbs__/f4702.png"></a><a href="6d927/images/__thumbs__/f4702.png"></a><a href="6d927/images/__thumbs__/f4702.png"></a><a href="6d927/images/__thumbs__/f4702.png"></a><a href="6d927/images/__thumbs__/f4702.png"></a><a href="6d927/images/__thumbs__/f4702.png"></a><a href="6d927/images/__thumbs__/f4702.png"></a><a href="6d927/images/__thumbs__/f4702.png"></a><a href="6d927/images/__thumbs__/f4702.png"></a><a href="6d927/images/__thumbs__/f4702.png"></a><a href="6d927/images/__thumbs__/f4702.png"></a><a href="6d927/images/__thumbs__/f4702.png"></a><a href="6d927/images/__thumbs__/f4702.png"></a><a href="6d927/images/__thumbs__/f4702.png"></a><a href="6d927/images/__thumbs__/f4702.png"></a><a href="6d927/images/__thumbs__/f4702.png"></a><a href="6d927/images/__thumbs__/f4702.png"></a><a href="6d927/images/__thumbs__/f4702.png"></a><a href="6d927/images/__thumbs__/f4702.png"></a><a href="6d927/images/__thumbs__/f4702.png"></a><a href="6d927/images/__thumbs__/f4702.png"></a><a href="6d927/images/__thumbs__/f4702.png"></a><a href="6d927/images/__thumbs__/f4702.png"></a><a href="6d927/images/__thumbs__/f4702.png"></a><a href="6d927/images/__thumbs__/f4702.png"></a><a href="6d927/images/__thumbs__/f4702.png"></a><a href="6d927/images/__thumbs__/f4702.png"></a><a href="6d927/images/__thumbs__/f4702.png"></a><a href="6d927/images/__thumbs__/f4702.png"></a><a href="6d927/images/__thumbs__/f4702.png"></a><a href="6d927/images/__thumbs__/f4702.png"></a><a href="6d927/images/__thumbs__/f4702.png"></a></html>

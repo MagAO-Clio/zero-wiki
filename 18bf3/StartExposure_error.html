@@ -1,0 +1,121 @@
+<html>
+<head><title>StartExposure_error</title><base href="../"/></head>
+<div class="wiki_entry">
+<p> </p>
+<h1>The error aborts Quick Video mode:</h1>
+<p></p>
+<p>Press to exit video mode<br class=""/></p>
+<div>
+<div> 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 Error: timeout while waiting for image readout. 522752 of 524288</div>
+<div>Warning: failed acquisition. Trying again . . . </div>
+<div>Error: SEX command returns "0"Error: failed to take image.</div>
+<div><br class=""/></div>
+<div><br class=""/></div>
+<h2>When we have it return "ret" instead of "%x":</h2>
+<div><br class=""/></div>
+<div>Press to exit video mode</div>
+<div> 1 1 1 1 1 1 1 1 Error: timeout while waiting for image readout. 520192 of 524288</div>
+<div>Warning: failed acquisition. Trying again . . . </div>
+<div>Error: SEX command returns "ffffffff"Error: failed to take image.</div></div>
+<div><br class=""/></div>
+<div><br class=""/></div>
+<div><br class=""/></div>
+<div>
+<div>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 Error: timeout while waiting for image readout. 520704 of 524288</div>
+<div>Warning: failed acquisition. Trying again . . . </div>
+<div>Error: SEX command returns "ffffffff"Error: failed to take image. </div>
+<div>Succeeded in doing video mode.</div></div>
+<div><br class=""/></div>
+<div><br class=""/></div>
+<div><br class=""/></div>
+<h1>mirkwood.c</h1>
+<div>
+<div><br class=""/></div>
+<div><span class="Apple-tab-span"> </span>print_fine_time("Starting the exposure");</div>
+<div><span class="Apple-tab-span"> </span>suc=0;</div>
+<div><span class="Apple-tab-span"> </span>while (suc != 1) {</div>
+<div><span class="Apple-tab-span"> </span>/* Send the SEX command */</div>
+<div><span class="Apple-tab-span"> </span>ret = doCommand(pci_fd, TIM_ID, SEX, DON);</div>
+<div><span class="Apple-tab-span"> </span>if (ret != 0) {</div>
+<div><span class="Apple-tab-span"> </span>fcntl(0, F_SETFL, flags); /* restore the flags */</div>
+<div><span class="Apple-tab-span"> </span>printf("Error: SEX command returns \"%x\"", getError());</div>
+<div><span class="Apple-tab-span"> </span>return(ret);</div>
+<div><span class="Apple-tab-span"> </span>}</div></div>
+<div><br class=""/></div>
+<div>
+<h2>When we have it return "ret" instead of "%x":</h2></div>
+<div><br class=""/></div>
+<div>
+<div>
+<div>print_fine_time("Starting the exposure");</div>
+<div><span class="Apple-tab-span"></span>suc=0;</div>
+<div><span class="Apple-tab-span"></span>while (suc != 1) {</div>
+<div><span class="Apple-tab-span"></span>/* Send the SEX command */</div>
+<div><span class="Apple-tab-span"></span>ret = doCommand(pci_fd, TIM_ID, SEX, DON);</div>
+<div><span class="Apple-tab-span"></span>if (ret != 0) {</div>
+<div><span class="Apple-tab-span"></span>fcntl(0, F_SETFL, flags); /* restore the flags */</div>
+<div>printf("Error: SEX command returns \"%x\"", ret);//getError());</div>
+<div>return(ret);<br class=""/><span class="Apple-tab-span"></span></div>
+<div><span class="Apple-tab-span"></span>}</div></div>
+<div><br class=""/></div>
+<div><br class=""/></div>
+<div><br class=""/></div>
+<div>
+<h1>Aborted while trying to Init:</h1>
+<div>
+<div>POF returns -1</div>
+<div>PON returns 0, 455252</div>
+<div>doing WRM command to y|16, value:d86e6, off:d8000, volts:2.450000.</div>
+<div>Error: can't send value to DAC.</div>
+<div>doing WRM command to y|17, value:dc168, off:dc000, volts:0.500000.</div>
+<div>Error: can't send value to DAC.</div>
+<div>doing WRM command to y|14, value:d0e14, off:d0000, volts:5.000000.</div>
+<div>doing WRM command to y|15, value:d49db, off:d4000, volts:3.500000.</div>
+<div>Error: can't send value to DAC.</div>
+<div>doing WRM command to y|18, value:1d0b43, off:1d0000, volts:4.000000.</div>
+<div>Error: can't send value to DAC.</div>
+<div>doing WRM command to y|19, value:1d4000, off:1d4000, volts:0.000000.</div>
+<div>Error: can't send value to DAC.</div>
+<div>doing WRM command to y|10, value:c09d9, off:c0000, volts:3.497000.</div>
+<div>Error: can't send value to DAC.</div>
+<div>doing WRM command to y|11, value:c4f7d, off:c4000, volts:5.500000.</div>
+<div>Error: can't send value to DAC.</div>
+<div>doing WRM command to y|12, value:1c0b8b, off:1c0000, volts:4.100000.</div>
+<div>Error: can't send value to DAC.</div>
+<div>doing WRM command to y|13, value:1c4b8d, off:1c4000, volts:4.102500.</div>
+<div>Error: can't send value to DAC.</div>
+<div>Error: -9 errors occurred while initializing voltages.</div>
+<div>Aborting initialization</div></div>
+<h2><br class=""/></h2>
+<h2>Successful init:</h2>
+<div><br class=""/></div>
+<div>
+<div>Enter Selection: init</div>
+<div><br class=""/></div>
+<div><br class=""/></div>
+<div>POF returns -1</div>
+<div>PON returns 0, 455252</div>
+<div>doing WRM command to y|16, value:d86e6, off:d8000, volts:2.450000.</div>
+<div>doing WRM command to y|17, value:dc168, off:dc000, volts:0.500000.</div>
+<div>doing WRM command to y|14, value:d0e14, off:d0000, volts:5.000000.</div>
+<div>doing WRM command to y|15, value:d49db, off:d4000, volts:3.500000.</div>
+<div>doing WRM command to y|18, value:1d0b43, off:1d0000, volts:4.000000.</div>
+<div>doing WRM command to y|19, value:1d4000, off:1d4000, volts:0.000000.</div>
+<div>doing WRM command to y|10, value:c09d9, off:c0000, volts:3.497000.</div>
+<div>doing WRM command to y|11, value:c4f7d, off:c4000, volts:5.500000.</div>
+<div>doing WRM command to y|12, value:1c0b8b, off:1c0000, volts:4.100000.</div>
+<div>doing WRM command to y|13, value:1c4b8d, off:1c4000, volts:4.102500.</div>
+<div>System initialized.</div></div></div>
+<div><br class=""/></div>
+<div><br class=""/></div>
+<h1>Steps to take:</h1>
+<div>Restart camera control -- Then have to reset electronics and re-init -- sometimes works.</div>
+<div>If not: killclio, runclio.</div>
+<div>Hit white button and re-seated fibers (with Clio killed) -- did not fix.</div>
+<div><br class=""/></div>
+<h1>Update/Fixed:</h1>
+<div>Ala Phil Hinz email 2015/05/05 -- Reset the power supply (the black button the grey power supply box) -- Killclio first.</div>
+<div><br class=""/></div>
+<div><br class=""/></div>
+<div>--Katie Morzinski, 2015/05/04</div>
+<div></div></div></div></html>

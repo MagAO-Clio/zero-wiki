@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>phinz</string>
+	<key>authorLongName</key>
+	<string>Phil Hinz</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/6d047</string>
+	<key>content</key>
+	<string>
+&lt;div class="wiki_entry"&gt; 
+ &lt;p&gt;&lt;span class="Apple-style-span"&gt; &lt;/span&gt;&lt;/p&gt; 
+ &lt;div class="page"&gt; 
+  &lt;div class="page"&gt; 
+   &lt;h2 class="wiki_unbold"&gt;Cool Down Prescription for Clio&lt;/h2&gt;
+   &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;&lt;/div&gt; 
+  &lt;div&gt;May 2010&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;h3&gt;Vacuum Pumpdown: 2-3 days before run&lt;/h3&gt; 
+  &lt;div&gt; 
+   &lt;p&gt;Before cooling, Clio should be put on the turbopump. When the vacuum gets down to about 7e-4 Torr, it is good enough for a typical Clio AO run.&lt;/p&gt; 
+   &lt;h3&gt;Cooldown: 12 hours before beginning of night&lt;/h3&gt;
+   &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;
+   &lt;div&gt;
+    &lt;ul&gt;
+     
+     &lt;li&gt;Turn cold switch CCW 2 Turns&lt;/li&gt;
+     
+     &lt;li&gt;Began filling outer vessel using funnel&lt;/li&gt;
+     
+    &lt;/ul&gt;&lt;/div&gt;
+   &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+   &lt;p&gt;The Clio needs 12 hours to completely cool down to a stable temperature. The detector is operational 6 hours after cooldown. If possible, it is thus preferable to begin cooldown the day before the Clio run starts.&lt;/p&gt; 
+   &lt;p&gt;Only the outer vessel is filled for the first fill, and this takes typically 10 minutes to get the cooling down going. Fill until the liquid spurts out of the tube.&lt;/p&gt; 
+   &lt;p&gt;Look for the vapor to stop exiting from Clio after about 30 minutes. This is an indication the liquid has boiled off. Refill the outer vessel a second time. It should be empty after around 3 hours from the start of your cooldown. Refill a third time.&lt;/p&gt; 
+   &lt;p&gt;When the outer vessel temperature is 150 degrees or below, you can fill the inner vesel. The limit of 150 degrees is important, as this is the temperature that the getter in the dewar activates. Do not fill the inner vessel if the outer vessel is above 150 K! If the detector is the coldest surface in the dewar, the detector will attract all residual vapours!&lt;/p&gt;&lt;/div&gt; 
+  &lt;div&gt;Example Refrences&lt;/div&gt;
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;table class="data __useTableEditor"&gt;&lt;thead&gt; 
+     &lt;tr&gt;
+       
+      &lt;th&gt;Fill&lt;/th&gt;
+       
+      &lt;th&gt;Vessel&lt;/th&gt;
+       
+      &lt;th&gt;Time from start&lt;/th&gt;
+       
+      &lt;th&gt;Optics Temperature (Channle B)&lt;/th&gt;
+       
+     &lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt; 
+     &lt;tr&gt;
+       
+      &lt;td&gt;1st&lt;/td&gt;
+       
+      &lt;td&gt;outer&lt;/td&gt;
+       
+      &lt;td&gt;start&lt;/td&gt;
+       
+      &lt;td&gt;280 K&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td&gt;2nd&lt;/td&gt;
+       
+      &lt;td&gt;outer&lt;/td&gt;
+       
+      &lt;td&gt;30 min&lt;/td&gt;
+       
+      &lt;td&gt;220 K&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td&gt;3rd&lt;/td&gt;
+       
+      &lt;td&gt;outer+inner&lt;/td&gt;
+       
+      &lt;td&gt;3 hours&lt;/td&gt;
+       
+      &lt;td&gt;140 K&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td&gt;4th&lt;/td&gt;
+       
+      &lt;td&gt;outer+inner&lt;/td&gt;
+       
+      &lt;td&gt;6 hours&lt;/td&gt;
+       
+      &lt;td&gt;90 K&lt;/td&gt;
+       
+     &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt; 
+  &lt;div class="level2"&gt; 
+   &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt;&lt;/div&gt; 
+  &lt;div class="secedit"&gt;&lt;/div&gt;&lt;a name="typical_clio_cooldown_timeline"&gt;&lt;/a&gt;&lt;b&gt; 
+   &lt;h3&gt;Past Clio Cooldown information&lt;/h3&gt;&lt;br class="" /&gt;&lt;/b&gt; 
+  &lt;div class="level3"&gt; 
+   &lt;table class="inline"&gt;&lt;tbody&gt; 
+     &lt;tr&gt;
+       
+      &lt;th class="leftalign"&gt;Fill&lt;/th&gt;
+       
+      &lt;th class="leftalign"&gt;Vessel&lt;/th&gt;
+       
+      &lt;th class="leftalign"&gt;Temperature just before filling&lt;/th&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;1st&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;outer chamber&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;283K at 18:19 2008 Mar 19&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;2nd fill&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;outer&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;224K at 18:48 2008 Mar 19&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;3rd fill&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;outer&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;150K at 21:14 2008 Mar 19&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;4th fill&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;outer&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;150K at 21:14 2008 Mar 19&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="rightalign"&gt;&lt;/td&gt;
+       
+      &lt;td class="rightalign"&gt;&lt;/td&gt;
+       
+      &lt;td&gt;OUTER AT 150 K, can fill INNER&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;5th fill&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;outer&lt;/td&gt;
+       
+      &lt;td&gt;130K at 21:37 2008 Mar 19 DETECTOR = 321K, INNER = 84K OUTER = 130K&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;6th fill&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;inner&lt;/td&gt;
+       
+      &lt;td&gt;21:37 detector at 231K, inner at 84K&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;7th fill&lt;/td&gt;
+       
+      &lt;td&gt;inner and outer&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;topped up slightly at 00:40 2008 Mar 20&lt;/td&gt;
+       
+     &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br class="" /&gt; 
+   &lt;p&gt;Fills at 11.30am 2008 Mar 20, but INNER not needed. OUTER requires only small topup. Inner vessel on pump at about 2.45pm, temperature change is 10 degs in about 10 mins to 65K.&lt;/p&gt;&lt;/div&gt; 
+  &lt;div class="secedit"&gt;&lt;/div&gt;&lt;a name="oct_2009_cooldown"&gt;&lt;/a&gt;&lt;b&gt;Oct 2009 Cooldown&lt;/b&gt; 
+  &lt;div class="level3"&gt; 
+   &lt;p&gt;Dewar at 3.9e-6 Torr at disconnection from the pump.&lt;/p&gt; 
+   &lt;table class="inline"&gt;&lt;tbody&gt; 
+     &lt;tr&gt;
+       
+      &lt;th class="leftalign"&gt;Fill&lt;/th&gt;
+       
+      &lt;th class="leftalign"&gt;Vessel&lt;/th&gt;
+       
+      &lt;th class="leftalign"&gt;Temperature just before filling&lt;/th&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;1st&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;outer chamber&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;298K at 22:10 2009 Oct 02&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;2nd&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;outer chamber&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;245K at 22:30 2009 Oct 02&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;3rd&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;outer chamber&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;175K at 23:40 2009 Oct 02&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;4th&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;outer chamber&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;120K at 01:10 2009 Oct 03&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td class="leftalign"&gt;5th&lt;/td&gt;
+       
+      &lt;td class="leftalign"&gt;inner&lt;/td&gt;
+       
+      &lt;td&gt;OUTER AT 150 K, can fill INNER&lt;/td&gt;
+       
+     &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br class="" /&gt; 
+   &lt;p&gt;Temperature of INNER is 80K at 1:30am.&lt;/p&gt;&lt;/div&gt; 
+  &lt;div class="secedit"&gt;&lt;/div&gt;&lt;a name="cooldown_prescription"&gt;&lt;/a&gt; 
+  &lt;h2 class="wiki_unbold"&gt;&lt;br class="" /&gt;&lt;/h2&gt;&lt;/div&gt; 
+ &lt;div class="stylefoot"&gt; 
+  &lt;div class="meta"&gt; 
+   &lt;div class="user"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt; 
+ &lt;p&gt;&lt;/p&gt;&lt;/div&gt;</string>
+	<key>createdDate</key>
+	<string>2010-10-07 18:15:22.690339+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>Manny</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>Manny</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2012-11-07 13:35:44</string>
+	<key>lastVersion</key>
+	<string>10</string>
+	<key>latestVersion</key>
+	<string>9</string>
+	<key>modifiedDate</key>
+	<date>2012-11-07T13:43:53Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Cool Down Instructions</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/6d047</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

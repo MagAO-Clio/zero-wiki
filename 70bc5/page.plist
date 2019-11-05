@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>phinz</string>
+	<key>authorLongName</key>
+	<string>Phil Hinz</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/70bc5</string>
+	<key>content</key>
+	<string>
+&lt;div class="wiki_entry"&gt; 
+ &lt;p&gt;This page provides Clio Pre-Ship Review Documentation. Please direct questions to Phil Hinz&lt;/p&gt; 
+ &lt;h2&gt;Introduction to MagAO and Clio Slides&lt;/h2&gt; 
+ &lt;div&gt;&lt;img src="/groups/clio2usermanual/wiki/70bc5/attachments/99157/MagAO_SUMMARY_June_12.pdf.png" alt="Download file &amp;quot;MagAO_SUMMARY_June_12.pdf&amp;quot;" title="Download file &amp;quot;MagAO_SUMMARY_June_12.pdf&amp;quot;" class="attachment_handle_img quicklookable" longdesc="/groups/clio2usermanual/wiki/70bc5/attachments/99157/MagAO_SUMMARY_June_12.pdf" /&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;img src="/groups/clio2usermanual/wiki/70bc5/attachments/50f51/Clio-Intro_v2.pdf.png" alt="Download file &amp;quot;Clio-Intro_v2.pdf&amp;quot;" title="Download file &amp;quot;Clio-Intro_v2.pdf&amp;quot;" longdesc="/groups/clio2usermanual/wiki/70bc5/attachments/50f51/Clio-Intro_v2.pdf" class="attachment_handle_img quicklookable" /&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;h2&gt;Clio Acceptance and Verification Matrix&lt;/h2&gt; 
+ &lt;div&gt;&lt;img src="/groups/clio2usermanual/wiki/70bc5/attachments/c0daf/Clio2_Acceptance%20and%20Verification%20Matrix_Test%20Plan.pdf.png" alt="Download file &amp;quot;Clio2_Acceptance and Verification Matrix_Test Plan.pdf&amp;quot;" title="Download file &amp;quot;Clio2_Acceptance and Verification Matrix_Test Plan.pdf&amp;quot;" class="attachment_handle_img quicklookable" longdesc="/groups/clio2usermanual/wiki/70bc5/attachments/c0daf/Clio2_Acceptance%20and%20Verification%20Matrix_Test%20Plan.pdf" /&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;h2&gt;Clio Shipping Plans&lt;/h2&gt; 
+ &lt;div&gt;&lt;img src="/groups/clio2usermanual/wiki/70bc5/attachments/ed9ce/Clio%20Instrument%20Shipping%20Plan%20062712v2.pdf.png" alt="Download file &amp;quot;Clio Instrument Shipping Plan 062712v2.pdf&amp;quot;" class="attachment_handle_img quicklookable" longdesc="/groups/clio2usermanual/wiki/70bc5/attachments/ed9ce/Clio%20Instrument%20Shipping%20Plan%20062712v2.pdf" title="Download file &amp;quot;Clio Instrument Shipping Plan 062712v2.pdf&amp;quot;" /&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;h2&gt;Clio Installation and Commissioning Plan&lt;/h2&gt; 
+ &lt;div&gt;&lt;img src="/groups/clio2usermanual/wiki/70bc5/attachments/3144a/Clio%20Instrument%20Installation%20Plan%20061812v1.pdf.png" alt="Download file &amp;quot;Clio Instrument Installation Plan 061812v1.pdf&amp;quot;" class="attachment_handle_img quicklookable" longdesc="/groups/clio2usermanual/wiki/70bc5/attachments/3144a/Clio%20Instrument%20Installation%20Plan%20061812v1.pdf" title="Download file &amp;quot;Clio Instrument Installation Plan 061812v1.pdf&amp;quot;" /&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;h2&gt;Clio Support Agreement&lt;/h2&gt; 
+ &lt;div&gt;&lt;img src="/groups/clio2usermanual/wiki/70bc5/attachments/da7d3/clio2_support_agreement-9.html.png" alt="Download file &amp;quot;clio2_support_agreement-9.html&amp;quot;" longdesc="/groups/clio2usermanual/wiki/70bc5/attachments/da7d3/clio2_support_agreement-9.html" class="attachment_handle_img quicklookable" title="Download file &amp;quot;clio2_support_agreement-9.html&amp;quot;" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;h2&gt;Clio example data files&lt;/h2&gt;
+ &lt;div&gt;LabData folder provides example dark frames for read noise and dark current estimation.&lt;/div&gt;
+ &lt;div&gt;MMTdata folder provides example on-sky data used in Rodigas et al. 2010&lt;/div&gt;
+ &lt;div&gt;&lt;img src="/groups/clio2usermanual/wiki/70bc5/attachments/4ed87/Clio2ExampleData.zip.png" title="Download file &amp;quot;Clio2ExampleData.zip&amp;quot;" class="attachment_handle_img" longdesc="/groups/clio2usermanual/wiki/70bc5/attachments/4ed87/Clio2ExampleData.zip" alt="Download file &amp;quot;Clio2ExampleData.zip&amp;quot;" /&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;h2&gt;&lt;br class="" /&gt;&lt;/h2&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt;&lt;/div&gt;</string>
+	<key>createdDate</key>
+	<string>2012-06-19 18:54:44.774979+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>phinz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>phinz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2012-06-28 08:18:03</string>
+	<key>lastVersion</key>
+	<string>13</string>
+	<key>latestVersion</key>
+	<string>12</string>
+	<key>modifiedDate</key>
+	<date>2012-06-28T08:18:29Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Clio2 Pre-Ship Review Documentation</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/70bc5</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>phinz</string>
+	<key>authorLongName</key>
+	<string>Phil Hinz</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/73fa1</string>
+	<key>content</key>
+	<string>
+&lt;div class="wiki_entry"&gt; 
+ &lt;p&gt;&lt;span class="Apple-style-span"&gt; &lt;/span&gt;&lt;/p&gt; 
+ &lt;div class="page"&gt;&lt;b&gt;Detector&lt;/b&gt; 
+  &lt;div class="level1"&gt; 
+   &lt;p&gt;The detector for Clio as of April 2010 is a HAWAII-1 HgCdTe array. We use two quadrants of the array to give a 512×1024 FOV. Pixels are 18.5 microns on a side.&lt;/p&gt;&lt;/div&gt; 
+  &lt;div class="secedit"&gt;&lt;/div&gt;&lt;a name="operational_parameters"&gt;&lt;/a&gt; 
+  &lt;h2 class="wiki_unbold"&gt;Operational Parameters&lt;/h2&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;h2 class="wiki_unbold"&gt;Read Noise &amp;amp; Dark Current (as of June 2012)&lt;/h2&gt;&lt;/div&gt; 
+  &lt;div&gt;Images were taken on 6/21/2012, with MBE detector temperature at 56 K. Images were taken with exposure times of 1s, 3s, 10s, 30s, and 100s. From the 1s images, the read noise was estimated as follows:&lt;/div&gt; 
+  &lt;div&gt;-subtract two successive images from each other.&lt;/div&gt; 
+  &lt;div&gt;-in a good region of the detector (away from stationary artifacts), place a 10x10 pixel box and calculate the standard deviation of the difference image inside the box.&lt;/div&gt; 
+  &lt;div&gt;-divide the result by sqrt(2)&lt;/div&gt; 
+  &lt;div&gt;-repeat for each consecutive pair of images taken.&lt;/div&gt; 
+  &lt;div&gt;-the read noise was measured to be 10 DN (49 e-) from the median of all of these values.&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;The dark current rate was measured by placing the same 10x10 box on all of the images taken (up to 100s exposure). the average pixel value in the box was then calculated, and plotted as a function of exposure time. the dark current rate, measured as the slope of the fitted line, was 5.9 DN/s (29 e-/s). the plot is shown below:&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;img src="/groups/clio2usermanual/wiki/73fa1/attachments/9fcd8/Clio2DarkCurrent.eps.png" alt="Download file &amp;quot;Clio2DarkCurrent.eps&amp;quot;" title="Download file &amp;quot;Clio2DarkCurrent.eps&amp;quot;" longdesc="/groups/clio2usermanual/wiki/73fa1/attachments/9fcd8/Clio2DarkCurrent.eps" class="attachment_handle_img" /&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Bad regions of the detector:&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;The image below shows the regions to be avoided in the detector when taking low flux data. the regions marked in red are high in dark current rate (up to ~25 DN/s); the regions in blue are low (~ 6 DN/s).&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;img src="/groups/clio2usermanual/wiki/73fa1/attachments/49cb2/badregions.png.png" alt="Download file &amp;quot;badregions.png&amp;quot;" title="Download file &amp;quot;badregions.png&amp;quot;" class="attachment_handle_img quicklookable" longdesc="/groups/clio2usermanual/wiki/73fa1/attachments/49cb2/badregions.png" /&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div class="level2"&gt;&lt;/div&gt; 
+  &lt;div class="secedit"&gt;&lt;/div&gt;&lt;a name="detector_parameters"&gt;&lt;/a&gt; 
+  &lt;h2 class="wiki_unbold"&gt;Detector Parameters&lt;/h2&gt; 
+  &lt;div class="level2"&gt; 
+   &lt;p&gt;The detector gain is 4.9 e-/dn.&lt;/p&gt; 
+   &lt;p&gt;At the MMT, the temperature settles to 75.6 K on the detector, and the bias is 3700 dn (measured 101021).&lt;/p&gt; 
+   &lt;p&gt;The approximate saturation level is 55,000 dn.&lt;/p&gt; 
+   &lt;p&gt;This indicates that the full well capacity of the array is 51,000 dn or 250,000 e-&lt;br class="" /&gt;&lt;/p&gt; 
+   &lt;p&gt;The read noise for a single frame is 19 dn or 93 e- (measured 101020). &lt;/p&gt;&lt;/div&gt; 
+  &lt;div class="secedit"&gt;&lt;/div&gt;&lt;a name="detector_characterization"&gt;&lt;/a&gt; 
+  &lt;h2 class="wiki_unbold"&gt;Detector characterization&lt;/h2&gt; 
+  &lt;div class="level2"&gt; 
+   &lt;p&gt;Need flats at M, L, and K&lt;/p&gt; 
+   &lt;h3&gt;Bad pixel mask&lt;/h3&gt; 
+   &lt;div&gt;This is a minimal mask that rejects the nonsensitive areas of the Clio2 detector.&lt;/div&gt; 
+   &lt;div&gt;&lt;img src="/groups/clio2usermanual/wiki/73fa1/attachments/00e57/Clio2mask101020.fits.png" alt="Download file &amp;quot;Clio2mask101020.fits&amp;quot;" title="Download file &amp;quot;Clio2mask101020.fits&amp;quot;" longdesc="/groups/clio2usermanual/wiki/73fa1/attachments/00e57/Clio2mask101020.fits" class="attachment_handle_img" /&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+   &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;&lt;/div&gt; 
+  &lt;div class="secedit"&gt;&lt;/div&gt;&lt;a name="minimum_integration_time"&gt;&lt;/a&gt; 
+  &lt;h2 class="wiki_unbold"&gt;Minimum Integration Time&lt;/h2&gt; 
+  &lt;div class="level2"&gt; 
+   &lt;p&gt;The minimum integration times are the following:&lt;/p&gt; 
+   &lt;table class="inline __useTableEditor data"&gt;&lt;thead&gt; 
+     &lt;tr&gt;
+       
+      &lt;th&gt;Format&lt;/th&gt;
+       
+      &lt;th&gt;Array Size&lt;/th&gt;
+       
+      &lt;th&gt;Minimum&lt;/th&gt;
+       
+      &lt;th&gt;Max Coadds&lt;/th&gt;
+       
+     &lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt; 
+     &lt;tr&gt;
+       
+      &lt;td&gt;Full array&lt;/td&gt;
+       
+      &lt;td&gt;(512×1024)&lt;/td&gt;
+       
+      &lt;td&gt;280 ms&lt;/td&gt;
+       
+      &lt;td&gt;20&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td&gt;Strip&lt;/td&gt;
+       
+      &lt;td&gt;(300×1024)&lt;/td&gt;
+       
+      &lt;td&gt;164 ms&lt;/td&gt;
+       
+      &lt;td&gt;40&lt;/td&gt;
+       
+     &lt;/tr&gt; 
+     &lt;tr&gt;
+       
+      &lt;td&gt;Stamp&lt;/td&gt;
+       
+      &lt;td&gt;(200×400)&lt;/td&gt;
+       
+      &lt;td&gt;43 ms&lt;/td&gt;
+       
+      &lt;td&gt;100&lt;/td&gt;
+       
+     &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div class="secedit"&gt;&lt;/div&gt;&lt;a name="duty_cycle"&gt;&lt;/a&gt; 
+  &lt;h2 class="wiki_unbold"&gt;Duty Cycle&lt;/h2&gt; 
+  &lt;div class="level2"&gt; 
+   &lt;p&gt;The dead time for an exposure is approximately 262 msec. This would give an expected efficiency of 50% for a minimum integration time of 262.&lt;/p&gt; 
+   &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt;&lt;/div&gt; 
+  &lt;div class="secedit"&gt;&lt;/div&gt;&lt;/div&gt; 
+ &lt;div class="clearer"&gt; &lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div class="stylefoot"&gt; 
+  &lt;div class="meta"&gt; 
+   &lt;div class="user"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt; 
+ &lt;p&gt;&lt;/p&gt;&lt;/div&gt;</string>
+	<key>createdDate</key>
+	<string>2010-10-07 18:13:17.790107+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>phinz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>phinz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2012-06-28 08:25:18</string>
+	<key>lastVersion</key>
+	<string>15</string>
+	<key>latestVersion</key>
+	<string>14</string>
+	<key>modifiedDate</key>
+	<date>2012-06-28T08:25:50Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Detector Information</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/73fa1</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>phinz</string>
+	<key>authorLongName</key>
+	<string>Phil Hinz</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/57038</string>
+	<key>content</key>
+	<string>
+&lt;div class="wiki_entry"&gt;
+ &lt;p&gt;Clio has a direct vision prism that creates a low resolution spectrum of the object. Use the following prescription to setup the spectral mode:&lt;/p&gt;
+ &lt;p&gt;&lt;/p&gt;
+ &lt;ol&gt;
+  
+  &lt;li&gt;Use the strip mode, unless the object is wide enough to require full mode.&lt;/li&gt;
+  
+  &lt;li&gt;Place the object at approximately row 262 on the Clio detector. (rows 262 will correspond to K band for the spectral mode).&lt;/li&gt;
+  
+  &lt;li&gt;Insert the &amp;quot;medium&amp;quot;slit. This is a 0.5&amp;quot; (16 pixels) slit. Use the filter wheel GUI to do this.&lt;/li&gt;
+  
+  &lt;li&gt;Check that the object is centered on the slit. Set up a nod vector and test it if uncertain.&lt;/li&gt;
+  
+  &lt;li&gt;Insert the prism using the filter wheel GUI.&lt;/li&gt;
+  
+  &lt;li&gt;Take spectra. L band sky will typically saturate for t&amp;gt;4000 ms.&lt;/li&gt;
+  
+ &lt;/ol&gt;
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;
+ &lt;p&gt;&lt;/p&gt;Images below show estimated SNR for test data taken on Mat 2010. Rows 50-100 are the K band portion of the spectrum. Rows 150-450 are the 3-4.1 um portion of the spectrum. M band can be seen at rows 550-650.&lt;br class="" /&gt;&lt;img src="/groups/clio2usermanual/wiki/57038/images/48768.png" title="clio2spectra.png" role="button" alt="" class="donotalign" tabindex="0" /&gt;&lt;br class="" /&gt;&lt;/div&gt;&lt;img src="/groups/clio2usermanual/wiki/57038/images/16ea0.png" title="clio2spectralm.png" role="button" alt="" class="donotalign" tabindex="0" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;</string>
+	<key>createdDate</key>
+	<string>2010-10-13 16:13:18.920422+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>phinz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>phinz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2010-10-13 16:22:22</string>
+	<key>lastVersion</key>
+	<string>3</string>
+	<key>latestVersion</key>
+	<string>2</string>
+	<key>modifiedDate</key>
+	<date>2010-10-22T10:18:05Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Using the Spectral mode of Clio</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/57038</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

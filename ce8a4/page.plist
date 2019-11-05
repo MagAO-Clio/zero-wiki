@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>phinz</string>
+	<key>authorLongName</key>
+	<string>Phil Hinz</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/ce8a4</string>
+	<key>content</key>
+	<string>
+&lt;div class="wiki_entry"&gt;
+ &lt;p&gt;
+  &lt;div class="page"&gt;
+   &lt;h2 class="wiki_unbold"&gt;&lt;br class="" /&gt;&lt;/h2&gt;
+   &lt;div class="level2"&gt;
+    &lt;ul&gt;
+     
+     &lt;li class="level1"&gt;
+      &lt;div class="li wiki_unbold"&gt;The outer liquid N2 dewar should be filled every day (hold time is 30 hours).&lt;/div&gt;&lt;/li&gt;
+     
+     &lt;li class="level1"&gt;
+      &lt;div class="li wiki_unbold"&gt;The inner solid N2 dewar only requires cryogens every two days (hold time is 50 hours).&lt;/div&gt;&lt;/li&gt;
+     
+    &lt;/ul&gt;
+    &lt;p&gt;&lt;strong&gt;Important:&lt;/strong&gt; The inner vessel should be filled a minimum of 4 hours before sunset, to allow the vacuum to reach equilibrium after it is reattached.&lt;/p&gt;&lt;/div&gt;
+   &lt;div class="level3"&gt;
+    &lt;h3&gt;Filling the Dewars&lt;br class="" /&gt;&lt;/h3&gt;
+    &lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;b&gt;&lt;br class="" /&gt;&lt;/b&gt;
+   &lt;div class="level3"&gt;
+    &lt;p&gt;&lt;strong&gt;Outer Dewar&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;The outer vessel can be filled using either a funnel or a tube. The funnel is slower, but allows the dewar to be filled closer to the top. &lt;/p&gt;
+    &lt;p&gt;Fill time: 5 minutes if near empty.&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Inner Dewar&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;The inner dewar may have very little loss of liquid nitrogen each day. A fill time of 30-60 seconds is not unsual.&lt;/p&gt;
+    &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt;
+    &lt;p&gt;Temperature of the dewars is checked at the digital thermometer display on the Clio Electronics rack. The left top number shows the detector temperature. The right top number shows the optics temperature. The right bottom number shows what percentage of the total heater output is being used to stabilize the detector.&lt;/p&gt;
+    &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;&lt;/div&gt;
+   &lt;div class="secedit"&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div class="clearer"&gt;&lt;/div&gt;&lt;/p&gt;&lt;/div&gt;</string>
+	<key>createdDate</key>
+	<string>2012-11-21 12:45:16.577602+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>phinz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>phinz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2012-11-21 12:55:38</string>
+	<key>lastVersion</key>
+	<string>3</string>
+	<key>latestVersion</key>
+	<string>2</string>
+	<key>modifiedDate</key>
+	<date>2012-11-26T19:56:03Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Refilling Cryogens</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/ce8a4</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

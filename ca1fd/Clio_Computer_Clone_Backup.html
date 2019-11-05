@@ -1,0 +1,879 @@
+<html>
+<head><title>Clio_Computer_Clone_Backup</title><base href="../"/></head>
+<h1>How to boot off the cloned harddrive:</h1>
+<ol>
+<li>Completely shut down</li>
+<li>Hit Power on computer (front top/left of rack)</li>
+<li>Hit DELETE for set-up menu (at first black SuperMicro screen)</li>
+<li>Boot (Arrow keys)</li>
+<li>Exclude the regular drive from the boot list: IDE1: WDC WD2500YS-01SHB1</li>
+<li>Restart but won't work so then force shutdown and then do power on with Power button</li>
+<li>Then to go back to normal, Include the regular drive in step 5</li>
+</ol><br class=""/><br class=""/><br class=""/><br class=""/><br class=""/><br class=""/>
+<h1>How to clone a harddrive:</h1><br class=""/>
+<div class="__pbConvHr">
+<div>
+<div> <b><b>From:</b> Jared Males <a class="moz-txt-link-rfc2396E" href="53636/NovDec_2012_Observing_Block.html">&lt;jrmales@as.arizona.edu&gt;</a><br class=""/></b><b>Date:</b> March 10, 2014 at 7:52 PM<br class=""/><b>To:</b> vanessabailey <a class="moz-txt-link-rfc2396E" href="53636/NovDec_2012_Observing_Block.html">&lt;vanessa.p.bailey@gmail.com&gt;</a><br class=""/><b>CC:</b> "Katie Morzinski M - (ktmorz)" <a class="moz-txt-link-rfc2396E" href="53636/NovDec_2012_Observing_Block.html">&lt;ktmorz@email.arizona.edu&gt;</a>, Jared Males <a class="moz-txt-link-rfc2396E" href="53636/NovDec_2012_Observing_Block.html">&lt;jrmales@as.arizona.edu&gt;</a><br class=""/><b>Subject:</b> Cloning a HD<br class=""/></div> </div></div>
+<div class="__pbConvBody">
+<div>
+<div>Yeah, this or a version of it should work fine on <a href="53636/NovDec_2012_Observing_Block.html">clio1.lco.cl</a>, I'm mostly worried about hardware specs, that is having a drive that will work with that machine.<br class=""/><br class=""/></div><br class=""/></div>
+<div><b><b>From:</b> vanessabailey <a class="moz-txt-link-rfc2396E" href="53636/NovDec_2012_Observing_Block.html">&lt;vanessa.p.bailey@gmail.com&gt;</a><br class=""/></b><b>Date:</b> March 10, 2014 at 7:23 PM<br class=""/><b>To:</b> <a class="moz-txt-link-abbreviated" href="53636/NovDec_2012_Observing_Block.html">ktmorz@email.arizona.edu</a>, <a class="moz-txt-link-abbreviated" href="53636/NovDec_2012_Observing_Block.html">jrmales@as.arizona.edu</a><br class=""/><b>Subject:</b> Cloning a HD<br class=""/></div></div>
+<div class="__pbConvHr">
+<div> </div></div>
+<div class="__pbConvBody">
+<table> <tbody>
+<tr>
+<td> Here's what I did to clone my work hard drive. The bs flag in the dd line had to do with block sizes on the hard drives being different (some new hard drives write data in different chunk sizes than some old hard drives did so that required some futzing). <br class=""/><br class=""/>I did this by installing the new drive in the computer. But it might also work on an external device, I just haven't tried it. <br class=""/><br class=""/>Katie did you say you'd ask Phil whether there is room for another hard drive in the computer and what kind of connector it needs (SATA or IDE) or was that me?<br class=""/><br class=""/>Vanessa </td>
+</tr>
+<tr>
+<td> <br class=""/>
+</td>
+</tr>
+<tr>
+<td> <b>Cloning a HD</b> </td>
+</tr>
+</tbody></table>
+<div class="ennote"><pre><span>Note: this has only been tested with Ubuntu 10.04</span>
+</pre><pre><span>First make a complete copy of the original disk. </span>
+
+</pre><pre><span>Be *very careful* to get the input file (if) and output file (of) correct, or you will wipe your original disk!!</span>
+</pre>
+<div><span><a class="moz-txt-link-freetext" href="53636/NovDec_2012_Observing_Block.html">https://wiki.archlinux.org/index.php/Disk_Cloning</a> </span></div><pre><strong>&gt;&gt; sudo dd if=/dev/sda | pv | sudo dd of=/dev/sdb bs=4096 conv=notrunc,noerror</strong>
+</pre>
+<div><span><br class=""/></span><span>Give the new drive partition(s) unique UUID, and check that the new drive partition has a unique UUID:</span><span><strong>&gt;&gt; sudo tune2fs -U random /dev/sdb1</strong></span><span><strong>&gt;&gt; sudo blkid</strong></span></div><pre><span><span>
+Configure grub on the new drive to boot from the new drive:</span></span>
+</pre>
+<div><a href="53636/NovDec_2012_Observing_Block.html">http://www.linuxjournal.com/content/copy-your-linux-install-different-partition-or-drive</a><br class=""/></div>
+<div><a href="53636/NovDec_2012_Observing_Block.html">https://help.ubuntu.com/community/RecoveringUbuntuAfterInstallingWindows</a><br class=""/></div>
+<div><br class=""/></div>
+<div>Install grub on the new drive</div>
+<div><strong><span>&gt;&gt; sudo grub-install /dev/sdb </span></strong><span>(the new drive, with no partition number)</span></div>
+<div><span>This will list all the hard drives. Note which number corresponds to the new drive. For example, (hd2)</span></div>
+<div><span><span><br class=""/></span></span></div>
+<div>Edit your grub configuration file on the new HD. Replace the old HD's UUID with the new HD's UUID for all kernels. </div>
+<div><pre><strong><span>&gt;&gt; cd /media/newDrive/boot/grub</span></strong>
+</pre><pre><strong>&gt;&gt; gksu emacs menu.lst &amp;</strong>
+</pre><span><br class=""/></span><pre><span>Reconfigure grub to look for a boot loader on your new hd [ e.g.: (hd2) ]. The first command tells it to look for the boot loader in the first partition of the new HD (0 indexing) and the second runs the setup on the new HD. </span></pre><span><br class=""/></span><pre><strong><span>&gt;&gt; grub</span></strong>
+</pre><pre><strong><span>(grub) root (hd2,0)</span></strong>
+</pre></div>
+<div><strong><span>(grub) setup (hd2)</span></strong></div></div>
+<table> <tbody>
+<tr>
+<td><br class=""/></td>
+</tr></tbody></table></div><br class=""/><br class=""/>
+<h1><br class=""/></h1>
+<h1><br class=""/></h1>
+<h1><br class=""/></h1>
+<h1>Partioning a harddrive:</h1>
+<table><tbody>
+<tr>
+<td>And more info on partitioning hard drives (at least in Ubuntu) </td>
+</tr>
+<tr>
+<td> <br class=""/></td>
+</tr>
+<tr>
+<td> <b>Partitioning a hard drive</b> </td>
+</tr>
+</tbody></table>
+<div class="ennote">
+<div><u>Formatting a drive</u><br class=""/></div>
+<div>Many new drives have 4096b sectors. When trying to partition with Ubuntu Disk Utility, you will see "Warning: the partition is misaligned by #### bytes."</div>
+<div>For more information see: </div>
+<div><a href="53636/NovDec_2012_Observing_Block.html">https://wiki.archlinux.org/index.php/Advanced_Format</a><br class=""/></div>
+<div><a href="53636/NovDec_2012_Observing_Block.html">http://www.ibm.com/developerworks/linux/library/l-4kb-sector-disks/</a><br class=""/></div>
+<div><br class=""/></div>
+<div>If you're going to boot from this disk, make a small (500MB-1GB) partition and a main data partition.</div>
+<div><br class=""/></div>
+<div><br class=""/></div>
+<div><u>Using Parted</u></div>
+<div><a href="53636/NovDec_2012_Observing_Block.html">http://www.thegeekstuff.com/2012/08/2tb-gtp-parted/</a> </div>
+<div><a href="53636/NovDec_2012_Observing_Block.html">http://askubuntu.com/questions/55214/how-do-i-correctly-align-partions-on-a-hdd-with-sector-size-of-4096-bytes</a> </div>
+<div><br class=""/></div>
+<div><u><span>Make the partitions using parted</span></u></div>
+<div><br class=""/></div>
+<div><pre><strong><span>&gt;&gt; sudo parted -a optimal /dev/sdb</span></strong><span>(the optimal keyword makes it recognize 4096b boundaries)</span>
+</pre>
+<div><pre><span>(parted) <strong>mklabel gpt</strong>
+(parted) <strong>print</strong></span>
+</pre>
+<p><span>Model: ATA ST3000DM001-9YN1 (scsi)</span><br class=""/> <span>Disk /dev/sdb: 3001GB</span><br class=""/> <span>Sector size (logical/physical): 512B/4096B</span><br class=""/> <span>Partition Table: gpt</span></p><pre><span>Number Start End Size File system Name Flags</span>
+</pre></div></div>
+<div><br class=""/></div>
+<div><br class=""/></div>
+<div># make a boot partition (only if making bootable disk)</div>
+<div><pre><span>(parted) <strong>u MiB </strong></span>
+</pre></div>
+<div><pre><span>(parted) <strong>mkpart primary 1 100 </strong><span># starting from 1MiB sets it on an sector boundary<strong><br class=""/></strong></span>(parted)<strong> name 1 boot </strong><span># name this the boot partition</span><br class=""/></span><span>(parted)</span><strong> set 1 boot on </strong><span># set the boot flag on</span>
+</pre></div>
+<div><pre><span>(parted) <strong>print</strong></span>
+</pre></div>
+<div>
+<p><span>Number Start End Size File system Name Flags</span><br class=""/> <span>1 1.00MiB 100MiB 99MiB ext2 boot boot</span></p>
+<p> </p>
+<div># make a swap partition (only if making bootable disk)</div>
+<div><span>(parted) <strong>mkpart logical 100 XX</strong></span></div>
+<div><span><strong> </strong></span></div>
+<div>
+<p># make the main partition (fill the rest of the disk)</p>
+<div><span>(parted) <strong>mkpart primary 100 100% </strong>(or XX 100% if have SWAP partition)</span></div>
+<div><span>(parted) <strong>name 2 BackupDrive</strong><br class=""/></span></div>
+<div><span>(parted)<strong><span> </span>print</strong></span></div>
+<div>
+<p><span>Number Start End Size File system Name Flags</span><br class=""/> <span>1 1.00MiB 100MiB 99.0MiB ext2 boot boot</span><br class=""/> <span>2 100MiB 2861588MiB 2861488MiB ext4 BackupDrive</span></p>
+<p> </p>
+<p> </p>
+<p><u><span>Make and mount the filesystems using mkfs</span></u></p>
+<p># quit parted and use mkfs to make the filesystems of each partition</p></div><pre><strong><span>&gt;&gt; sudo mkfs.ext2 /dev/sdb1</span></strong>
+</pre><pre><strong><span>&gt;&gt; sudo mkfs.ext4 /dev/sdb2</span></strong>
+</pre><pre><strong><span>&gt;&gt; sudo mkdir /media/NewDrive</span></strong>
+</pre>
+<div><pre><strong><span><span>&gt;&gt; sudo mount /dev/sdb2 /media/NewDrive<br class=""/><br class=""/></span></span></strong>
+</pre></div></div></div>
+<div><pre><span><span># edit the fstab entry for the drive<br class=""/><a href="53636/NovDec_2012_Observing_Block.html">https://help.ubuntu.com/community/Fstab<br class=""/></a></span></span>
+</pre><pre><span><strong>&gt;&gt; gksu emacs /etc/fstab &amp;</strong></span>
+</pre><pre><span># &lt;file system&gt; &lt;mount point&gt; &lt;type&gt; &lt;options&gt; &lt;dump&gt; &lt;pass&gt;</span>
+</pre>
+<p><span>UUID=806250b7-885d-4af5-87bb-3a0f53c473f5 /media/NewDrive ext4 defaults 0 2</span></p></div></div>
+<h1><br class=""/></h1>
+<h1><br class=""/></h1>
+<h1><br class=""/></h1>
+<h1><br class=""/></h1>
+<h1><br class=""/></h1>
+<h1><br class=""/></h1>
+<h1><br class=""/></h1>
+<h1>Commands to query hardware:<br class=""/></h1>(Email from Jared to Katie, Vanessa, Phil, 2014/03/11)<br class=""/><br class=""/>
+<div class="moz-text-html">
+<div>These are the commands I ran to query clio1 hardware specs. I think there are several other commands along these lines for checking the serial numbers of PCI cards, et.<br class=""/><br class=""/>Both as root:<br class=""/><br class=""/>Getting hard drive params:<br class=""/>/sbin/hdparm -I /dev/sda &gt; clio1_sda.txt<br class=""/><br class=""/>Getting mobo params:<br class=""/>/usr/sbin/dmidecode &gt; dmidecode_out.txt<br class=""/><br class=""/>
+<div><br class=""/></div>
+<div>The output files are attached.<br class=""/><br class=""/><br class=""/></div>
+<div>-- <br class=""/>
+<div>
+<div>Jared R. Males<br class=""/>NASA Sagan Fellow<br class=""/>Steward Observatory<br class=""/>University of Arizona<br class=""/><a href="53636/NovDec_2012_Observing_Block.html">http://makana.as.arizona.edu/</a><br class=""/></div>ph: <span class="__postbox-detected-content __postbox-detected-phone">520-626-3900</span></div></div></div> </div>
+<div class="moz-text-plain"><pre><br class=""/>
+/dev/sda:
+
+ATA device, with non-removable media
+	Model Number:       WDC WD2500YS-01SHB1                     
+	Serial Number:      WD-WCANY4011458
+	Firmware Revision:  20.06C06
+Standards:
+	Supported: <span class="__postbox-detected-content __postbox-detected-date">7 6 5 4</span> 
+	Likely used: 7
+Configuration:
+	Logical		max	current
+	cylinders	16383	16383
+	heads		<span class="__postbox-detected-content __postbox-detected-date">16	16</span>
+	sectors/track	<span class="__postbox-detected-content __postbox-detected-date">63	63</span>
+	--
+	CHS current addressable sectors:   16514064
+	LBA    user addressable sectors:  268435455
+	LBA48  user addressable sectors:  490234752
+	device size with M = 1024*1024:      239372 MBytes
+	device size with M = 1000*1000:      251000 MBytes (251 GB)
+Capabilities:
+	LBA, IORDY(can be disabled)
+	Queue depth: 32
+	Standby timer values: spec'd by Standard, with device specific minimum
+	R/W multiple sector transfer: Max = 16	Current = 16
+	Recommended acoustic management value: 128, current value: 254
+	DMA: mdma0 mdma1 mdma2 udma0 udma1 udma2 udma3 udma4 udma5 *udma6 
+	     Cycle time: min=120ns recommended=120ns
+	PIO: pio0 pio1 pio2 pio3 pio4 
+	     Cycle time: no flow control=120ns  IORDY flow control=120ns
+Commands/features:
+	Enabled	Supported:
+	   *	SMART feature set
+	    	Security Mode feature set
+	   *	Power Management feature set
+	   *	Write cache
+	   *	Look-ahead
+	   *	Host Protected Area feature set
+	   *	WRITE_BUFFER command
+	   *	READ_BUFFER command
+	   *	NOP cmd
+	   *	DOWNLOAD_MICROCODE
+	    	Power-Up In Standby feature set
+	   *	SET_FEATURES required to spinup after power up
+	   *	SET_MAX security extension
+	    	Automatic Acoustic Management feature set
+	   *	48-bit Address feature set
+	   *	Device Configuration Overlay feature set
+	   *	Mandatory FLUSH_CACHE
+	   *	FLUSH_CACHE_EXT
+	   *	SMART error logging
+	   *	SMART self-test
+	   *	General Purpose Logging feature set
+	   *	WRITE_{DMA|MULTIPLE}_FUA_EXT
+	   *	64-bit World wide name
+	   *	SATA-I signaling speed (1.5Gb/s)
+	   *	SATA-II signaling speed (3.0Gb/s)
+	   *	Native Command Queueing (NCQ)
+	   *	Phy event counters
+	    	DMA Setup Auto-Activate optimization
+	   *	Software settings preservation
+	   *	SMART Command Transport (SCT) feature set
+	   *	SCT Long Sector Access (AC1)
+	   *	SCT LBA Segment Access (AC2)
+	   *	SCT Error Recovery Control (AC3)
+	   *	SCT Features Control (AC4)
+	   *	SCT Data Tables (AC5)
+	    	unknown 206[12]
+Security: 
+	Master password revision code = 65534
+		supported
+	not	enabled
+	not	locked
+		frozen
+	not	expired: security count
+	not	supported: enhanced erase
+	<span class="__postbox-detected-content __postbox-detected-date">78min</span> for SECURITY ERASE UNIT. 
+Checksum: correct
+</pre></div>
+<div class="moz-text-plain"><pre><br class=""/>dmidecode_out.txt<br class=""/># dmidecode <span class="__postbox-detected-content __postbox-detected-date">2.7</span>
+SMBIOS <span class="__postbox-detected-content __postbox-detected-date">2.5</span> present.
+38 structures occupying 1584 bytes.
+Table at 0x3FEDF000.
+
+Handle 0x0000, DMI type 0, 24 bytes.
+BIOS Information
+	Vendor: Phoenix Technologies LTD
+	Version: 1.0c   
+	Release Date: <span class="__postbox-detected-content __postbox-detected-date">04/03/2008</span>
+	Address: 0xE2D40
+	Runtime Size: 119488 bytes
+	ROM Size: 2048 kB
+	Characteristics:
+		ISA is supported
+		PCI is supported
+		PNP is supported
+		BIOS is upgradeable
+		BIOS shadowing is allowed
+		ESCD support is available
+		Boot from CD is supported
+		Selectable boot is supported
+		BIOS ROM is socketed
+		EDD is supported
+		5.25"/1.2 MB floppy services are supported (int <span class="__postbox-detected-content __postbox-detected-date"><span class="__postbox-detected-content __postbox-detected-date"><span class="__postbox-detected-content __postbox-detected-date">13h)</span></span></span>
+		3.5"/720 KB floppy services are supported (int <span class="__postbox-detected-content __postbox-detected-date"><span class="__postbox-detected-content __postbox-detected-date">13h)</span></span>
+		3.5"/2.88 MB floppy services are supported (int <span class="__postbox-detected-content __postbox-detected-date">13h)</span>
+		Print screen service is supported (int <span class="__postbox-detected-content __postbox-detected-date">5h)</span>
+		8042 keyboard services are supported (int <span class="__postbox-detected-content __postbox-detected-date">9h)</span>
+		Serial services are supported (int <span class="__postbox-detected-content __postbox-detected-date">14h)</span>
+		Printer services are supported (int 17h)
+		CGA/mono video services are supported (int 10h)
+		USB legacy is supported
+		Smart battery is supported
+		BIOS boot specification is supported
+		Targeted content distribution is supported
+
+Handle 0x0001, DMI type 1, 27 bytes.
+System Information
+	Manufacturer: Supermicro
+	Product Name: X7SBA
+	Version: 0123456789
+	Serial Number: 0123456789
+	UUID: 53D1A494-D663-A0E7-890B-003048665EF0
+	Wake-up Type: Power Switch
+	SKU Number: Not Specified
+	Family: Not Specified
+
+Handle 0x0002, DMI type 2, 8 bytes.
+Base Board Information
+	Manufacturer: Supermicro
+	Product Name: X7SBA
+	Version: PCB Version
+	Serial Number: 0123456789
+
+Handle 0x0003, DMI type 3, 17 bytes.
+Chassis Information
+	Manufacturer: Supermicro
+	Type: Other
+	Lock: Not Present
+	Version: 0123456789
+	Serial Number: 0123456789
+	Asset Tag:  
+	Boot-up State: Safe
+	Power Supply State: Safe
+	Thermal State: Safe
+	Security Status: None
+	OEM Information: 0x00001234
+
+Handle 0x0004, DMI type 4, 35 bytes.
+Processor Information
+	Socket Designation: CPU 1
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Intel
+	ID: F2 06 00 00 FF FB EB BF
+	Version: 00000000000000000000000000000000
+	Voltage: 1.8 V
+	External Clock: Unknown
+	Max Speed: 3300 MHz
+	Current Speed: 2130 MHz
+	Status: Populated, Enabled
+	Upgrade: &lt;OUT OF SPEC&gt;
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+
+Handle 0x0005, DMI type 7, 19 bytes.
+Cache Information
+	Socket Designation: L1 Cache
+	Configuration: Enabled, Socketed, Level 1
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 16 KB
+	Maximum Size: 16 KB
+	Supported SRAM Types:
+		Burst
+		Pipeline Burst
+		Asynchronous
+	Installed SRAM Type: Asynchronous
+	Speed: Unknown
+	Error Correction Type: Unknown
+	System Type: Unknown
+	Associativity: Unknown
+
+Handle 0x0006, DMI type 7, 19 bytes.
+Cache Information
+	Socket Designation: L2 Cache
+	Configuration: Enabled, Socketed, Level 2
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 2048 KB
+	Maximum Size: 512 KB
+	Supported SRAM Types:
+		Burst
+		Pipeline Burst
+		Asynchronous
+	Installed SRAM Type: Burst
+	Speed: Unknown
+	Error Correction Type: Unknown
+	System Type: Unknown
+	Associativity: Unknown
+
+Handle 0x0007, DMI type 7, 19 bytes.
+Cache Information
+	Socket Designation: L3 Cache
+	Configuration: Enabled, Socketed, Level 3
+	Operational Mode: Write Back
+	Location: Internal
+	Installed Size: 2048 KB
+	Maximum Size: 512 KB
+	Supported SRAM Types:
+		Burst
+		Pipeline Burst
+		Asynchronous
+	Installed SRAM Type: Burst
+	Speed: Unknown
+	Error Correction Type: Unknown
+	System Type: Unknown
+	Associativity: Unknown
+
+Handle 0x0008, DMI type 8, 9 bytes.
+Port Connector Information
+	Internal Reference Designator: J2A1
+	Internal Connector Type: 9 Pin Dual Inline (pin 10 cut)
+	External Reference Designator: COM 1
+	External Connector Type: DB-9 male
+	Port Type: Serial Port 16550A Compatible
+
+Handle 0x0009, DMI type 8, 9 bytes.
+Port Connector Information
+	Internal Reference Designator: J3A1
+	Internal Connector Type: 25 Pin Dual Inline (pin 26 cut)
+	External Reference Designator: Parallel
+	External Connector Type: DB-25 female
+	Port Type: Parallel Port ECP/EPP
+
+Handle 0x000A, DMI type 8, 9 bytes.
+Port Connector Information
+	Internal Reference Designator: J1A1
+	Internal Connector Type: None
+	External Reference Designator: Keyboard
+	External Connector Type: Circular DIN-8 male
+	Port Type: Keyboard Port
+
+Handle 0x000B, DMI type 8, 9 bytes.
+Port Connector Information
+	Internal Reference Designator: J1A1
+	Internal Connector Type: None
+	External Reference Designator: PS/2 Mouse
+	External Connector Type: Circular DIN-8 male
+	Port Type: Keyboard Port
+
+Handle 0x000C, DMI type 9, 13 bytes.
+System Slot Information
+	Designation: PCI Slot #1 - J5B1
+	Type: 32-bit PCI
+	Current Usage: In Use
+	Length: Long
+	ID: 1
+	Characteristics:
+		5.0 V is provided
+		3.3 V is provided
+
+Handle 0x000D, DMI type 9, 13 bytes.
+System Slot Information
+	Designation: PCIe Slot #1 - J7C1
+	Type: 32-bit PCI Express
+	Current Usage: Available
+	Length: Long
+	Characteristics:
+		5.0 V is provided
+		3.3 V is provided
+
+Handle 0x000E, DMI type 10, 6 bytes.
+On Board Device Information
+	Type: Sound
+	Status: Disabled
+	Description: ADI1886
+
+Handle 0x000F, DMI type 11, 5 bytes.
+OEM Strings
+	String 1: This is the Intel 965
+	String 2: Customer Reference Board
+
+Handle 0x0010, DMI type 12, 5 bytes.
+System Configuration Options
+	Option 1: Jumper settings can be described here.
+
+Handle 0x0011, DMI type 15, 29 bytes.
+System Event Log
+	Area Length: 112 bytes
+	Header Start Offset: 0x0000
+	Header Length: 16 bytes
+	Data Start Offset: 0x0010
+	Access Method: General-purpose non-volatile data functions
+	Access Address: 0x0000
+	Status: Valid, Not Full
+	Change Token: 0x00000009
+	Header Format: Type 1
+	Supported Log Type Descriptors: 3
+	Descriptor 1: POST error
+	Data Format 1: POST results bitmap
+	Descriptor 2: Single-bit ECC memory error
+	Data Format 2: Multiple-event
+	Descriptor 3: Multi-bit ECC memory error
+	Data Format 3: Multiple-event
+
+Handle 0x0012, DMI type 16, 15 bytes.
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: None
+	Maximum Capacity: 8 GB
+	Error Information Handle: Not Provided
+	Number Of Devices: 4
+
+Handle 0x0013, DMI type 17, 27 bytes.
+Memory Device
+	Array Handle: 0x0012
+	Error Information Handle: 0xFF01
+	Total Width: 40968 bits
+	Data Width: 41032 bits
+	Size: 512 MB
+	Form Factor: DIMM
+	Set: 1
+	Locator: J6G1
+	Bank Locator: DIMM 0
+	Type: DDR2
+	Type Detail: Synchronous
+	Speed: 667 MHz (1.5 ns)
+	Manufacturer: Kingston                                        
+	Serial Number: 76196455
+	Asset Tag: 0000080F
+	Part Number: 393930353332302D3030322E4130314C4600
+
+Handle 0x0014, DMI type 17, 27 bytes.
+Memory Device
+	Array Handle: 0x0012
+	Error Information Handle: 0xFF01
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: 1
+	Locator: J6G2
+	Bank Locator: DIMM 1
+	Type: DDR2
+	Type Detail: Synchronous
+	Speed: 667 MHz (1.5 ns)
+	Manufacturer: 48spaces                                        
+	Serial Number: 01234567
+	Asset Tag: 01234567
+	Part Number: 012345678901234567890123456789012345
+
+Handle 0x0015, DMI type 17, 27 bytes.
+Memory Device
+	Array Handle: 0x0012
+	Error Information Handle: 0xFF01
+	Total Width: 41992 bits
+	Data Width: 42056 bits
+	Size: 512 MB
+	Form Factor: DIMM
+	Set: 1
+	Locator: J6H1
+	Bank Locator: DIMM 2
+	Type: DDR2
+	Type Detail: Synchronous
+	Speed: 667 MHz (1.5 ns)
+	Manufacturer: Kingston                                        
+	Serial Number: 75196955
+	Asset Tag: 0000080F
+	Part Number: 393930353332302D3030322E4130314C4600
+
+Handle 0x0016, DMI type 17, 27 bytes.
+Memory Device
+	Array Handle: 0x0012
+	Error Information Handle: 0xFF01
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: 1
+	Locator: J6H2
+	Bank Locator: DIMM 3
+	Type: DDR2
+	Type Detail: Synchronous
+	Speed: 667 MHz (1.5 ns)
+	Manufacturer: 48spaces                                        
+	Serial Number: 01234567
+	Asset Tag: 01234567
+	Part Number: 012345678901234567890123456789012345
+
+Handle 0x0017, DMI type 19, 15 bytes.
+Memory Array Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x0003FFFFFFF
+	Range Size: 1 GB
+	Physical Array Handle: 0x0012
+	Partition Width: 0
+
+Handle 0x0018, DMI type 20, 19 bytes.
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x0001FFFFFFF
+	Range Size: 512 MB
+	Physical Device Handle: 0x0013
+	Memory Array Mapped Address Handle: 0x0017
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x0019, DMI type 20, 19 bytes.
+Memory Device Mapped Address
+	Starting Address: 0x0001FFFFC00
+	Ending Address: 0x0001FFFFFFF
+	Range Size: 1 kB
+	Physical Device Handle: 0x0014
+	Memory Array Mapped Address Handle: 0x0017
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x001A, DMI type 23, 13 bytes.
+System Reset
+	Status: Enabled
+	Watchdog Timer: Present
+	Boot Option: Do Not Reboot
+	Boot Option On Limit: Do Not Reboot
+	Reset Count: Unknown
+	Reset Limit: Unknown
+	Timer Interval: Unknown
+	Timeout: Unknown
+
+Handle 0x001B, DMI type 24, 5 bytes.
+Hardware Security
+	Power-On Password Status: Disabled
+	Keyboard Password Status: Unknown
+	Administrator Password Status: Disabled
+	Front Panel Reset Status: Unknown
+
+Handle 0x001C, DMI type 25, 9 bytes.
+	System Power Controls
+	Next Scheduled Power-on: 12-31 23:59:59
+
+Handle 0x001D, DMI type 26, 20 bytes.
+Voltage Probe
+	Description: Voltage Probe
+	Location: Processor
+	Status: OK
+	Maximum Value: Unknown
+	Minimum Value: Unknown
+	Resolution: Unknown
+	Tolerance: Unknown
+	Accuracy: Unknown
+	OEM-specific Information: 0x00000000
+
+Handle 0x001E, DMI type 27, 12 bytes.
+Cooling Device
+	Temperature Probe Handle: 0x001F
+	Type: Fan
+	Status: OK
+	OEM-specific Information: 0x00000000
+
+Handle 0x001F, DMI type 28, 20 bytes.
+Temperature Probe
+	Description: Temperature Probe
+	Location: Processor
+	Status: OK
+	Maximum Value: Unknown
+	Minimum Value Unknown
+	Resolution: Unknown
+	Tolerance: Unknown
+	Accuracy: Unknown
+	OEM-specific Information: 0x00000000
+
+Handle 0x0020, DMI type 29, 20 bytes.
+Electrical Current Probe
+	Description: Electrical Current Probe
+	Location: Processor
+	Status: OK
+	Maximum Value: Unknown
+	Minimum Value: Unknown
+	Resolution: Unknown
+	Tolerance: Unknown
+	Accuracy: Unknown
+	OEM-specific Information: 0x00000000
+
+Handle 0x0021, DMI type 30, 6 bytes.
+Out-of-band Remote Access
+	Manufacturer Name: Intel
+	Inbound Connection: Enabled
+	Outbound Connection: Disabled
+
+Handle 0x0022, DMI type 32, 20 bytes.
+System Boot Information
+	Status: &lt;OUT OF SPEC&gt;
+
+Handle 0x0023, DMI type 126, 4 bytes.
+Inactive
+
+Handle 0x0024, DMI type 127, 4 bytes.
+End Of Table
+
+Handle 0x0025, DMI type 127, 4 bytes.
+End Of Table
+
+</pre></div><br class=""/><br class=""/><br class=""/><br class=""/><br class=""/><br class=""/><br class=""/><br class=""/><br class=""/><br class=""/><br class=""/><br class=""/>
+<h1>Raid Array Configuration in Ubuntu<br class=""/></h1><br class=""/>
+<table><tbody>
+<tr>
+<td>And here's how I did a redundant RAID array on my Ubuntu box. Maybe it's relevant to Clio, maybe not.<br class=""/><br class=""/>Vanessa </td>
+</tr>
+<tr>
+<td> <br class=""/></td>
+</tr>
+<tr>
+<td> <b>RAID array configuration in Ubuntu <span class="__postbox-detected-content __postbox-detected-date">12.04</span> install</b> </td>
+</tr>
+</tbody></table>
+<div class="ennote">
+<div>the steps below are based on: <a href="53636/NovDec_2012_Observing_Block.html">https://help.ubuntu.com/10.04/serverguide/advanced-installation.html</a><br class=""/></div>
+<div>That tutorial only has swap and / partitions, whereas I want boot, swap, and / partitions. </div>
+<div><br class=""/></div>
+<div>These notes are based on a fresh install of Ubuntu <span class="__postbox-detected-content __postbox-detected-date"><span class="__postbox-detected-content __postbox-detected-date">12.04</span>,</span> <span class="__postbox-detected-content __postbox-detected-date">done on Aug 31, 2013.</span></div>
+<div><br class=""/></div>
+<div><br class=""/></div>
+<div>The approx architecture I want is:</div>
+<div>
+<table><tbody>
+<tr>
+<td colspan="1" rowspan="1"><strong>drive 1 (750GB)</strong></td>
+<td colspan="1" rowspan="1"><strong>drive 2 (750GB)</strong></td>
+<td colspan="1" rowspan="1"><strong>drive 3 (1TB)</strong></td>
+<td colspan="1" rowspan="1"><strong>RAID</strong></td>
+<td colspan="1" rowspan="1"><strong>use</strong></td>
+<td colspan="1" rowspan="1"><strong>format</strong></td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1"><span>0 - 1GB</span></td>
+<td colspan="1" rowspan="1"><span>0 - 1GB<br class=""/></span></td>
+<td colspan="1" rowspan="1"><span>0 - 1GB<br class=""/></span></td>
+<td colspan="1" rowspan="1"><span>RAID 1</span></td>
+<td colspan="1" rowspan="1"><span>/boot</span></td>
+<td colspan="1" rowspan="1"><span>primary / ext4</span></td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1"><span>1 - 745GB</span></td>
+<td colspan="1" rowspan="1"><span>1 - 745GB<br class=""/></span></td>
+<td colspan="1" rowspan="1"><span>1 - 745GB<br class=""/></span></td>
+<td colspan="1" rowspan="1"><span>RAID 5</span></td>
+<td colspan="1" rowspan="1"><span>/</span></td>
+<td colspan="1" rowspan="1"><span>primary / ext4</span></td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1"><span>745 - 750 GB</span></td>
+<td colspan="1" rowspan="1"><span>745 - 750 GB<br class=""/></span></td>
+<td colspan="1" rowspan="1"><span>745 - 750 GB<br class=""/></span></td>
+<td colspan="1" rowspan="1"><span>none</span></td>
+<td colspan="1" rowspan="1"><span>swap</span></td>
+<td colspan="1" rowspan="1"><span>logical / swap</span></td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1"><span><br class=""/></span></td>
+<td colspan="1" rowspan="1"><span><br class=""/></span></td>
+<td colspan="1" rowspan="1"><span>750 - 1000 GB</span></td>
+<td colspan="1" rowspan="1"><span>none</span></td>
+<td colspan="1" rowspan="1"><span>/media/nonredundant</span></td>
+<td colspan="1" rowspan="1"><span><br class=""/></span></td>
+</tr></tbody></table></div>
+<div><br class=""/></div>
+<div><br class=""/></div>
+<div>Boot from a live CD/USB.</div>
+<div>If you don't see a main menu, just hit "enter" and maybe an arrow key or two until you get to the 'select a language' screen :)</div>
+<div><br class=""/></div>
+<div>Select "install" and proceed w/ defining language, username, …, until you get to the screen where you can re-partition drives. First you'll tell the system which partitions to use for the RAID array(s). Then you'll create the array(s). Then you'll format each array. Then you'll finish the Ubuntu Install.</div>
+<div><br class=""/></div>
+<div>We'll be making 3 partitions: /boot, /, and swap. The size and location of each partition on each drive must match. Therefore, on the larger drive(s), we're left with extra space at the end of the drive. We'll make this into a non-redundant partition that can be mounted separately.</div>
+<div><br class=""/></div>
+<div><br class=""/></div>
+<div>Once you get to the Partition Drives screen, select "manual mode," and then:</div>
+<div><br class=""/></div>
+<div>If you have any disks which you do not intend to use for the installation (e.g.: a backup drive), make sure that those partitions aren't used. </div>
+<div>Select the partition(s) on the unused drive and configure: </div>
+<div>
+<table><tbody>
+<tr>
+<td colspan="1" rowspan="1">use as</td>
+<td colspan="1" rowspan="1">do not use</td>
+</tr></tbody></table></div>
+<div><br class=""/></div>
+<div><br class=""/></div>
+<div>Highlight the drive you wish to wipe and modify and hit "enter" to create new partition map. </div>
+<div>This removes all existing partitions and you'll see only a "FREE SPACE" partition.</div>
+<div><br class=""/></div>
+<div>Select the partition with "FREE SPACE" and select "create a new partition." </div>
+<div><br class=""/></div>
+<div>For the boot partition:</div>
+<div><span class="__postbox-detected-content __postbox-detected-date">1.0</span> GB size</div>
+<div>primary</div>
+<div>beginning</div>
+<div><br class=""/></div>
+<div>
+<table><tbody>
+<tr>
+<td colspan="1" rowspan="1">use as</td>
+<td colspan="1" rowspan="1">physical volume for RAID</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">bootable flag</td>
+<td colspan="1" rowspan="1">on</td>
+</tr></tbody></table></div>
+<div><br class=""/></div>
+<div><br class=""/></div>
+<div>For the / partition:</div>
+<div>744.2 GB </div>
+<div>primary</div>
+<div>beginning<br class=""/></div>
+<div><br class=""/></div>
+<table><tbody>
+<tr>
+<td colspan="1" rowspan="1">use as</td>
+<td colspan="1" rowspan="1">physical volume for RAID</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">bootable flag</td>
+<td colspan="1" rowspan="1">off</td>
+</tr></tbody></table>
+<div><br class=""/></div>
+<div><br class=""/></div>
+<div>The swap partition</div>
+<div><span class="__postbox-detected-content __postbox-detected-date">5.0</span> GB</div>
+<div>logical</div>
+<div>(beginning)</div>
+<div><br class=""/></div>
+<table><tbody>
+<tr>
+<td colspan="1" rowspan="1">use as:</td>
+<td colspan="1" rowspan="1">swap area</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">bootable flag</td>
+<td colspan="1" rowspan="1">off</td>
+</tr></tbody></table>
+<div><br class=""/></div>
+<div><br class=""/></div>
+<div><br class=""/></div>
+<div>Then choose "Configure Software Raid"</div>
+<div>Make sure that you're only changing the partitions you intend to use for your RAID array(s), and not any other partitions</div>
+<div><br class=""/></div>
+<div>Choose "Make MD device"</div>
+<div>Select the RAID version you want.</div>
+<div>- RAID 1 uses 2 active devices, and 1 spare</div>
+<div>- RAID 5 uses 3 active devices and 0 spares</div>
+<div>Choose the partitions you want to use for that array</div>
+<div><br class=""/></div>
+<div><br class=""/></div>
+<div>Once you've finished making your RAID array(s), configure each array:</div>
+<div><br class=""/></div>
+<div><br class=""/></div>
+<div>RAID 1 array</div>
+<div>
+<table><tbody>
+<tr>
+<td colspan="1" rowspan="1">mount point</td>
+<td colspan="1" rowspan="1">/boot</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">mount options</td>
+<td colspan="1" rowspan="1">defaults<br class=""/></td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">label</td>
+<td colspan="1" rowspan="1">boot</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">reserved blocks</td>
+<td colspan="1" rowspan="1">5%</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">typical usage</td>
+<td colspan="1" rowspan="1">standard</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">use as: </td>
+<td colspan="1" rowspan="1">ext4 journaling</td>
+</tr></tbody></table><br class=""/></div>
+<div><br class=""/></div>
+<div>RAID 5 array</div>
+<div>
+<table><tbody>
+<tr>
+<td colspan="1" rowspan="1">mount point</td>
+<td colspan="1" rowspan="1">/</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">mount options</td>
+<td colspan="1" rowspan="1">defaults<br class=""/></td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">label</td>
+<td colspan="1" rowspan="1">root<br class=""/></td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">reserved blocks</td>
+<td colspan="1" rowspan="1">5%</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">typical usage</td>
+<td colspan="1" rowspan="1">standard</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">use as:</td>
+<td colspan="1" rowspan="1">ext4 journaling</td>
+</tr></tbody></table><br class=""/></div>
+<div><br class=""/></div>
+<div><br class=""/></div>
+<div><br class=""/></div>
+<div>and, finally, the fstab entry:<br class=""/></div>
+<div># /etc/fstab: static file system information.<br class=""/>#<br class=""/># Use 'blkid' to print the universally unique identifier for a<br class=""/># device; this may be used with UUID= as a more robust way to name devices<br class=""/># that works even if disks are added and removed. See fstab(5).<br class=""/>#<br class=""/># &lt;file system&gt; &lt;mount point&gt; &lt;type&gt; &lt;options&gt; &lt;dump&gt; &lt;pass&gt;<br class=""/>proc /proc proc nodev,noexec,nosuid 0 0<br class=""/># / was on /dev/md1 during installation<br class=""/>UUID=7993a080-e38b-4c6b-ac6c-77c3e22e08af / ext4 errors=remount-ro 0 1<br class=""/># /boot was on /dev/md0 during installation<br class=""/>UUID=43759216-dbc8-4b91-b523-e51c30ec3419 /boot ext4 defaults 0 2<br class=""/># /media/notredundant was on /dev/sdb4 during installation<br class=""/>UUID=15d7b369-2017-4f4a-a0ca-ec806e5a7f9b /media/notredundant ext4 defaults 0 2<br class=""/># swap was on /dev/sda5 during installation<br class=""/>UUID=b7d9e12c-3016-49a6-8403-bcbd1388a595 none swap sw 0 0<br class=""/># swap was on /dev/sdb5 during installation<br class=""/>UUID=d18d1f59-437e-498f-b1e2-50170f3e847e none swap sw 0 0<br class=""/># swap was on /dev/sdc5 during installation<br class=""/>UUID=bb33caee-d5a9-429f-bd3f-ee3ceb32bfeb none swap sw 0 0<br class=""/># backup. /dev/sdd3<br class=""/>UUID=50cf773c-c34a-4c84-90c3-dfcb678436db /media/BackupDrive ext4 defaults 0 2<br class=""/></div></div>
+<table> <tbody>
+<tr>
+<td><br class=""/></td>
+</tr></tbody></table><br class=""/><br class=""/><br class=""/><br class=""/>-Katie Morzinski, 16 July 2014, based on emails from Vanessa Bailey and Jared Males<br class=""/><a href="53636/NovDec_2012_Observing_Block.html"></a><a href="53636/NovDec_2012_Observing_Block.html"></a><a href="53636/NovDec_2012_Observing_Block.html"></a><a href="53636/NovDec_2012_Observing_Block.html"></a><a href="53636/NovDec_2012_Observing_Block.html"></a><a href="53636/NovDec_2012_Observing_Block.html"></a><a href="53636/NovDec_2012_Observing_Block.html"></a></html>

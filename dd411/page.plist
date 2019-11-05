@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>phinz</string>
+	<key>authorLongName</key>
+	<string>Phil Hinz</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/dd411</string>
+	<key>content</key>
+	<string>
+&lt;div class="wiki_entry"&gt; 
+ &lt;p&gt;&lt;span class="Apple-style-span"&gt; &lt;/span&gt;&lt;/p&gt; 
+ &lt;div class="page"&gt; 
+  &lt;h2&gt;&lt;span class="Apple-style-span"&gt;Nodding and Dithering&lt;/span&gt;&lt;br class="" /&gt;&lt;/h2&gt; 
+  &lt;div class="page"&gt; 
+   &lt;div class="level3 wiki_unbold"&gt; 
+    &lt;p&gt;Nodding should be carried out every 0.5-2 minutes to ensure good sky subtraction. The direction of nodding is set in the &amp;quot;Setup Values&amp;quot; of the Camera Control GUI. The coordinates are in X and Y on the detector. A positive X nod value moves the star to the left, relative to the initial position. A positive Y node value moves the star down on the array. (THIS IS COUNTERITUITIVE AND NEEDS FIXING).&lt;/p&gt;&lt;/div&gt; 
+   &lt;div class="secedit wiki_unbold"&gt;&lt;/div&gt; 
+   &lt;h2&gt;Typical Integration Times&lt;br class="" /&gt;&lt;/h2&gt; 
+   &lt;div&gt; 
+    &lt;p&gt;At wavelengths beyond 3 microns, the exposures are typically set by the sky background, rather than the source brightness. The integration time is adjust to obtain a typical sky flux of 200,000 photons per pixel, below the saturation of 250,000 for the detector. &lt;/p&gt; 
+    &lt;table class="inline __useTableEditor data custom_bold"&gt;&lt;thead&gt; 
+      &lt;tr&gt;
+        
+       &lt;th class="wiki_unbold"&gt;Filter&lt;/th&gt;
+        
+       &lt;th class="wiki_unbold"&gt;Typical Integration (s)&lt;/th&gt;
+        
+       &lt;th class="wiki_unbold"&gt;Expected Sky flux (photons/pixel/s)&lt;/th&gt;
+        
+      &lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt; 
+      &lt;tr&gt;
+        
+       &lt;td class="wiki_unbold"&gt;3.1&lt;/td&gt;
+        
+       &lt;td class="wiki_unbold"&gt;12&lt;/td&gt;
+        
+       &lt;td class="wiki_unbold"&gt;17,000&lt;/td&gt;
+        
+      &lt;/tr&gt; 
+      &lt;tr&gt;
+        
+       &lt;td class="wiki_unbold"&gt;3.3&lt;/td&gt;
+        
+       &lt;td class="wiki_unbold"&gt;3&lt;/td&gt;
+        
+       &lt;td class="wiki_unbold"&gt;70,000&lt;/td&gt;
+        
+      &lt;/tr&gt; 
+      &lt;tr&gt;
+        
+       &lt;td class="wiki_unbold"&gt;L’&lt;/td&gt;
+        
+       &lt;td class="wiki_unbold"&gt;0.6&lt;/td&gt;
+        
+       &lt;td class="wiki_unbold"&gt;350,000&lt;/td&gt;
+        
+      &lt;/tr&gt; 
+      &lt;tr&gt;
+        
+       &lt;td class="wiki_unbold"&gt;M’&lt;/td&gt;
+        
+       &lt;td class="wiki_unbold"&gt;0.3&lt;/td&gt;
+        
+       &lt;td class="wiki_unbold"&gt;689,000&lt;/td&gt;
+        
+      &lt;/tr&gt; 
+      &lt;tr&gt;
+        
+       &lt;td class="wiki_unbold"&gt;M&lt;/td&gt;
+        
+       &lt;td class="wiki_unbold"&gt;0.07&lt;/td&gt;
+        
+       &lt;td class="wiki_unbold"&gt;2,740,000&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;/td&gt;
+        
+      &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt; 
+   &lt;div class="level3 wiki_unbold"&gt; 
+    &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+    &lt;p&gt;At shorter wavelengths, observations with Clio should use a long enough integration time to get above the read noise of the detector, if possible. The RON is approximately 19 dn or 93 e-. This suggests that the wells should be above at least 10,000 e- (2,000 dn) to not be dominated by read noise. This is mainly relevant for H and K observations, and spectra.&lt;/p&gt; 
+    &lt;table class="inline __useTableEditor data custom_bold"&gt;&lt;thead&gt; 
+      &lt;tr&gt;
+        
+       &lt;th&gt;Filter&lt;/th&gt;
+        
+       &lt;th&gt;Typical Integration (s)&lt;/th&gt;
+        
+       &lt;th&gt;Expected Sky flux (photons/pixel/s)&lt;/th&gt;
+        
+      &lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt; 
+      &lt;tr&gt;
+        
+       &lt;td&gt;H&lt;/td&gt;
+        
+       &lt;td&gt;10-60&lt;/td&gt;
+        
+       &lt;td&gt;90&lt;/td&gt;
+        
+      &lt;/tr&gt; 
+      &lt;tr&gt;
+        
+       &lt;td&gt;Ks&lt;/td&gt;
+        
+       &lt;td&gt;10-60&lt;/td&gt;
+        
+       &lt;td&gt;150&lt;/td&gt;
+        
+      &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt; 
+    &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt;&lt;/div&gt; 
+   &lt;div class="secedit wiki_unbold"&gt;&lt;/div&gt; 
+   &lt;h2&gt;&lt;span class="Apple-style-span"&gt;Taking Flats&lt;/span&gt;&lt;br class="" /&gt;&lt;/h2&gt; 
+   &lt;div class="level3 wiki_unbold"&gt; 
+    &lt;p&gt;Flats are typically acquired by pointing at blank sky and taking frames, followed by putting a blank in the filter wheel and taking another set of frames. The difference should provide reliable flats.&lt;/p&gt;
+    &lt;p&gt;H and K band flats will require observing at sunset, to get enough sky flux on the detector.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt; 
+  &lt;h2 class="wiki_unbold"&gt;Format Choice&lt;/h2&gt; 
+  &lt;div class="level2"&gt; 
+   &lt;p&gt;The Clio detector can be read out in full format, or in several subarray formats. Smaller formats have shorter minimum integration times. This can prevent saturation or be used to increase efficiency. The image below shows the several formats available, and how they are arranged on the detector.&lt;/p&gt; 
+   &lt;p&gt;&lt;img src="/groups/clio2usermanual/wiki/dd411/images/__thumbs__/bdf1c.png" name="/groups/clio2usermanual/wiki/dd411/images/bdf1c.png#1024x768" title="" longdesc="/groups/clio2usermanual/wiki/dd411/images/bdf1c.png#1024x768" role="button" alt="" class="aligncenter thumbnail" tabindex="0" /&gt;&lt;/p&gt; 
+   &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt;
+   &lt;h2&gt;Efficiency&lt;/h2&gt;
+   &lt;p&gt;The minimum frame time for the different sizes are&lt;/p&gt; 
+   &lt;p&gt; &lt;/p&gt; 
+   &lt;table class="data __useTableEditor"&gt;&lt;thead&gt;
+     &lt;tr&gt;
+      
+      &lt;th&gt;Format&lt;/th&gt;
+      
+      &lt;th&gt;Minimum Frame Time&lt;/th&gt;
+      
+      &lt;th&gt;&amp;quot;Dead Time&amp;quot;&lt;/th&gt;
+      
+      &lt;th&gt;Maximum Coadds&lt;/th&gt;
+      
+     &lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+     &lt;tr&gt;
+      
+      &lt;td&gt;Full&lt;/td&gt;
+      
+      &lt;td&gt;280 ms&lt;/td&gt;
+      
+      &lt;td&gt;280 ms&lt;/td&gt;
+      
+      &lt;td&gt;20&lt;/td&gt;
+      
+     &lt;/tr&gt;
+     &lt;tr&gt;
+      
+      &lt;td&gt;Strip&lt;/td&gt;
+      
+      &lt;td&gt;160 ms&lt;/td&gt;
+      
+      &lt;td&gt;160 ms&lt;/td&gt;
+      
+      &lt;td&gt;40&lt;/td&gt;
+      
+     &lt;/tr&gt;
+     &lt;tr&gt;
+      
+      &lt;td&gt;Stamp&lt;/td&gt;
+      
+      &lt;td&gt;43 ms&lt;/td&gt;
+      
+      &lt;td&gt;43 ms&lt;/td&gt;
+      
+      &lt;td&gt;100&lt;/td&gt;
+      
+     &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br class="" /&gt;There is a &amp;quot;dead time&amp;quot; equivalent to the minimum frame time in each mode. For, example, if I need to take a 500 ms image to avoid saturation, my efficiency for &amp;quot;full&amp;quot; mode (integration time / clock time) is 500/(280+500) =64%. If I use the &amp;quot;strip&amp;quot; mode it is 500/(160+500)=76%. 
+   &lt;p&gt;&lt;/p&gt;&lt;/div&gt;
+  &lt;div class="level2"&gt;Above a certain number of coadds, the process of deinterlacing and coadding slows down dramatically due to disk swapping in the computer. For maximum efficiency the coadds should be kept to below the table listed in the above table.&lt;/div&gt; 
+  &lt;div class="secedit"&gt;&lt;/div&gt;&lt;a name="nodding_and_dithering"&gt;&lt;/a&gt;&lt;/div&gt; 
+ &lt;div class="stylefoot"&gt; 
+  &lt;div class="meta"&gt; 
+   &lt;div class="user"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt; 
+ &lt;p&gt;&lt;/p&gt;&lt;/div&gt;</string>
+	<key>createdDate</key>
+	<string>2010-10-08 15:14:27.698532+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>phinz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>phinz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2011-04-18 02:43:26</string>
+	<key>lastVersion</key>
+	<string>11</string>
+	<key>latestVersion</key>
+	<string>10</string>
+	<key>modifiedDate</key>
+	<date>2011-04-18T02:43:58Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Observation Guidelines</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/dd411</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

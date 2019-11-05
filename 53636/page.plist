@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>phinz</string>
+	<key>authorLongName</key>
+	<string>Phil Hinz</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/53636</string>
+	<key>content</key>
+	<string>
+&lt;div class="wiki_entry"&gt; 
+ &lt;p&gt;&lt;a href="/groups/clio2usermanual/wiki/4d80f/Mannys_Notes.html"&gt;Manny's Notes&lt;/a&gt;&lt;br class="" /&gt;&lt;/p&gt;
+ &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt;
+ &lt;p&gt;&lt;a href="/groups/clio2usermanual/wiki/f7503/Phils_Notes_Nov_2012.html"&gt;Phils Notes Nov. 2012&lt;/a&gt;&lt;br class="" /&gt;&lt;/p&gt;&lt;/div&gt;</string>
+	<key>createdDate</key>
+	<string>2012-11-20 21:12:24.178156+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>phinz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>phinz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2012-11-21 17:37:51</string>
+	<key>lastVersion</key>
+	<string>4</string>
+	<key>latestVersion</key>
+	<string>3</string>
+	<key>modifiedDate</key>
+	<date>2012-11-21T17:42:29Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Nov.-Dec. 2012 Observing Block</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/53636</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

@@ -1,0 +1,144 @@
+Here we put some relevant files for calibrating Clio2 data.<br class="" /><br class="" />
+<h1>General</h1><br class="" />
+<table class="data __useTableEditor"><thead> 
+  <tr>
+    
+   <th>Description</th>
+    
+   <th>File</th>
+    
+   <th>Date</th>
+    
+  </tr></thead><tbody> 
+  <tr>
+    
+   <td>Bad pixel map. Value 1 = bad pixel.<br class="" /><br class="" />Full frame (1024x512)<br class="" />Strip mode (1024x300)<br class="" />Stamp mode (400x200)<br class="" />Substamp mode (100x50)<br class="" /><br class="" />(Or see <a href="groups/clio2usermanual/wiki/3a7bb/Full_Frame_and_Sub_Frame_Formats.html">Full Frame and Sub Frame Formats</a> for how to crop the full-frame images yourself.)</td>
+    
+   <td><img src="/groups/clio2usermanual/wiki/6d927/attachments/1242c/badpix_fullframe.fit.png" alt="Download file &quot;badpix_fullframe.fit&quot;" title="Download file &quot;badpix_fullframe.fit&quot;" class="attachment_handle_img" longdesc="/groups/clio2usermanual/wiki/6d927/attachments/1242c/badpix_fullframe.fit" /> <br class="" /> <img src="/groups/clio2usermanual/wiki/6d927/attachments/ae61c/badpix_strip.fit.png" alt="Download file &quot;badpix_strip.fit&quot;" title="Download file &quot;badpix_strip.fit&quot;" class="attachment_handle_img" longdesc="/groups/clio2usermanual/wiki/6d927/attachments/ae61c/badpix_strip.fit" /> <br class="" /> <img src="/groups/clio2usermanual/wiki/6d927/attachments/c5553/badpix_stamp.fit.png" alt="Download file &quot;badpix_stamp.fit&quot;" title="Download file &quot;badpix_stamp.fit&quot;" class="attachment_handle_img" longdesc="/groups/clio2usermanual/wiki/6d927/attachments/c5553/badpix_stamp.fit" /> <br class="" /><img src="/groups/clio2usermanual/wiki/6d927/attachments/82070/badpix_substamp.fit.png" alt="Download file &quot;badpix_substamp.fit&quot;" longdesc="/groups/clio2usermanual/wiki/6d927/attachments/82070/badpix_substamp.fit" class="attachment_handle_img" title="Download file &quot;badpix_substamp.fit&quot;" /></td>
+    
+   <td>Calibrated 2013/02/13 from data from December 2012</td>
+    
+  </tr> 
+  <tr>
+    
+   <td>Linearity calibration. Documentation (PDF) and IDL code (.pro) to correct linearity.</td>
+    
+   <td><img src="/groups/clio2usermanual/wiki/6d927/attachments/69b81/linearity_clio.pdf.png" alt="Download file &quot;linearity_clio.pdf&quot;" title="Download file &quot;linearity_clio.pdf&quot;" class="attachment_handle_img quicklookable" longdesc="/groups/clio2usermanual/wiki/6d927/attachments/69b81/linearity_clio.pdf" /><br class="" /><img src="/groups/clio2usermanual/wiki/6d927/attachments/b247d/linearize_clio2.pro.png" alt="Download file &quot;linearize_clio2.pro&quot;" title="Download file &quot;linearize_clio2.pro&quot;" class="attachment_handle_img" longdesc="/groups/clio2usermanual/wiki/6d927/attachments/b247d/linearize_clio2.pro" /><br class="" />WARNING: YOU MUST FIRST DIVIDE BY THE NUMBER OF COADDS<br class="" />WARNING2: LINEARITY DATA TAKEN FOR DETECTOR TEMP=55 K and BIAS VOLTAGE VOS=2.5 V. ONLY VALID FOR THESE VALUES - CHECK YOUR FITS HEADER.</td>
+    
+   <td>Calibrated 2013/04/10 from data from April 2013 -- NOT VALID FOR 2014B DATA. Check your FITS header. The linearity data have Temp1=54.999K and VOS=2.5 Volts (Bias voltage). Only valid for these parameters.</td>
+    
+  </tr> 
+  <tr>
+    
+   <td>Plate scale and instrument angle (&quot;North_Clio&quot;), and IDL program to rotate North up (.pro).</td>
+    
+   <td>Get Platescale and NorthClio instrument angle at <a href="groups/clio2usermanual/wiki/d017e/Astrometric_Calibration.html">Astrometric Calibration</a><br class="" />DEROT = ROTOFF-180+NORTHCLIO<br class="" /><img src="/groups/clio2usermanual/wiki/6d927/attachments/63923/derot_clio.pro.png" alt="Download file &quot;derot_clio.pro&quot;" class="attachment_handle_img" longdesc="/groups/clio2usermanual/wiki/6d927/attachments/63923/derot_clio.pro" title="Download file &quot;derot_clio.pro&quot;" /><br class="" />To rotate your images to get North up:<br class="" />Rotate COUNTER-CLOCKWISE by angle DEROT.</td>
+    
+   <td>Calibrated 2013 from data from December 2012</td>
+    
+  </tr></tbody></table>
+<h2>Linearity notes:</h2><span class="custom_forecolor_important">Relevant lines of the linearity program, in IDL:<br class="" /></span><span class="custom_forecolor_emphasis">;; Linearity coefficients measured on Comm2 March-April 2013<br class="" /></span><span class="custom_backcolor_highlight">coeff3 = [112.575 , 1.00273 , -1.40776e-06 , 4.59015e-11]<br class="" /></span><span class="custom_forecolor_emphasis">;; Only apply to pixels above 27,000 counts in de-coadded frames.<br class="" /></span><span class="custom_backcolor_highlight">for n=0L,n_elements(im)-1 do if im[n] gt 2.7e4 then $</span><br class="" /><span class="custom_backcolor_highlight"></span>
+<blockquote><span class="custom_backcolor_highlight">im[n] = coeff3[0] + coeff3[1]*im[n] + coeff3[2]*im[n]^2. + coeff3[3]*im[n]^3.</span><br class="" /></blockquote><span class="custom_backcolor_highlight"></span><span class="custom_forecolor_important">LINEARITY WARNINGS:<br class="" />The linearity correction is a correction to the raw pixel count. Therefore, it must be applied to the raw pixels, after data have been de-coadded (divided by the number of coadds). The FITS keyword is called COADDS.<br class="" /></span>Also, the linearity coefficients were only fit to counts at the higher end - therefore, also do NOT apply to counts below 27,000.  The best way is to divde your frames by the number of coadds, then apply the IDL function.<br class="" />Note 2: While the linearity correction is applied to pixels above 27,000 counts, the significant linearity correction (if you look at the plots in the documentation) is only above ~40,000 counts.  Therefore, the linearity correction is a conservative approach, but when taking data, it is safe to have counts up to 40,000 for conservative linearity regime.<br class="" /><span class="custom_forecolor_important">LINEARITY VALIDITY:</span><br class="custom_forecolor_important" /><span class="custom_forecolor_important">The linearity data were taken when the detector temperature Temp1=54.999 K and the bias voltage VOS=2.5 V. These values are sometimes changed from run to run, so check your FITS headers for these keywords (TEMP1 and VOS) to see if this linearity correction is valid for your data. Katie Morzinski is working on a new linearity correction for different settings. Thanks.</span>
+<div><br class="custom_forecolor_important" />
+ <h2>Rotation notes:</h2><span class="custom_forecolor_important"><span class="custom_forecolor_emphasis">To rotate your images to get North up: Rotate COUNTERCLOCKWISE by the DEROT angle.</span></span><span class="custom_forecolor_important"><br class="" /></span>(In IDL that means you have to multiply the angle by minus one)<br class="" /><span class="custom_forecolor_important">Relevant lines of the derot (rotate-north-up) program, in IDL:<br class="" /></span><span class="custom_backcolor_highlight">angle = rotoff - 180 + north_clio<br class="" />derot_image = rot(image, -1.*angle, cubic=-0.5)<br class="" /></span><br class="" />
+ <h1>Flats</h1>
+ <table class="data __useTableEditor"><thead> 
+   <tr>
+     
+    <th>Camera</th>
+     
+    <th>Filter</th>
+     
+    <th>Flat field and Description</th>
+     
+    <th>Date</th>
+     
+    <th>Quality Note</th>
+     
+   </tr></thead><tbody> 
+   <tr>
+     
+    <td>Narrow camera</td>
+     
+   </tr> 
+   <tr>
+     
+   </tr> 
+   <tr>
+     
+    <td>Narrow</td>
+     
+    <td>H + PK50</td>
+     
+    <td><img src="/groups/clio2usermanual/wiki/6d927/attachments/e1515/HnarrowFlat_n140403_TwilightMinusDarks.fit.png" alt="Download file &quot;HnarrowFlat_n140403_TwilightMinusDarks.fit&quot;" longdesc="/groups/clio2usermanual/wiki/6d927/attachments/e1515/HnarrowFlat_n140403_TwilightMinusDarks.fit" class="attachment_handle_img" title="Download file &quot;HnarrowFlat_n140403_TwilightMinusDarks.fit&quot;" /> <br class="" /> Took 9 images (60 sec, 1 coadd) of dawn sky, subtracted mean (of 10) 60-sec darks from each, normalized all to same median, then mean-combined all 9 into 1 image, finally made the median within the good pixel region equal to 1.</td>
+     
+    <td>From twilight at end of night 2014/04/02-03 (UT 140403)</td>
+     
+    <td><br class="" /></td>
+     
+   </tr> 
+   <tr>
+     
+    <td>Narrow</td>
+     
+    <td>Ks + PK50</td>
+     
+    <td><img src="/groups/clio2usermanual/wiki/6d927/attachments/69ad8/KsNarrowFlat_n140414_TwilightMinusTwidark.fit.png" alt="Download file &quot;KsNarrowFlat_n140414_TwilightMinusTwidark.fit&quot;" title="Download file &quot;KsNarrowFlat_n140414_TwilightMinusTwidark.fit&quot;" class="attachment_handle_img" longdesc="/groups/clio2usermanual/wiki/6d927/attachments/69ad8/KsNarrowFlat_n140414_TwilightMinusTwidark.fit" /><br class="" />Took 5 images (120 sec, 1 coadd) of bright dusk sky, subtracted 5 images (120 sec, 1 coadd) of dark dusk sky, then mean combined and normalized so that the median within the good pixel region is equal to 1.</td>
+     
+    <td>From twilight at start of night 2014/04/13-14 (UT 140414)</td>
+     
+    <td>OK. Can still see thermal pupil glow in upper center. Need to try flats with mirror covers closed.</td>
+     
+   </tr> 
+   <tr>
+     
+    <td>Wide camera</td>
+     
+   </tr> 
+   <tr>
+     
+    <td>Wide</td>
+     
+    <td>Ks + PK50</td>
+     
+    <td><img src="/groups/clio2usermanual/wiki/6d927/attachments/9c769/Flat_Ks_Wide_Laird.fits.png" alt="Download file &quot;Flat_Ks_Wide_Laird.fits&quot;" title="Download file &quot;Flat_Ks_Wide_Laird.fits&quot;" longdesc="/groups/clio2usermanual/wiki/6d927/attachments/9c769/Flat_Ks_Wide_Laird.fits" class="attachment_handle_img" /></td>
+     
+    <td><br class="" /></td>
+     
+    <td><br class="" /></td>
+     
+   </tr> 
+   <tr>
+     
+    <td>Wide</td>
+     
+    <td>Ks + PK50</td>
+     
+    <td><img src="/groups/clio2usermanual/wiki/6d927/attachments/97e66/KsWideFlat_n140408_TwilightMinusDarks.fit.png" alt="Download file &quot;KsWideFlat_n140408_TwilightMinusDarks.fit&quot;" longdesc="/groups/clio2usermanual/wiki/6d927/attachments/97e66/KsWideFlat_n140408_TwilightMinusDarks.fit" class="attachment_handle_img" title="Download file &quot;KsWideFlat_n140408_TwilightMinusDarks.fit&quot;" /> <br class="" />Took 10 images (60 sec, 1 coadd) of dawn sky, subtracted mean (of 10) 60-sec darks from each, normalized all to same median, then mean-combined all 10 into 1 image, finally made the median within the good pixel region equal to 1.</td>
+     
+    <td>From twilight at end of night 2014/04/07-08 (UT 140408)</td>
+     
+    <td>Unfortunately, the darks are noisier than normal, so this set has extra noise at the high-spatial-frequencies.</td>
+     
+   </tr> 
+   <tr>
+     
+    <td>Wide</td>
+     
+    <td>Ks + PK50</td>
+     
+    <td><img src="/groups/clio2usermanual/wiki/6d927/attachments/561ab/KsWideFlat_n140408_TwilightMinusNarrowCamTwidark.fit.png" alt="Download file &quot;KsWideFlat_n140408_TwilightMinusNarrowCamTwidark.fit&quot;" class="attachment_handle_img" longdesc="/groups/clio2usermanual/wiki/6d927/attachments/561ab/KsWideFlat_n140408_TwilightMinusNarrowCamTwidark.fit" title="Download file &quot;KsWideFlat_n140408_TwilightMinusNarrowCamTwidark.fit&quot;" /><br class="" />Took 10 images (60 sec, 1 coadd) of bright dawn sky, subtracted mean (of 10) 60-sec dark-twilight(dusk)-sky in Narrow camera (Note the wrong camera), then mean-combined all 10 into 1 image, finally made the median within the good pixel region equal to 1.</td>
+     
+    <td>From twilight at end of night 2014/04/07-08 (UT 140408)</td>
+     
+    <td>Not ideal. You can see the thermal pupil glow in upper center that didn't subtract out.</td>
+     
+   </tr></tbody></table><br class="" /><br class="" />
+ <h1>User-contributed calibrations:</h1>Ks Wide -- Graeme Salter, Australia:<br class="" /><img src="/groups/clio2usermanual/wiki/6d927/attachments/bd336/Flat_Ks_Wide_Graeme.fits.png" alt="Download file &quot;Flat_Ks_Wide_Graeme.fits&quot;" title="Download file &quot;Flat_Ks_Wide_Graeme.fits&quot;" longdesc="/groups/clio2usermanual/wiki/6d927/attachments/bd336/Flat_Ks_Wide_Graeme.fits" class="attachment_handle_img" /><br class="" /><br class="" />User-contributed bad pix map -- Graeme Salter, Australia:<br class="" /><img src="/groups/clio2usermanual/wiki/6d927/attachments/e1e3c/badpix_Master_Graeme.fits.png" alt="Download file &quot;badpix_Master_Graeme.fits&quot;" class="attachment_handle_img" longdesc="/groups/clio2usermanual/wiki/6d927/attachments/e1e3c/badpix_Master_Graeme.fits" title="Download file &quot;badpix_Master_Graeme.fits&quot;" /><br class="" /><br class="" />Thanks to our users for supplying those.<br class="" /><br class="" /><br class="" />
+ <h1>All about Formats: Making Strip, Stamp, or Substamp images from Full-Frame images:</h1>
+ <p>Follow the diagrams here: <a href="groups/clio2usermanual/wiki/3a7bb/Full_Frame_and_Sub_Frame_Formats.html">Full Frame and Sub Frame Formats</a></p><br class="" /><br class="" /><br class="" /><br class="" /><br class="" /><br class="" /><br class="" />
+ <h1>Raw Calibration Files</h1>
+ <h2><a href="groups/clio2usermanual/wiki/6a22d/Calibration_Data__2014A.html">Calibration Data - 2014A</a></h2>
+ <h2><a href="groups/clio2usermanual/wiki/92355/Calibration_Data__2014B.html">Calibration Data - 2014B</a></h2>
+ <div> 
+  <h2><a href="groups/clio2usermanual/wiki/860fc/Calibration_Data__2015A.html">Calibration Data - 2015A</a></h2></div><br class="" />Created 2014/04/13, Katie Morzinski.<br class="" /><br class="" /><a href="http://www.pinterest.com/pin/create/extension/"></a><a href="http://www.pinterest.com/pin/create/extension/"></a><a href="http://www.pinterest.com/pin/create/extension/"></a><a href="http://www.pinterest.com/pin/create/extension/"></a><a href="http://www.pinterest.com/pin/create/extension/"></a><a href="http://www.pinterest.com/pin/create/extension/"></a><a href="http://www.pinterest.com/pin/create/extension/"></a><a href="http://www.pinterest.com/pin/create/extension/"></a><a href="http://www.pinterest.com/pin/create/extension/"></a><a href="http://www.pinterest.com/pin/create/extension/"></a><a href="http://www.pinterest.com/pin/create/extension/"></a><a href="http://www.pinterest.com/pin/create/extension/"></a><a href="http://www.pinterest.com/pin/create/extension/"></a></div>

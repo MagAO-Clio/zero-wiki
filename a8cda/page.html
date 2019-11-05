@@ -1,0 +1,151 @@
+
+<div class="wiki_entry"> 
+ <p><span class="Apple-style-span"><b>Astrometric parameters for the Clio2 array</b> </span></p> 
+ <div class="level1"> 
+  <p>The Clio array is a 512×1024 array. It has 18.5 micron pixels, and operates with an f/20 final focal ratio.</p></div> 
+ <div class="secedit"></div><a name="astrometric_standards"></a> 
+ <h2 class="wiki_unbold">Astrometric Standards</h2> 
+ <div class="level2"> 
+  <p>The following double stars, provided by Vanessa Bailey, may be used for plate scale calibration.</p> 
+  <table class="inline __useTableEditor data"><thead>
+    <tr>
+     
+     <th>Object Name</th>
+     
+     <th>RA</th>
+     
+     <th>Dec</th>
+     
+     <th>Epoch</th>
+     
+     <th>PM RA (mas/yr)</th>
+     
+     <th>PM Dec (mas/yr)</th>
+     
+     <th>Source</th>
+     
+    </tr></thead><tbody>
+    <tr>
+     
+     <td>HIP 56622 A</td>
+     
+     <td>174.14950197</td>
+     
+     <td>+ 56.13557459</td>
+     
+     <td>1991.25</td>
+     
+     <td>178.35</td>
+     
+     <td>92.25</td>
+     
+     <td>Hipparcos Double Star Catalogue</td>
+     
+    </tr>
+    <tr>
+     
+     <td>HIP 56622 B</td>
+     
+     <td>174.15023083</td>
+     
+     <td>+ 56.133 927 23</td>
+     
+     <td>1991.25</td>
+     
+     <td>179.09</td>
+     
+     <td>109.06</td>
+     
+     <td>Hipparcos Double Star Catalogue</td>
+     
+    </tr>
+    <tr>
+     
+     <td></td>
+     
+     <td></td>
+     
+     <td></td>
+     
+     <td></td>
+     
+     <td></td>
+     
+     <td></td>
+     
+     <td></td>
+     
+    </tr>
+    <tr>
+     
+     <td>HIP 88817</td>
+     
+     <td>271.95628810</td>
+     
+     <td>+ 26.09726716</td>
+     
+     <td>1991.25</td>
+     
+     <td>10.47</td>
+     
+     <td>29.79</td>
+     
+     <td>Hipparcos Double Star Catalogue</td>
+     
+    </tr>
+    <tr>
+     
+     <td>HIP 88818</td>
+     
+     <td>271.95651031</td>
+     
+     <td>+ 26.10122114</td>
+     
+     <td>1991.25</td>
+     
+     <td>1.92</td>
+     
+     <td>24.37</td>
+     
+     <td>Hipparcos Double Star Catalogue</td>
+     
+    </tr></tbody></table><br class="" /> 
+  <ul>
+    
+   <li class="level1"> 
+    <div class="li wiki_unbold">HIP 88817 and 88818 form a 14.2” binary with a N-S separation.</div></li>
+    
+   <li class="level1"> 
+    <div class="li wiki_unbold">HIP 88818 has a faint companion ~0.2” away, seen in n100525 data that may affect its suitability as a good astrometric calibrator</div></li>
+    
+  </ul></div> 
+ <div class="secedit"></div><a name="ari_s_list"></a> 
+ <h2 class="wiki_unbold">Ari's list</h2> 
+ <div class="level2"> 
+  <p>Clio was originally calibrated using a list of stars observed by Ari Heinze:</p><pre class="code">HD 100831: Sep = 6.159 +/- 0.011 asec, PA = 165.79 +/- 0.15 deg
+RA = 11:36:35.6938, DEC = +56:08:07.261, V = 7.3</pre><pre class="code">HD 115404: Sep = 7.532 +/- 0.050 asec, PA = 104.83 +/- 0.20 deg
+RA = 13:16:51.0523, DED = +17:01:01.857, V = 6.52</pre><pre class="code">HR 3208: Sep = 6.095 +/- 0.026 asec, PA = 71.67 +/- 0.20 deg
+RA = 08 12 12.84, DEC = +17 38 52.6, V = 5.44</pre><pre class="code">HD 71151: Sep = 5.202 +/- 0.020 asec, PA = 218.00 +/- 0.50 deg
+RA = 08 26 47.0694, DEC = +26 56 07.760, V = 6.169</pre><pre class="code">HR 8549: Sep =  4.353 +/- 0.030 asec, PA =  0.35 +/- 0.20 deg
+RA = 22 26 45.557, DEC = +37 26 37.342, V = 6.46</pre><pre class="code">HD 217890: Sep = 4.124 +/- 0.030 asec, PA = 150.48 +/- 0.20 deg
+RA = 23 03 52.182, DEC = +04 08 45.64, V = 8.95</pre><pre class="code">HD 223718: Sep = 5.651 +/- 0.015 asec, PA = 86.23 +/- 0.15 deg
+RA = 23 51 52.4004, DEC = +37 53 28.426, V = 7.0</pre></div> 
+ <div class="secedit"></div><a name="orientation"></a> 
+ <h2 class="wiki_unbold">Orientation</h2> 
+ <div class="level2"> 
+  <p>The data acquisition software carries out several manipulations of the array data prior to saving the file in FITS format. The two output channels are deinterlaced. Each data value is manipulated to give new_data=65535-data. Also the image is flipped about the vertical axis.</p> 
+  <p>After this manipulation, +elevation is up on the array. +azimuth is right on the array. This means that when the parallactic angle and rotator offset are set to zero, north will be up and east will be left on the array.</p> 
+  <p>A positive change in the parallactic angle will cause the direction of North to rotate clockwise.</p> 
+  <p>A negative change in the rotator angle will cause the direction of North to rotate clockwise.</p> 
+  <p>It is expected that, similar to Clio1, Clio2 requires a small additional rotation to result in true North corresponding to the top of the array.</p> 
+  <p>5/27/2010: T.J. Rodigas analyzed data taken for the binary star HD 223718 and found a rotational offset of 2.53 +/- 0.15 degrees. This means that data should be additionally rotated clockwise by this offset to get North up and East left. This need to be confirmed.</p> 
+  <p>The amount of clockwise rotation to apply to the image is</p> 
+  <p>clockwise_rotation = CAL + ROT - PAR</p> 
+  <p>where ROT and PAR are the FITS keywords for the rotator angle and the parallactic angle. CAL is the calibration value listed above.</p></div> 
+ <div class="secedit"></div><a name="pixel_size_and_fov"></a> 
+ <h2 class="wiki_unbold">Pixel Size and FOV</h2> 
+ <div class="level2"> 
+  <p>Based on the Clio1 calibration of 0.0484”/pixel, and assuming the pixel sizes of each detector are accurate. We expect Clio to have a plate scale of 0.02985”/pixel.</p> 
+  <p>5/27/2010: T.J. Rodigas analyzed the binary data taken for HD 223718 and measured a plate scale of 0.029914548798008 +/- 7.940510210053551e-05 “/pixel.</p> 
+  <p>This results in a FOV for the full array of 15.3”x30.6”</p></div> 
+ <p></p></div>

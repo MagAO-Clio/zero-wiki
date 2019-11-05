@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>aweinberger</string>
+	<key>authorLongName</key>
+	<string>Alycia Weinberger</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/5bd63</string>
+	<key>content</key>
+	<string>
+&lt;div class="wiki_entry"&gt; 
+ &lt;p&gt;It can be useful to use a script, for example, to take multiple nod sets with dithers in between or even take a nod set, change filter, take a nod set, dither, etc. Scripts for Clio are written in TCL.&lt;/p&gt; 
+ &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;p&gt;Sample observing scripts are on clio1.lco.cl in the directory /home/obs/Programs/ObsScripts.&lt;/p&gt; 
+ &lt;p&gt; &lt;/p&gt; 
+ &lt;ul&gt;
+   
+  &lt;li&gt;ditherscript.tcl - a simple script you can use as a template. Here is what it does:&lt;/li&gt;
+   
+  
+  &lt;ul&gt;
+    
+   &lt;li&gt;set filename prefix with &lt;i&gt;set previxtext &amp;quot;name&amp;quot; &lt;/i&gt;[set to &amp;quot;obj_&amp;quot; in the template]&lt;/li&gt;
+    
+   &lt;li&gt;set integration time with &lt;i&gt;set intent &amp;lt;inttime&amp;gt;&lt;/i&gt; [set to 1500 ms in template]&lt;/li&gt;
+    
+   &lt;li&gt;set number of coadds [10 in template]&lt;/li&gt;
+    
+   &lt;li&gt;set number of images per nod [10 in template]&lt;/li&gt;
+    
+   &lt;li&gt;set number of nod cycles [1 in template]&lt;/li&gt;
+    
+   &lt;li&gt;set dither size (in arc sec) [0.3 in template]&lt;/li&gt;
+    
+   &lt;li&gt;Loop n times [1 time in template], taking ABBA nods and dithering after each nod&lt;/li&gt;
+    
+  &lt;/ul&gt;
+   
+ &lt;/ul&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;h1&gt;Script header&lt;/h1&gt; 
+ &lt;div&gt; 
+  &lt;div&gt;#!/usr/bin/wish&lt;/div&gt; 
+  &lt;div&gt;# Declare variables:&lt;/div&gt; 
+  &lt;div&gt;global calon coaddtext darkon datacubeon impernod_stored impernod inttext movestatus prefixtext queryaoon step timeout video xnodset ynodset&lt;br class="" /&gt;&lt;/div&gt;&lt;/div&gt; 
+ &lt;div&gt;# Save TCS &amp;amp; AO header info? 0=no, 1=yes&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;div&gt;set useTCSAO 1&lt;/div&gt; 
+  &lt;div&gt;if {$useTCSAO != $queryaoon} {QueryAO}&lt;/div&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;h1&gt;Change filter&lt;/h1&gt; 
+  &lt;div&gt;&lt;/div&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;div&gt;##########################################################################&lt;/div&gt; 
+  &lt;div&gt;## 1. Select filter (choose one below)&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;######### Br Gamma + PK50 ########&lt;/div&gt; 
+  &lt;div&gt;send CLIOMOTORS definepos 3 1&lt;/div&gt; 
+  &lt;div&gt;######### J + PK50 ########&lt;/div&gt; 
+  &lt;div&gt;send CLIOMOTORS definepos 3 2&lt;/div&gt; 
+  &lt;div&gt;######### H + PK50 ########&lt;/div&gt; 
+  &lt;div&gt;send CLIOMOTORS definepos 3 3&lt;/div&gt; 
+  &lt;div&gt;######### Ks + PK50 ########&lt;/div&gt; 
+  &lt;div&gt;send CLIOMOTORS definepos 3 4&lt;/div&gt; 
+  &lt;div&gt;######### 3.1 um ########&lt;/div&gt; 
+  &lt;div&gt;send CLIOMOTORS definepos 3 5&lt;/div&gt; 
+  &lt;div&gt;######### 3.3 um ########&lt;/div&gt; 
+  &lt;div&gt;send CLIOMOTORS definepos 3 6&lt;/div&gt; 
+  &lt;div&gt;######### 3.9 um ########&lt;/div&gt; 
+  &lt;div&gt;send CLIOMOTORS definepos 3 7&lt;/div&gt; 
+  &lt;div&gt;######### L' ########&lt;/div&gt; 
+  &lt;div&gt;send CLIOMOTORS definepos 3 8&lt;/div&gt; 
+  &lt;div&gt;######### M' ########&lt;/div&gt; 
+  &lt;div&gt;send CLIOMOTORS definepos 3 9&lt;/div&gt; 
+  &lt;div&gt;######### Lspec+Clear #######&lt;/div&gt; 
+  &lt;div&gt;send CLIOMOTORS definepos 3 10&lt;/div&gt; 
+  &lt;div&gt;######### Prism+Lspec #######&lt;/div&gt; 
+  &lt;div&gt;send CLIOMOTORS definepos 3 11&lt;/div&gt; 
+  &lt;div&gt;######### Blocked ########&lt;/div&gt; 
+  &lt;div&gt;send CLIOMOTORS definepos 3 12&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;##########################################################################&lt;/div&gt; 
+  &lt;div&gt;## 2. Move to selected filter&lt;/div&gt; 
+  &lt;div&gt;send CLIOMOTORS movemotors&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;##########################################################################&lt;/div&gt; 
+  &lt;div&gt;# 3. Focus in the selected filter&lt;/div&gt; 
+  &lt;div&gt;# Check the focus, and update if not in focus&lt;/div&gt; 
+  &lt;div&gt;exec echo all | nc magadsecsup.lco.cl 7102 | grep BAYSIDE_Z &amp;gt; /tmp/tmpfocus.txt&lt;/div&gt; 
+  &lt;div&gt;&lt;span class="Apple-tab-span"&gt;	&lt;/span&gt;set fi [open &amp;quot;/tmp/tmpfocus.txt&amp;quot;]&lt;/div&gt; 
+  &lt;div&gt;&lt;span class="Apple-tab-span"&gt;	&lt;/span&gt;set focusinfo [gets $fi]&lt;/div&gt; 
+  &lt;div&gt;&lt;span class="Apple-tab-span"&gt;	&lt;/span&gt;set currentfocus [lindex $focusinfo 1]&lt;/div&gt; 
+  &lt;div&gt;&lt;span class="Apple-tab-span"&gt;	&lt;/span&gt;set newfocus [send CLIOMOTORS checkfocus]&lt;/div&gt; 
+  &lt;div&gt;&lt;span class="Apple-tab-span"&gt;	&lt;/span&gt;set focusdiff [expr {$currentfocus - $newfocus}]&lt;/div&gt; 
+  &lt;div&gt;&lt;span class="Apple-tab-span"&gt;	&lt;/span&gt;if {$focusdiff != 0} {&lt;/div&gt; 
+  &lt;div&gt;&lt;span class="Apple-tab-span"&gt; &lt;/span&gt;send CLIOMOTORS dofocus&lt;/div&gt; 
+  &lt;div&gt;&lt;span class="Apple-tab-span"&gt; &lt;/span&gt;after 5000&lt;/div&gt; 
+  &lt;div&gt;&lt;span class="Apple-tab-span"&gt;	&lt;/span&gt;}&lt;/div&gt; 
+  &lt;div&gt;##########################################################################&lt;/div&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;div&gt; 
+   &lt;h1&gt;Select file name&lt;/h1&gt; 
+   &lt;div&gt;&lt;/div&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;/div&gt; 
+  &lt;div&gt;##########################################################################&lt;/div&gt; 
+  &lt;div&gt;## FITS files named:&lt;/div&gt; 
+  &lt;div&gt;set prefixtext &amp;quot;Achernar&amp;quot;&lt;/div&gt; 
+  &lt;div&gt;UpdatePrefix&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;div&gt; 
+    &lt;h1&gt;Select integration time, coadds, cubes, cal&lt;/h1&gt; 
+    &lt;div&gt;&lt;/div&gt;&lt;/div&gt; 
+   &lt;div&gt;&lt;/div&gt;&lt;/div&gt; 
+  &lt;div&gt;##########################################################################&lt;/div&gt; 
+  &lt;div&gt;## Integration time, coadds, and cubes, and cal frames&lt;/div&gt; 
+  &lt;div&gt;set inttext 0&lt;/div&gt; 
+  &lt;div&gt;UpdateInt&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;set coaddtext 1&lt;/div&gt; 
+  &lt;div&gt;UpdateCoadd&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;## 0 = No Cube (Data Co-added like normal Coadds)&lt;/div&gt; 
+  &lt;div&gt;## 1 = Cube (Coadds saved as frames in 3-d cube)&lt;/div&gt; 
+  &lt;div&gt;set useCube 0&lt;/div&gt; 
+  &lt;div&gt;if {$useCube != $datacubeon} {CubeOn}&lt;/div&gt; 
+  &lt;div&gt;## (It's actually a toggle)&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;div&gt;## 0 = No Cal frames (Just the integration times you asked for)&lt;/div&gt; 
+   &lt;div&gt;## 1 = Cal frames (Will save a 0-second 1-coadd file at each new Nod position)&lt;/div&gt; 
+   &lt;div&gt;set useCal 0&lt;/div&gt; 
+   &lt;div&gt;if {$useCal != $calon} {CalOn}&lt;/div&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;h1&gt;Choose how many images to take at each position&lt;/h1&gt; 
+   &lt;div&gt;&lt;/div&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;/div&gt; 
+  &lt;div&gt;##########################################################################&lt;/div&gt; 
+  &lt;div&gt;## How many images do you want to take in each position?&lt;/div&gt; 
+  &lt;div&gt;set impernod 5&lt;/div&gt; 
+  &lt;div&gt;UpdateImperNod&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;div&gt; 
+    &lt;h1&gt;Set up the nod/dither vector&lt;/h1&gt; 
+    &lt;div&gt;&lt;/div&gt;&lt;/div&gt; 
+   &lt;div&gt;&lt;/div&gt;&lt;/div&gt; 
+  &lt;div&gt;##########################################################################&lt;/div&gt; 
+  &lt;div&gt;## Set up the nod vector&lt;/div&gt; 
+  &lt;div&gt;## Positive X makes the star move to the Left on the detector&lt;/div&gt; 
+  &lt;div&gt;## Positive Y makes the star move Down on the detector&lt;/div&gt; 
+  &lt;div&gt;## xy nod/dither sizes in arcseconds&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;set xsize -1.1&lt;/div&gt; 
+  &lt;div&gt;set ysize 0.4&lt;/div&gt; 
+  &lt;div&gt;set xnodset $xsize&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;set ynodset $ysize&lt;/div&gt; 
+  &lt;div&gt;UpdateNodVector&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;h1&gt;Send moves to the Bayside stages&lt;/h1&gt; 
+   &lt;div&gt;&lt;/div&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;/div&gt; 
+  &lt;div&gt;##########################################################################&lt;/div&gt; 
+  &lt;div&gt;## set dither .5&lt;/div&gt; 
+  &lt;div&gt;## Left &amp;amp; right moves the Y stage&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;## right2 moves the star to the Right&lt;/div&gt; 
+  &lt;div&gt;#send MOVEBAYSIDES right2 $dither&lt;/div&gt; 
+  &lt;div&gt;#send MOVEBAYSIDES left2 $dither&lt;/div&gt; 
+  &lt;div&gt;## Up &amp;amp; down moves the X stage:&lt;/div&gt; 
+  &lt;div&gt;#send MOVEBAYSIDES up2 $dither&lt;/div&gt; 
+  &lt;div&gt;#send MOVEBAYSIDES down2 $dither&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;h1&gt;Take data&lt;/h1&gt; 
+   &lt;div&gt;&lt;/div&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;/div&gt; 
+  &lt;div&gt;##########################################################################&lt;/div&gt; 
+  &lt;div&gt;## Take data&lt;/div&gt; 
+  &lt;div&gt;## NImg = Take data here without moving&lt;/div&gt; 
+  &lt;div&gt;#NImg&lt;/div&gt; 
+  &lt;div&gt;## NNod = AB&lt;/div&gt; 
+  &lt;div&gt;#NNod&lt;/div&gt; 
+  &lt;div&gt;## NNod_ABBA = ABBA&lt;/div&gt; 
+  &lt;div&gt;#NNod_abba&lt;/div&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;-Alycia Weinberger, 2014/04/13&lt;/div&gt; 
+ &lt;div&gt;-Katie Morzinski, 2014/10/31&lt;/div&gt; 
+ &lt;p&gt;&lt;/p&gt;&lt;/div&gt;</string>
+	<key>createdDate</key>
+	<string>2014-04-13 23:23:35.481370+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2015-05-09 10:57:37</string>
+	<key>lastVersion</key>
+	<string>15</string>
+	<key>latestVersion</key>
+	<string>14</string>
+	<key>modifiedDate</key>
+	<date>2015-05-11T05:52:11Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Observing Scripts</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/5bd63</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

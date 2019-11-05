@@ -1,0 +1,4548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>ktmorz</string>
+	<key>authorLongName</key>
+	<string>Katie Morzinski</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/3553c</string>
+	<key>content</key>
+	<string>
+
+&lt;h1&gt;clio_20141107_08&lt;/h1&gt;
+
+&lt;div&gt; 
+ &lt;h2&gt;FITS Files:&lt;/h2&gt;&lt;/div&gt;
+
+&lt;div&gt; 
+ &lt;h2&gt;File Listing:&lt;/h2&gt;&lt;/div&gt;
+
+&lt;div&gt;Get this table as a text file:&lt;/div&gt;
+
+&lt;table class="data __useTableEditor"&gt;&lt;tbody&gt;
+  &lt;tr&gt;
+    
+   &lt;th&gt;TimeStamp &lt;/th&gt;
+    
+   &lt;th&gt; FileName &lt;/th&gt;
+    
+   &lt;th&gt; Filter &lt;/th&gt;
+    
+   &lt;th&gt; Camera &lt;/th&gt;
+    
+   &lt;th&gt; Nx &lt;/th&gt;
+    
+   &lt;th&gt; Ny &lt;/th&gt;
+    
+   &lt;th&gt; Nz &lt;/th&gt;
+    
+   &lt;th&gt; Int [ms] &lt;/th&gt;
+    
+   &lt;th&gt; Number of Coadds &lt;/th&gt;
+    
+   &lt;th&gt; Counts per Coadd &lt;/th&gt;
+    
+   &lt;th&gt; Detector Temp [K] &lt;/th&gt;
+    
+   &lt;th&gt; Optics Temp [K]&lt;/th&gt;
+    
+  &lt;/tr&gt;
+
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:40:29 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00001 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 108 &lt;/td&gt;
+    
+   &lt;td&gt; 54 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 3 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5665 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3240 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9760 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:40:29 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00002 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 108 &lt;/td&gt;
+    
+   &lt;td&gt; 54 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 3 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5705 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3240 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9760 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:40:30 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00003 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 108 &lt;/td&gt;
+    
+   &lt;td&gt; 54 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 3 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5719 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3240 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9760 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:40:30 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00004 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 108 &lt;/td&gt;
+    
+   &lt;td&gt; 54 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 3 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5729 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3240 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9760 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:40:30 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00005 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 108 &lt;/td&gt;
+    
+   &lt;td&gt; 54 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 3 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5736 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3240 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9760 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:40:31 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00006 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 108 &lt;/td&gt;
+    
+   &lt;td&gt; 54 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 3 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5742 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3240 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9760 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:40:31 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00007 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 108 &lt;/td&gt;
+    
+   &lt;td&gt; 54 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 3 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5749 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3240 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9760 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:40:31 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00008 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 108 &lt;/td&gt;
+    
+   &lt;td&gt; 54 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 3 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5753 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3240 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9760 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:40:32 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00009 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 108 &lt;/td&gt;
+    
+   &lt;td&gt; 54 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 3 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5756 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3240 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9760 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:40:32 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00010 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 108 &lt;/td&gt;
+    
+   &lt;td&gt; 54 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 3 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5762 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3240 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9760 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:40:43 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00011 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 300 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 164 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5376 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3240 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9760 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:40:44 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00012 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 300 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 164 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5449 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3240 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9760 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:40:46 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00013 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 300 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 164 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5488 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3240 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9760 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:40:48 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00014 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 300 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 164 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5505 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3240 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9760 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:40:49 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00015 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 300 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 164 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5516 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3240 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9760 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:40:51 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00016 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 300 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 164 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5519 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3240 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9760 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:40:53 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00017 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 300 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 164 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5517 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3240 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9760 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:40:54 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00018 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 300 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 164 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5517 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3240 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9760 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:40:56 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00019 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 300 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 164 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5517 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3240 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9760 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:40:57 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00020 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 300 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 164 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5516 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3240 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9760 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:41:08 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00021 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 300 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 164 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5368 &lt;/td&gt;
+    
+   &lt;td&gt; 53.2990 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9990 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:41:10 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00022 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 300 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 164 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5449 &lt;/td&gt;
+    
+   &lt;td&gt; 53.2990 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9990 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:41:12 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00023 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 300 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 164 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5486 &lt;/td&gt;
+    
+   &lt;td&gt; 53.2990 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9990 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:41:14 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00024 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 300 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 164 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5502 &lt;/td&gt;
+    
+   &lt;td&gt; 53.2990 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9990 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:41:16 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00025 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 300 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 164 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5504 &lt;/td&gt;
+    
+   &lt;td&gt; 53.2990 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9990 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:41:18 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00026 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 300 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 164 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5508 &lt;/td&gt;
+    
+   &lt;td&gt; 53.2990 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9990 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:41:20 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00027 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 300 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 164 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5508 &lt;/td&gt;
+    
+   &lt;td&gt; 53.2990 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9990 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:41:22 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00028 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 300 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 164 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5507 &lt;/td&gt;
+    
+   &lt;td&gt; 53.2990 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9990 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:41:24 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00029 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 300 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 164 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5505 &lt;/td&gt;
+    
+   &lt;td&gt; 53.2990 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9990 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:41:26 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00030 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 300 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 164 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5503 &lt;/td&gt;
+    
+   &lt;td&gt; 53.2990 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9990 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:41:36 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00032 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 1 &lt;/td&gt;
+    
+   &lt;td&gt; 5404 &lt;/td&gt;
+    
+   &lt;td&gt; 53.2990 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9990 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:41:35 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00031 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 1 &lt;/td&gt;
+    
+   &lt;td&gt; 5388 &lt;/td&gt;
+    
+   &lt;td&gt; 53.2990 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9990 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:41:37 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00033 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 1 &lt;/td&gt;
+    
+   &lt;td&gt; 5431 &lt;/td&gt;
+    
+   &lt;td&gt; 53.2990 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9990 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:41:38 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00034 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 1 &lt;/td&gt;
+    
+   &lt;td&gt; 5452 &lt;/td&gt;
+    
+   &lt;td&gt; 53.2990 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9990 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:41:39 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00035 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 1 &lt;/td&gt;
+    
+   &lt;td&gt; 5467 &lt;/td&gt;
+    
+   &lt;td&gt; 53.2990 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9990 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:41:40 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00036 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 1 &lt;/td&gt;
+    
+   &lt;td&gt; 5477 &lt;/td&gt;
+    
+   &lt;td&gt; 53.2990 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9990 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:41:41 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00037 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 1 &lt;/td&gt;
+    
+   &lt;td&gt; 5485 &lt;/td&gt;
+    
+   &lt;td&gt; 53.2990 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9990 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:41:42 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00038 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 1 &lt;/td&gt;
+    
+   &lt;td&gt; 5479 &lt;/td&gt;
+    
+   &lt;td&gt; 53.2990 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9990 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:41:43 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00039 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 1 &lt;/td&gt;
+    
+   &lt;td&gt; 5487 &lt;/td&gt;
+    
+   &lt;td&gt; 53.2990 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9990 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:41:44 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00040 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 1 &lt;/td&gt;
+    
+   &lt;td&gt; 5492 &lt;/td&gt;
+    
+   &lt;td&gt; 53.2990 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9990 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:41:55 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00041 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5433 &lt;/td&gt;
+    
+   &lt;td&gt; 53.2990 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9990 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:41:58 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00042 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5513 &lt;/td&gt;
+    
+   &lt;td&gt; 53.2990 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9990 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:42:00 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00043 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5543 &lt;/td&gt;
+    
+   &lt;td&gt; 53.2990 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9990 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:42:03 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00044 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5552 &lt;/td&gt;
+    
+   &lt;td&gt; 53.2990 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9990 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:42:06 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00045 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5547 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3000 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9980 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:42:08 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00046 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5550 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3000 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9980 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:42:11 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00047 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5546 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3000 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9980 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:42:13 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00048 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5545 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3000 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9980 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:42:16 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00049 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5543 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3000 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9980 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:42:19 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00050 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5541 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3000 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9980 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:42:31 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00051 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5428 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3000 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9980 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:42:34 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00052 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5512 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3000 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9980 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:42:37 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00053 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5532 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3000 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9980 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:42:41 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00054 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5535 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3000 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9980 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:42:44 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00055 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5532 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3000 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9980 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:42:47 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00056 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5528 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3000 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9980 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:42:50 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00057 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5523 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3000 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9980 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:42:53 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00058 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5520 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3000 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9980 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:42:57 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00059 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5516 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3000 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9980 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:43:00 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00060 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5516 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3000 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9980 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:43:13 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00061 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 6 &lt;/td&gt;
+    
+   &lt;td&gt; 5410 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3030 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9950 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:43:16 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00062 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 6 &lt;/td&gt;
+    
+   &lt;td&gt; 5492 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3030 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9950 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:43:20 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00063 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 6 &lt;/td&gt;
+    
+   &lt;td&gt; 5510 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3030 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9950 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:43:24 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00064 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 6 &lt;/td&gt;
+    
+   &lt;td&gt; 5511 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3030 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9950 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:43:28 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00065 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 6 &lt;/td&gt;
+    
+   &lt;td&gt; 5505 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3030 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9950 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:43:31 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00066 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 6 &lt;/td&gt;
+    
+   &lt;td&gt; 5501 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3030 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9950 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:43:35 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00067 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 6 &lt;/td&gt;
+    
+   &lt;td&gt; 5498 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3030 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9950 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:43:39 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00068 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 6 &lt;/td&gt;
+    
+   &lt;td&gt; 5492 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3030 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9950 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:43:43 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00069 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 6 &lt;/td&gt;
+    
+   &lt;td&gt; 5491 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3030 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9950 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:43:46 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00070 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 6 &lt;/td&gt;
+    
+   &lt;td&gt; 5489 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3030 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9950 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:44:05 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00071 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 15 &lt;/td&gt;
+    
+   &lt;td&gt; 5453 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3030 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9950 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:44:13 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00072 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 15 &lt;/td&gt;
+    
+   &lt;td&gt; 5501 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3030 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9940 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:44:22 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00073 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 15 &lt;/td&gt;
+    
+   &lt;td&gt; 5495 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3030 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9940 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:44:31 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00074 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 15 &lt;/td&gt;
+    
+   &lt;td&gt; 5485 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3030 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9940 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:44:40 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00075 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 15 &lt;/td&gt;
+    
+   &lt;td&gt; 5479 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3030 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9940 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:44:49 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00076 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 15 &lt;/td&gt;
+    
+   &lt;td&gt; 5472 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3030 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9940 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:44:58 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00077 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 15 &lt;/td&gt;
+    
+   &lt;td&gt; 5466 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3030 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9940 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:45:07 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00078 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 15 &lt;/td&gt;
+    
+   &lt;td&gt; 5458 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3050 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9930 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:45:16 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00079 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 15 &lt;/td&gt;
+    
+   &lt;td&gt; 5452 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3050 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9930 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:45:25 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00080 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 15 &lt;/td&gt;
+    
+   &lt;td&gt; 5443 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3050 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9930 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:45:46 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00081 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 20 &lt;/td&gt;
+    
+   &lt;td&gt; 5410 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3050 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9930 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:45:58 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00082 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 20 &lt;/td&gt;
+    
+   &lt;td&gt; 5442 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3050 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9930 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:46:09 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00083 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 20 &lt;/td&gt;
+    
+   &lt;td&gt; 5432 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3050 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9930 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:46:21 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00084 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 20 &lt;/td&gt;
+    
+   &lt;td&gt; 5423 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3050 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9930 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:46:33 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00085 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 20 &lt;/td&gt;
+    
+   &lt;td&gt; 5413 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3050 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9930 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:46:45 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00086 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 20 &lt;/td&gt;
+    
+   &lt;td&gt; 5405 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3050 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9930 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:46:57 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00087 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 20 &lt;/td&gt;
+    
+   &lt;td&gt; 5398 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3050 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9930 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:47:08 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00088 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 20 &lt;/td&gt;
+    
+   &lt;td&gt; 5390 &lt;/td&gt;
+    
+   &lt;td&gt; 0.00000 &lt;/td&gt;
+    
+   &lt;td&gt; 0.00000 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:47:20 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00089 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 20 &lt;/td&gt;
+    
+   &lt;td&gt; 5383 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3100 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9910 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:47:32 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00090 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 280 &lt;/td&gt;
+    
+   &lt;td&gt; 20 &lt;/td&gt;
+    
+   &lt;td&gt; 5375 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3100 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9910 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:48:01 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00091 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 700 &lt;/td&gt;
+    
+   &lt;td&gt; 20 &lt;/td&gt;
+    
+   &lt;td&gt; 5266 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3100 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9910 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:48:22 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00092 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 700 &lt;/td&gt;
+    
+   &lt;td&gt; 20 &lt;/td&gt;
+    
+   &lt;td&gt; 5277 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3040 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9910 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:48:42 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00093 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 700 &lt;/td&gt;
+    
+   &lt;td&gt; 20 &lt;/td&gt;
+    
+   &lt;td&gt; 5277 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3040 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9910 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:49:02 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00094 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 700 &lt;/td&gt;
+    
+   &lt;td&gt; 20 &lt;/td&gt;
+    
+   &lt;td&gt; 5277 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3040 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9910 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:49:22 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00095 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 700 &lt;/td&gt;
+    
+   &lt;td&gt; 20 &lt;/td&gt;
+    
+   &lt;td&gt; 5278 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3080 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9890 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:49:42 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00096 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 700 &lt;/td&gt;
+    
+   &lt;td&gt; 20 &lt;/td&gt;
+    
+   &lt;td&gt; 5277 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3080 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9890 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:50:03 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00097 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 700 &lt;/td&gt;
+    
+   &lt;td&gt; 20 &lt;/td&gt;
+    
+   &lt;td&gt; 5276 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3080 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9890 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:50:23 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00098 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 700 &lt;/td&gt;
+    
+   &lt;td&gt; 20 &lt;/td&gt;
+    
+   &lt;td&gt; 5276 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3080 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9870 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:50:43 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00099 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 700 &lt;/td&gt;
+    
+   &lt;td&gt; 20 &lt;/td&gt;
+    
+   &lt;td&gt; 5274 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3080 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9870 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:51:03 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00100 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 700 &lt;/td&gt;
+    
+   &lt;td&gt; 20 &lt;/td&gt;
+    
+   &lt;td&gt; 5273 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3080 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9870 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:51:47 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00101 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 2000 &lt;/td&gt;
+    
+   &lt;td&gt; 15 &lt;/td&gt;
+    
+   &lt;td&gt; 5235 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3070 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9870 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:52:22 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00102 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 2000 &lt;/td&gt;
+    
+   &lt;td&gt; 15 &lt;/td&gt;
+    
+   &lt;td&gt; 5244 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3080 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9840 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:52:57 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00103 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 2000 &lt;/td&gt;
+    
+   &lt;td&gt; 15 &lt;/td&gt;
+    
+   &lt;td&gt; 5257 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3080 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9840 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:53:31 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00104 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 2000 &lt;/td&gt;
+    
+   &lt;td&gt; 15 &lt;/td&gt;
+    
+   &lt;td&gt; 5270 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3070 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9850 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:54:06 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00105 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 2000 &lt;/td&gt;
+    
+   &lt;td&gt; 15 &lt;/td&gt;
+    
+   &lt;td&gt; 5280 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3070 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9850 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:54:41 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00106 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 2000 &lt;/td&gt;
+    
+   &lt;td&gt; 15 &lt;/td&gt;
+    
+   &lt;td&gt; 5291 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3080 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9850 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:55:15 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00107 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 2000 &lt;/td&gt;
+    
+   &lt;td&gt; 15 &lt;/td&gt;
+    
+   &lt;td&gt; 5300 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3080 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9850 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:55:50 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00108 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 2000 &lt;/td&gt;
+    
+   &lt;td&gt; 15 &lt;/td&gt;
+    
+   &lt;td&gt; 5309 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3070 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9810 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:56:25 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00109 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 2000 &lt;/td&gt;
+    
+   &lt;td&gt; 15 &lt;/td&gt;
+    
+   &lt;td&gt; 5318 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3120 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9820 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:57:00 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00110 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 2000 &lt;/td&gt;
+    
+   &lt;td&gt; 15 &lt;/td&gt;
+    
+   &lt;td&gt; 5327 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3120 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9820 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:57:14 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00111 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 5000 &lt;/td&gt;
+    
+   &lt;td&gt; 1 &lt;/td&gt;
+    
+   &lt;td&gt; 5469 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3120 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9820 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:57:20 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00112 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 5000 &lt;/td&gt;
+    
+   &lt;td&gt; 1 &lt;/td&gt;
+    
+   &lt;td&gt; 5359 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3100 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9810 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:57:26 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00113 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 5000 &lt;/td&gt;
+    
+   &lt;td&gt; 1 &lt;/td&gt;
+    
+   &lt;td&gt; 5354 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3100 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9810 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:57:31 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00114 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 5000 &lt;/td&gt;
+    
+   &lt;td&gt; 1 &lt;/td&gt;
+    
+   &lt;td&gt; 5352 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3100 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9810 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:57:37 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00115 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 5000 &lt;/td&gt;
+    
+   &lt;td&gt; 1 &lt;/td&gt;
+    
+   &lt;td&gt; 5353 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3100 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9810 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:57:42 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00116 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 5000 &lt;/td&gt;
+    
+   &lt;td&gt; 1 &lt;/td&gt;
+    
+   &lt;td&gt; 5355 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3100 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9810 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:57:48 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00117 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 5000 &lt;/td&gt;
+    
+   &lt;td&gt; 1 &lt;/td&gt;
+    
+   &lt;td&gt; 5357 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3100 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9810 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:57:54 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00118 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 5000 &lt;/td&gt;
+    
+   &lt;td&gt; 1 &lt;/td&gt;
+    
+   &lt;td&gt; 5358 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3100 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9810 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:57:59 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00119 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 5000 &lt;/td&gt;
+    
+   &lt;td&gt; 1 &lt;/td&gt;
+    
+   &lt;td&gt; 5358 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3100 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9810 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:58:05 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00120 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 5000 &lt;/td&gt;
+    
+   &lt;td&gt; 1 &lt;/td&gt;
+    
+   &lt;td&gt; 5364 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3100 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9810 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:58:46 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00121 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 5000 &lt;/td&gt;
+    
+   &lt;td&gt; 6 &lt;/td&gt;
+    
+   &lt;td&gt; 5406 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3090 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9790 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:59:18 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00122 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 5000 &lt;/td&gt;
+    
+   &lt;td&gt; 6 &lt;/td&gt;
+    
+   &lt;td&gt; 5390 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3090 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9790 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T09:59:50 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00123 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 5000 &lt;/td&gt;
+    
+   &lt;td&gt; 6 &lt;/td&gt;
+    
+   &lt;td&gt; 5402 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3110 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9780 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:00:22 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00124 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 5000 &lt;/td&gt;
+    
+   &lt;td&gt; 6 &lt;/td&gt;
+    
+   &lt;td&gt; 5411 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3110 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9790 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:00:54 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00125 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 5000 &lt;/td&gt;
+    
+   &lt;td&gt; 6 &lt;/td&gt;
+    
+   &lt;td&gt; 5415 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3110 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9790 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:01:26 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00126 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 5000 &lt;/td&gt;
+    
+   &lt;td&gt; 6 &lt;/td&gt;
+    
+   &lt;td&gt; 5429 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3140 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9780 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:01:58 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00127 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 5000 &lt;/td&gt;
+    
+   &lt;td&gt; 6 &lt;/td&gt;
+    
+   &lt;td&gt; 5442 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3140 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9780 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:02:31 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00128 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 5000 &lt;/td&gt;
+    
+   &lt;td&gt; 6 &lt;/td&gt;
+    
+   &lt;td&gt; 5451 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3150 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9770 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:03:03 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00129 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 5000 &lt;/td&gt;
+    
+   &lt;td&gt; 6 &lt;/td&gt;
+    
+   &lt;td&gt; 5462 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3150 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9770 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:03:35 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00130 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 5000 &lt;/td&gt;
+    
+   &lt;td&gt; 6 &lt;/td&gt;
+    
+   &lt;td&gt; 5469 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3130 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9770 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:04:16 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00131 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 6000 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5527 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3130 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9770 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:04:47 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00132 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 6000 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5503 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3150 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9760 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:05:19 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00133 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 6000 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5510 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3150 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9760 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:05:51 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00134 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 6000 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5519 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3170 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9760 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:06:23 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00135 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 6000 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5530 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3170 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9760 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:06:55 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00136 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 6000 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5536 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3160 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9750 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:07:26 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00137 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 6000 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5544 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3160 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9750 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:07:58 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00138 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 6000 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5550 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3160 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9730 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:08:30 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00139 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 6000 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5556 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3190 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9740 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:09:02 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00140 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 6000 &lt;/td&gt;
+    
+   &lt;td&gt; 5 &lt;/td&gt;
+    
+   &lt;td&gt; 5567 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3190 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9740 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:10:46 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00141 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 6000 &lt;/td&gt;
+    
+   &lt;td&gt; 15 &lt;/td&gt;
+    
+   &lt;td&gt; 5607 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3200 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9710 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:12:20 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00142 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 6000 &lt;/td&gt;
+    
+   &lt;td&gt; 15 &lt;/td&gt;
+    
+   &lt;td&gt; 5613 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3230 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9710 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:13:55 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00143 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 6000 &lt;/td&gt;
+    
+   &lt;td&gt; 15 &lt;/td&gt;
+    
+   &lt;td&gt; 5633 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3250 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9710 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:15:30 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00144 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 6000 &lt;/td&gt;
+    
+   &lt;td&gt; 15 &lt;/td&gt;
+    
+   &lt;td&gt; 5654 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3230 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9700 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:17:04 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00145 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 6000 &lt;/td&gt;
+    
+   &lt;td&gt; 15 &lt;/td&gt;
+    
+   &lt;td&gt; 5672 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3280 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9680 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:17:43 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00146 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 300 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 7000 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5709 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3270 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9680 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:18:12 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00147 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 300 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 7000 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5669 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3270 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9680 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:18:41 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00148 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 300 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 7000 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5674 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3270 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9700 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:19:10 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00149 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 300 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 7000 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5680 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3270 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9700 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:19:39 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00150 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 300 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 7000 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5687 &lt;/td&gt;
+    
+   &lt;td&gt; 0.00000 &lt;/td&gt;
+    
+   &lt;td&gt; 0.00000 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:20:08 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00151 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 300 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 7000 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5692 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3290 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9670 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:20:37 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00152 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 300 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 7000 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5698 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3290 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9670 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:21:06 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00153 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 300 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 7000 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5704 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3280 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9670 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:21:34 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00154 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 300 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 7000 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5711 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3280 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9670 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:22:04 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00155 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 300 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 7000 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5717 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3290 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9650 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:22:42 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00156 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 7000 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5813 &lt;/td&gt;
+    
+   &lt;td&gt; 0.00000 &lt;/td&gt;
+    
+   &lt;td&gt; 0.00000 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:23:12 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00157 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 7000 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5772 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3320 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9670 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:23:41 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00158 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 7000 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5774 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3320 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9670 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:24:11 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00159 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 7000 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5775 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3310 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9640 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:24:40 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00160 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 7000 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5779 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3310 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9640 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:25:10 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00161 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 7000 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5783 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3330 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9640 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:25:39 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00162 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 7000 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5787 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3330 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9640 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:26:09 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00163 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 7000 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5790 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3340 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9650 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:26:38 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00164 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 7000 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5796 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3340 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9650 &lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    
+   &lt;td&gt;2014-11-08T10:27:08 &lt;/td&gt;
+    
+   &lt;td&gt; Darks00165 &lt;/td&gt;
+    
+   &lt;td&gt; Blocked &lt;/td&gt;
+    
+   &lt;td&gt; Narrow &lt;/td&gt;
+    
+   &lt;td&gt; 1024 &lt;/td&gt;
+    
+   &lt;td&gt; 512 &lt;/td&gt;
+    
+   &lt;td&gt; 0 &lt;/td&gt;
+    
+   &lt;td&gt; 7000 &lt;/td&gt;
+    
+   &lt;td&gt; 4 &lt;/td&gt;
+    
+   &lt;td&gt; 5800 &lt;/td&gt;
+    
+   &lt;td&gt; 53.3320 &lt;/td&gt;
+    
+   &lt;td&gt; 77.9650 &lt;/td&gt;
+    
+  &lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+      
+</string>
+	<key>createdDate</key>
+	<string>2015-01-13 22:51:39.787757+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2015-01-13 22:52:54</string>
+	<key>lastVersion</key>
+	<string>4</string>
+	<key>latestVersion</key>
+	<string>3</string>
+	<key>modifiedDate</key>
+	<date>2015-01-13T22:54:33Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Calibration Data clio_20141107_08</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/3553c</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

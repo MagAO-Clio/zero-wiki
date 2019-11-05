@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>ktmorz</string>
+	<key>authorLongName</key>
+	<string>Katie Morzinski</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/9ddee</string>
+	<key>content</key>
+	<string>
+&lt;div class="wiki_entry"&gt; 
+ &lt;p&gt;Diagrams of the Clio Pupil Wheel&lt;/p&gt; 
+ &lt;ul&gt;
+   
+  &lt;li&gt;Measurements:&lt;/li&gt;
+   
+  
+  &lt;ul&gt;
+    
+   &lt;li&gt;Designed in 2004 by IR Labs&lt;/li&gt;
+    
+   &lt;li&gt;Tolerance on wheel: 0.005 inch &amp;quot;5 thou&amp;quot; probably.&lt;/li&gt;
+    
+   &lt;li&gt;100 micron tolerance in alignment&lt;/li&gt;
+    
+   &lt;li&gt;Center of rotation to center of optic in slot = 1.12 inches&lt;/li&gt;
+    
+   &lt;li&gt;Diameter of wheel: 3.447 inches (inner); 3.531 inches (outer)&lt;/li&gt;
+    
+   &lt;li&gt;Slot diameter: 1.005 inches (outer); 0.875 inches (inner); Thus the lip/shelf is 1.65mm deep.&lt;/li&gt;
+    
+   &lt;li&gt;Spec given for the NRM mask: 1.00 inch plus 0.0 minus 0.002&lt;/li&gt;
+    
+   &lt;li&gt;f/16, so 1-inch field stop opening (2.54 mm) is about 50'' FoV Narrow cam&lt;/li&gt;
+    
+   &lt;li&gt;Narrow Cam Beam Dimensions:&lt;/li&gt;
+    
+   
+   &lt;ul&gt;
+     
+    &lt;li&gt;Outer diam: 3.32 mm&lt;/li&gt;
+     
+    &lt;li&gt;Inner diam: 0.97 mm&lt;/li&gt;
+     
+   &lt;/ul&gt;
+    
+   &lt;li&gt;Narrow Cam Beam Undersized for vAPP with 100um alignment tol:&lt;/li&gt;
+    
+   
+   &lt;ul&gt;
+     
+    &lt;li&gt;Outer diam: 3.22 mm&lt;/li&gt;
+     
+    &lt;li&gt;Inner diam: 1.07 mm&lt;/li&gt;
+     
+    &lt;li&gt;This equals a 33.2% obscuration&lt;/li&gt;
+     
+   &lt;/ul&gt;
+    
+   &lt;li&gt;Narrow Cam Cold Stop:&lt;/li&gt;
+    
+   
+   &lt;ul&gt;
+     
+    &lt;li&gt;Outer circle 3.32 mm&lt;/li&gt;
+     
+    &lt;li&gt;Inner circle 0.96 mm&lt;/li&gt;
+     
+   &lt;/ul&gt;
+    
+   &lt;li&gt;Wide Cam Cold Stop:&lt;/li&gt;
+    
+   
+   &lt;ul&gt;
+     
+    &lt;li&gt;Outer circle 4.33 mm&lt;/li&gt;
+     
+    &lt;li&gt;Inner circle 1.25 mm&lt;/li&gt;
+     
+    &lt;li&gt;Spiders 0.1? mm width&lt;/li&gt;
+     
+   &lt;/ul&gt;
+    
+  &lt;/ul&gt;
+   
+ &lt;/ul&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;ul&gt;
+   
+  &lt;li&gt;Diagrams dug up and/or made while creating the new vAPPs circa 2014-2015.&lt;/li&gt;
+   
+ &lt;/ul&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;img src="/groups/clio2usermanual/wiki/9ddee/images/__thumbs__/b32ae.png" name="/groups/clio2usermanual/wiki/9ddee/images/b32ae.png#721.8719016422957x541.4039262317218" title="Diagram of the Clio Pupil Wheel with Narrow and Wide camera alignment" class="thumbnail aligncenter" role="button" alt="Diagram of the Clio Pupil Wheel with Narrow and Wide camera alignment - when we were trying to determine whether we could stop down the exit aperture" longdesc="/groups/clio2usermanual/wiki/9ddee/images/b32ae.png#721.8719016422957x541.4039262317218" tabindex="0" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;img src="/groups/clio2usermanual/wiki/9ddee/images/__thumbs__/0e58a.png" name="/groups/clio2usermanual/wiki/9ddee/images/0e58a.png#747.3102066868713x526.5249176207436" title="vAPP 2" longdesc="/groups/clio2usermanual/wiki/9ddee/images/0e58a.png#747.3102066868713x526.5249176207436" role="button" alt="vAPP 2" class="aligncenter thumbnail" tabindex="0" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;img src="/groups/clio2usermanual/wiki/9ddee/images/__thumbs__/b6fc4.png" name="/groups/clio2usermanual/wiki/9ddee/images/b6fc4.png#726.1916138196765x526.5249176207436" title="Diagram of the Clio Pupil Wheel with 2 x vAPP optic." longdesc="/groups/clio2usermanual/wiki/9ddee/images/b6fc4.png#726.1916138196765x526.5249176207436" role="button" alt="Diagram of the Clio Pupil Wheel with 2 x vAPP optic." class="aligncenter thumbnail" tabindex="0" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;img src="/groups/clio2usermanual/wiki/9ddee/images/b30e7.png" title="two_app_circleplace.png" role="button" alt="Two APP circle placement" class="aligncenter" tabindex="0" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;Page created Katie Morzinski 2015/01/27&lt;/div&gt;&lt;/div&gt;</string>
+	<key>createdDate</key>
+	<string>2015-01-27 17:49:38.098159+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2015-01-27 18:20:19</string>
+	<key>lastVersion</key>
+	<string>16</string>
+	<key>latestVersion</key>
+	<string>15</string>
+	<key>modifiedDate</key>
+	<date>2015-01-27T21:08:46Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Clio Pupil Wheel</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/9ddee</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

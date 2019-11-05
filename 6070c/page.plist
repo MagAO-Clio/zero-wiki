@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>ktmorz</string>
+	<key>authorLongName</key>
+	<string>Katie Morzinski</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/6070c</string>
+	<key>content</key>
+	<string>&lt;span class="custom_forecolor_important"&gt;&lt;/span&gt;
+&lt;h2&gt;Camera Operation&lt;/h2&gt;
+&lt;div class="wiki_entry"&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;1. Choice of array / subarray size:&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;table class="inline __useTableEditor data"&gt;&lt;thead&gt;
+    &lt;tr&gt;
+     
+     &lt;th&gt;Format&lt;/th&gt;
+     
+     &lt;th&gt;Array Size&lt;/th&gt;
+     
+     &lt;th&gt;Minimum Integr. &lt;br class="" /&gt;(and readout time)&lt;/th&gt;
+     
+     &lt;th&gt;Max Coadds&lt;/th&gt;
+     
+    &lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+    &lt;tr&gt;
+     
+     &lt;td&gt;Full array&lt;/td&gt;
+     
+     &lt;td&gt;(1024x512)&lt;/td&gt;
+     
+     &lt;td&gt;280 ms&lt;/td&gt;
+     
+     &lt;td&gt;20&lt;/td&gt;
+     
+    &lt;/tr&gt;
+    &lt;tr&gt;
+     
+     &lt;td&gt;Strip&lt;/td&gt;
+     
+     &lt;td&gt;(1024x300)&lt;/td&gt;
+     
+     &lt;td&gt;164 ms&lt;/td&gt;
+     
+     &lt;td&gt;40&lt;/td&gt;
+     
+    &lt;/tr&gt;
+    &lt;tr&gt;
+     
+     &lt;td&gt;Stamp&lt;/td&gt;
+     
+     &lt;td&gt;(400x200)&lt;/td&gt;
+     
+     &lt;td&gt;43 ms&lt;/td&gt;
+     
+     &lt;td&gt;100&lt;/td&gt;
+     
+    &lt;/tr&gt;
+    &lt;tr&gt;
+     
+     &lt;td&gt;Substamp&lt;/td&gt;
+     
+     &lt;td&gt;(100x50)&lt;/td&gt;
+     
+     &lt;td&gt;3 ms&lt;/td&gt;
+     
+     &lt;td&gt;(We have tried up to 300 and it's ok)&lt;/td&gt;
+     
+    &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;u&gt;&lt;b&gt;&lt;br class="" /&gt;&lt;/b&gt;&lt;/u&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;span&gt;Strip is composed of the full width (1024 pix) and the top 300 pixels of the array.&lt;/span&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;span&gt;&lt;br class="" /&gt;&lt;/span&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;span&gt;Stamp is composed of two 200x200 square sets of pixels, located in the upper left of each half of the detector, which are saved together as a 400x200 pixel image.&lt;/span&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;span&gt;&lt;br class="" /&gt;&lt;/span&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;span&gt;SubStamp is composed of two 50x50 square sets of pixels, located in upper left of each half of the detector, which are saved together as a 100x50 pixel image.&lt;/span&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;u&gt;&lt;b&gt;&lt;br class="" /&gt;&lt;/b&gt;&lt;/u&gt;&lt;/div&gt; 
+ &lt;div&gt;2. Software / GUI Descriptions&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;b&gt;I) Clio Camera Control Program GUI&lt;/b&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;b&gt;&lt;br class="" /&gt;&lt;/b&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;span&gt;This is the main GUI for setting the observation parameters. &lt;/span&gt;To set up an imaging sequence, select an integration time (must be greater than the minimum time for the selected read-out format), number of coadds, number of images per nod, and number of nod cycles.&lt;b&gt; After entering values in the boxes, press &amp;lt;RETURN&amp;gt;.&lt;/b&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;Integration time per nod [ms] = Integration [ms] * Coadds * Images per Nod&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;No changes may be made to any of the values in this GUI while data taking is in progress. To make changes, you must first press the &amp;quot;Stop&amp;quot; button and wait for the current image to complete.&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;u&gt;Startup Buttons:&lt;/u&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;ul&gt;
+    
+   &lt;li&gt;&lt;b&gt;Reset&lt;/b&gt;: resets Clio2 electronics&lt;/li&gt;
+    
+   &lt;li&gt;&lt;b&gt;Init&lt;/b&gt;: [done automatically at startup] Allows GUI to interact with the instrument&lt;/li&gt;
+    
+  &lt;/ul&gt; 
+  &lt;div&gt;&lt;u&gt;Detector:&lt;/u&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;ul&gt;
+    
+   &lt;li&gt;&lt;b&gt;Format&lt;/b&gt;: Choose read-out format for detector (Full, strip, stamp, substamp)&lt;/li&gt;
+    
+  &lt;/ul&gt; 
+  &lt;div&gt;&lt;u&gt;Taking Data:&lt;/u&gt;&lt;/div&gt; 
+  &lt;ul&gt;
+    
+   &lt;li&gt;&lt;b&gt;Take Back&lt;/b&gt;.: Saves a sky image with current values of integration time and coadds&lt;/li&gt;
+    
+  &lt;/ul&gt;There are two way of taking continuous unsaved images (useful for acquiring/centering target and setting integration times)&lt;br class="" /&gt; 
+  &lt;ul&gt;
+    
+   &lt;li&gt;&lt;b&gt;Video&lt;/b&gt;: Uses current values (integration and coadds) and takes continuous unsaved images&lt;/li&gt;
+    
+   &lt;li&gt;&lt;b&gt;Quick Video&lt;/b&gt;: sets integration to minimum for the read-out format and coadds to 1, then takes continuous unsaved images. Stop button will return time parameters to previous values.&lt;/li&gt;
+    
+  &lt;/ul&gt; 
+  &lt;div&gt; 
+   &lt;div&gt;There are three buttons for taking data that will be saved:&lt;/div&gt; 
+   &lt;div&gt; 
+    &lt;ul&gt;
+      
+     &lt;li&gt;&lt;b&gt;Take Images&lt;/b&gt;: At the current position, takes the number of images set by &amp;quot;Images per Nod&amp;quot; where each image is taken with the current values of integration time and number of coadds&lt;/li&gt;
+      
+     &lt;li&gt;&lt;b&gt;Take Images (Nod AB)&lt;/b&gt;: Executes two sets of images. Nod A will be the current position of the target on the detector. Nod B will be xnod,ynod arcseconds away. In each position, &amp;quot;Images per Nod&amp;quot; will be saved, where each image is taken with the current values of integration time and number of coadds. After the nod, Clio will wait to take data until the AO loop closes.&lt;/li&gt;
+      
+     &lt;li&gt;&lt;b&gt;Take Images (Nod ABBA)&lt;/b&gt;: Executes four sets of images starting at the current position of the target on the detector. Nod B will be xnod,ynod arcseconds away. In each position, &amp;quot;Images per Nod&amp;quot; will be saved, where each image is taken with the current values of integration time and number of coadds. After each nod, Clio will wait to take data until the AO loop closes.&lt;/li&gt;
+      
+    &lt;/ul&gt;&lt;/div&gt; 
+   &lt;div&gt;All three types of Take Images are repeated &amp;quot;Nod cycles&amp;quot; times.&lt;/div&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;u&gt;To end data acquisition:&lt;/u&gt;&lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;ul&gt;
+     
+    &lt;li&gt;Stop: button appears after starting data acquisition (either video, taking images or a script); stops video mode or imaging (including aborting a script)&lt;/li&gt;
+     
+   &lt;/ul&gt;&lt;/div&gt;&lt;u&gt;Check Boxes:&lt;/u&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;ul&gt;
+    
+   &lt;li&gt;Use Back: In Video and Imaging mode, subtract the saved sky image before displaying&lt;/li&gt;
+    
+   &lt;li&gt;Save Data in Cubes: save every coadd in naxis3 of a single output FITS file instead of saving each coadd in its own FITS file&lt;/li&gt;
+    
+   &lt;li&gt;Take Cal. Frame: after every nod, save an image (called Prefix_calxxxxxx.fit) with the minimum integration time and current value of coadds (useful for getting unsaturated images of a target once every nod)&lt;/li&gt;
+    
+   &lt;li&gt;Tel. info in header: THIS SHOULD ALWAYS BE CHECKED WHEN CLIO IS AT THE TELESCOPE. It puts the TCS information (e.g. RA, DEC) in the Clio FITS headers&lt;/li&gt;
+    
+  &lt;/ul&gt; 
+  &lt;div&gt;&lt;u&gt;File Saving Boxes:&lt;/u&gt;&lt;/div&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;ul&gt;
+    
+   &lt;li&gt;Set Directory: choses output directory for image FITS files [note that this is done automatically for you when you start Clio, setting the directory to the current UT date, with the prefix &amp;quot;n&amp;quot;].&lt;/li&gt;
+    
+   &lt;li&gt;Set Prefix: sets the file name prefix; names will be of the form Prefixnnnnn.fit and will be numbered sequentially starting with 1 for every unique Prefix, and the ns are 0s (ie, StarName00001.fit is the first file saved).&lt;/li&gt;
+    
+   &lt;li&gt;Next Image Number: used for setting the next image number by hand instead of letting the Clio2 software use the next sequential number&lt;/li&gt;
+    
+  &lt;/ul&gt; 
+  &lt;div&gt;&lt;u&gt;Nod Parameter Boxes:&lt;/u&gt;&lt;/div&gt;&lt;/div&gt; 
+ &lt;div&gt;The current values of the nod distance are shown and may be set in the boxes:&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;ul&gt;
+    
+   &lt;li&gt;xnod (arsec)&lt;/li&gt;
+    
+   &lt;li&gt;ynod (arsec)&lt;/li&gt;
+    
+  &lt;/ul&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;span&gt;&lt;b&gt;NOTE: -x moves the star to the right on the detector; -y moves the star up on the detector&lt;/b&gt;&lt;/span&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;span&gt;&lt;b&gt;NOTE2: This is NOT the same sign convention as in the Star nudger!&lt;/b&gt;&lt;/span&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;u&gt;&lt;br class="" /&gt;&lt;/u&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;u&gt;Script:&lt;/u&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Pushing the green Script button brings up the buttons for selecting and executing a .tcl observing script&lt;/div&gt; 
+  &lt;div&gt;&lt;b&gt;&lt;u&gt;&lt;br class="" /&gt;&lt;/u&gt;&lt;/b&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;b&gt;II) Star Nudger GUI&lt;/b&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;This is the GUI for moving the telescope. There are currently two ways to use it:&lt;/div&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;ol&gt;
+    
+   &lt;li&gt;left/right or up/down: enter the distance (in arcsec) into the box and press the appropriate button. The button indicates the way the &lt;b&gt;target &lt;/b&gt;moves, not the way the telescope moves.&lt;/li&gt;
+    
+   &lt;li&gt;AutoStar: Waits for two mouse clicks in the ds9 display. The first mouse click is on the current position of the target (and displays a green circle) and the second mouse click is on the desired location of the target (and displays a blue circle). The GUI calculates the offset and presents it to the user. Then the green &amp;quot;Move&amp;quot; button will execute the offset. NOTE: +x is right on the detector and +y is up on the detector (not the same as the Nod vector convention)&lt;/li&gt;
+    
+   &lt;li&gt;Go to focus button: sets focus to the entered value&lt;/li&gt;
+    
+  &lt;/ol&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;b&gt;III) CLIO Motor Control GUI&lt;/b&gt;&lt;b&gt;&lt;u&gt;&lt;br class="" /&gt;&lt;/u&gt;&lt;/b&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;span&gt;This is the GUI for selecting the camera plate scale, filter, and pupil mask. &lt;/span&gt;The boxes turn yellow while the wheels are turning and become green when done moving. The status bar at the bottom of the GUI is also yellow when things are moving. It's fine to move multiple wheels at once, though once you click on &amp;quot;Move motors&amp;quot;, all other buttons become disabled until the movements are done.&lt;/div&gt; 
+ &lt;div&gt;&lt;span&gt;&lt;br class="" /&gt;&lt;/span&gt;&lt;/div&gt; 
+ &lt;div&gt;1. Select a camera: Hit the &amp;quot;Align Wide Camera&amp;quot; or &amp;quot;Align Narrow Camera&amp;quot; button. This will get you very close to being aligned, but extra tweeking may be necessary. See Section &lt;a href="/groups/clio2usermanual/wiki/de452/Observation_Guidelines.html"&gt;Observation Guidelines&lt;/a&gt; for instructions on how to complete the alignment.&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;ul&gt;
+    
+   &lt;li&gt;The align button will automatically choose the camera (pupil plane) and corresponding Scale. After all the wheels move, you will be left in pupil imaging mode.&lt;/li&gt;
+    
+   &lt;li&gt;When you are done aligning, to return to regular imaging, click &amp;quot;Next CW&amp;quot; on wheel 5 (Camera Lens) until you reach your desired camera (f/37.7 for narrow or f/21.5 for wide). &lt;b&gt;NOTE: Do not select the &amp;quot;Scale&amp;quot; from the button menu because that will ruin your alignment.&lt;/b&gt;&lt;/li&gt;
+    
+   &lt;li&gt;When you click &amp;quot;Align ...&amp;quot;, a window will pop up that will ask you if you're sure you want to Align.&lt;/li&gt;
+    
+   &lt;li&gt;If you change the camera by hand in the &amp;quot;Pupil Plane&amp;quot; menu, the wheel will not move until you press &amp;quot;Move motors&amp;quot;. You also then need to align by hand (see &amp;quot;Observation Guidelines&amp;quot;).&lt;/li&gt;
+    
+  &lt;/ul&gt;&lt;/div&gt; 
+ &lt;div&gt;2. To change filters, choose the &amp;quot;wavelength&amp;quot; button and select the desired filter. Then press &amp;quot;Move motors.&amp;quot; Note: If the &amp;quot;Auto Focus&amp;quot; button is checked, this should move to the correct focus as well (but sometimes it will not if AO is not accepting bayside commands). Check the focus!&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;3. Focus button: Sets the focus to the correct value for the current filter&lt;/div&gt; 
+ &lt;div&gt;&lt;span&gt;&lt;br class="" /&gt;&lt;/span&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;div&gt;&lt;b&gt;IV) Quick Analysis (cliocurrentstats GUI)&lt;/b&gt;&lt;/div&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;span&gt;This Matlab tool uses the image currently displayed in ds9 and computes and display some statistics.&lt;/span&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;b&gt;&lt;u&gt;&lt;br class="" /&gt;&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;br class="" /&gt;&lt;/div&gt;</string>
+	<key>createdDate</key>
+	<string>2014-04-16 02:12:42.705920+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2014-11-28 06:36:13</string>
+	<key>lastVersion</key>
+	<string>4</string>
+	<key>latestVersion</key>
+	<string>3</string>
+	<key>modifiedDate</key>
+	<date>2014-11-28T06:36:55Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Camera Operation</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/6070c</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

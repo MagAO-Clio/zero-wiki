@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>phinz</string>
+	<key>authorLongName</key>
+	<string>Phil Hinz</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/f7503</string>
+	<key>content</key>
+	<string>
+&lt;div class="wiki_entry"&gt; 
+ &lt;h2&gt;Clio Checkout in Clean Room &lt;/h2&gt; 
+ &lt;div&gt;All motors were confirmed to home and move to position on Nov. 19.&lt;/div&gt; 
+ &lt;div&gt;Detector is settling to ~54.5 degrees. Turned heater on &amp;quot;Low&amp;quot;. Draws 47% of power in clean room.&lt;/div&gt; 
+ &lt;div&gt;Preamp offset is too high. pixels are at 65535 for high flux (end of range for A/D).&lt;/div&gt; 
+ &lt;div&gt;Adjusted vos to 2.5 v in &amp;quot;clio.cfg&amp;quot; file. Note that the naming conventions are not correct. vos-&amp;gt;preamp offset.&lt;/div&gt; 
+ &lt;div&gt;Bias level is approximately 5,000 dn.&lt;/div&gt; 
+ &lt;div&gt;Saturation is 62,0000.&lt;/div&gt; 
+ &lt;div&gt;Noise was measured to be 10 dn in Full and 7 dn in cds.&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;h2&gt;Clio Motor check and Software Revision &lt;/h2&gt; 
+ &lt;div&gt;Nov. 20&lt;/div&gt; 
+ &lt;div&gt;Slits were mislabeled. Top level software was not correct for slits or magnification. &lt;/div&gt; 
+ &lt;div&gt;Low level commands worked well.&lt;/div&gt; 
+ &lt;div&gt;Added Top level menu for pupil wheel.&lt;/div&gt; 
+ &lt;div&gt;Adjusted timing of top level commands.&lt;/div&gt; 
+ &lt;div&gt;TODO: put in setting values for slit and pupil wheel&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;h2&gt;Clio Installation&lt;/h2&gt; 
+ &lt;div&gt;Nov. 21&lt;/div&gt; 
+ &lt;div&gt;Instrument was brought up on flatbed. Could use pickup truck from now on.&lt;/div&gt; 
+ &lt;div&gt;Strapping was changed for crane. Lift point on right was moved away from ring. More balanced.&lt;/div&gt; 
+ &lt;div&gt;Weight was ~225 lbs.&lt;/div&gt; 
+ &lt;div&gt;Used closed dome imaging at 3.4 microns for pupil alignment.&lt;/div&gt; 
+ &lt;div&gt;Pupil image was off to the right on cold stop.&lt;/div&gt; 
+ &lt;div&gt;Moved image left by removing ~13.8 mm of shims on left side of instrument.&lt;/div&gt; 
+ &lt;div&gt;Proper cold stop position found by going -12,000 then +7000 from home for vertical alignment.&lt;/div&gt; 
+ &lt;div&gt;Regular failures of SDSU communication while installing. Much better at night.&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;h2&gt;Telescope Communication and Orientation&lt;/h2&gt; 
+ &lt;div&gt;Nov. 22&lt;/div&gt; 
+ &lt;div&gt;Rotator offset is &amp;quot;rotang&amp;quot; in the server command. It defines the rotator offset relative to the cell.&lt;/div&gt; 
+ &lt;div&gt;0 degrees is Clio with tubes up and telescope at zenith.&lt;/div&gt; 
+ &lt;div&gt;+rotang moves Clio counterclockwise.&lt;/div&gt; 
+ &lt;div&gt;server is magadsecsup.lco.cl 7102&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;Needed:&lt;/div&gt; 
+ &lt;div&gt;Based on the MMT orientation, the Clio detector should have +el to right and +az up (N right E down when PA=0).&lt;/div&gt; 
+ &lt;div&gt;-&amp;gt; Need to flip -u-d and then rotate 90 degrees CCW, or rotate 90 CCW and then flip l-r.&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;Solution:&lt;/div&gt; 
+ &lt;div&gt;flip L-R was in code. Removed. Put in 90 deg. CW rotation. N up E left when PA = 0.&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;Put in focus command to starnudger. Tested offset commands via starnudger&lt;/div&gt;
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;
+ &lt;h2&gt;CRO imaging on Clio&lt;/h2&gt;
+ &lt;div&gt;-H moves star up &lt;/div&gt;
+ &lt;div&gt;-V moves star right on Clio&lt;/div&gt;
+ &lt;div&gt;starting position: V=-144, H=113 x,y=618,68&lt;/div&gt;
+ &lt;div&gt;Better position: V=-134, H=83, x,y=680,223. Bayside: 18.5,10.5, z=45&lt;/div&gt;
+ &lt;div&gt;Z6=+0.2, Z7=-0.1, Z8=-0.1&lt;/div&gt;
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;&lt;/div&gt;</string>
+	<key>createdDate</key>
+	<string>2012-11-20 21:13:04.439211+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>phinz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>phinz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2012-11-24 05:00:57</string>
+	<key>lastVersion</key>
+	<string>12</string>
+	<key>latestVersion</key>
+	<string>11</string>
+	<key>modifiedDate</key>
+	<date>2012-11-24T05:27:26Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Phils Notes Nov. 2012</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/f7503</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

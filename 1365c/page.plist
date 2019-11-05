@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>ktmorz</string>
+	<key>authorLongName</key>
+	<string>Katie Morzinski</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/1365c</string>
+	<key>content</key>
+	<string>
+&lt;h1&gt;clio_20141108_09&lt;/h1&gt;
+&lt;div&gt; 
+ &lt;h2&gt;FITS Files:&lt;/h2&gt;&lt;/div&gt;
+&lt;div&gt;&lt;img src="/groups/clio2usermanual/wiki/1365c/attachments/bb9fe/clio_20141108_09_calibrations_Darks_test.zip.png" title="Download file &amp;quot;clio_20141108_09_calibrations_Darks_test.zip&amp;quot;" class="attachment_handle_img" longdesc="/groups/clio2usermanual/wiki/1365c/attachments/bb9fe/clio_20141108_09_calibrations_Darks_test.zip" alt="Download file &amp;quot;clio_20141108_09_calibrations_Darks_test.zip&amp;quot;" /&gt;(130.5 MB)&lt;br class="" /&gt;&lt;/div&gt;
+&lt;div&gt; 
+ &lt;h2&gt;File Listing:&lt;/h2&gt;&lt;/div&gt;
+&lt;div&gt;Get this table as a text file:&lt;/div&gt;</string>
+	<key>createdDate</key>
+	<string>2015-01-13 22:58:19.824734+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2015-01-13 23:00:31</string>
+	<key>lastVersion</key>
+	<string>4</string>
+	<key>latestVersion</key>
+	<string>3</string>
+	<key>modifiedDate</key>
+	<date>2015-01-13T23:01:54Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Calibration Data clio_20141108_09</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/1365c</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

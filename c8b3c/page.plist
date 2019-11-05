@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>ktmorz</string>
+	<key>authorLongName</key>
+	<string>Katie Morzinski</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/c8b3c</string>
+	<key>content</key>
+	<string>
+&lt;div class="wiki_entry"&gt;
+ &lt;h1&gt;Index of the Clio2 User Manual&lt;/h1&gt;&lt;/div&gt;</string>
+	<key>createdDate</key>
+	<string>2015-01-27 18:11:31.049359+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2015-01-27 18:11:46</string>
+	<key>lastVersion</key>
+	<string>3</string>
+	<key>latestVersion</key>
+	<string>2</string>
+	<key>modifiedDate</key>
+	<date>2015-01-27T18:12:37Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Index</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/c8b3c</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

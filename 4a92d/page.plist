@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>ktmorz</string>
+	<key>authorLongName</key>
+	<string>Katie Morzinski</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/4a92d</string>
+	<key>content</key>
+	<string>
+&lt;div class="wiki_entry"&gt; 
+ &lt;h1&gt;Symptoms:&lt;/h1&gt; 
+ &lt;div&gt;Unable to query AO so not saving data -- but didn't say that, kept running script until it got to the end and I looked for the data and found it wasn't there. File numbers WERE incrementing where it says &amp;quot;Name of next file&amp;quot; Ran through whole script, saying &amp;quot;Clio take images complete&amp;quot; after each nimg.&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;Second day: Same problem. New manifestation: &lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;h1&gt;Diagnostics on Clio:&lt;/h1&gt; 
+ &lt;h2&gt;Error in Clio Command Line xterm:&lt;/h2&gt; 
+ &lt;p&gt;&lt;/p&gt; 
+ &lt;p&gt;Enter the number of images to take: 1 2 3 4 5 6 7 8 9 10 &lt;/p&gt; 
+ &lt;p&gt;Saving file /home/obs/Data/clio20141030_31/39NarrowFocus00029.fit &lt;/p&gt; 
+ &lt;p&gt;Error: unable to query ao system for status.&lt;/p&gt; 
+ &lt;p&gt;Check ao_com.log for details.&lt;/p&gt; 
+ &lt;p&gt;0 images taken.&lt;/p&gt; 
+ &lt;p&gt;Error: Failed in taking n images.&lt;/p&gt; 
+ &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;p&gt;------------------------------------------------------------------------------------&lt;/p&gt; 
+ &lt;p&gt;&lt;/p&gt; 
+ &lt;p&gt;1 Succeeded in doing video mode.&lt;/p&gt; 
+ &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;p&gt; Querying AO system for header values.&lt;/p&gt; 
+ &lt;p&gt; Size: (1024,512), Coadds: 1, File: /home/obs/Data/clio20141031_01/test00002.fit&lt;/p&gt; 
+ &lt;p&gt; Int: 280, Use dark: True, Nod: beam 0, ra -12.12, dec 0.98&lt;/p&gt; 
+ &lt;p&gt; Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod&lt;/p&gt; 
+ &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;p&gt;Enter Selection: coadds&lt;/p&gt; 
+ &lt;p&gt;1&lt;/p&gt; 
+ &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;p&gt;Enter new number of coadds (cur 1): Succeeded in setting number of coadds.&lt;/p&gt; 
+ &lt;p&gt;&lt;/p&gt; 
+ &lt;p&gt; Querying AO system for header values.&lt;/p&gt; 
+ &lt;p&gt; Size: (1024,512), Coadds: 1, File: /home/obs/Data/clio20141031_01/test00002.fit&lt;/p&gt; 
+ &lt;p&gt; Int: 280, Use dark: True, Nod: beam 0, ra -12.12, dec 0.98&lt;/p&gt; 
+ &lt;p&gt; Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod&lt;/p&gt; 
+ &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;p&gt;Enter Selection: int&lt;/p&gt; 
+ &lt;p&gt;0&lt;/p&gt; 
+ &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;p&gt;Enter new integration time (cur 280 milisec): &lt;/p&gt; 
+ &lt;p&gt;Setting integration time to minimum possible&lt;/p&gt; 
+ &lt;p&gt;Succeeded in setting integration time.&lt;/p&gt; 
+ &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;p&gt;Enter Selection: prefix&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;div&gt; 
+  &lt;div&gt;Achernar&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter prefix for image files (cur test): (default: &amp;quot;clio&amp;quot;): Setting image number to 1.&lt;/div&gt; 
+  &lt;div&gt;Succeeded in setting prefix.&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt; Querying AO system for header values.&lt;/div&gt; 
+  &lt;div&gt; Size: (1024,512), Coadds: 1, File: /home/obs/Data/clio20141031_01/Achernar00001.fit&lt;/div&gt; 
+  &lt;div&gt; Int: 280, Use dark: True, Nod: beam 0, ra -12.12, dec 0.98&lt;/div&gt; 
+  &lt;div&gt; Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter Selection: int&lt;/div&gt; 
+  &lt;div&gt;0&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter new integration time (cur 280 milisec): &lt;/div&gt; 
+  &lt;div&gt;Setting integration time to minimum possible&lt;/div&gt; 
+  &lt;div&gt;Succeeded in setting integration time.&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt; Querying AO system for header values.&lt;/div&gt; 
+  &lt;div&gt; Size: (1024,512), Coadds: 1, File: /home/obs/Data/clio20141031_01/Achernar00001.fit&lt;/div&gt; 
+  &lt;div&gt; Int: 280, Use dark: True, Nod: beam 0, ra -12.12, dec 0.98&lt;/div&gt; 
+  &lt;div&gt; Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter Selection: coadds&lt;/div&gt; 
+  &lt;div&gt;1&lt;/div&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;div&gt;Enter new number of coadds (cur 1): Succeeded in setting number of coadds.&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt; Querying AO system for header values.&lt;/div&gt; 
+  &lt;div&gt; Size: (1024,512), Coadds: 1, File: /home/obs/Data/clio20141031_01/Achernar00001.fit&lt;/div&gt; 
+  &lt;div&gt; Int: 280, Use dark: True, Nod: beam 0, ra -12.12, dec 0.98&lt;/div&gt; 
+  &lt;div&gt; Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter Selection: nod off&lt;/div&gt; 
+  &lt;div&gt;1.2&lt;/div&gt; 
+  &lt;div&gt;-0.98&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter nod RA (cur -12.12 asec): Enter nod Dec (cur 0.98 asec): Succeeded in setting nod offset.&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt; Querying AO system for header values.&lt;/div&gt; 
+  &lt;div&gt; Size: (1024,512), Coadds: 1, File: /home/obs/Data/clio20141031_01/Achernar00001.fit&lt;/div&gt; 
+  &lt;div&gt; Int: 280, Use dark: True, Nod: beam 0, ra 1.20, dec -0.98&lt;/div&gt; 
+  &lt;div&gt; Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter Selection: nnod&lt;/div&gt; 
+  &lt;div&gt;1&lt;/div&gt; 
+  &lt;div&gt;1&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter the number of images to take per nod: Enter the number of nod pairs to take: 1 &lt;/div&gt; 
+  &lt;div&gt;Saving file /home/obs/Data/clio20141031_01/Achernar00001.fit &lt;/div&gt; 
+  &lt;div&gt;Error: unable to query ao system for status.&lt;/div&gt; 
+  &lt;div&gt;Check ao_com.log for details.&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Aborting nimg.&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt; Querying AO system for header values.&lt;/div&gt; 
+  &lt;div&gt; Size: (1024,512), Coadds: 1, File: /home/obs/Data/clio20141031_01/Achernar00002.fit&lt;/div&gt; 
+  &lt;div&gt; Int: 280, Use dark: True, Nod: beam 0, ra 1.20, dec -0.98&lt;/div&gt; 
+  &lt;div&gt; Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod&lt;/div&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;div&gt;Enter Selection: &lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Error: Unknown command &amp;quot;&amp;quot;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;elapsed time = 0.980000 sec, 980.000000 msec/frame &lt;/div&gt; 
+  &lt;div&gt;1 images taken.&lt;/div&gt; 
+  &lt;div&gt;Total exposure= 0.280 Efficiency= 0.29&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Succeeded in taking n images.&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;div&gt;Enter Selection: nod off&lt;/div&gt; 
+  &lt;div&gt;-1.2&lt;/div&gt; 
+  &lt;div&gt;0.98&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter nod RA (cur 1.20 asec): Enter nod Dec (cur -0.98 asec): Succeeded in setting nod offset.&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter Selection: nnod&lt;/div&gt; 
+  &lt;div&gt;1&lt;/div&gt; 
+  &lt;div&gt;1&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter the number of images to take per nod: Enter the number of nod pairs to take: 1 &lt;/div&gt; 
+  &lt;div&gt;Saving file /home/obs/Data/clio20141031_01/Achernar00003.fit &lt;/div&gt; 
+  &lt;div&gt;. 1 &lt;/div&gt; 
+  &lt;div&gt;Saving file /home/obs/Data/clio20141031_01/Achernar00004.fit &lt;/div&gt; 
+  &lt;div&gt;.1 images taken.&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;div&gt; Querying AO system for header values.&lt;/div&gt; 
+  &lt;div&gt; Size: (1024,512), Coadds: 1, File: /home/obs/Data/clio20141031_01/Achernar00005.fit&lt;/div&gt; 
+  &lt;div&gt; Int: 280, Use dark: True, Nod: beam 2, ra -1.20, dec 0.98&lt;/div&gt; 
+  &lt;div&gt; Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter Selection: int&lt;/div&gt; 
+  &lt;div&gt;0&lt;/div&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;div&gt;Enter Selection: coadds&lt;/div&gt; 
+  &lt;div&gt;1&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter new number of coadds (cur 1): Succeeded in setting number of coadds.&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt; Querying AO system for header values.&lt;/div&gt; 
+  &lt;div&gt; Size: (1024,512), Coadds: 1, File: /home/obs/Data/clio20141031_01/Achernar00005.fit&lt;/div&gt; 
+  &lt;div&gt; Int: 280, Use dark: True, Nod: beam 2, ra -1.20, dec 0.98&lt;/div&gt; 
+  &lt;div&gt; Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter Selection: prefix&lt;/div&gt; 
+  &lt;div&gt;Achernar&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter prefix for image files (cur Achernar): (default: &amp;quot;clio&amp;quot;): Setting image number to 1.&lt;/div&gt; 
+  &lt;div&gt;Succeeded in setting prefix.&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt; Querying AO system for header values.&lt;/div&gt; 
+  &lt;div&gt; Size: (1024,512), Coadds: 1, File: /home/obs/Data/clio20141031_01/Achernar00001.fit&lt;/div&gt; 
+  &lt;div&gt; Int: 280, Use dark: True, Nod: beam 2, ra -1.20, dec 0.98&lt;/div&gt; 
+  &lt;div&gt; Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter Selection: int&lt;/div&gt; 
+  &lt;div&gt;0&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter new integration time (cur 280 milisec): &lt;/div&gt; 
+  &lt;div&gt;Setting integration time to minimum possible&lt;/div&gt; 
+  &lt;div&gt;Succeeded in setting integration time.&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt; Querying AO system for header values.&lt;/div&gt; 
+  &lt;div&gt; Size: (1024,512), Coadds: 1, File: /home/obs/Data/clio20141031_01/Achernar00001.fit&lt;/div&gt; 
+  &lt;div&gt; Int: 280, Use dark: True, Nod: beam 2, ra -1.20, dec 0.98&lt;/div&gt; 
+  &lt;div&gt; Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter Selection: coadds&lt;/div&gt; 
+  &lt;div&gt;10&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter new number of coadds (cur 1): Succeeded in setting number of coadds.&lt;/div&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;div&gt; Querying AO system for header values.&lt;/div&gt; 
+  &lt;div&gt; Size: (1024,512), Coadds: 10, File: /home/obs/Data/clio20141031_01/Achernar00001.fit&lt;/div&gt; 
+  &lt;div&gt; Int: 280, Use dark: True, Nod: beam 2, ra -1.20, dec 0.98&lt;/div&gt; 
+  &lt;div&gt; Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter Selection: nod off&lt;/div&gt; 
+  &lt;div&gt;1.2&lt;/div&gt; 
+  &lt;div&gt;-0.98&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter nod RA (cur -1.20 asec): Enter nod Dec (cur 0.98 asec): Succeeded in setting nod offset.&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt; Querying AO system for header values.&lt;/div&gt; 
+  &lt;div&gt; Size: (1024,512), Coadds: 10, File: /home/obs/Data/clio20141031_01/Achernar00001.fit&lt;/div&gt; 
+  &lt;div&gt; Int: 280, Use dark: True, Nod: beam 2, ra 1.20, dec -0.98&lt;/div&gt; 
+  &lt;div&gt; Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter Selection: nnod&lt;/div&gt; 
+  &lt;div&gt;3&lt;/div&gt; 
+  &lt;div&gt;1&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter the number of images to take per nod: Enter the number of nod pairs to take: 1 2 3 4 5 6&lt;/div&gt; 
+  &lt;div&gt; 7 8 9 10 &lt;/div&gt; 
+  &lt;div&gt;Saving file /home/obs/Data/clio20141031_01/Achernar00001.fit &lt;/div&gt; 
+  &lt;div&gt;. 1 2 3 4 5 6 7 8 9 10 &lt;/div&gt; 
+  &lt;div&gt;Saving file /home/obs/Data/clio20141031_01/Achernar00002.fit &lt;/div&gt; 
+  &lt;div&gt;Error: fits function returns 115 for file /home/obs/Data/clio20141031_01/Achernar00002.fit.&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;FITSIO status = 115: NULL input pointer&lt;/div&gt; 
+  &lt;div&gt;failed to create new file (already exists?):&lt;/div&gt; 
+  &lt;div&gt;/home/obs/Data/clio20141031_01/Achernar00002.fit&lt;/div&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;div&gt;Error: unable to write to /home/obs/Data/clio20141031_01/Achernar00002.fit.Check to see that file do&lt;/div&gt; 
+  &lt;div&gt;esn't already exist.&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Aborting nimg.&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt; Querying AO system for header values.&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt; Size: (1024,512), Coadds: 10, File: /home/obs/Data/clio20141031_01/Achernar00003.fit&lt;/div&gt; 
+  &lt;div&gt; Int: 280, Use dark: True, Nod: beam 0, ra 1.20, dec -0.98&lt;/div&gt; 
+  &lt;div&gt; Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter Selection: &lt;/div&gt; 
+  &lt;div&gt;Error: Unknown command &amp;quot;&amp;quot;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt; Querying AO system for header values.&lt;/div&gt; 
+  &lt;div&gt; Size: (1024,512), Coadds: 10, File: /home/obs/Data/clio20141031_01/Achernar00003.fit&lt;/div&gt; 
+  &lt;div&gt; Int: 280, Use dark: True, Nod: beam 0, ra 1.20, dec -0.98&lt;/div&gt; 
+  &lt;div&gt; Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter Selection: prefix&lt;/div&gt; 
+  &lt;div&gt;Achernar&lt;/div&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;div&gt;Enter prefix for image files (cur Achernar): (default: &amp;quot;clio&amp;quot;): Setting image number to 5.&lt;/div&gt; 
+  &lt;div&gt;Succeeded in setting prefix.&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt; Querying AO system for header values.&lt;/div&gt; 
+  &lt;div&gt; Size: (1024,512), Coadds: 10, File: /home/obs/Data/clio20141031_01/Achernar00005.fit&lt;/div&gt; 
+  &lt;div&gt; Int: 280, Use dark: True, Nod: beam 0, ra 1.20, dec -0.98&lt;/div&gt; 
+  &lt;div&gt; Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter Selection: int&lt;/div&gt; 
+  &lt;div&gt;0&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter new integration time (cur 280 milisec): &lt;/div&gt; 
+  &lt;div&gt;Setting integration time to minimum possible&lt;/div&gt; 
+  &lt;div&gt;Succeeded in setting integration time.&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt; Querying AO system for header values.&lt;/div&gt; 
+  &lt;div&gt; Size: (1024,512), Coadds: 10, File: /home/obs/Data/clio20141031_01/Achernar00005.fit&lt;/div&gt; 
+  &lt;div&gt; Int: 280, Use dark: True, Nod: beam 0, ra 1.20, dec -0.98&lt;/div&gt; 
+  &lt;div&gt; Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter Selection: coadds&lt;/div&gt; 
+  &lt;div&gt;10&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter new number of coadds (cur 10): Succeeded in setting number of coadds.&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt; Querying AO system for header values.&lt;/div&gt; 
+  &lt;div&gt; Size: (1024,512), Coadds: 10, File: /home/obs/Data/clio20141031_01/Achernar00005.fit&lt;/div&gt; 
+  &lt;div&gt; Int: 280, Use dark: True, Nod: beam 0, ra 1.20, dec -0.98&lt;/div&gt; 
+  &lt;div&gt; Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod&lt;/div&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;div&gt;Enter Selection: nod off&lt;/div&gt; 
+  &lt;div&gt;1.2&lt;/div&gt; 
+  &lt;div&gt;-0.98&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter nod RA (cur 1.20 asec): Enter nod Dec (cur -0.98 asec): Succeeded in setting nod offset.&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt; Querying AO system for header values.&lt;/div&gt; 
+  &lt;div&gt; Size: (1024,512), Coadds: 10, File: /home/obs/Data/clio20141031_01/Achernar00005.fit&lt;/div&gt; 
+  &lt;div&gt; Int: 280, Use dark: True, Nod: beam 0, ra 1.20, dec -0.98&lt;/div&gt; 
+  &lt;div&gt; Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter Selection: nnod&lt;/div&gt; 
+  &lt;div&gt;3&lt;/div&gt; 
+  &lt;div&gt;1&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter the number of images to take per nod: Enter the number of nod pairs to take: 1 2 3 4 5 6 7 8 9 10 &lt;/div&gt; 
+  &lt;div&gt;Saving file /home/obs/Data/clio20141031_01/Achernar00005.fit &lt;/div&gt; 
+  &lt;div&gt;. 1 2 3 4 5 6 7 8 9 10 &lt;/div&gt; 
+  &lt;div&gt;Saving file /home/obs/Data/clio20141031_01/Achernar00006.fit &lt;/div&gt; 
+  &lt;div&gt;. 1 2 3 4 5 6 7 8 9 10 &lt;/div&gt; 
+  &lt;div&gt;Saving file /home/obs/Data/clio20141031_01/Achernar00007.fit &lt;/div&gt; 
+  &lt;div&gt;. 1 2 3 4 5 6 7 8 9 10 &lt;/div&gt; 
+  &lt;div&gt;Saving file /home/obs/Data/clio20141031_01/Achernar00008.fit &lt;/div&gt; 
+  &lt;div&gt;. 1 2 3 4 5 6 7 8 9 10 &lt;/div&gt; 
+  &lt;div&gt;Saving file /home/obs/Data/clio20141031_01/Achernar00009.fit &lt;/div&gt; 
+  &lt;div&gt;. 1 2 3 4 5 6 7 8 9 10 &lt;/div&gt; 
+  &lt;div&gt;Saving file /home/obs/Data/clio20141031_01/Achernar00010.fit &lt;/div&gt; 
+  &lt;div&gt;.1 images taken.&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt; Querying AO system for header values.&lt;/div&gt; 
+  &lt;div&gt; Size: (1024,512), Coadds: 10, File: /home/obs/Data/clio20141031_01/Achernar00011.fit&lt;/div&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;div&gt; Int: 280, Use dark: True, Nod: beam 2, ra 1.20, dec -0.98&lt;/div&gt; 
+  &lt;div&gt; Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter Selection: &lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Error: Unknown command &amp;quot;&amp;quot;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt; Querying AO system for header values.&lt;/div&gt; 
+  &lt;div&gt; Size: (1024,512), Coadds: 10, File: /home/obs/Data/clio20141031_01/Achernar00011.fit&lt;/div&gt; 
+  &lt;div&gt; Int: 280, Use dark: True, Nod: beam 2, ra 1.20, dec -0.98&lt;/div&gt; 
+  &lt;div&gt; Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Enter Selection: &lt;/div&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;p&gt;------------------------------------------------------------------------------------&lt;/p&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;h2&gt;Error in ao_comm.log:&lt;/h2&gt; 
+ &lt;div&gt; 
+  &lt;div&gt;[obs@clio1 Programs]$ tail -20 ao_com.log&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Error: failed to write complete request to socket. 4 chars left.&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;10/31/2014 03:17:38: /home/obs/MBEcode/ao_comm//ao_sock.c line 234&lt;/div&gt; 
+  &lt;div&gt;Sending to server:&lt;/div&gt; 
+  &lt;div&gt;All&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;10/31/2014 03:17:38: /home/obs/MBEcode/ao_comm//ao_sock.c line 106&lt;/div&gt; 
+  &lt;div&gt;Error: failed to write complete request to socket. 4 chars left.&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;10/31/2014 03:17:52: /home/obs/MBEcode/ao_comm//ao_sock.c line 234&lt;/div&gt; 
+  &lt;div&gt;Sending to server:&lt;/div&gt; 
+  &lt;div&gt;All&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;10/31/2014 03:17:52: /home/obs/MBEcode/ao_comm//ao_sock.c line 106&lt;/div&gt; 
+  &lt;div&gt;Error: failed to write complete request to socket. 4 chars left.&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;--------------------------------------------------------------------------------------------&lt;/div&gt; 
+ &lt;div&gt;DAY 3:&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;div&gt;11/01/2014 21:24:23: /home/obs/MBEcode/ao_comm//ao_sock.c line 302&lt;/div&gt; 
+  &lt;div&gt;Error: Read on socket failed. Returned -1&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;ALSO happening when clicking &amp;quot;Take Images&amp;quot;&lt;/div&gt; 
+ &lt;div&gt;and it updated the file number and said it took images.&lt;/div&gt; 
+ &lt;div&gt;Again I only noticed when I went to look for the FITS files and they weren't there.&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;div&gt;11/02/2014 02:50:37: /home/obs/MBEcode/ao_comm//ao_sock.c line 234&lt;/div&gt; 
+  &lt;div&gt;Sending to server:&lt;/div&gt; 
+  &lt;div&gt;All&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;11/02/2014 02:50:37: /home/obs/MBEcode/ao_comm//ao_sock.c line 302&lt;/div&gt; 
+  &lt;div&gt;Error: Read on socket failed. Returned 0&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;11/02/2014 02:50:37: /home/obs/MBEcode/ao_comm//ao_sock.c line 203&lt;/div&gt; 
+  &lt;div&gt;Got from server:&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;11/02/2014 02:52:09: /home/obs/MBEcode/ao_comm//ao_sock.c line 234&lt;/div&gt; 
+  &lt;div&gt;Sending to server:&lt;/div&gt; 
+  &lt;div&gt;All&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;11/02/2014 02:52:09: /home/obs/MBEcode/ao_comm//ao_sock.c line 106&lt;/div&gt; 
+  &lt;div&gt;Error: failed to write complete request to socket. 4 chars left.&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;11/02/2014 02:58:32: /home/obs/MBEcode/ao_comm//ao_cli.c line 100&lt;/div&gt; 
+  &lt;div&gt;Opened socket connection to AO system at 139.229.110.35, port 7102.&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;&lt;/div&gt;
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;
+ &lt;div&gt;
+  &lt;div&gt; Querying AO system for header values.&lt;/div&gt;
+  &lt;div&gt; Size: (1024,512), Coadds: 10, File: /home/obs/Data/clio20141101_02/TrapWide00002.fit&lt;/div&gt;
+  &lt;div&gt; Int: 280, Use dark: False, Nod: beam 0, ra -7.40, dec 0.81&lt;/div&gt;
+  &lt;div&gt; Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod&lt;/div&gt;
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;
+  &lt;div&gt;Enter Selection: &lt;/div&gt;
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;
+  &lt;div&gt;Error: Unknown command &amp;quot;&amp;quot;&lt;/div&gt;
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;div&gt;--------------------------------------------------------------------------------------------&lt;/div&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;h1&gt;Diagnostics of &amp;quot;all&amp;quot; command to MMTI:&lt;/h1&gt; 
+ &lt;div&gt; 
+  &lt;ul&gt;
+    
+   &lt;li&gt;Jared is seeing an &amp;quot;all&amp;quot; request from Clio every 3 seconds.&lt;/li&gt;
+    
+   &lt;li&gt;The error about &amp;quot;4 chars left&amp;quot; means it didn't receive ANY of the command since the command &amp;quot;/all&amp;quot; is 4 characters.&lt;/li&gt;
+    
+   &lt;li&gt;Other Clio computer communications seem fine -- Guanaco is running clio just fine, Transfer files is running smoothly, etc.&lt;/li&gt;
+    
+  &lt;/ul&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;&lt;/div&gt; 
+ &lt;h1&gt;Only working solutions:&lt;/h1&gt; 
+ &lt;div&gt; 
+  &lt;ul&gt;
+    
+   &lt;li&gt;Killclio&lt;/li&gt;
+    
+  &lt;/ul&gt;&lt;/div&gt; 
+ &lt;div&gt;Or&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;ul&gt;
+    
+   &lt;li&gt;Close camera control program, restart MMTI, restart Clio component.&lt;/li&gt;
+    
+  &lt;/ul&gt;&lt;/div&gt; 
+ &lt;div&gt;As according to &lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/66709/Troubleshooting_Pages.html"&gt;http://zero.as.arizona.edu/groups/clio2usermanual/wiki/66709/Troubleshooting_Pages.html&lt;/a&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;h2&gt;Unsatisfactory because:&lt;/h2&gt; 
+ &lt;div&gt; 
+  &lt;ul&gt;
+    
+   &lt;li&gt;Have to killclio&lt;/li&gt;
+    
+   &lt;li&gt;Doesn't warn you when ao_com error keeps from saving data&lt;/li&gt;
+    
+  &lt;/ul&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;-Katie Morzinski, 2014/10/31&lt;/div&gt;&lt;/div&gt;</string>
+	<key>createdDate</key>
+	<string>2014-10-31 06:32:08.893877+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2014-11-02 08:16:08</string>
+	<key>lastVersion</key>
+	<string>18</string>
+	<key>latestVersion</key>
+	<string>17</string>
+	<key>modifiedDate</key>
+	<date>2014-11-02T08:16:26Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>AO comm errors</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/4a92d</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>ktmorz</string>
+	<key>authorLongName</key>
+	<string>Katie Morzinski</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/3bdd4</string>
+	<key>content</key>
+	<string>
+&lt;h1&gt;User's Guides&lt;/h1&gt;
+&lt;ul&gt;
+  
+ &lt;li&gt;&lt;a href="/groups/clio2usermanual/wiki/33b3c/Beginning_of_the_Night_Checklist.html"&gt;Beginning of the Night Checklist&lt;/a&gt;&lt;/li&gt;
+  
+ 
+ &lt;ul&gt;
+   
+  &lt;li&gt;How to start up Clio2&lt;/li&gt;
+   
+ &lt;/ul&gt;
+  
+ &lt;li&gt;&lt;a href="/groups/clio2usermanual/wiki/15d15/Using_Clio_Cookbook.html"&gt;Using Clio Cookbook&lt;/a&gt;&lt;/li&gt;
+  
+ 
+ &lt;ul&gt;
+   
+  &lt;li&gt;A quick guide to taking data, once you're on sky and ready to go&lt;/li&gt;
+   
+ &lt;/ul&gt;
+  
+ &lt;li&gt;&lt;a href="/groups/clio2usermanual/wiki/6070c/Camera_Operation.html"&gt;Camera Operation&lt;/a&gt;&lt;/li&gt;
+  
+ 
+ &lt;ul&gt;
+   
+  &lt;li&gt;Info about the Array and Subarray sizes and Co-adds allowed&lt;/li&gt;
+   
+  &lt;li&gt;How to run the camera through the GUI&lt;/li&gt;
+   
+ &lt;/ul&gt;
+  
+ &lt;li&gt;&lt;a href="/groups/clio2usermanual/wiki/5bd63/Observing_Scripts.html"&gt;Observing Scripts&lt;/a&gt;&lt;/li&gt;
+  
+ 
+ &lt;ul&gt;
+   
+  &lt;li&gt;How to run the camera through scripts&lt;/li&gt;
+   
+ &lt;/ul&gt;
+  
+ &lt;li&gt;&lt;a href="/groups/clio2usermanual/wiki/3f15c/PSF_Switching.html"&gt;PSF Stars (Switching stars quickly)&lt;br class="" /&gt;&lt;/a&gt;&lt;/li&gt;
+  
+ 
+ &lt;ul&gt;
+   
+  &lt;li&gt;How to take PSF stars, i.e. How to work with the AO operator and TO to reduce overheads in order to quickly acquire a PSF star (only works when the target star is a similar brightness and in a similar part of the sky)&lt;/li&gt;
+   
+ &lt;/ul&gt;
+  
+ &lt;li&gt;Spectroscopy&lt;/li&gt;
+  
+&lt;/ul&gt;
+&lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt;
+&lt;p&gt;Random note:&lt;/p&gt;
+&lt;p&gt;Which file is being used to subtract the background?&lt;/p&gt;
+&lt;p&gt;Check Programs/mirkwood_persist.cfg&lt;/p&gt;
+&lt;p&gt;It's the one in this line:&lt;br class="" /&gt;&lt;/p&gt;
+&lt;p&gt;dark_fn dark0.fit&lt;br class="" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  
+&lt;/ul&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h1&gt;Info&lt;/h1&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+  
+ &lt;li&gt;&lt;a href="/groups/clio2usermanual/wiki/52ac4/Filters.html"&gt;Filters Info&lt;/a&gt; -- List of which filters we have in the 2 wheels, also includes filter curves&lt;/li&gt;
+  
+ &lt;li&gt; 
+  &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/d481f/Pupil_Stops.html"&gt;Pupil Stops&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;
+  
+ &lt;li&gt; 
+  &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/2b8d0/Readout_Efficiency.html"&gt;Readout Efficiency Tests&lt;/a&gt; -- Also includes info about what the various combinations of Nimg, Coadds, and Cubes mean for your data taking.&lt;br class="" /&gt;&lt;/div&gt;&lt;/li&gt;
+  
+&lt;/ul&gt;
+&lt;h1&gt;&lt;br class="" /&gt;&lt;/h1&gt;
+&lt;h1&gt;Data Reduction&lt;/h1&gt;
+&lt;ul&gt;
+  
+ &lt;li&gt;&lt;a href="/groups/clio2usermanual/wiki/07e7e/Orientation_true_North.html"&gt;Orientation (true North)&lt;/a&gt;&lt;/li&gt;
+  
+ &lt;li&gt;Non-linearity/Saturation: Pixels above 27000 DN are non-linear and must be corrected. Conservatively, pixels above ~45000 should be considered saturated because they can not be corrected to high precision. (See more at &lt;a href="/groups/clio2usermanual/wiki/6d927/Calibration_Data.html"&gt;Calibration Data&lt;/a&gt;)&lt;/li&gt;
+  
+ &lt;li&gt;&lt;a href="/groups/clio2usermanual/wiki/6d927/Calibration_Data.html"&gt;Calibration Data&lt;/a&gt; - Bad pixel map, astrometric calibration, linearity, flat fields, etc. Also links to raw calibration data such as &lt;a href="/groups/clio2usermanual/wiki/6a22d/Calibration_Data__2014A.html"&gt;Calibration Data - 2014A&lt;/a&gt;&lt;/li&gt;
+  
+ &lt;li&gt;&lt;a href="/groups/clio2usermanual/wiki/3a7bb/Full_Frame_and_Sub_Frame_Formats.html"&gt;Full Frame and Sub Frame Formats&lt;/a&gt; - Info about Full Frame, Strip, Stamp, and Substamp Mode&lt;/li&gt;
+  
+&lt;/ul&gt;
+&lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  
+&lt;/ul&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h1&gt;User's Resources&lt;/h1&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+  
+ &lt;li&gt;Magellan Weather Info&lt;/li&gt;
+  
+ 
+ &lt;ul&gt;
+   
+  &lt;li&gt;&lt;a href="http://pipeline.lco.cl/site/gmtsite/developer/testplot/WEATHER/test.html"&gt;Magellan telescopes weather station: All-inclusive weather info&lt;/a&gt;&lt;/li&gt;
+   
+  &lt;li&gt;&lt;a href="http://weather.lco.cl/"&gt;Las Campanas weather info (old page)&lt;/a&gt;&lt;/li&gt;
+   
+  &lt;li&gt;&lt;a href="http://www.lco.cl/observer-information/environmental-information/"&gt;Environmental information page&lt;/a&gt;&lt;/li&gt;
+   
+  &lt;li&gt;&lt;a href="https://www.eso.org/gen-fac/pubs/astclim/forecast/meteo/ERASMUS/las_fore.txt"&gt;Precipital Water Vapor at La Silla&lt;/a&gt;&lt;/li&gt;
+   
+ &lt;/ul&gt;
+  
+ &lt;li&gt; 
+  &lt;div&gt;L' and M' photometric standards&lt;/div&gt;&lt;/li&gt;
+  
+ 
+ &lt;ul&gt;
+   
+  &lt;li&gt; 
+   &lt;div&gt;&lt;img src="/groups/clio2usermanual/wiki/welcome/attachments/fda56/Leggett2003.pdf.png" alt="Download file &amp;quot;Leggett2003.pdf&amp;quot;" class="attachment_handle_img quicklookable" longdesc="/groups/clio2usermanual/wiki/welcome/attachments/fda56/Leggett2003.pdf" title="Download file &amp;quot;Leggett2003.pdf&amp;quot;" /&gt; &lt;/div&gt; &lt;/li&gt;
+   
+ &lt;/ul&gt;
+  
+ 
+ &lt;ul&gt;
+   
+ &lt;/ul&gt;
+  
+&lt;/ul&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;</string>
+	<key>createdDate</key>
+	<string>2014-04-16 02:07:26.206535+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2014-07-17 23:19:33</string>
+	<key>lastVersion</key>
+	<string>33</string>
+	<key>latestVersion</key>
+	<string>32</string>
+	<key>modifiedDate</key>
+	<date>2014-11-25T08:00:15Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Observing Pages</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/3bdd4</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

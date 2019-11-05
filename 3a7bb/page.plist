@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>ktmorz</string>
+	<key>authorLongName</key>
+	<string>Katie Morzinski</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/3a7bb</string>
+	<key>content</key>
+	<string>&amp;quot;Format&amp;quot; is the detector sub-array that is read out during a Clio observation.  This page has diagrams to illustrate the exact pixels that fall in the different detector formats: Strip, Stamp, and Substamp. &lt;br class="" /&gt;&lt;br class="" /&gt;&lt;img src="/groups/clio2usermanual/wiki/6d927/images/__thumbs__/36de0.png" name="/groups/clio2usermanual/wiki/6d927/images/36de0.png#655.1563469027485x331.6579016189005" title="Full Frame" longdesc="/groups/clio2usermanual/wiki/6d927/images/36de0.png#655.1563469027485x331.6579016189005" role="button" alt="Full Frame" class="aligncenter thumbnail" tabindex="0" /&gt;&lt;br class="" /&gt;&lt;img src="/groups/clio2usermanual/wiki/6d927/images/__thumbs__/c0809.png" name="/groups/clio2usermanual/wiki/6d927/images/c0809.png#655.1563469027485x331.6579016189005" title="Strip Mode" longdesc="/groups/clio2usermanual/wiki/6d927/images/c0809.png#655.1563469027485x331.6579016189005" role="button" alt="Strip Mode" class="aligncenter thumbnail" tabindex="0" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;img src="/groups/clio2usermanual/wiki/6d927/images/__thumbs__/f4702.png" name="/groups/clio2usermanual/wiki/6d927/images/f4702.png#655.1563469027485x331.6579016189005" title="Stamp Mode" longdesc="/groups/clio2usermanual/wiki/6d927/images/f4702.png#655.1563469027485x331.6579016189005" role="button" alt="Stamp Mode" class="aligncenter thumbnail" tabindex="0" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;img src="/groups/clio2usermanual/wiki/6d927/images/__thumbs__/1f530.png" name="/groups/clio2usermanual/wiki/6d927/images/1f530.png#657.0762189815844x331.6579016189005" title="Sub-stamp Mode" longdesc="/groups/clio2usermanual/wiki/6d927/images/1f530.png#657.0762189815844x331.6579016189005" role="button" alt="Sub-stamp Mode" class="aligncenter thumbnail" tabindex="0" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;img src="/groups/clio2usermanual/wiki/6d927/images/__thumbs__/7c4da.png" name="/groups/clio2usermanual/wiki/6d927/images/7c4da.png#664.7557072969279x331.6579016189005" title="Half-way Across" longdesc="/groups/clio2usermanual/wiki/6d927/images/7c4da.png#664.7557072969279x331.6579016189005" role="button" alt="Half-way Across" class="aligncenter thumbnail" tabindex="0" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;img src="/groups/clio2usermanual/wiki/6d927/images/__thumbs__/96359.png" name="/groups/clio2usermanual/wiki/6d927/images/96359.png#684x380.1346716095068" title="Dimensions" longdesc="/groups/clio2usermanual/wiki/6d927/images/96359.png#684x380.1346716095068" role="button" alt="Dimensions" class="aligncenter thumbnail" tabindex="0" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;img src="/groups/clio2usermanual/wiki/6d927/images/__thumbs__/916ac.png" name="/groups/clio2usermanual/wiki/6d927/images/916ac.png#736.2709422335649x445.89029030963616" title="Coordinates in IDL" longdesc="/groups/clio2usermanual/wiki/6d927/images/916ac.png#736.2709422335649x445.89029030963616" role="button" alt="Coordinates in IDL" class="aligncenter thumbnail" tabindex="0" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;img src="/groups/clio2usermanual/wiki/6d927/images/__thumbs__/13a90.png" name="/groups/clio2usermanual/wiki/6d927/images/13a90.png#736.2709422335649x445.89029030963616" title="Coordinates in IRAF" longdesc="/groups/clio2usermanual/wiki/6d927/images/13a90.png#736.2709422335649x445.89029030963616" role="button" alt="Coordinates in IRAF" class="aligncenter thumbnail" tabindex="0" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;Created 2014/05/09, Katie Morzinski.&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;</string>
+	<key>createdDate</key>
+	<string>2014-07-16 22:00:13.001094+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2014-07-16 22:19:49</string>
+	<key>lastVersion</key>
+	<string>6</string>
+	<key>latestVersion</key>
+	<string>5</string>
+	<key>modifiedDate</key>
+	<date>2014-07-16T22:20:09Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Full Frame and Sub Frame Formats</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/3a7bb</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>ktmorz</string>
+	<key>authorLongName</key>
+	<string>Katie Morzinski</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/7faa9</string>
+	<key>content</key>
+	<string>&lt;a href="/groups/clio2usermanual/wiki/2d16d/Aligning_Wide_and_Narrow_Cameras.html"&gt;&lt;/a&gt;
+&lt;h3&gt;Set Focus&lt;/h3&gt;
+&lt;h3&gt;- every time you change filters - &lt;/h3&gt;&lt;br class="" /&gt;
+&lt;div&gt;Send focus offsets from the Clio GUI to set the focus to the value indicated in the table below. To get the current bayside Z focus position, either ask the AO operator use the BoardGUI on aosup@magswfssup.lco.cl.&lt;/div&gt;&lt;br class="" /&gt;
+&lt;div&gt;&lt;b&gt;Focus Values (May 2015)&lt;/b&gt;&lt;/div&gt;
+&lt;table class="data __useTableEditor"&gt;&lt;thead&gt;
+  &lt;tr&gt;
+   
+   &lt;th&gt;Filter&lt;/th&gt;
+   
+   &lt;th&gt;Wide (f/21) &lt;br class="" /&gt;Bayside Z [mm]&lt;/th&gt;
+   
+   &lt;th&gt;Narrow (f/37) &lt;br class="" /&gt;Bayside Z [mm]&lt;/th&gt;
+   
+  &lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+  &lt;tr&gt;
+   
+   &lt;td&gt;J&lt;/td&gt;
+   
+   &lt;td&gt;not Nyquist&lt;/td&gt;
+   
+   &lt;td&gt;35.4&lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td&gt;H&lt;/td&gt;
+   
+   &lt;td&gt;34.0&lt;/td&gt;
+   
+   &lt;td&gt;34.7&lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td&gt;BrG&lt;/td&gt;
+   
+   &lt;td&gt;33.2&lt;/td&gt;
+   
+   &lt;td&gt;35.0&lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td&gt;Ks&lt;/td&gt;
+   
+   &lt;td&gt;33.1&lt;/td&gt;
+   
+   &lt;td&gt;34.9&lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td&gt;3.1&lt;/td&gt;
+   
+   &lt;td&gt;33.7&lt;/td&gt;
+   
+   &lt;td&gt;34.4&lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td&gt;3.3&lt;/td&gt;
+   
+   &lt;td&gt;33.3&lt;/td&gt;
+   
+   &lt;td&gt;34.3&lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td&gt;Lspec&lt;/td&gt;
+   
+   &lt;td&gt;33.3&lt;/td&gt;
+   
+   &lt;td&gt;34.3&lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td&gt;L'&lt;/td&gt;
+   
+   &lt;td&gt;33.4&lt;/td&gt;
+   
+   &lt;td&gt;34.1&lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td&gt;L' + 0.1%&lt;/td&gt;
+   
+   &lt;td&gt;33.5&lt;/td&gt;
+   
+   &lt;td&gt;34.2&lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td&gt;L' + 4.4%&lt;/td&gt;
+   
+   &lt;td&gt;33.1&lt;/td&gt;
+   
+   &lt;td&gt;33.8&lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td&gt;3.9&lt;/td&gt;
+   
+   &lt;td&gt;33.3&lt;/td&gt;
+   
+   &lt;td&gt;34.3&lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td&gt;M'&lt;/td&gt;
+   
+   &lt;td&gt;32.5&lt;/td&gt;
+   
+   &lt;td&gt;34.0&lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td&gt;M' + 0.1%&lt;/td&gt;
+   
+   &lt;td&gt;32.6&lt;/td&gt;
+   
+   &lt;td&gt;34.1&lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td&gt;M' + 4.4%&lt;/td&gt;
+   
+   &lt;td&gt;32.1&lt;/td&gt;
+   
+   &lt;td&gt;33.6&lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td&gt;3.9 + vAPP A1&lt;/td&gt;
+   
+   &lt;td&gt;&lt;/td&gt;
+   
+   &lt;td&gt;33.8&lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td&gt;Prism&lt;/td&gt;
+   
+   &lt;td&gt;&lt;/td&gt;
+   
+   &lt;td&gt;&lt;/td&gt;
+   
+  &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;* = Inferred from other values&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;a href="/groups/clio2usermanual/wiki/79c98/Historical_Focus_Positions.html"&gt;Historical Focus Positions&lt;/a&gt;&lt;br class="" /&gt;</string>
+	<key>createdDate</key>
+	<string>2014-04-21 10:08:18.070114+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2015-05-05 22:43:40</string>
+	<key>lastVersion</key>
+	<string>6</string>
+	<key>latestVersion</key>
+	<string>5</string>
+	<key>modifiedDate</key>
+	<date>2015-05-05T22:44:21Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Current Focus Positions</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/7faa9</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

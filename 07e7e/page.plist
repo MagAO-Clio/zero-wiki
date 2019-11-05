@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>trodigas</string>
+	<key>authorLongName</key>
+	<string>T.J. Rodigas</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/07e7e</string>
+	<key>content</key>
+	<string>
+&lt;div class="wiki_entry"&gt; 
+ &lt;p&gt;To obtain North-up, East-left on Clio images, you need to rotate your images COUNTERCLOCKWISE by the following:&lt;/p&gt; 
+ &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;p&gt; DEROT = ROTOFF - 180 + NORTH_CLIO&lt;br class="" /&gt;&lt;/p&gt;&lt;img src="/groups/clio2usermanual/wiki/6d927/attachments/63923/derot_clio.pro.png" alt="Download file &amp;quot;derot_clio.pro&amp;quot;" longdesc="/groups/clio2usermanual/wiki/6d927/attachments/63923/derot_clio.pro" class="attachment_handle_img" title="Download file &amp;quot;derot_clio.pro&amp;quot;" /&gt;&lt;br class="" /&gt;To rotate your images to get North up:&lt;br class="" /&gt;Rotate COUNTER-CLOCKWISE by angle DEROT. &lt;br class="" /&gt; 
+ &lt;p&gt;where ROTOFF is the keyword in the header file (= PARANG when the rotator angle = 0).&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;p&gt;Values for NORTHCLIO:&lt;/p&gt; 
+ &lt;p&gt;NorthClio = -1.80 +/- 0.10 deg&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;Wide Camera&lt;br class="" /&gt;&lt;br class="" /&gt;platescale = 0.02749 +/- 0.00012 arcsec/pix&lt;br class="" /&gt;&lt;br class="" /&gt;platescale = 27.49 +/- 0.12 mas/pix&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;Narrow Camera&lt;br class="" /&gt;&lt;br class="" /&gt;platescale = 0.01585 +/- 0.00004 arcsec/pix&lt;br class="" /&gt;&lt;br class="" /&gt;platescale = 15.85 +/- 0.04 mas/pix&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;p&gt;Katie Morzinski, 2014/07/16&lt;/p&gt; 
+ &lt;p&gt;Modified 2014/09/25 -- Typo in angle, fixed. Was OK at &lt;a href="http://zero.as.arizona.edu/groups/clio2usermanual/wiki/07e7e/Orientation_true_North.html"&gt;http://zero.as.arizona.edu/groups/clio2usermanual/wiki/07e7e/Orientation_true_North.html&lt;/a&gt;&lt;br class="" /&gt;&lt;/p&gt;&lt;/div&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;</string>
+	<key>createdDate</key>
+	<string>2013-04-12 19:45:04.117082+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2014-09-26 02:09:43</string>
+	<key>lastVersion</key>
+	<string>10</string>
+	<key>latestVersion</key>
+	<string>9</string>
+	<key>modifiedDate</key>
+	<date>2014-09-26T02:15:40Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Orientation (true North)</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/07e7e</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

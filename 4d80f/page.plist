@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>phinz</string>
+	<key>authorLongName</key>
+	<string>Phil Hinz</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/4d80f</string>
+	<key>content</key>
+	<string>
+&lt;div class="wiki_entry"&gt; 
+ &lt;p&gt; &lt;/p&gt; 
+ &lt;p class="p1"&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;h2&gt;Unpacking and Assembly&lt;/h2&gt; 
+ &lt;p class="p2"&gt;· Unpacked Clio, Rack crate and cart crate: no damage. Drop and Tells were torn off. &lt;/p&gt; 
+ &lt;p class="p2"&gt;· Assembled Clio and cart and stored empty crates in La Bodega&lt;/p&gt; 
+ &lt;p class="p1"&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;h2&gt;Electronics&lt;/h2&gt; 
+ &lt;p class="p2"&gt;· Assembled 2 ea 15 ft power cables and 2ea 15 ft coolant hoses. Red is Feed, Blue is return &lt;/p&gt; 
+ &lt;p class="p2"&gt;· Sealed the umbilical port on Rack&lt;/p&gt; 
+ &lt;p class="p2"&gt;· Used spacer and tie wraps to secure motor D connectors on CLIO so they will not accidentally come off during operation&lt;/p&gt; 
+ &lt;p class="p2"&gt;· We changed the O-rings to Viton for cooling line in Rack&lt;/p&gt; 
+ &lt;p class="p2"&gt;· Transported the Rack to the Telescope, connected the coolant hoses, connected power and turned on the pump. There were no leaks and the rack had the usual vibration. There was no vibration on platform (used hands).&lt;/p&gt; 
+ &lt;p class="p2"&gt;· Returned the Rack to the clean room and continued with Clio testing&lt;/p&gt; 
+ &lt;p class="p2"&gt;· Assembled Grounding straps with eyelets for controller grounding to Clio and tied wire bundles on Clio&lt;/p&gt; 
+ &lt;p class="p1"&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;h2&gt;Testing&lt;/h2&gt; 
+ &lt;p class="p2"&gt;· Confirmed motors worked at room temperature and at cryo&lt;/p&gt; 
+ &lt;p class="p2"&gt;· Confirmed that server worked&lt;/p&gt; 
+ &lt;p class="p2"&gt;· Confirmed that temp sensors were working.&lt;/p&gt; 
+ &lt;p class="p2"&gt;· Confirmed that detector worked at room temperature worked at room temperature&lt;/p&gt; 
+ &lt;p class="p2"&gt;· Took noise measurements of detector was able to achieve 6.5 dn&lt;/p&gt; 
+ &lt;p class="p1"&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;h2&gt;Software and Server&lt;/h2&gt; 
+ &lt;p class="p2"&gt;· Server network would not come up after re-power fixed in os to come up as default&lt;/p&gt; 
+ &lt;p class="p2"&gt;· Cleaned up tcl program so it reads clio and power ups only detector controller, and motor supply’s&lt;/p&gt; 
+ &lt;p class="p2"&gt;· Set server up to static IP address that was given by Magellan&lt;/p&gt; 
+ &lt;p class="p2"&gt;· Confirmed that it could be accessed remotely both ssh and xterm&lt;/p&gt; 
+ &lt;p class="p1"&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;h2&gt;Staff Training&lt;/h2&gt; 
+ &lt;p class="p2"&gt;· Manny wrote procedures for set- up and operation and instructed the megellan crew on the cooling procedures, he then oversaw them go through the cooling process.&lt;/p&gt; 
+ &lt;p class="p2"&gt;· Manny gave a nice presentation/briefing on Clio and how to support it.&lt;/p&gt; 
+ &lt;p class="p2"&gt;· Staff should be trained in both day to day operations of keeping CLIO cold during observation and also were instructed in initial pumping and cooling of CLIO at the beginning of the run. &lt;/p&gt; 
+ &lt;p class="p2"&gt;· Did a test lift of CLIO off the cart so staff could see and feel how CLIO reacted when attached to a crane in preparation of installing to MagAO&lt;/p&gt; 
+ &lt;p class="p1"&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;h2&gt;Other Task&lt;/h2&gt; 
+ &lt;p class="p2"&gt;· climbed Mount GMT&lt;/p&gt; 
+ &lt;p class="p2"&gt;* Spare parts kit was given to Megellan Crew and we have lots of pictures of every task.&lt;/p&gt;&lt;/div&gt;</string>
+	<key>createdDate</key>
+	<string>2012-11-21 17:37:47.157623+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>phinz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>phinz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2012-11-21 17:39:58</string>
+	<key>lastVersion</key>
+	<string>4</string>
+	<key>latestVersion</key>
+	<string>3</string>
+	<key>modifiedDate</key>
+	<date>2012-11-21T17:42:01Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Richard and Manny's Notes</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/4d80f</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

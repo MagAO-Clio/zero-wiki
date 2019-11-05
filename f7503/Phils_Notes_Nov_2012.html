@@ -1,0 +1,56 @@
+<html>
+<head><title>Phils_Notes_Nov_2012</title><base href="../"/></head>
+<div class="wiki_entry">
+<h2>Clio Checkout in Clean Room </h2>
+<div>All motors were confirmed to home and move to position on Nov. 19.</div>
+<div>Detector is settling to ~54.5 degrees. Turned heater on "Low". Draws 47% of power in clean room.</div>
+<div>Preamp offset is too high. pixels are at 65535 for high flux (end of range for A/D).</div>
+<div>Adjusted vos to 2.5 v in "clio.cfg" file. Note that the naming conventions are not correct. vos-&gt;preamp offset.</div>
+<div>Bias level is approximately 5,000 dn.</div>
+<div>Saturation is 62,0000.</div>
+<div>Noise was measured to be 10 dn in Full and 7 dn in cds.</div>
+<div><br class=""/></div>
+<h2>Clio Motor check and Software Revision </h2>
+<div>Nov. 20</div>
+<div>Slits were mislabeled. Top level software was not correct for slits or magnification. </div>
+<div>Low level commands worked well.</div>
+<div>Added Top level menu for pupil wheel.</div>
+<div>Adjusted timing of top level commands.</div>
+<div>TODO: put in setting values for slit and pupil wheel</div>
+<div><br class=""/></div>
+<h2>Clio Installation</h2>
+<div>Nov. 21</div>
+<div>Instrument was brought up on flatbed. Could use pickup truck from now on.</div>
+<div>Strapping was changed for crane. Lift point on right was moved away from ring. More balanced.</div>
+<div>Weight was ~225 lbs.</div>
+<div>Used closed dome imaging at 3.4 microns for pupil alignment.</div>
+<div>Pupil image was off to the right on cold stop.</div>
+<div>Moved image left by removing ~13.8 mm of shims on left side of instrument.</div>
+<div>Proper cold stop position found by going -12,000 then +7000 from home for vertical alignment.</div>
+<div>Regular failures of SDSU communication while installing. Much better at night.</div>
+<div>Noise was measured to be 15 dn in Full and 10 dn in CDS.</div>
+<div><br class=""/></div>
+<h2>Telescope Communication and Orientation</h2>
+<div>Nov. 22</div>
+<div>Rotator offset is "rotang" in the server command. It defines the rotator offset relative to the cell.</div>
+<div>0 degrees is Clio with tubes up and telescope at zenith.</div>
+<div>+rotang moves Clio counterclockwise.</div>
+<div>server is magadsecsup.lco.cl 7102</div>
+<div><br class=""/></div>
+<div>Needed:</div>
+<div>Based on the MMT orientation, the Clio detector should have +el to right and +az up (N right E down when PA=0).</div>
+<div>-&gt; Need to flip -u-d and then rotate 90 degrees CCW, or rotate 90 CCW and then flip l-r.</div>
+<div><br class=""/></div>
+<div>Solution:</div>
+<div>flip L-R was in code. Removed. Put in 90 deg. CW rotation. N up E left when PA = 0.</div>
+<div><br class=""/></div>
+<div>Put in focus command to starnudger. Tested offset commands via starnudger</div>
+<div><br class=""/></div>
+<h2>CRO imaging on Clio</h2>
+<div>-H moves star up </div>
+<div>-V moves star right on Clio</div>
+<div>starting position: V=-144, H=113 x,y=618,68</div>
+<div>Better position: V=-134, H=83, x,y=680,223. Bayside: 18.5,10.5, z=45</div>
+<div>Z6=+0.2, Z7=-0.1, Z8=-0.1</div>
+<div><br class=""/></div>
+<div><br class=""/></div></div></html>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>ktmorz</string>
+	<key>authorLongName</key>
+	<string>Katie Morzinski</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/6218f</string>
+	<key>content</key>
+	<string>
+&lt;div class="wiki_entry"&gt; 
+ &lt;h1&gt;Spectroscopy&lt;/h1&gt;
+ &lt;div&gt;Spectroscopy is done with a prism+Lspec filter and a slit.&lt;/div&gt;
+ &lt;div&gt;We have 3 slits that are oriented vertically. &lt;/div&gt;
+ &lt;div&gt;In the Narrow cam the slit is at the left edge of the frame and the spectrum is dispersed to the right. &lt;/div&gt;
+ &lt;div&gt;In the Wide cam the slit is approximately in the middle of the frame.&lt;/div&gt;
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;h2&gt;Lspec filter&lt;/h2&gt; 
+ &lt;div&gt;Lspec passes 2.8-4.2um&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;h2&gt;Spectral Resolution&lt;/h2&gt; 
+ &lt;div&gt;R~80-100 at 2.9 microns&lt;/div&gt; 
+ &lt;div&gt;R~250-300 at 4.1 microns&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;--Jordan Stone, 2014/11/23&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;h2&gt;Prism Dispersion&lt;/h2&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;p&gt;&lt;img src="/groups/clio2usermanual/wiki/6218f/images/__thumbs__/9bd64.jpg" name="/groups/clio2usermanual/wiki/6218f/images/9bd64.jpg#1102x494" title="Prism dispersion image" class="thumbnail aligncenter" role="button" alt="Prism dispersion image" longdesc="/groups/clio2usermanual/wiki/6218f/images/9bd64.jpg#1102x494" tabindex="0" /&gt;&lt;span&gt;Here's a nod pair of images of an A star taken with the slit and prism in but no filter (Narrow cam). You can see J,H,K,L, and M bands. J and H are almost right on top of each other and K is not very dispersed. The L-band portion is the main part you will see. The M-band portion is on the right half. --Jordan Stone, 2014/11/24&lt;/span&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;p&gt;--Thanks to Jordan Stone and Vanessa Bailey, University of Arizona&lt;/p&gt; 
+ &lt;p&gt;--Page created 2014/11/25 Katie Morzinski&lt;/p&gt;&lt;/div&gt;</string>
+	<key>createdDate</key>
+	<string>2014-11-25 07:57:01.937071+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2014-11-25 08:58:50</string>
+	<key>lastVersion</key>
+	<string>9</string>
+	<key>latestVersion</key>
+	<string>8</string>
+	<key>modifiedDate</key>
+	<date>2015-04-06T21:34:18Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Spectroscopy</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/6218f</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

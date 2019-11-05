@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>trodigas</string>
+	<key>authorLongName</key>
+	<string>T.J. Rodigas</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/1b57d</string>
+	<key>content</key>
+	<string>
+&lt;div class="wiki_entry"&gt; 
+ &lt;h2&gt;Add FITS Header Keywords&lt;/h2&gt; 
+ &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;p&gt;Log into obs@clio1.lco.cl. The relevant code is located in &amp;quot;MBEcode,&amp;quot; in particular the &amp;quot;clio&amp;quot; and &amp;quot;ao_comm&amp;quot; directories.You will need to add the keyword to 3 files: &lt;/p&gt; 
+ &lt;p&gt;&lt;/p&gt;&lt;pre&gt;clio/mirkwood.c&lt;/pre&gt; 
+ &lt;p&gt;&lt;/p&gt; 
+ &lt;p&gt;If you're modifying keywords which come from AO or TCS, you must also edit:&lt;/p&gt; 
+ &lt;p&gt;&lt;/p&gt;&lt;pre&gt;ao_comm/ao_cli.h&lt;br class="" /&gt;ao_comm/ao_cli.c&lt;br class="" /&gt;&lt;/pre&gt; 
+ &lt;p&gt;&lt;/p&gt; 
+ &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;p&gt;In each file, add your desired keyword, following the same syntax as for the other keywords in the file&lt;/p&gt; 
+ &lt;p&gt; &lt;/p&gt; 
+ &lt;ul&gt;
+   
+  &lt;li&gt;mirkwood.c: Writes the header. Use TFLOAT for floats and TSTRING for chars.&lt;/li&gt;
+   
+  &lt;li&gt;ao_cli.h: Defines the keyword variable (either float or char)&lt;/li&gt;
+   
+  &lt;li&gt;ao_cli.c: get_ao_status_val returns a char, while get_ao_status_num returns a float.&lt;/li&gt;
+   
+ &lt;/ul&gt; 
+ &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;p&gt;Recompile:&lt;/p&gt; 
+ &lt;p&gt; &lt;/p&gt; 
+ &lt;ul&gt;
+   
+  &lt;li&gt;killclio if you haven't already&lt;/li&gt;
+   
+  &lt;li&gt;In MBEcode/clio, type &amp;quot;make&amp;quot;&lt;/li&gt;
+   
+  &lt;li&gt;In MBEcode/ao_comm, type &amp;quot;make&amp;quot;&lt;/li&gt;
+   
+  &lt;li&gt;runclio&lt;/li&gt;
+   
+ &lt;/ul&gt; 
+ &lt;p&gt;&lt;/p&gt;&lt;br class="" /&gt; &lt;/div&gt;
+&lt;h2&gt;Scripting Guidelines&lt;/h2&gt;
+&lt;p&gt;Observing scripts are located on the clio computer in Programs/ObsScripts/Samples. &lt;/p&gt;
+&lt;p&gt;To change the wheels/motors/filters in Clio, type &amp;quot;send CLIOMOTORS&amp;quot; (without quotes) followed by one of the following. then on the next line, type &amp;quot;send CLIOMOTORS movemotors&amp;quot; again without quotes:&lt;/p&gt;
+&lt;p&gt;definepos 1 1 (= 50 um pinhole)&lt;/p&gt;
+&lt;p&gt;definepos 1 2 (= Open)&lt;/p&gt;
+&lt;p&gt;definepos 1 3 (= Narrow Slit)&lt;/p&gt;
+&lt;p&gt;definepos 1 4 (= Medium Slit)&lt;/p&gt;
+&lt;p&gt;definepos 1 5 (= Wide Slit)&lt;/p&gt;
+&lt;p&gt;definepos 1 6 (= Rectangle)&lt;/p&gt;
+&lt;p&gt;definepos 2 1 (= f/21.5)&lt;/p&gt;
+&lt;p&gt;definepos 2 2 (= M APP)&lt;/p&gt;
+&lt;p&gt;definepos 2 3 (= L' APP)&lt;/p&gt;
+&lt;p&gt;definepos 2 4 (= f/37.7)&lt;/p&gt;
+&lt;p&gt;definepos 2 5 (= 3 hole NRM)&lt;/p&gt;
+&lt;p&gt;definepos 2 6 (= 6 hole NRM)&lt;/p&gt;
+&lt;p&gt;definepos 4 1 (= f/21.5)&lt;/p&gt;
+&lt;p&gt;definepos 4 2 (= f/37.7)&lt;/p&gt;
+&lt;p&gt;definepos 4 3 (= f/21.5 pupil)&lt;/p&gt;
+&lt;p&gt;definepos 4 4 (= f/37.7 pupil)&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;definepos 3 1 (= Blocked)&lt;/p&gt;
+&lt;p&gt;definepos 3 2 (= J)&lt;/p&gt;
+&lt;p&gt;definepos 3 3 (= H)&lt;/p&gt;
+&lt;p&gt;definepos 3 4 (= Ks)&lt;/p&gt;
+&lt;p&gt;definepos 3 5 (= 3.1 um)&lt;/p&gt;
+&lt;p&gt;definepos 3 6 (= 3.3 um)&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;definepos 3 7 (= 3.4 um)&lt;/p&gt;
+&lt;p&gt;definepos 3 8 (= L')&lt;/p&gt;
+&lt;p&gt;definepos 3 9 (= 3.9 um)&lt;/p&gt;
+&lt;p&gt;definepos 3 10 (= M')&lt;/p&gt;
+&lt;p&gt;definepos 3 11 (= Barr M)&lt;/p&gt;
+&lt;p&gt;definepos 3 12 (= Prism)&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt;
+&lt;p&gt;--------------------------------------------------------------&lt;/p&gt;
+&lt;h1&gt;Edit the placement of startup windows&lt;/h1&gt;
+&lt;div&gt;In reset-programs.tcl&lt;/div&gt;
+&lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt;
+&lt;p&gt;--------------------------------------------------------------&lt;/p&gt;
+&lt;h1&gt;Connecting to Clio with VNC&lt;/h1&gt;
+&lt;div&gt;How to check what's installed:&lt;/div&gt;
+&lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;&lt;pre&gt;yum search vnc&lt;/pre&gt;&lt;pre&gt;yum list installed vnc-server.i386&lt;/pre&gt;
+&lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;
+&lt;div&gt;How to install a VNC server:&lt;/div&gt;&lt;pre&gt;su&lt;/pre&gt;&lt;pre&gt;yum install vnc-server.i386&lt;/pre&gt;&lt;pre&gt;gedit /etc/sysconfig/vncservers &amp;amp;&lt;/pre&gt;&lt;pre&gt;exit&lt;/pre&gt;&lt;pre&gt;vncpasswd&lt;/pre&gt;
+&lt;div&gt;How to start the VNC server:&lt;/div&gt;&lt;pre&gt;su&lt;/pre&gt;&lt;pre&gt;/etc/init.d/vncserver start&lt;/pre&gt;&lt;pre&gt;[root@clio1 obs]# /etc/init.d/vncserver start
+Starting VNC server: 1:obs xauth:  timeout in locking authority file /root/.xauthrmrMOV
+
+New 'clio1.lco.cl:1 (obs)' desktop is clio1.lco.cl:1
+
+Starting applications specified in /home/obs/.vnc/xstartup
+Log file is /home/obs/.vnc/clio1.lco.cl:1.log
+
+                                                           [  OK  ]
+[root@clio1 obs]# 
+&lt;/pre&gt;
+&lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;
+&lt;div&gt;How to connect to the VNC: Chicken of the VNC on Zorro:&lt;/div&gt;
+&lt;div&gt;&lt;pre&gt;clio1.lco.cl:1&lt;/pre&gt;&lt;pre&gt;obs&lt;/pre&gt;&lt;/div&gt;
+&lt;div&gt; 
+ &lt;div&gt;How to check the IP Address:&lt;/div&gt; 
+ &lt;div&gt;&lt;pre&gt;/sbin/ifconfig&lt;/pre&gt;&lt;pre&gt;200.28.147.38&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;
+&lt;p&gt;--------------------------------------------------------------&lt;/p&gt;
+&lt;div&gt;
+ &lt;p&gt;2015/12/04 New VNC&lt;/p&gt;
+ &lt;p&gt;vncserver :1 -geometry 1920x1200 -depth 16&lt;/p&gt;
+ &lt;p&gt;Connect from Screen Sharing with &lt;a href="vnc://clio1.lco.cl:5901"&gt;vnc://clio1.lco.cl:5901&lt;/a&gt;&lt;/p&gt;
+ &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt;
+ &lt;p&gt;--------------------------------------------------------------&lt;/p&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;
+&lt;p&gt;Originally by Vanessa Bailey 2013&lt;/p&gt;
+&lt;p&gt;Edited 2014/11/10 Katie Morzinski&lt;br class="" /&gt;&lt;/p&gt;</string>
+	<key>createdDate</key>
+	<string>2013-03-15 18:47:55.193396+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2015-12-04 21:18:50</string>
+	<key>lastVersion</key>
+	<string>20</string>
+	<key>latestVersion</key>
+	<string>19</string>
+	<key>modifiedDate</key>
+	<date>2015-12-04T21:20:36Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Software (advanced users only)</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/1b57d</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

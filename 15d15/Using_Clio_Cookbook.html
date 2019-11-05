@@ -1,0 +1,47 @@
+<html>
+<head><title>Using_Clio_Cookbook</title><base href="../"/></head>
+<div class="wiki_entry">
+<p>This Cookbook assumes you've already started all the Clio GUIs (see <a href="33b3c/Beginning_of_the_Night_Checklist.html">Beginning of the Night Checklist</a>), slewed to your target of interest, and the AO is locked. Before the AO is locked, you won't be allowed to nod the camera and you won't be able to tell what integration time you want, but you can check the background level in your filter of interest.</p>
+<p>Note: In the afternoon, you should have selected the camera you wanted (i.e. the pixel scale). The pupil stop is not repeatable, so once you have it aligned, you want to leave it there. If you absolutely must change it during the night, you will have to realign (see <a href="de452/Camera_Details.html">camera details</a>).</p>
+<p>Follow this 7 step checklist to observe.</p>
+<p> </p>
+<ol>
+<li><span>Choose your filter</span></li>
+<ol>
+<li><span>Press "Wavelength" button on CLIO motor control GUI</span></li>
+<li><span>Press "Move Motors" button on CLIO motor control GUI</span></li>
+</ol>
+<li><span>Choose Clio Camera Format (Full, Strip or Stamp) in Clio Camera Control Program</span></li>
+<div>NOTE: After AO lock, target should appear in Narrow camera, Full field at approx. pixel (200,300)</div>
+<li><span>Take "Video" images to check the exposure time</span></li>
+<ol>
+<li><span>Set a short Integration time, e.g. 0 s to get shortest, and press return (NOTE <a href="de452/Camera_Details.html">1</a>)</span></li>
+<li><span>Set Coadds = 1 &lt;PRESS RETURN&gt;</span></li>
+<li><span>Press "Video" in the Clio Camera Control Program</span></li>
+<li><span>Stop video and change Integration time as needed (PRESS RETURN), then restart video</span></li>
+<li><span>Stop video to set final integration times (PRESS RETURN), coadds (be sure to check the maximum coadds for your detector format), and images per nod</span></li>
+    (NOTE 
+   <a href="de452/Camera_Details.html">2</a>
+    ) 
+  </ol>
+<li>Set Filename Prefix in "Set Prefix" window and PRESS RETURN</li>
+<li>Put your target where you want it on the array using "Star nudger MagAO GUI"</li>
+<ol>
+<li>Press "AutoStar" - click on current location of target (blue circle appears) and then new location for target (green circle appears)</li>
+<li>Check with the AO operator that it is ok to nod, then press "Move"</li>
+</ol>
+<li>Set up nod vector using "Star Nudger MagAO GUI"</li>
+<ol>
+<li>Press "AutoStar" - click on current location of target (A nod) and then where you want B nod</li>
+<li>Click "Update Nod Vector" NOTE: for this to work, image taking must be stopped first (i.e. stop video)</li>
+</ol>
+<li>Take Images</li>
+<ol>
+<li>Choose "Nod AB" or "Nod ABBA"</li>
+<li>Check Focus - a warning dialog box will come up, if focus is ok, press "yes" otherwise press"no" and click the Focus button on the CLIO Motor Control GUI</li>
+</ol>
+</ol>
+<p></p>
+<div class="wiki_entry"><a><a>For</a> more sophisticated use, you can write a script. See the </a><a href="5bd63/Observing_Scripts.html">Observing Scripts</a> page<a> for instructions.</a></div><a>
+<div class="wiki_entry"><br class=""/></div>NOTE 1. If you are saturating in the minimum exposure time in your detector format, you can switch to a smaller format </a>
+<p> <a>NOTE 2: Normally, we nod on Clio to remove the sky. A typical time between nods is 3 min. On-sky integration time = Integration * coadds * images/nod * Nnods (were Nnods =4 for ABBA).</a><br class=""/></p></div></html>

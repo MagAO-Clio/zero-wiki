@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>trodigas</string>
+	<key>authorLongName</key>
+	<string>T.J. Rodigas</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/9192e</string>
+	<key>content</key>
+	<string>
+&lt;div class="wiki_entry"&gt; 
+ &lt;p&gt;&lt;img src="/groups/clio2usermanual/wiki/9192e/images/__thumbs__/bac45.png" name="/groups/clio2usermanual/wiki/9192e/images/bac45.png#732x281" title="" longdesc="/groups/clio2usermanual/wiki/9192e/images/bac45.png#732x281" role="button" alt="" class="aligncenter thumbnail" tabindex="0" /&gt;Above: Clio camera control GUI. This is what you interact with you to take data.&lt;/p&gt;
+ &lt;p&gt;Reset==reset electronics on the detector. Do this if you are unable to take any images and are repeatedly getting errors. The yellow bar above will be red. After hitting reset, click Init to initialize the program. If that fails again, click Reset again. Repeat as many times as it fails (it's finicky, eventually it should work).&lt;/p&gt;
+ &lt;p&gt;Format==choose your image size&lt;/p&gt;
+ &lt;p&gt;Take Back==take and store image to use for background subtraction in video mode&lt;/p&gt;
+ &lt;p&gt;Video==take continuous images and display them on ds9&lt;/p&gt;
+ &lt;p&gt;Use Back==check if you wish to subtract the background image (obtained by clicking Take Back) from subsequent displayed images&lt;/p&gt;
+ &lt;p&gt;Save Data in Cubes==check this if you want 3D data, rather than 2D (coadded) data. NOTE that cube data files are much larger than coadded data.&lt;/p&gt;
+ &lt;p&gt;Tel. info in header==this should always be checked, toggles whether header information from the telescope is populated in saved Clio images&lt;/p&gt;
+ &lt;p&gt;Take Cal frame==check this if you wish to automatically take minimum exposure images at every nod position. This is useful for obtaining unsaturated images of the star for photometry.&lt;/p&gt;
+ &lt;p&gt;Set Directory==you shouldn't have to mess with this, as directories for saving data are created automatically. Allows you to choose where to save your data.&lt;/p&gt;
+ &lt;p&gt;Set Prefix==what your data files will be called, e.g., &amp;quot;YourFavoriteStar00001.fit&amp;quot; would be saved if you specified &amp;quot;YourFavoriteStar&amp;quot; as the prefix (without quotes).&lt;/p&gt;
+ &lt;p&gt;Last image number==you shouldn't have to mess with this, as the next image to be taken is automatically updated, but this allows you to manually specify what the number of the next file should be.&lt;/p&gt;
+ &lt;p&gt;xnod/ynod==set the nod vector here&lt;/p&gt;
+ &lt;p&gt;Integration==set integration time for image acquisition in mas&lt;/p&gt;
+ &lt;p&gt;Coadds==self-explanatory&lt;/p&gt;
+ &lt;p&gt;Images per nod==set the number of images to take at each nod position&lt;/p&gt;
+ &lt;p&gt;Nod cycles==set how many times you want to repeat a given nod cycle of image acquisition &lt;/p&gt;
+ &lt;p&gt;Quick Video==minimum exposure, 1-coadd video mode. Good for aligning&lt;/p&gt;
+ &lt;p&gt;Take Images==take data without nodding&lt;/p&gt;
+ &lt;p&gt;Take Images (Nod AB)==take images at position A, move the telescope to position B, take data, stop.&lt;/p&gt;
+ &lt;p&gt;Take Images (Nod ABBA)==take images at position A, move the telescope to position B, take images, take images, move the telescope to position A, take images, stop.&lt;/p&gt;
+ &lt;p&gt;Script==choose script to execute for observations. More on this at the bottom of the page.&lt;/p&gt;
+ &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt;
+ &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;p&gt;&lt;img src="/groups/clio2usermanual/wiki/9192e/images/__thumbs__/a13c9.png" name="/groups/clio2usermanual/wiki/9192e/images/a13c9.png#916x306" title="" longdesc="/groups/clio2usermanual/wiki/9192e/images/a13c9.png#916x306" role="button" alt="" class="aligncenter thumbnail" tabindex="0" /&gt;&lt;br class="" /&gt;&lt;img src="/groups/clio2usermanual/wiki/9192e/images/51765.png" title="starnudger.png" role="button" alt="" class="aligncenter" tabindex="0" /&gt;&lt;br class="" /&gt;&lt;img src="/groups/clio2usermanual/wiki/9192e/images/__thumbs__/7b363.png" name="/groups/clio2usermanual/wiki/9192e/images/7b363.png#1139x199" title="" longdesc="/groups/clio2usermanual/wiki/9192e/images/7b363.png#1139x199" role="button" alt="" class="aligncenter thumbnail" tabindex="0" /&gt;&lt;/p&gt; 
+ &lt;p&gt;&lt;br class="" /&gt;&lt;img src="/groups/clio2usermanual/wiki/9192e/images/5f12a.png" title="currentstats.png" role="button" alt="" class="aligncenter" tabindex="0" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;/p&gt;&lt;/div&gt;</string>
+	<key>createdDate</key>
+	<string>2014-04-02 23:42:09.761927+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>trodigas</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>trodigas</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2014-04-03 00:00:47</string>
+	<key>lastVersion</key>
+	<string>4</string>
+	<key>latestVersion</key>
+	<string>3</string>
+	<key>modifiedDate</key>
+	<date>2014-04-03T00:02:03Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Camera control GUI info</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/9192e</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

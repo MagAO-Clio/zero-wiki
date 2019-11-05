@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>phinz</string>
+	<key>authorLongName</key>
+	<string>Phil Hinz</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/69b68</string>
+	<key>content</key>
+	<string>
+&lt;div class="wiki_entry"&gt; 
+ &lt;p&gt;Several tasks are only needed during the first night of a Clio run. These include:&lt;/p&gt; 
+ &lt;p&gt; &lt;/p&gt; 
+ &lt;ul&gt;
+   
+  &lt;li&gt;Cold Stop Alignment&lt;/li&gt;
+   
+  &lt;li&gt;Focusing of Clio&lt;/li&gt;
+   
+ &lt;/ul&gt; 
+ &lt;h2&gt;Cold Stop Alignment&lt;/h2&gt; 
+ &lt;div&gt; 
+  &lt;ul&gt;
+    
+   &lt;li&gt;The camera lens brass knob is turned counterclockwise 1 detent to put in the pupil imaging lens (setting 2).&lt;/li&gt;
+    
+   &lt;li&gt;The pupil wheel should be surveyed to find the f/20 stop. &lt;/li&gt;
+    
+   &lt;li&gt;Adjust the f/20 stop to center on the secondary image using the Advanced Options in the Clio Motor Control dialog. For more details see the section on &lt;a href="/groups/clio2usermanual/wiki/d9496/Using_the_APP_mode_of_Clio.html"&gt;using the APP mode&lt;/a&gt;. See images of below for proper alignment.&lt;/li&gt;
+    
+   &lt;li&gt;If orthogonal adjustment is needed this must be manually with shims at the instrument.&lt;/li&gt;
+    
+   &lt;li&gt;Return the Camera lens to f/20 imaging with a clockwise turn of the brass knob.&lt;/li&gt;
+    
+  &lt;/ul&gt; 
+  &lt;h2&gt;Focusing of Clio&lt;/h2&gt;&lt;/div&gt; 
+ &lt;div&gt;The focus of the Clio camera is adjusted by changing the position of the AO WFS. &lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;ul&gt;
+    
+   &lt;li&gt;Close the AO loop&lt;/li&gt;
+    
+   &lt;li&gt;Adjust the WFSC position in 10-20 micron increments by asking the AO operator.&lt;/li&gt;
+    
+   &lt;li&gt;Monitor the peak brightness of the star, and maximize it.&lt;/li&gt;
+    
+  &lt;/ul&gt; 
+  &lt;div&gt;Once you have set this, the AO will keep Clio focused throughout the run.&lt;/div&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;img src="/groups/clio2usermanual/wiki/69b68/images/dbd56.jpg" title="pupilstoptoolow.jpg" role="button" alt="Pupil Stop too low" class="donotalign" tabindex="0" /&gt;&lt;img src="/groups/clio2usermanual/wiki/69b68/images/cf7dd.jpg" title="pupilstopcorrect.jpg" role="button" alt="Pupil stop correct" class="donotalign" tabindex="0" /&gt;&lt;img src="/groups/clio2usermanual/wiki/69b68/images/e2f20.jpg" title="pupilstoptoohigh.jpg" role="button" alt="Pupil Stop too high" class="donotalign" tabindex="0" /&gt;&lt;/div&gt; 
+ &lt;div&gt;Placement of pupil stop [f/20 big]: (left to right) too low, correct, too high. Use the balance in intensity of the four points at the corners to align.&lt;/div&gt;&lt;br class="" /&gt;&lt;img src="/collaboration/images/blank.gif" alt="" class="upload_progress donotalign" /&gt;&lt;br class="" /&gt;&lt;/div&gt;</string>
+	<key>createdDate</key>
+	<string>2010-10-24 01:50:16.749206+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>vbailey</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>vbailey</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2011-04-18 11:35:39</string>
+	<key>lastVersion</key>
+	<string>7</string>
+	<key>latestVersion</key>
+	<string>6</string>
+	<key>modifiedDate</key>
+	<date>2011-11-14T06:35:57Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Beginning of the Run Setup</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/69b68</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

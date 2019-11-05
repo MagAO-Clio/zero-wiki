@@ -1,0 +1,109 @@
+<html>
+<head><title>Observation_Guidelines</title><base href="../"/></head>
+<div class="wiki_entry">
+<p><span class="Apple-style-span"> </span></p>
+<div class="page">
+<h2><span class="Apple-style-span">Nodding and Dithering</span><br class=""/></h2>
+<div class="page">
+<div class="level3 wiki_unbold">
+<p>Nodding should be carried out every 0.5-2 minutes to ensure good sky subtraction. The direction of nodding is set in the "Setup Values" of the Camera Control GUI. The coordinates are in X and Y on the detector. A positive X nod value moves the star to the left, relative to the initial position. A positive Y node value moves the star down on the array.</p></div>
+<div class="secedit wiki_unbold"></div>
+<h2>Typical Integration Times<br class=""/></h2>
+<div>
+<p>At wavelengths beyond 3 microns, the exposures are typically set by the sky background, rather than the source brightness. The integration time is adjust to obtain a typical sky flux of 200,000 photons per pixel, below the saturation of 250,000 for the detector. </p>
+<table class="inline __useTableEditor data custom_bold"><thead>
+<tr>
+<th class="wiki_unbold">Filter</th>
+<th class="wiki_unbold">Typical Integration (s)</th>
+<th class="wiki_unbold">Expected Sky flux (photons/pixel/s)</th>
+</tr></thead><tbody>
+<tr>
+<td class="wiki_unbold">3.1</td>
+<td class="wiki_unbold">12</td>
+<td class="wiki_unbold">17,000</td>
+</tr>
+<tr>
+<td class="wiki_unbold">3.3</td>
+<td class="wiki_unbold">3</td>
+<td class="wiki_unbold">70,000</td>
+</tr>
+<tr>
+<td class="wiki_unbold">L’</td>
+<td class="wiki_unbold">0.6</td>
+<td class="wiki_unbold">350,000</td>
+</tr>
+<tr>
+<td class="wiki_unbold">M’</td>
+<td class="wiki_unbold">0.3</td>
+<td class="wiki_unbold">689,000</td>
+</tr>
+<tr>
+<td class="wiki_unbold">M</td>
+<td class="wiki_unbold">0.07</td>
+<td class="wiki_unbold">2,740,000<br class=""/><br class=""/></td>
+</tr></tbody></table></div>
+<div class="level3 wiki_unbold">
+<p><br class=""/></p>
+<p>At shorter wavelengths, observations with Clio should use a long enough integration time to get above the read noise of the detector, if possible. The RON is approximately 19 dn or 93 e-. This suggests that the wells should be above at least 10,000 e- (2,000 dn) to not be dominated by read noise. This is mainly relevant for H and K observations, and spectra.</p>
+<table class="inline __useTableEditor data custom_bold"><thead>
+<tr>
+<th>Filter</th>
+<th>Typical Integration (s)</th>
+<th>Expected Sky flux (photons/pixel/s)</th>
+</tr></thead><tbody>
+<tr>
+<td>H</td>
+<td>10-60</td>
+<td>90</td>
+</tr>
+<tr>
+<td>Ks</td>
+<td>10-60</td>
+<td>150</td>
+</tr></tbody></table>
+<p><br class=""/></p></div>
+<div class="secedit wiki_unbold"></div>
+<h2><span class="Apple-style-span">Taking Flats</span><br class=""/></h2>
+<div class="level3 wiki_unbold">
+<p>Flats are typically acquired by pointing at blank sky and taking frames, followed by putting a blank in the filter wheel and taking another set of frames. The difference should provide reliable flats.</p>
+<p>H and K band flats will require observing at sunset, to get enough sky flux on the detector.</p></div></div>
+<h2 class="wiki_unbold">Format Choice</h2>
+<div class="level2">
+<p>The Clio detector can be read out in full format, or in several subarray formats. Smaller formats have shorter minimum integration times. This can prevent saturation or be used to increase efficiency. The image below shows the several formats available, and how they are arranged on the detector.</p>
+<p><img alt="" class="aligncenter thumbnail" longdesc="/groups/clio2usermanual/wiki/dd411/images/bdf1c.png#1024x768" name="/groups/clio2usermanual/wiki/dd411/images/bdf1c.png#1024x768" role="button" src="dd411/images/__thumbs__/bdf1c.png" tabindex="0" title=""/></p>
+<p><br class=""/></p>
+<h2>Efficiency</h2>
+<p>The minimum frame time for the different sizes are</p>
+<p> </p>
+<table class="data __useTableEditor"><thead>
+<tr>
+<th>Format</th>
+<th>Minimum Frame Time</th>
+<th>"Dead Time"</th>
+<th>Maximum Coadds</th>
+</tr></thead><tbody>
+<tr>
+<td>Full</td>
+<td>280 ms</td>
+<td>280 ms</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Strip</td>
+<td>160 ms</td>
+<td>160 ms</td>
+<td>40</td>
+</tr>
+<tr>
+<td>Stamp</td>
+<td>43 ms</td>
+<td>43 ms</td>
+<td>100</td>
+</tr></tbody></table><br class=""/>There is a "dead time" equivalent to the minimum frame time in each mode. For, example, if I need to take a 500 ms image to avoid saturation, my efficiency for "full" mode (integration time / clock time) is 500/(280+500) =64%. If I use the "strip" mode it is 500/(160+500)=76%. 
+   <p></p></div>
+<div class="level2">Above a certain number of coadds, the process of deinterlacing and coadding slows down dramatically due to disk swapping in the computer. For maximum efficiency the coadds should be kept to below the table listed in the above table.</div>
+<div class="secedit"></div><a name="nodding_and_dithering"></a></div>
+<div class="stylefoot">
+<div class="meta">
+<div class="user"></div></div></div>
+<p></p></div></html>

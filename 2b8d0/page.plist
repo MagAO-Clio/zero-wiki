@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>ktmorz</string>
+	<key>authorLongName</key>
+	<string>Katie Morzinski</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/2b8d0</string>
+	<key>content</key>
+	<string>
+&lt;div class="wiki_entry"&gt; 
+ &lt;h1&gt;Readout Efficiency Tests&lt;/h1&gt;For the Key Project we are interested in temporal sampling of the PSF. So here we did some efficiency tests of the various combinations of Integration time, Coadds, and Cubes to see which mode to use to jointly optimize temporal sampling and efficiency. First let's explain the different options in ways to save Coadds and Cubes.&lt;br class="" /&gt;&lt;br class="" /&gt; 
+ &lt;h2&gt;Clio Data Sequence Options:&lt;/h2&gt;Between Coadds, Nimgs, and Cubes, there are a few options for temporal sampling and resultant image size for how to take a sequence of Clio data. &lt;span class="custom_forecolor_emphasis"&gt;If you are using Cubes, then the Coadds are not added but are saved as individual frames within a 3-dimensional data cube.&lt;/span&gt; The Cube will be saved as a single .fit file and so it will have only 1 FITS header. Thus, while the temporal sampling of the data is higher, the temporal sampling of the FITS header (not listed here) is per .fit written.&lt;br class="" /&gt;&lt;br class="" /&gt;The Table explains it with an example:&lt;br class="" /&gt; 
+ &lt;table class="data __useTableEditor"&gt;&lt;thead&gt;
+   &lt;tr&gt;
+    
+    &lt;th&gt;Nimgs&lt;/th&gt;
+    
+    &lt;th&gt;Integration Time [ms]&lt;/th&gt;
+    
+    &lt;th&gt;Coadds&lt;/th&gt;
+    
+    &lt;th&gt;Cubes&lt;/th&gt;
+    
+    &lt;th&gt;What Will the FITS Header Say for # of Coadds&lt;/th&gt;
+    
+    &lt;th&gt;Result&lt;/th&gt;
+    
+    &lt;th&gt;FITS dimensions (Example for Full Frame)&lt;/th&gt;
+    
+    &lt;th&gt;Total Integration Time [sec] = Nimg x IntTime x Coadds&lt;/th&gt;
+    
+    &lt;th&gt;Temporal Sampling of Images [sec]&lt;/th&gt;
+    
+   &lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+   &lt;tr&gt;
+    
+    &lt;td&gt;10&lt;/td&gt;
+    
+    &lt;td&gt;1000&lt;/td&gt;
+    
+    &lt;td&gt;1&lt;/td&gt;
+    
+    &lt;td&gt;No&lt;/td&gt;
+    
+    &lt;td&gt;1&lt;/td&gt;
+    
+    &lt;td&gt;10 2-d FITS files, no coadds&lt;/td&gt;
+    
+    &lt;td&gt;1024 x 512&lt;/td&gt;
+    
+    &lt;td&gt;10&lt;/td&gt;
+    
+    &lt;td&gt;1&lt;/td&gt;
+    
+   &lt;/tr&gt;
+   &lt;tr&gt;
+    
+    &lt;td&gt;10&lt;/td&gt;
+    
+    &lt;td&gt;1000&lt;/td&gt;
+    
+    &lt;td&gt;10&lt;/td&gt;
+    
+    &lt;td&gt;No&lt;/td&gt;
+    
+    &lt;td&gt;10&lt;/td&gt;
+    
+    &lt;td&gt;10 2-d FITS files, each with 10 frames coadded (the total duration is 10x longer than the above line)&lt;/td&gt;
+    
+    &lt;td&gt;1024 x 512&lt;/td&gt;
+    
+    &lt;td&gt;100&lt;/td&gt;
+    
+    &lt;td&gt;10&lt;/td&gt;
+    
+   &lt;/tr&gt;
+   &lt;tr&gt;
+    
+    &lt;td&gt;10&lt;/td&gt;
+    
+    &lt;td&gt;1000&lt;/td&gt;
+    
+    &lt;td&gt;1&lt;/td&gt;
+    
+    &lt;td&gt;Yes&lt;/td&gt;
+    
+    &lt;td&gt;1&lt;/td&gt;
+    
+    &lt;td&gt;10 &amp;quot;3-d&amp;quot; FITS files, with the coadds saved in cubes except that since there is only 1 coadd, the 3rd dimension has nothing in it&lt;/td&gt;
+    
+    &lt;td&gt;1024 x 512 x 1&lt;/td&gt;
+    
+    &lt;td&gt;10&lt;/td&gt;
+    
+    &lt;td&gt;1&lt;/td&gt;
+    
+   &lt;/tr&gt;
+   &lt;tr&gt;
+    
+    &lt;td&gt;10&lt;/td&gt;
+    
+    &lt;td&gt;1000&lt;/td&gt;
+    
+    &lt;td&gt;10&lt;/td&gt;
+    
+    &lt;td&gt;Yes&lt;/td&gt;
+    
+    &lt;td&gt;1&lt;/td&gt;
+    
+    &lt;td&gt;10 3-d FITS files, each with 10 frames in a 3-d Cube&lt;/td&gt;
+    
+    &lt;td&gt;1024 x 512 x 10&lt;/td&gt;
+    
+    &lt;td&gt;100&lt;/td&gt;
+    
+    &lt;td&gt;1&lt;/td&gt;
+    
+   &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;And here are the readout efficiency tests:&lt;br class="" /&gt;&lt;br class="" /&gt;(Also a quick note about taking data at a very high temporal sampling. To save computer processing speed, you may want to stop the Transfer Files program (hit the X in upper left corner of window) during the data taking. Restart it when resuming normal observations by going to Restart Clio Components -&amp;gt; FileBackup)&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt; 
+ &lt;h2&gt;Strip Mode Tests:&lt;/h2&gt; &lt;img src="/groups/clio2usermanual/wiki/6d927/images/__thumbs__/c0809.png" name="/groups/clio2usermanual/wiki/6d927/images/c0809.png#655.1563469027485x331.6579016189005" title="Strip Mode" class="aligncenter thumbnail" role="button" alt="Strip Mode" longdesc="/groups/clio2usermanual/wiki/6d927/images/c0809.png#655.1563469027485x331.6579016189005" tabindex="0" /&gt;&lt;br class="" /&gt; 
+ &lt;table class="data __useTableEditor"&gt;&lt;thead&gt; 
+   &lt;tr&gt;
+     
+    &lt;th&gt;Integration time [ms]&lt;/th&gt;
+     
+    &lt;th&gt;# Coadds&lt;/th&gt;
+     
+    &lt;th&gt;Cubes or 2-d FITS?&lt;/th&gt;
+     
+    &lt;th&gt;# Frames&lt;/th&gt;
+     
+    &lt;th&gt;Images ID&lt;/th&gt;
+     
+    &lt;th&gt;Total Clock Time Elapsed [min:sec] / [sec]&lt;/th&gt;
+     
+    &lt;th&gt;Total Integration [sec]&lt;/th&gt;
+     
+    &lt;th&gt;% Efficiency = 100 x Total Integration / Clock Time Elapsed&lt;/th&gt;
+     
+    &lt;th&gt;Temporal Sampling of Images [sec]&lt;/th&gt;
+     
+   &lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt; 
+   &lt;tr&gt;
+     
+    &lt;td&gt;164&lt;/td&gt;
+     
+    &lt;td&gt;40&lt;/td&gt;
+     
+    &lt;td&gt;Cubes&lt;/td&gt;
+     
+    &lt;td&gt;15&lt;/td&gt;
+     
+    &lt;td&gt;n140410 test 1-15&lt;/td&gt;
+     
+    &lt;td&gt;3:39.5 / 219.5&lt;/td&gt;
+     
+    &lt;td&gt;98.4&lt;/td&gt;
+     
+    &lt;td&gt;44.8 %&lt;/td&gt;
+     
+    &lt;td&gt;0.164&lt;/td&gt;
+     
+   &lt;/tr&gt; 
+   &lt;tr&gt;
+     
+    &lt;td&gt;164&lt;/td&gt;
+     
+    &lt;td&gt;40&lt;/td&gt;
+     
+    &lt;td&gt;2-d FITS&lt;/td&gt;
+     
+    &lt;td&gt;15&lt;/td&gt;
+     
+    &lt;td&gt;n140410 test 16-30&lt;/td&gt;
+     
+    &lt;td&gt;3:33.3 / 213.3&lt;/td&gt;
+     
+    &lt;td&gt;98.4&lt;/td&gt;
+     
+    &lt;td&gt;46.1 %&lt;/td&gt;
+     
+    &lt;td&gt;6.56&lt;/td&gt;
+     
+   &lt;/tr&gt; 
+   &lt;tr&gt;
+     
+    &lt;td&gt;164&lt;/td&gt;
+     
+    &lt;td&gt;1&lt;/td&gt;
+     
+    &lt;td&gt;2-d FITS&lt;/td&gt;
+     
+    &lt;td&gt;600&lt;/td&gt;
+     
+    &lt;td&gt;n140410 test 31-630&lt;/td&gt;
+     
+    &lt;td&gt;6:30.0 / 390.0&lt;/td&gt;
+     
+    &lt;td&gt;98.4&lt;/td&gt;
+     
+    &lt;td&gt;25.2 %&lt;/td&gt;
+     
+    &lt;td&gt;0.164&lt;/td&gt;
+     
+   &lt;/tr&gt; 
+   &lt;tr&gt;
+     
+    &lt;td&gt;164&lt;/td&gt;
+     
+    &lt;td&gt;6&lt;/td&gt;
+     
+    &lt;td&gt;Cubes&lt;/td&gt;
+     
+    &lt;td&gt;100&lt;/td&gt;
+     
+    &lt;td&gt;n140410 test 631-730&lt;/td&gt;
+     
+    &lt;td&gt;4:10.8 / 250.8&lt;/td&gt;
+     
+    &lt;td&gt;98.4&lt;/td&gt;
+     
+    &lt;td&gt;39.2 %&lt;/td&gt;
+     
+    &lt;td&gt;0.164&lt;/td&gt;
+     
+   &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt; 
+ &lt;h2&gt;Stamp Mode Tests:&lt;/h2&gt;&lt;img src="/groups/clio2usermanual/wiki/6d927/images/__thumbs__/f4702.png" name="/groups/clio2usermanual/wiki/6d927/images/f4702.png#655.1563469027485x331.6579016189005" title="Stamp Mode" class="aligncenter thumbnail" role="button" alt="Stamp Mode" longdesc="/groups/clio2usermanual/wiki/6d927/images/f4702.png#655.1563469027485x331.6579016189005" tabindex="0" /&gt;  
+ &lt;div class="__tableContainer"&gt;
+  &lt;table class="data __useTableEditor"&gt;&lt;thead&gt; 
+    &lt;tr&gt;
+      
+     &lt;th&gt;Integration time [ms]&lt;/th&gt;
+      
+     &lt;th&gt;# Coadds&lt;/th&gt;
+      
+     &lt;th&gt;Cubes or 2-d FITS?&lt;/th&gt;
+      
+     &lt;th&gt;# Frames&lt;/th&gt;
+      
+     &lt;th&gt;Images ID&lt;/th&gt;
+      
+     &lt;th&gt;Total Clock Time Elapsed [min:sec] / [sec]&lt;/th&gt;
+      
+     &lt;th&gt;Total Integration [sec]&lt;/th&gt;
+      
+     &lt;th&gt;% Efficiency = 100 x Total Integration / Clock Time Elapsed&lt;/th&gt;
+      
+     &lt;th&gt;Temporal Sampling of Images [sec]&lt;/th&gt;
+      
+    &lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt; 
+    &lt;tr&gt;
+      
+     &lt;td&gt;1000&lt;/td&gt;
+      
+     &lt;td&gt;10&lt;/td&gt;
+      
+     &lt;td&gt;2-d FITS&lt;/td&gt;
+      
+     &lt;td&gt;10&lt;/td&gt;
+      
+     &lt;td&gt;n140406 AlphaCen 1-10&lt;/td&gt;
+      
+     &lt;td&gt;2:14.2 / 134.2&lt;/td&gt;
+      
+     &lt;td&gt;100&lt;/td&gt;
+      
+     &lt;td&gt;74.5 %&lt;/td&gt;
+      
+     &lt;td&gt;10&lt;/td&gt;
+      
+    &lt;/tr&gt; 
+    &lt;tr&gt;
+      
+     &lt;td&gt;10000&lt;/td&gt;
+      
+     &lt;td&gt;1&lt;/td&gt;
+      
+     &lt;td&gt;2-d FITS&lt;/td&gt;
+      
+     &lt;td&gt;10&lt;/td&gt;
+      
+     &lt;td&gt;n140406 AlphaCen 11-20&lt;/td&gt;
+      
+     &lt;td&gt;1:47.8 / 107.8&lt;/td&gt;
+      
+     &lt;td&gt;100&lt;/td&gt;
+      
+     &lt;td&gt;92.8 %&lt;/td&gt;
+      
+     &lt;td&gt;10&lt;/td&gt;
+      
+    &lt;/tr&gt; 
+    &lt;tr&gt;
+      
+     &lt;td&gt;1000&lt;/td&gt;
+      
+     &lt;td&gt;1&lt;/td&gt;
+      
+     &lt;td&gt;2-d FITS&lt;/td&gt;
+      
+     &lt;td&gt;100&lt;/td&gt;
+      
+     &lt;td&gt;n140406 AlphaCen 21-120&lt;/td&gt;
+      
+     &lt;td&gt;2:50.0 / 170.0&lt;/td&gt;
+      
+     &lt;td&gt;100&lt;/td&gt;
+      
+     &lt;td&gt;58.8 %&lt;/td&gt;
+      
+     &lt;td&gt;1&lt;/td&gt;
+      
+    &lt;/tr&gt; 
+    &lt;tr&gt;
+      
+     &lt;td&gt;43&lt;/td&gt;
+      
+     &lt;td&gt;100&lt;/td&gt;
+      
+     &lt;td&gt;2-d FITS&lt;/td&gt;
+      
+     &lt;td&gt;10&lt;/td&gt;
+      
+     &lt;td&gt;n140406 AlphaCen 121-130&lt;/td&gt;
+      
+     &lt;td&gt;1:47.4 / 107.4&lt;/td&gt;
+      
+     &lt;td&gt;43&lt;/td&gt;
+      
+     &lt;td&gt;40.0 %&lt;/td&gt;
+      
+     &lt;td&gt;4.3&lt;/td&gt;
+      
+    &lt;/tr&gt; 
+    &lt;tr&gt;
+      
+     &lt;td&gt;43&lt;/td&gt;
+      
+     &lt;td&gt;10&lt;/td&gt;
+      
+     &lt;td&gt;2-d FITS&lt;/td&gt;
+      
+     &lt;td&gt;100&lt;/td&gt;
+      
+     &lt;td&gt;n140406 AlphaCen 131-230&lt;/td&gt;
+      
+     &lt;td&gt;2:08.6 / 128.6&lt;/td&gt;
+      
+     &lt;td&gt;43&lt;/td&gt;
+      
+     &lt;td&gt;33.4 %&lt;/td&gt;
+      
+     &lt;td&gt;0.43&lt;/td&gt;
+      
+    &lt;/tr&gt; 
+    &lt;tr&gt;
+      
+     &lt;td&gt;43&lt;/td&gt;
+      
+     &lt;td&gt;25&lt;/td&gt;
+      
+     &lt;td&gt;2-d FITS&lt;/td&gt;
+      
+     &lt;td&gt;40&lt;/td&gt;
+      
+     &lt;td&gt;n140407 AlphaCenTest 1-40&lt;/td&gt;
+      
+     &lt;td&gt;1:57.4 / 117.4&lt;/td&gt;
+      
+     &lt;td&gt;43&lt;/td&gt;
+      
+     &lt;td&gt;36.6 %&lt;/td&gt;
+      
+     &lt;td&gt;1.075&lt;/td&gt;
+      
+    &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;br class="" /&gt;&lt;br class="" /&gt; 
+ &lt;h2&gt;&lt;br class="" /&gt;&lt;/h2&gt;&lt;br class="" /&gt;&lt;br class="" /&gt; 
+ &lt;p&gt;-Katie Morzinski, 2014/07/17, tested 2014/04/06-10&lt;br class="" /&gt;&lt;/p&gt; &lt;/div&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;</string>
+	<key>createdDate</key>
+	<string>2014-07-17 21:15:03.614624+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2014-07-18 19:35:03</string>
+	<key>lastVersion</key>
+	<string>34</string>
+	<key>latestVersion</key>
+	<string>33</string>
+	<key>modifiedDate</key>
+	<date>2014-07-18T19:35:56Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Readout Efficiency</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/2b8d0</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

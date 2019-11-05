@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>phinz</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/268c6</string>
+	<key>createdDate</key>
+	<date>2010-11-10T21:45:11Z</date>
+	<key>edited</key>
+	<false/>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>phinz</string>
+	<key>lastVersion</key>
+	<string>1</string>
+	<key>modifiedDate</key>
+	<date>2010-11-10T21:45:11Z</date>
+	<key>title</key>
+	<string>here</string>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/268c6</string>
+	<key>versioned</key>
+	<true/>
+</dict>
+</plist>

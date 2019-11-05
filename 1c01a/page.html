@@ -1,0 +1,21 @@
+
+<div class="wiki_entry">
+ <h2>Beginning of the Night Setup</h2>
+ <div><span class="Apple-style-span">
+   <p>At the beginning of the night:</p>
+   <p>1) Login to clio using the command “ssh obs@clio.mmto.arizona.edu -X -Y -C” </p>
+   <p>Make sure you have talked to the previous observer or email Phil Hinz to get the password.</p>
+   <p>2) Type “runclio” to start the various programs. </p>
+   <p>“runclio” is a link to mirkwood.sh in the Programs directory. This in turn is a shell script which runs mirkwood (the clio control program), ds9 (the image display program), Cliomotors.tcl (the filter control program), starnudger-Clio.tcl, (the telescope paddle control), statcurrent.tcl (the statistics display program), and transferfiles.sh(Backs up files to zero in Tucson). The programs as they should appear on your desktop are shown below:</p>
+   <p>NEED SCREEN CAPTURE</p>
+   <p>If any of the software components stop responding or crash, they can be restarted or rest using the GUI in the lower right hand of the display.<br class="" /></p>
+   <p>3) Initialize the camera by clicking “Initialize on the Clio Camera Control GUI“. </p>
+   <p>The button should turn from red to green.<br class="" /></p>
+   <p></p>
+   <p>5) Make sure the “AO/Tel. info in header” check box is clicked</p>
+   <p> NOTE: IF THIS IS NOT TURNED ON YOU WILL NOT HAVE TELESCOPE INFO IN YOUR FITS FILES</p>
+   <p>6) Set the data directory to /home/obs/Data/n(year)(month(UTnight). </p>
+   <p>For example on the evening of October 7, 2010 I would type</p>
+   <blockquote>mkdir /home/obs/Data/n101008</blockquote>
+   <p>since the UT data is 1008 starting at 5 pm on October 7. While other directories can be used, setting this is important for automatic file backup to<span class="Apple-style-span"> Tucson. You can see the operation of this script in the terminal on the bottom of the screen. It will copy data in ten minute intervals. If there is concern about this script interrupting camer operations, this can be stopped at anytime simply by killing the terminal, but it should be restarted at the end of the night to ensure the data is backed up.</span></p>
+   <p><span class="Apple-style-span"><br class="" /></span></p></span></div></div>

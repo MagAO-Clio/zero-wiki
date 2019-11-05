@@ -1,0 +1,147 @@
+<html>
+<head><title>Camera_Operation</title><base href="../"/></head><span class="custom_forecolor_important"></span>
+<h2>Camera Operation</h2>
+<div class="wiki_entry">
+<div><br class=""/></div>
+<div>1. Choice of array / subarray size:</div>
+<div><br class=""/></div>
+<div>
+<table class="inline __useTableEditor data"><thead>
+<tr>
+<th>Format</th>
+<th>Array Size</th>
+<th>Minimum Integr. <br class=""/>(and readout time)</th>
+<th>Max Coadds</th>
+</tr></thead><tbody>
+<tr>
+<td>Full array</td>
+<td>(1024x512)</td>
+<td>280 ms</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Strip</td>
+<td>(1024x300)</td>
+<td>164 ms</td>
+<td>40</td>
+</tr>
+<tr>
+<td>Stamp</td>
+<td>(400x200)</td>
+<td>43 ms</td>
+<td>100</td>
+</tr>
+<tr>
+<td>Substamp</td>
+<td>(100x50)</td>
+<td>3 ms</td>
+<td>(We know 300 works -- haven't tried more)</td>
+</tr></tbody></table></div>
+<div><u><b><br class=""/></b></u></div>
+<div><span>Strip is composed of the full width (1024 pix) and the top 300 pixels of the array.</span></div>
+<div><span><br class=""/></span></div>
+<div><span>Stamp is composed of two 200x200 square sets of pixels, located in the upper left of each half of the detector, which are saved together as a 400x200 pixel image.</span></div>
+<div><span><br class=""/></span></div>
+<div><span>SubStamp is composed of two 50x50 square sets of pixels, located in upper left of each half of the detector, which are saved together as a 100x50 pixel image.</span></div>
+<div><u><b><br class=""/></b></u></div>
+<div>2. Software / GUI Descriptions</div>
+<div><br class=""/></div>
+<div><b>I) Clio Camera Control Program GUI</b><br class=""/></div>
+<div><b><br class=""/></b></div>
+<div><span>This is the main GUI for setting the observation parameters. </span>To set up an imaging sequence, select an integration time (must be greater than the minimum time for the selected read-out format), number of coadds, number of images per nod, and number of nod cycles.<b> After entering values in the boxes, press &lt;RETURN&gt;.</b></div>
+<div><br class=""/></div>
+<div>Integration time per nod [ms] = Integration [ms] * Coadds * Images per Nod</div>
+<div><br class=""/></div>
+<div>No changes may be made to any of the values in this GUI while data taking is in progress. To make changes, you must first press the "Stop" button and wait for the current image to complete.</div>
+<div><br class=""/></div>
+<div><u>Startup Buttons:</u></div>
+<div>
+<ul>
+<li><b>Reset</b>: resets Clio2 electronics</li>
+<li><b>Init</b>: [done automatically at startup] Allows GUI to interact with the instrument</li>
+</ul>
+<div><u>Detector:</u><br class=""/></div>
+<ul>
+<li><b>Format</b>: Choose read-out format for detector (Full, strip, stamp, substamp)</li>
+</ul>
+<div><u>Taking Data:</u></div>
+<ul>
+<li><b>Take Back</b>.: Saves a sky image with current values of integration time and coadds</li>
+</ul>There are two way of taking continuous unsaved images (useful for acquiring/centering target and setting integration times)<br class=""/>
+<ul>
+<li><b>Video</b>: Uses current values (integration and coadds) and takes continuous unsaved images</li>
+<li><b>Quick Video</b>: sets integration to minimum for the read-out format and coadds to 1, then takes continuous unsaved images. Stop button will return time parameters to previous values.</li>
+</ul>
+<div>
+<div>There are three buttons for taking data that will be saved:</div>
+<div>
+<ul>
+<li><b>Take Images</b>: At the current position, takes the number of images set by "Images per Nod" where each image is taken with the current values of integration time and number of coadds</li>
+<li><b>Take Images (Nod AB)</b>: Executes two sets of images. Nod A will be the current position of the target on the detector. Nod B will be xnod,ynod arcseconds away. In each position, "Images per Nod" will be saved, where each image is taken with the current values of integration time and number of coadds. After the nod, Clio will wait to take data until the AO loop closes.</li>
+<li><b>Take Images (Nod ABBA)</b>: Executes four sets of images starting at the current position of the target on the detector. Nod B will be xnod,ynod arcseconds away. In each position, "Images per Nod" will be saved, where each image is taken with the current values of integration time and number of coadds. After each nod, Clio will wait to take data until the AO loop closes.</li>
+</ul></div>
+<div>All three types of Take Images are repeated "Nod cycles" times.</div></div>
+<div><br class=""/></div>
+<div><u>To end data acquisition:</u></div>
+<div>
+<ul>
+<li>Stop: button appears after starting data acquisition (either video, taking images or a script); stops video mode or imaging (including aborting a script)</li>
+</ul></div><u>Check Boxes:</u></div>
+<div>
+<ul>
+<li>Use Back: In Video and Imaging mode, subtract the saved sky image before displaying</li>
+<li>Save Data in Cubes: save every coadd in naxis3 of a single output FITS file instead of saving each coadd in its own FITS file</li>
+<li>Take Cal. Frame: after every nod, save an image (called Prefix_calxxxxxx.fit) with the minimum integration time and current value of coadds (useful for getting unsaturated images of a target once every nod)</li>
+<li>Tel. info in header: THIS SHOULD ALWAYS BE CHECKED WHEN CLIO IS AT THE TELESCOPE. It puts the TCS information (e.g. RA, DEC) in the Clio FITS headers</li>
+</ul>
+<div><u>File Saving Boxes:</u></div></div>
+<div>
+<ul>
+<li>Set Directory: choses output directory for image FITS files [note that this is done automatically for you when you start Clio, setting the directory to the current UT date, with the prefix "n"].</li>
+<li>Set Prefix: sets the file name prefix; names will be of the form Prefixnnnnn.fit and will be numbered sequentially starting with 1 for every unique Prefix, and the ns are 0s (ie, StarName00001.fit is the first file saved).</li>
+<li>Next Image Number: used for setting the next image number by hand instead of letting the Clio2 software use the next sequential number</li>
+</ul>
+<div><u>Nod Parameter Boxes:</u></div></div>
+<div>The current values of the nod distance are shown and may be set in the boxes:</div>
+<div>
+<ul>
+<li>xnod (arsec)</li>
+<li>ynod (arsec)</li>
+</ul>
+<div><br class=""/></div>
+<div><span><b>NOTE: -x moves the star to the right on the detector; -y moves the star up on the detector</b></span></div>
+<div><span><b>NOTE2: This is NOT the same sign convention as in the Star nudger!</b></span></div>
+<div><u><br class=""/></u></div>
+<div><u>Script:</u></div>
+<div><br class=""/></div>
+<div>Pushing the green Script button brings up the buttons for selecting and executing a .tcl observing script</div>
+<div><b><u><br class=""/></u></b></div>
+<div><b>II) Star Nudger GUI</b><br class=""/></div>
+<div><br class=""/></div>
+<div>This is the GUI for moving the telescope. There are currently two ways to use it:</div></div>
+<div>
+<ol>
+<li>left/right or up/down: enter the distance (in arcsec) into the box and press the appropriate button. The button indicates the way the <b>target </b>moves, not the way the telescope moves.</li>
+<li>AutoStar: Waits for two mouse clicks in the ds9 display. The first mouse click is on the current position of the target (and displays a green circle) and the second mouse click is on the desired location of the target (and displays a blue circle). The GUI calculates the offset and presents it to the user. Then the green "Move" button will execute the offset. NOTE: +x is right on the detector and +y is up on the detector (not the same as the Nod vector convention)</li>
+<li>Go to focus button: sets focus to the entered value</li>
+</ol></div>
+<div><b>III) CLIO Motor Control GUI</b><b><u><br class=""/></u></b></div>
+<div><br class=""/></div>
+<div><span>This is the GUI for selecting the camera plate scale, filter, and pupil mask. </span>The boxes turn yellow while the wheels are turning and become green when done moving. The status bar at the bottom of the GUI is also yellow when things are moving. It's fine to move multiple wheels at once, though once you click on "Move motors", all other buttons become disabled until the movements are done.</div>
+<div><span><br class=""/></span></div>
+<div>1. Select a camera: Hit the "Align Wide Camera" or "Align Narrow Camera" button. This will get you very close to being aligned, but extra tweeking may be necessary. See Section <a href="de452/Observation_Guidelines.html">Observation Guidelines</a> for instructions on how to complete the alignment.</div>
+<div>
+<ul>
+<li>The align button will automatically choose the camera (pupil plane) and corresponding Scale. After all the wheels move, you will be left in pupil imaging mode.</li>
+<li>When you are done aligning, to return to regular imaging, click "Next CW" on wheel 5 (Camera Lens) until you reach your desired camera (f/37.7 for narrow or f/21.5 for wide). <b>NOTE: Do not select the "Scale" from the button menu because that will ruin your alignment.</b></li>
+<li>When you click "Align ...", a window will pop up that will ask you if you're sure you want to Align.</li>
+<li>If you change the camera by hand in the "Pupil Plane" menu, the wheel will not move until you press "Move motors". You also then need to align by hand (see "Observation Guidelines").</li>
+</ul></div>
+<div>2. To change filters, choose the "wavelength" button and select the desired filter. Then press "Move motors." Note: If the "Auto Focus" button is checked, this should move to the correct focus as well (but sometimes it will not if AO is not accepting bayside commands). Check the focus!</div>
+<div><br class=""/></div>
+<div>3. Focus button: Sets the focus to the correct value for the current filter</div>
+<div><span><br class=""/></span></div>
+<div>
+<div><b>IV) Quick Analysis (cliocurrentstats GUI)</b></div></div>
+<div><span>This Matlab tool uses the image currently displayed in ds9 and computes and display some statistics.</span></div>
+<div><b><u><br class=""/></u></b></div><br class=""/></div></html>

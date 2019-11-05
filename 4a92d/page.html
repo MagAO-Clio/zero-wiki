@@ -1,0 +1,483 @@
+
+<div class="wiki_entry"> 
+ <h1>Symptoms:</h1> 
+ <div>Unable to query AO so not saving data -- but didn't say that, kept running script until it got to the end and I looked for the data and found it wasn't there. File numbers WERE incrementing where it says &quot;Name of next file&quot; Ran through whole script, saying &quot;Clio take images complete&quot; after each nimg.</div> 
+ <div><br class="" /></div> 
+ <div>Second day: Same problem. New manifestation: </div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <h1>Diagnostics on Clio:</h1> 
+ <h2>Error in Clio Command Line xterm:</h2> 
+ <p></p> 
+ <p>Enter the number of images to take: 1 2 3 4 5 6 7 8 9 10 </p> 
+ <p>Saving file /home/obs/Data/clio20141030_31/39NarrowFocus00029.fit </p> 
+ <p>Error: unable to query ao system for status.</p> 
+ <p>Check ao_com.log for details.</p> 
+ <p>0 images taken.</p> 
+ <p>Error: Failed in taking n images.</p> 
+ <p><br class="" /></p> 
+ <p>------------------------------------------------------------------------------------</p> 
+ <p></p> 
+ <p>1 Succeeded in doing video mode.</p> 
+ <p><br class="" /></p> 
+ <p> Querying AO system for header values.</p> 
+ <p> Size: (1024,512), Coadds: 1, File: /home/obs/Data/clio20141031_01/test00002.fit</p> 
+ <p> Int: 280, Use dark: True, Nod: beam 0, ra -12.12, dec 0.98</p> 
+ <p> Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod</p> 
+ <p><br class="" /></p> 
+ <p>Enter Selection: coadds</p> 
+ <p>1</p> 
+ <p><br class="" /></p> 
+ <p>Enter new number of coadds (cur 1): Succeeded in setting number of coadds.</p> 
+ <p></p> 
+ <p> Querying AO system for header values.</p> 
+ <p> Size: (1024,512), Coadds: 1, File: /home/obs/Data/clio20141031_01/test00002.fit</p> 
+ <p> Int: 280, Use dark: True, Nod: beam 0, ra -12.12, dec 0.98</p> 
+ <p> Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod</p> 
+ <p><br class="" /></p> 
+ <p>Enter Selection: int</p> 
+ <p>0</p> 
+ <p><br class="" /></p> 
+ <p>Enter new integration time (cur 280 milisec): </p> 
+ <p>Setting integration time to minimum possible</p> 
+ <p>Succeeded in setting integration time.</p> 
+ <p><br class="" /></p> 
+ <p>Enter Selection: prefix<br class="" /></p> 
+ <div> 
+  <div>Achernar</div> 
+  <div><br class="" /></div> 
+  <div>Enter prefix for image files (cur test): (default: &quot;clio&quot;): Setting image number to 1.</div> 
+  <div>Succeeded in setting prefix.</div> 
+  <div><br class="" /></div> 
+  <div> Querying AO system for header values.</div> 
+  <div> Size: (1024,512), Coadds: 1, File: /home/obs/Data/clio20141031_01/Achernar00001.fit</div> 
+  <div> Int: 280, Use dark: True, Nod: beam 0, ra -12.12, dec 0.98</div> 
+  <div> Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod</div> 
+  <div><br class="" /></div> 
+  <div>Enter Selection: int</div> 
+  <div>0</div> 
+  <div><br class="" /></div> 
+  <div>Enter new integration time (cur 280 milisec): </div> 
+  <div>Setting integration time to minimum possible</div> 
+  <div>Succeeded in setting integration time.</div> 
+  <div><br class="" /></div> 
+  <div> Querying AO system for header values.</div> 
+  <div> Size: (1024,512), Coadds: 1, File: /home/obs/Data/clio20141031_01/Achernar00001.fit</div> 
+  <div> Int: 280, Use dark: True, Nod: beam 0, ra -12.12, dec 0.98</div> 
+  <div> Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod</div> 
+  <div><br class="" /></div> 
+  <div>Enter Selection: coadds</div> 
+  <div>1</div></div> 
+ <div><br class="" /></div> 
+ <div> 
+  <div>Enter new number of coadds (cur 1): Succeeded in setting number of coadds.</div> 
+  <div><br class="" /></div> 
+  <div> Querying AO system for header values.</div> 
+  <div> Size: (1024,512), Coadds: 1, File: /home/obs/Data/clio20141031_01/Achernar00001.fit</div> 
+  <div> Int: 280, Use dark: True, Nod: beam 0, ra -12.12, dec 0.98</div> 
+  <div> Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod</div> 
+  <div><br class="" /></div> 
+  <div>Enter Selection: nod off</div> 
+  <div>1.2</div> 
+  <div>-0.98</div> 
+  <div><br class="" /></div> 
+  <div>Enter nod RA (cur -12.12 asec): Enter nod Dec (cur 0.98 asec): Succeeded in setting nod offset.</div> 
+  <div><br class="" /></div> 
+  <div> Querying AO system for header values.</div> 
+  <div> Size: (1024,512), Coadds: 1, File: /home/obs/Data/clio20141031_01/Achernar00001.fit</div> 
+  <div> Int: 280, Use dark: True, Nod: beam 0, ra 1.20, dec -0.98</div> 
+  <div> Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod</div> 
+  <div><br class="" /></div> 
+  <div>Enter Selection: nnod</div> 
+  <div>1</div> 
+  <div>1</div> 
+  <div><br class="" /></div> 
+  <div>Enter the number of images to take per nod: Enter the number of nod pairs to take: 1 </div> 
+  <div>Saving file /home/obs/Data/clio20141031_01/Achernar00001.fit </div> 
+  <div>Error: unable to query ao system for status.</div> 
+  <div>Check ao_com.log for details.</div> 
+  <div><br class="" /></div> 
+  <div>Aborting nimg.</div> 
+  <div><br class="" /></div> 
+  <div> Querying AO system for header values.</div> 
+  <div> Size: (1024,512), Coadds: 1, File: /home/obs/Data/clio20141031_01/Achernar00002.fit</div> 
+  <div> Int: 280, Use dark: True, Nod: beam 0, ra 1.20, dec -0.98</div> 
+  <div> Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod</div></div> 
+ <div><br class="" /></div> 
+ <div> 
+  <div>Enter Selection: </div> 
+  <div><br class="" /></div> 
+  <div>Error: Unknown command &quot;&quot;</div> 
+  <div><br class="" /></div> 
+  <div><br class="" /></div> 
+  <div>elapsed time = 0.980000 sec, 980.000000 msec/frame </div> 
+  <div>1 images taken.</div> 
+  <div>Total exposure= 0.280 Efficiency= 0.29</div> 
+  <div><br class="" /></div> 
+  <div>Succeeded in taking n images.</div> 
+  <div><br class="" /></div> 
+  <div><br class="" /></div></div> 
+ <div> 
+  <div>Enter Selection: nod off</div> 
+  <div>-1.2</div> 
+  <div>0.98</div> 
+  <div><br class="" /></div> 
+  <div>Enter nod RA (cur 1.20 asec): Enter nod Dec (cur -0.98 asec): Succeeded in setting nod offset.</div> 
+  <div><br class="" /></div> 
+  <div>Enter Selection: nnod</div> 
+  <div>1</div> 
+  <div>1</div> 
+  <div><br class="" /></div> 
+  <div>Enter the number of images to take per nod: Enter the number of nod pairs to take: 1 </div> 
+  <div>Saving file /home/obs/Data/clio20141031_01/Achernar00003.fit </div> 
+  <div>. 1 </div> 
+  <div>Saving file /home/obs/Data/clio20141031_01/Achernar00004.fit </div> 
+  <div>.1 images taken.</div> 
+  <div><br class="" /></div> 
+  <div><br class="" /></div> 
+  <div><br class="" /></div></div> 
+ <div> 
+  <div> Querying AO system for header values.</div> 
+  <div> Size: (1024,512), Coadds: 1, File: /home/obs/Data/clio20141031_01/Achernar00005.fit</div> 
+  <div> Int: 280, Use dark: True, Nod: beam 2, ra -1.20, dec 0.98</div> 
+  <div> Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod</div> 
+  <div><br class="" /></div> 
+  <div>Enter Selection: int</div> 
+  <div>0</div></div> 
+ <div><br class="" /></div> 
+ <div> 
+  <div>Enter Selection: coadds</div> 
+  <div>1</div> 
+  <div><br class="" /></div> 
+  <div>Enter new number of coadds (cur 1): Succeeded in setting number of coadds.</div> 
+  <div><br class="" /></div> 
+  <div> Querying AO system for header values.</div> 
+  <div> Size: (1024,512), Coadds: 1, File: /home/obs/Data/clio20141031_01/Achernar00005.fit</div> 
+  <div> Int: 280, Use dark: True, Nod: beam 2, ra -1.20, dec 0.98</div> 
+  <div> Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod</div> 
+  <div><br class="" /></div> 
+  <div>Enter Selection: prefix</div> 
+  <div>Achernar</div> 
+  <div><br class="" /></div> 
+  <div>Enter prefix for image files (cur Achernar): (default: &quot;clio&quot;): Setting image number to 1.</div> 
+  <div>Succeeded in setting prefix.</div> 
+  <div><br class="" /></div> 
+  <div> Querying AO system for header values.</div> 
+  <div> Size: (1024,512), Coadds: 1, File: /home/obs/Data/clio20141031_01/Achernar00001.fit</div> 
+  <div> Int: 280, Use dark: True, Nod: beam 2, ra -1.20, dec 0.98</div> 
+  <div> Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod</div> 
+  <div><br class="" /></div> 
+  <div>Enter Selection: int</div> 
+  <div>0</div> 
+  <div><br class="" /></div> 
+  <div>Enter new integration time (cur 280 milisec): </div> 
+  <div>Setting integration time to minimum possible</div> 
+  <div>Succeeded in setting integration time.</div> 
+  <div><br class="" /></div> 
+  <div> Querying AO system for header values.</div> 
+  <div> Size: (1024,512), Coadds: 1, File: /home/obs/Data/clio20141031_01/Achernar00001.fit</div> 
+  <div> Int: 280, Use dark: True, Nod: beam 2, ra -1.20, dec 0.98</div> 
+  <div> Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod</div> 
+  <div><br class="" /></div> 
+  <div>Enter Selection: coadds</div> 
+  <div>10</div> 
+  <div><br class="" /></div> 
+  <div>Enter new number of coadds (cur 1): Succeeded in setting number of coadds.</div></div> 
+ <div><br class="" /></div> 
+ <div> 
+  <div> Querying AO system for header values.</div> 
+  <div> Size: (1024,512), Coadds: 10, File: /home/obs/Data/clio20141031_01/Achernar00001.fit</div> 
+  <div> Int: 280, Use dark: True, Nod: beam 2, ra -1.20, dec 0.98</div> 
+  <div> Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod</div> 
+  <div><br class="" /></div> 
+  <div>Enter Selection: nod off</div> 
+  <div>1.2</div> 
+  <div>-0.98</div> 
+  <div><br class="" /></div> 
+  <div>Enter nod RA (cur -1.20 asec): Enter nod Dec (cur 0.98 asec): Succeeded in setting nod offset.</div> 
+  <div><br class="" /></div> 
+  <div> Querying AO system for header values.</div> 
+  <div> Size: (1024,512), Coadds: 10, File: /home/obs/Data/clio20141031_01/Achernar00001.fit</div> 
+  <div> Int: 280, Use dark: True, Nod: beam 2, ra 1.20, dec -0.98</div> 
+  <div> Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod</div> 
+  <div><br class="" /></div> 
+  <div>Enter Selection: nnod</div> 
+  <div>3</div> 
+  <div>1</div> 
+  <div><br class="" /></div> 
+  <div>Enter the number of images to take per nod: Enter the number of nod pairs to take: 1 2 3 4 5 6</div> 
+  <div> 7 8 9 10 </div> 
+  <div>Saving file /home/obs/Data/clio20141031_01/Achernar00001.fit </div> 
+  <div>. 1 2 3 4 5 6 7 8 9 10 </div> 
+  <div>Saving file /home/obs/Data/clio20141031_01/Achernar00002.fit </div> 
+  <div>Error: fits function returns 115 for file /home/obs/Data/clio20141031_01/Achernar00002.fit.</div> 
+  <div><br class="" /></div> 
+  <div>FITSIO status = 115: NULL input pointer</div> 
+  <div>failed to create new file (already exists?):</div> 
+  <div>/home/obs/Data/clio20141031_01/Achernar00002.fit</div></div> 
+ <div> 
+  <div>Error: unable to write to /home/obs/Data/clio20141031_01/Achernar00002.fit.Check to see that file do</div> 
+  <div>esn't already exist.</div> 
+  <div><br class="" /></div> 
+  <div>Aborting nimg.</div> 
+  <div><br class="" /></div> 
+  <div> Querying AO system for header values.</div> 
+  <div><br class="" /></div> 
+  <div> Size: (1024,512), Coadds: 10, File: /home/obs/Data/clio20141031_01/Achernar00003.fit</div> 
+  <div> Int: 280, Use dark: True, Nod: beam 0, ra 1.20, dec -0.98</div> 
+  <div> Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod</div> 
+  <div><br class="" /></div> 
+  <div>Enter Selection: </div> 
+  <div>Error: Unknown command &quot;&quot;</div> 
+  <div><br class="" /></div> 
+  <div><br class="" /></div> 
+  <div> Querying AO system for header values.</div> 
+  <div> Size: (1024,512), Coadds: 10, File: /home/obs/Data/clio20141031_01/Achernar00003.fit</div> 
+  <div> Int: 280, Use dark: True, Nod: beam 0, ra 1.20, dec -0.98</div> 
+  <div> Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod</div> 
+  <div><br class="" /></div> 
+  <div>Enter Selection: prefix</div> 
+  <div>Achernar</div></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div> 
+  <div>Enter prefix for image files (cur Achernar): (default: &quot;clio&quot;): Setting image number to 5.</div> 
+  <div>Succeeded in setting prefix.</div> 
+  <div><br class="" /></div> 
+  <div> Querying AO system for header values.</div> 
+  <div> Size: (1024,512), Coadds: 10, File: /home/obs/Data/clio20141031_01/Achernar00005.fit</div> 
+  <div> Int: 280, Use dark: True, Nod: beam 0, ra 1.20, dec -0.98</div> 
+  <div> Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod</div> 
+  <div><br class="" /></div> 
+  <div>Enter Selection: int</div> 
+  <div>0</div> 
+  <div><br class="" /></div> 
+  <div>Enter new integration time (cur 280 milisec): </div> 
+  <div>Setting integration time to minimum possible</div> 
+  <div>Succeeded in setting integration time.</div> 
+  <div><br class="" /></div> 
+  <div> Querying AO system for header values.</div> 
+  <div> Size: (1024,512), Coadds: 10, File: /home/obs/Data/clio20141031_01/Achernar00005.fit</div> 
+  <div> Int: 280, Use dark: True, Nod: beam 0, ra 1.20, dec -0.98</div> 
+  <div> Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod</div> 
+  <div><br class="" /></div> 
+  <div>Enter Selection: coadds</div> 
+  <div>10</div> 
+  <div><br class="" /></div> 
+  <div>Enter new number of coadds (cur 10): Succeeded in setting number of coadds.</div> 
+  <div><br class="" /></div> 
+  <div> Querying AO system for header values.</div> 
+  <div> Size: (1024,512), Coadds: 10, File: /home/obs/Data/clio20141031_01/Achernar00005.fit</div> 
+  <div> Int: 280, Use dark: True, Nod: beam 0, ra 1.20, dec -0.98</div> 
+  <div> Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod</div></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div> 
+  <div>Enter Selection: nod off</div> 
+  <div>1.2</div> 
+  <div>-0.98</div> 
+  <div><br class="" /></div> 
+  <div>Enter nod RA (cur 1.20 asec): Enter nod Dec (cur -0.98 asec): Succeeded in setting nod offset.</div> 
+  <div><br class="" /></div> 
+  <div> Querying AO system for header values.</div> 
+  <div> Size: (1024,512), Coadds: 10, File: /home/obs/Data/clio20141031_01/Achernar00005.fit</div> 
+  <div> Int: 280, Use dark: True, Nod: beam 0, ra 1.20, dec -0.98</div> 
+  <div> Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod</div> 
+  <div><br class="" /></div> 
+  <div>Enter Selection: nnod</div> 
+  <div>3</div> 
+  <div>1</div> 
+  <div><br class="" /></div> 
+  <div>Enter the number of images to take per nod: Enter the number of nod pairs to take: 1 2 3 4 5 6 7 8 9 10 </div> 
+  <div>Saving file /home/obs/Data/clio20141031_01/Achernar00005.fit </div> 
+  <div>. 1 2 3 4 5 6 7 8 9 10 </div> 
+  <div>Saving file /home/obs/Data/clio20141031_01/Achernar00006.fit </div> 
+  <div>. 1 2 3 4 5 6 7 8 9 10 </div> 
+  <div>Saving file /home/obs/Data/clio20141031_01/Achernar00007.fit </div> 
+  <div>. 1 2 3 4 5 6 7 8 9 10 </div> 
+  <div>Saving file /home/obs/Data/clio20141031_01/Achernar00008.fit </div> 
+  <div>. 1 2 3 4 5 6 7 8 9 10 </div> 
+  <div>Saving file /home/obs/Data/clio20141031_01/Achernar00009.fit </div> 
+  <div>. 1 2 3 4 5 6 7 8 9 10 </div> 
+  <div>Saving file /home/obs/Data/clio20141031_01/Achernar00010.fit </div> 
+  <div>.1 images taken.</div> 
+  <div><br class="" /></div> 
+  <div><br class="" /></div> 
+  <div> Querying AO system for header values.</div> 
+  <div> Size: (1024,512), Coadds: 10, File: /home/obs/Data/clio20141031_01/Achernar00011.fit</div></div> 
+ <div> 
+  <div> Int: 280, Use dark: True, Nod: beam 2, ra 1.20, dec -0.98</div> 
+  <div> Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod</div> 
+  <div><br class="" /></div> 
+  <div>Enter Selection: </div> 
+  <div><br class="" /></div> 
+  <div>Error: Unknown command &quot;&quot;</div> 
+  <div><br class="" /></div> 
+  <div><br class="" /></div> 
+  <div> Querying AO system for header values.</div> 
+  <div> Size: (1024,512), Coadds: 10, File: /home/obs/Data/clio20141031_01/Achernar00011.fit</div> 
+  <div> Int: 280, Use dark: True, Nod: beam 2, ra 1.20, dec -0.98</div> 
+  <div> Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod</div> 
+  <div><br class="" /></div> 
+  <div>Enter Selection: </div></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <p>------------------------------------------------------------------------------------</p> 
+ <div><br class="" /></div> 
+ <h2>Error in ao_comm.log:</h2> 
+ <div> 
+  <div>[obs@clio1 Programs]$ tail -20 ao_com.log<br class="" /></div> 
+  <div>Error: failed to write complete request to socket. 4 chars left.</div> 
+  <div><br class="" /></div> 
+  <div><br class="" /></div> 
+  <div>10/31/2014 03:17:38: /home/obs/MBEcode/ao_comm//ao_sock.c line 234</div> 
+  <div>Sending to server:</div> 
+  <div>All</div> 
+  <div><br class="" /></div> 
+  <div><br class="" /></div> 
+  <div>10/31/2014 03:17:38: /home/obs/MBEcode/ao_comm//ao_sock.c line 106</div> 
+  <div>Error: failed to write complete request to socket. 4 chars left.</div> 
+  <div><br class="" /></div> 
+  <div><br class="" /></div> 
+  <div>10/31/2014 03:17:52: /home/obs/MBEcode/ao_comm//ao_sock.c line 234</div> 
+  <div>Sending to server:</div> 
+  <div>All</div> 
+  <div><br class="" /></div> 
+  <div><br class="" /></div> 
+  <div>10/31/2014 03:17:52: /home/obs/MBEcode/ao_comm//ao_sock.c line 106</div> 
+  <div>Error: failed to write complete request to socket. 4 chars left.</div> 
+  <div><br class="" /></div></div> 
+ <div><br class="" /></div> 
+ <div>--------------------------------------------------------------------------------------------</div> 
+ <div>DAY 3:</div> 
+ <div><br class="" /></div> 
+ <div> 
+  <div>11/01/2014 21:24:23: /home/obs/MBEcode/ao_comm//ao_sock.c line 302</div> 
+  <div>Error: Read on socket failed. Returned -1</div> 
+  <div><br class="" /></div></div> 
+ <div><br class="" /></div> 
+ <div>ALSO happening when clicking &quot;Take Images&quot;</div> 
+ <div>and it updated the file number and said it took images.</div> 
+ <div>Again I only noticed when I went to look for the FITS files and they weren't there.</div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div> 
+  <div>11/02/2014 02:50:37: /home/obs/MBEcode/ao_comm//ao_sock.c line 234</div> 
+  <div>Sending to server:</div> 
+  <div>All</div> 
+  <div><br class="" /></div> 
+  <div><br class="" /></div> 
+  <div>11/02/2014 02:50:37: /home/obs/MBEcode/ao_comm//ao_sock.c line 302</div> 
+  <div>Error: Read on socket failed. Returned 0</div> 
+  <div><br class="" /></div> 
+  <div><br class="" /></div> 
+  <div>11/02/2014 02:50:37: /home/obs/MBEcode/ao_comm//ao_sock.c line 203</div> 
+  <div>Got from server:</div> 
+  <div><br class="" /></div> 
+  <div><br class="" /></div> 
+  <div>11/02/2014 02:52:09: /home/obs/MBEcode/ao_comm//ao_sock.c line 234</div> 
+  <div>Sending to server:</div> 
+  <div>All</div> 
+  <div><br class="" /></div> 
+  <div><br class="" /></div> 
+  <div>11/02/2014 02:52:09: /home/obs/MBEcode/ao_comm//ao_sock.c line 106</div> 
+  <div>Error: failed to write complete request to socket. 4 chars left.</div> 
+  <div><br class="" /></div> 
+  <div><br class="" /></div> 
+  <div>11/02/2014 02:58:32: /home/obs/MBEcode/ao_comm//ao_cli.c line 100</div> 
+  <div>Opened socket connection to AO system at 139.229.110.35, port 7102.</div> 
+  <div><br class="" /></div> 
+  <div><br class="" /></div></div> 
+ <div><br class="" /></div> 
+ <div> 
+  <div> Querying AO system for header values.</div> 
+  <div> Size: (1024,512), Coadds: 10, File: /home/obs/Data/clio20141101_02/TrapWide00002.fit</div> 
+  <div> Int: 280, Use dark: False, Nod: beam 0, ra -7.40, dec 0.81</div> 
+  <div> Use data cube: False, Take short cal. image: False, PCR sync: False, lod file: tim.full.lod</div> 
+  <div><br class="" /></div> 
+  <div>Enter Selection: </div> 
+  <div><br class="" /></div> 
+  <div>Error: Unknown command &quot;&quot;</div> 
+  <div><br class="" /></div> 
+  <div><br class="" /></div></div> 
+ <div>
+  <div>11/02/2014 05:15:34: /home/obs/MBEcode/ao_comm//ao_sock.c line 234</div>
+  <div>Sending to server:</div>
+  <div>All</div>
+  <div><br class="" /></div>
+  <div><br class="" /></div>
+  <div>11/02/2014 05:15:34: /home/obs/MBEcode/ao_comm//ao_sock.c line 302</div>
+  <div>Error: Read on socket failed. Returned -1</div>
+  <div><br class="" /></div>
+  <div><br class="" /></div>
+  <div>11/02/2014 05:15:34: /home/obs/MBEcode/ao_comm//ao_sock.c line 203</div>
+  <div>Got from server:</div></div>
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div> 
+  <div>--------------------------------------------------------------------------------------------</div></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <h1>Diagnostics of &quot;all&quot; command to MMTI:</h1> 
+ <div> 
+  <ul>
+    
+   <li>Jared is seeing an &quot;all&quot; request from Clio every 3 seconds.</li>
+    
+   <li>The error about &quot;4 chars left&quot; means it didn't receive ANY of the command since the command &quot;/all&quot; is 4 characters.</li>
+    
+   <li>Other Clio computer communications seem fine -- Guanaco is running clio just fine, Transfer files is running smoothly, etc.</li>
+    
+  </ul> 
+  <div><br class="" /></div></div> 
+ <h1>Only working solutions:</h1> 
+ <div> 
+  <ul>
+    
+   <li>Killclio</li>
+    
+  </ul></div> 
+ <div>Or</div> 
+ <div> 
+  <ul>
+    
+   <li>Close camera control program, restart MMTI, restart Clio component.</li>
+    
+  </ul></div> 
+ <div>As according to </div> 
+ <div><a href="groups/clio2usermanual/wiki/66709/Troubleshooting_Pages.html">http://zero.as.arizona.edu/groups/clio2usermanual/wiki/66709/Troubleshooting_Pages.html</a><br class="" /></div> 
+ <div><br class="" /></div> 
+ <h2>Unsatisfactory because:</h2> 
+ <div> 
+  <ul>
+    
+   <li>Have to killclio</li>
+    
+   <li>Doesn't warn you when ao_com error keeps from saving data</li>
+    
+  </ul></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div>-Katie Morzinski, 2014/10/31</div></div>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>ktmorz</string>
+	<key>authorLongName</key>
+	<string>Katie Morzinski</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/05b9b</string>
+	<key>content</key>
+	<string>
+&lt;div class="wiki_entry"&gt; 
+ &lt;p&gt;Clio was behaving normally, until tonight. When I aligned the Clio pupil tonight, the pupil wheel motor #2 seemed to be not working somehow. In pupil imaging mode I could tell that the actual pupil stop was 1 position off from what was claimed in the software. The wheel itself is moving fine, so it's possible we lost the home. Anyway, I was still able to align it, by making sure by eye that I had the right cold stop in.&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;p&gt;***However, the images have an elongation at L-band that I have never seen before. And it is round on VisAO. So I think this means it is possible one of the other motors is also not homing properly, so perhaps we are going through the camera lens or collimator lens at a steep angle, to make this elongation. What do you think?&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;p&gt;Here is the image:&lt;/p&gt; 
+ &lt;p&gt;&lt;img src="/groups/clio2usermanual/wiki/05b9b/images/39736.jpg" title="20151126Lband.jpg" role="button" alt="" class="aligncenter" tabindex="0" /&gt;&lt;/p&gt; 
+ &lt;p&gt;&lt;span&gt;Test on Canopus at dawn on 2015/11/25-26&lt;/span&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;p&gt;&lt;span&gt;[3.9] filter, in focus, stamp mode, 43 ms, 20 coadds.&lt;/span&gt;&lt;/p&gt;&lt;pre&gt;&lt;span&gt;Test1: Left side, Regular Image: -slightly elongated&lt;/span&gt;  
+  
+  
+  &lt;p&gt;&lt;img src="/groups/clio2usermanual/wiki/05b9b/images/54bfa.jpg" title="20151126Lband_Test7.jpg" role="button" alt="" class="aligncenter" tabindex="0" /&gt;Test1: Right side, Regular Image: -slightly elongated&lt;span&gt; &lt;/span&gt;&lt;/p&gt;
+  
+  
+  &lt;p&gt;&lt;img src="/groups/clio2usermanual/wiki/05b9b/images/dd322.jpg" title="20151126Lband_Test18.jpg" role="button" alt="" class="aligncenter" tabindex="0" /&gt;&lt;br class="" /&gt;Test2: After jogging Motor 3 (Filter Wheel 1) Pretty Far to the Right:&lt;span&gt; &lt;/span&gt;&lt;/p&gt;
+  
+  
+  &lt;p&gt;&lt;img src="/groups/clio2usermanual/wiki/05b9b/images/264f6.jpg" title="20151126Lband_Test25.jpg" role="button" alt="" class="aligncenter" tabindex="0" /&gt;Same one on the Left:&lt;br class="" /&gt;&lt;img src="/groups/clio2usermanual/wiki/05b9b/images/03584.jpg" title="20151126Lband_Test33.jpg" role="button" alt="" class="aligncenter" tabindex="0" /&gt;&lt;br class="" /&gt;Test3: Moved [3.9] filter back to regular position. Then moved camera lens wheel&lt;/p&gt;
+  
+  
+  &lt;p&gt;-Moved star over but did not really change elongation:&lt;/p&gt;
+  
+  
+  &lt;p&gt;&lt;img src="/groups/clio2usermanual/wiki/05b9b/images/ec98d.jpg" title="20151126Lband_Test41.jpg" role="button" alt="" class="aligncenter" tabindex="0" /&gt;&lt;br class="" /&gt;Test4: Moved the collimator lens just a little. Result: Elongation:&lt;/p&gt;
+  
+  
+  &lt;p&gt;&lt;img src="/groups/clio2usermanual/wiki/05b9b/images/9da5e.jpg" title="20151126Lband_Test49.jpg" role="button" alt="" class="aligncenter" tabindex="0" /&gt;&lt;br class="" /&gt;same test, other side:&lt;/p&gt;
+  
+  
+  &lt;p&gt;&lt;img src="/groups/clio2usermanual/wiki/05b9b/images/d7e89.jpg" title="20151126Lband_Test57.jpg" role="button" alt="" class="aligncenter" tabindex="0" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;/p&gt;
+  
+  
+  &lt;p&gt;2015/11/26-27 Dawn:&lt;/p&gt;
+  
+  
+  &lt;p&gt;Canopus at M-band. Top row left to right: FW1 moved left; FW1 moved right; Normal.&lt;/p&gt;
+  
+  
+  &lt;p&gt;Bottom row left to right: Normal; Round by hand/eye; Round - Normal.&lt;/p&gt;
+  
+  
+  &lt;p&gt;&lt;img src="/groups/clio2usermanual/wiki/05b9b/images/__thumbs__/61e23.jpg" name="/groups/clio2usermanual/wiki/05b9b/images/61e23.jpg#680x494" title="" class="aligncenter thumbnail" role="button" alt="" longdesc="/groups/clio2usermanual/wiki/05b9b/images/61e23.jpg#680x494" tabindex="0" /&gt;&lt;br class="" /&gt;Pinhole. Left: 3.9um; Right: M-band. 3.9-um FWHM is 98mas while diff-lim is 124mas. M-band FWHM is 120mas while diff-lim is 149mas.&lt;/p&gt;
+  
+  &lt;p&gt;&lt;img src="/groups/clio2usermanual/wiki/05b9b/images/__thumbs__/5cd00.jpg" name="/groups/clio2usermanual/wiki/05b9b/images/5cd00.jpg#600x328" title="pinhole 3.9 and M" class="aligncenter thumbnail" role="button" alt="pinhole 3.9 and M" longdesc="/groups/clio2usermanual/wiki/05b9b/images/5cd00.jpg#600x328" tabindex="0" /&gt;Canopus. Left: 3.9um; Right: M-band. Saturated so I can't measure FWHM.&lt;br class="" /&gt;&lt;img src="/groups/clio2usermanual/wiki/05b9b/images/__thumbs__/b9a0b.jpg" name="/groups/clio2usermanual/wiki/05b9b/images/b9a0b.jpg#600x288" title="" class="aligncenter thumbnail" role="button" alt="" longdesc="/groups/clio2usermanual/wiki/05b9b/images/b9a0b.jpg#600x288" tabindex="0" /&gt;&lt;br class="" /&gt;UPDATE: SOLVED BY T.J.: DO NOT HOME WHEEL 5 CAMERA LENS AFTER ALIGNING PUPIL&lt;/p&gt;
+  &lt;p&gt;Focus sequence in J:&lt;/p&gt;
+  &lt;p&gt;Before:&lt;/p&gt;
+  &lt;p&gt;&lt;img src="/groups/clio2usermanual/wiki/05b9b/images/__thumbs__/df3b8.jpg" title="20151130_FocusSequence_J_Elongated.jpg" longdesc="/groups/clio2usermanual/wiki/05b9b/images/df3b8.jpg#600x49" role="button" alt="" class="aligncenter thumbnail" tabindex="0" /&gt;&lt;br class="" /&gt;&lt;/p&gt;
+  &lt;p&gt;After:&lt;/p&gt;
+  &lt;p&gt;&lt;img src="/groups/clio2usermanual/wiki/05b9b/images/__thumbs__/ddc45.jpg" title="20151130_FocusSequence_J_Fixed.jpg" longdesc="/groups/clio2usermanual/wiki/05b9b/images/ddc45.jpg#600x60" role="button" alt="" class="aligncenter thumbnail" tabindex="0" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;/p&gt;&lt;/pre&gt;&lt;/div&gt;</string>
+	<key>createdDate</key>
+	<string>2015-11-26 04:41:46.604028+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2015-11-30 05:54:15</string>
+	<key>lastVersion</key>
+	<string>13</string>
+	<key>latestVersion</key>
+	<string>12</string>
+	<key>modifiedDate</key>
+	<date>2015-11-30T06:04:40Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Image Elongation</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/05b9b</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

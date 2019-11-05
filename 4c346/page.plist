@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>phinz</string>
+	<key>authorLongName</key>
+	<string>Phil Hinz</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/4c346</string>
+	<key>content</key>
+	<string>
+&lt;div class="wiki_entry"&gt; 
+ &lt;p&gt;&lt;/p&gt; 
+ &lt;p&gt;The Clio prism is a direct-vision design prism, which means it has three wedges that make up the overall prism. The undeviated wavelength is 2 microns. Because it is a prism (not a grating) the dispersion is nonlinear. &lt;/p&gt; 
+ &lt;h2&gt;Spectral Resolution&lt;/h2&gt; 
+ &lt;p&gt;The spectral resolution as a function of wavelength for a 0.2&amp;quot; image is&lt;/p&gt; 
+ &lt;table class="data __useTableEditor"&gt;&lt;thead&gt; 
+   &lt;tr&gt;
+     
+    &lt;th&gt;Wavelength&lt;/th&gt;
+     
+    &lt;th&gt;R (for 0.2&amp;quot; image)&lt;/th&gt;
+     
+   &lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt; 
+   &lt;tr&gt;
+     
+    &lt;td&gt;1.65&lt;/td&gt;
+     
+    &lt;td&gt;8&lt;/td&gt;
+     
+   &lt;/tr&gt; 
+   &lt;tr&gt;
+     
+    &lt;td&gt;2.2&lt;/td&gt;
+     
+    &lt;td&gt;34&lt;/td&gt;
+     
+   &lt;/tr&gt; 
+   &lt;tr&gt;
+     
+    &lt;td&gt;3.5&lt;/td&gt;
+     
+    &lt;td&gt;126&lt;/td&gt;
+     
+   &lt;/tr&gt; 
+   &lt;tr&gt;
+     
+    &lt;td&gt;4.0&lt;/td&gt;
+     
+    &lt;td&gt;157&lt;/td&gt;
+     
+   &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;ZEMAX model of the wavelength vs. position for the Clio direct vision prism: &lt;br class="" /&gt;&lt;br class="" /&gt;&lt;img src="/groups/clio2usermanual/wiki/4c346/images/__thumbs__/c8d25.JPG" name="/groups/clio2usermanual/wiki/4c346/images/c8d25.JPG#1440x645" title="" longdesc="/groups/clio2usermanual/wiki/4c346/images/c8d25.JPG#1440x645" role="button" alt="" class="aligncenter thumbnail" tabindex="0" /&gt;&lt;br class="" /&gt; 
+ &lt;h2&gt;Wavelength Solution&lt;/h2&gt; 
+ &lt;div&gt;The nonlinear dispersion of the direct vision prism is well fit by a quadratic equation with wavelength as the independent variable. Fitting the ZEMAX model image positions, expressed in pixels, and solving the quadratic give s the wavelength solution of:&lt;/div&gt; 
+ &lt;div&gt;&lt;img src="/groups/clio2usermanual/wiki/4c346/images/165e2.png" title="Clio_wvl_soln.png" role="button" alt="Wavelength solution" class="aligncenter" tabindex="0" /&gt;&lt;/div&gt; 
+ &lt;div&gt;where y is in pixel rows on the detector, and &lt;i&gt;slit&lt;/i&gt; is the row position of the slit in imaging mode (260 for the medium slit).&lt;br class="" /&gt;&lt;/div&gt;
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;&lt;br class="" /&gt;&lt;/div&gt;</string>
+	<key>createdDate</key>
+	<string>2010-10-22 09:51:44.613613+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>phinz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>phinz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2010-10-23 15:34:32</string>
+	<key>lastVersion</key>
+	<string>7</string>
+	<key>latestVersion</key>
+	<string>6</string>
+	<key>modifiedDate</key>
+	<date>2010-10-27T08:29:21Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Prism Information</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/4c346</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

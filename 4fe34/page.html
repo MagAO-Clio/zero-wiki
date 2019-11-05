@@ -1,0 +1,19 @@
+
+<div class="wiki_entry"> 
+ <p> </p>
+ <h2><span class="Apple-style-span wiki_unbold">At the beginning of the night:</span><br class="" /></h2> 
+ <div><span class="Apple-style-span"> 
+   <p>1) Login to clio using the command “ssh obs@clio.mmto.arizona.edu -X -Y -C”</p> 
+   <p>Make sure you have talked to the previous observer or email Phil Hinz to get the password.</p> 
+   <p>2) Type “runclio” to start the various programs.</p> 
+   <p>“runclio” is a link to mirkwood.sh in the Programs directory. This in turn is a shell script which runs mirkwood (the clio control program), ds9 (the image display program), Cliomotors.tcl (the filter control program), starnudger-Clio.tcl, (the telescope paddle control), statcurrent.tcl (the statistics display program), and transferfiles.sh(Backs up files to zero in Tucson). The programs as they should appear on your desktop are shown below</p> 
+   <p><br class="" /><img src="/groups/clio2usermanual/wiki/4fe34/images/__thumbs__/524ed.png" title="clio-screenshot.png" longdesc="/groups/clio2usermanual/wiki/4fe34/images/524ed.png#1440x900" role="button" alt="" class="aligncenter thumbnail" tabindex="0" /><br class="" />If any of the software components stop responding or crash, they can be restarted or rest using the GUI in the lower right hand of the display.<br class="" /></p> 
+   <p>3) Initialize the camera by clicking “Init&quot; on the Clio Camera Control GUI.</p> 
+   <p>The button should turn from red to green.<br class="" /></p> 
+   <p></p> 
+   <p>4) Make sure the “AO/Tel. info in header” check box is clicked</p> 
+   <p>NOTE: IF THIS IS NOT TURNED ON YOU WILL NOT HAVE TELESCOPE INFO IN YOUR FITS FILES</p> 
+   <p>5) Check that the data directory is set to /home/obs/Data/n(year)(month(UTnight). As of October 2010, this should be automatic.</p> 
+   <p>For example on the evening of October 7, 2010 I would set the directory to  /home/obs/Data/n101008, since the UT data is 1008 starting at 5 pm on October 7. While other directories can be used, setting this is important for automatic file backup to Tucson. You can see the operation of this script in the terminal on the bottom of the screen. It will copy data in ten minute intervals. If there is concern about this script interrupting camera operations, this can be stopped at anytime simply by killing the terminal, but it should be restarted at the end of the night to ensure the data is backed up.</p> 
+   <div><br class="" /></div></span></div>
+ <p></p></div>

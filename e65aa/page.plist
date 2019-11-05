@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>phinz</string>
+	<key>authorLongName</key>
+	<string>Phil Hinz</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/e65aa</string>
+	<key>content</key>
+	<string>
+&lt;div class="wiki_entry"&gt;
+ &lt;p&gt;&lt;span class="Apple-style-span"&gt;
+   &lt;div class="page"&gt;
+    &lt;h2 class="wiki_unbold"&gt;Filling Clio&lt;/h2&gt;
+    &lt;div class="level2"&gt;
+     &lt;p&gt;Routine filing&lt;/p&gt;
+     &lt;ul&gt;
+      
+      &lt;li class="level1"&gt;
+       &lt;div class="li wiki_unbold"&gt;The outer liquid N2 dewar should be filled every day&lt;/div&gt;&lt;/li&gt;
+      
+      &lt;li class="level1"&gt;
+       &lt;div class="li wiki_unbold"&gt;The inner liquid N2 dewar every two days.&lt;/div&gt;&lt;/li&gt;
+      
+      &lt;li class="level1"&gt;
+       &lt;div class="li wiki_unbold"&gt;The outer vessel hold time is 23 hours.&lt;/div&gt;&lt;/li&gt;
+      
+     &lt;/ul&gt;
+     &lt;p&gt;&lt;strong&gt;Important:&lt;/strong&gt; If you want to fill only once per day, fill in the afternoon. Filling in the morning creates a risk that the outer vessel may run out before the end of observing.&lt;/p&gt;&lt;/div&gt;
+    &lt;div class="secedit"&gt;&lt;/div&gt;&lt;a name="dewar_spouts"&gt;&lt;/a&gt;&lt;b&gt;Dewar Spouts&lt;/b&gt;
+    &lt;div class="level3"&gt;
+     &lt;p&gt;&lt;a href="http://lemony.as.arizona.edu/wiki/lib/exe/fetch.php?cache=cache&amp;amp;media=clio_cryo_ports.jpg" class="media" title="clio_cryo_ports.jpg"&gt;&lt;img src="http://lemony.as.arizona.edu/wiki/lib/exe/fetch.php?w=&amp;amp;h=&amp;amp;cache=cache&amp;amp;media=clio_cryo_ports.jpg" alt="" class="media" /&gt;&lt;/a&gt;&lt;/p&gt;
+     &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The inner vessel does not have a hose connection for Clio2. This picture needs updating.&lt;/p&gt;
+     &lt;p&gt;&lt;a href="http://lemony.as.arizona.edu/wiki/lib/exe/fetch.php?cache=cache&amp;amp;media=proper_form_for_filling_clio.jpg" class="media" title="proper_form_for_filling_clio.jpg"&gt;&lt;img src="http://lemony.as.arizona.edu/wiki/lib/exe/fetch.php?w=&amp;amp;h=&amp;amp;cache=cache&amp;amp;media=proper_form_for_filling_clio.jpg" alt="" class="media" /&gt;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class="secedit"&gt;&lt;/div&gt;&lt;a name="filling_the_dewars"&gt;&lt;/a&gt;&lt;b&gt;Filling the Dewars&lt;/b&gt;
+    &lt;div class="level3"&gt;
+     &lt;p&gt;&lt;strong&gt;Liquid Nitrogen Dewar&lt;/strong&gt;&lt;/p&gt;
+     &lt;p&gt;An LN2 bottle is pulled over, and the metal rod inserted into the dewar. A solid metal rod from the top drawer of the Clio electronics rack is used to restrain a loop of the elastic filling tube. When the LN2 is turned on, this prevents the metal filling tube shooting out of the tank. HOlding it lightly in place until the cold vapour freezes te tube in place, it takes about 5 minutes to fill the LN2 tank. The sign of a full tank is LN2 overflowing and spurting out of the tank.&lt;/p&gt;
+     &lt;p&gt;&lt;strong&gt;Solid Nitrogen Dewar&lt;/strong&gt;&lt;/p&gt;
+     &lt;p&gt;The pump is switched off, and the pumping tube is removed from the dewar, taking care not to lose the Teflon washer that seals the solid nitrogen dewar tank. The filling procedure is the same as for the Liquid Nitrogen tank, and the Teflon washer and pumping tube reattached. You may use a wrench to firmly fix on the pumping tube, and then switch on the pump again.&lt;/p&gt;
+     &lt;p&gt;Temperature of the dewars is checked at the digital thermometer display on the Clio Electronics rack. The left top number shows the detector temperature. The right top number shows the vessel temperature. This can be either the inner vessel (when the manual switch is set to B) or the outer vessel. The bottom left number shows the set point for the thermostat at the detector. The right bottom number shows what percentage of the total heater output is being used to stabilize the detector. The picture shows the system during cooldown, so that the detector is still above its operating temperature of 55 K.&lt;/p&gt;
+     &lt;p&gt;&lt;a href="http://lemony.as.arizona.edu/wiki/lib/exe/fetch.php?cache=cache&amp;amp;media=clio_temp.jpg" class="media" title="clio_temp.jpg"&gt;&lt;img src="http://lemony.as.arizona.edu/wiki/lib/exe/fetch.php?w=&amp;amp;h=&amp;amp;cache=cache&amp;amp;media=clio_temp.jpg" alt="" class="media" /&gt;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+    &lt;div class="secedit"&gt;&lt;/div&gt;&lt;/div&gt;
+   &lt;div class="clearer"&gt; &lt;/div&gt;
+   &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;
+   &lt;div class="stylefoot"&gt;
+    &lt;div class="meta"&gt;
+     &lt;div class="user"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;</string>
+	<key>createdDate</key>
+	<string>2010-10-07 18:14:28.756107+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>phinz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>phinz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2010-10-08 15:45:01</string>
+	<key>lastVersion</key>
+	<string>3</string>
+	<key>latestVersion</key>
+	<string>2</string>
+	<key>modifiedDate</key>
+	<date>2010-10-19T01:19:11Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Refilling Cryogens</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/e65aa</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

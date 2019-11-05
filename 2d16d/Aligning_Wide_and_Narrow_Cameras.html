@@ -1,0 +1,107 @@
+<html>
+<head><title>Aligning_Wide_and_Narrow_Cameras</title><base href="../"/></head><img alt="Successfully aligned wide camera pupil image, 3.9um, with the field stop in Open, from 2014/04/21.  The pupil image is sharper with the rectangle in, but with the field stop Open we can center up the dark and light patterns better.  And since imaging will be with the field stop Open, this is the more valid alignment. It also gives less vignetting.  (Click for full-size image)" class="aligncenter thumbnail" longdesc="/groups/clio2usermanual/wiki/2d16d/images/4fe5c.jpg#1350x1028" name="/groups/clio2usermanual/wiki/2d16d/images/4fe5c.jpg#1350x1028" role="button" src="2d16d/images/__thumbs__/4fe5c.jpg" tabindex="0" title="Successfully aligned wide camera pupil image, 3.9um, with the field stop in Open, from 2014/04/21.  The pupil image is sharper with the rectangle in, but with the field stop Open we can center up the dark and light patterns better.  And since imaging will be with the field stop Open, this is the more valid alignment. It also gives less vignetting.  (Click for full-size image)"/>
+<h1>How to Align the Wide or the Narrow Camera</h1><img alt="Where you move the motors to align the camera.  (Click for full-size image)" class="aligncenter thumbnail" longdesc="/groups/clio2usermanual/wiki/2d16d/images/186cc.jpg#1308x451" name="/groups/clio2usermanual/wiki/2d16d/images/186cc.jpg#1308x451" role="button" src="2d16d/images/__thumbs__/186cc.jpg" tabindex="0" title="Where you move the motors to align the camera.  (Click for full-size image)"/>
+<ul>
+<li>Hit the appropriate "Align" Button ("Align Wide Camera" or "Align Narrow Camera") in the CLIO Motor Control Basic GUI -- Say "Yes" to the yes/no pop-up question.</li>
+<ul>
+<li>This will change the Pupil Plane, Wavelength, Image Plane, and Scale wheels automatically (takes a couple minutes because it moves the motors one at a time)</li>
+<li>Then put Wheel 1 (Field Stop) from Rectangle to Home to -&gt; Move CW to Open (because we used to put the Rectangle in, but when we did it with open it took out the vignetting in the Wide camera)</li>
+</ul>
+<li>Put the camera into quick video mode</li>
+<li>Put the camera control into Strip mode for Wide cam -- Full frame works for Narrow cam</li>
+<li>Set the ds9 scale to MinMax</li>
+<li>Put a ds9 cursor circle at:</li>
+<ul>
+<ul>
+</ul>
+<li><i>OLD: Aligning Narrow Camera: [681.3, 354.8] with radius 25 pixels in Full frame (Put ds9 Scale -&gt; Log, Zmax).</i></li>
+<li>NEWER2: Aligning Narrow Camera: [664.83, 354.8] with radius 25.1 pixels in Full frame (Put ds9 Scale -&gt; Log, Zmax).</li>
+<li>NEW WITH OPEN NOT RECTANGLE: Aligning Narrow Camera: [695.42, 145.15] with radius 16.28 pixels in Strip Mode (Put ds9 Scale -&gt; Linear, MinMax).</li>
+<li>NEW WITH RECTANGLE: Aligning Narrow Camera: [684.83, 357.15, 23.9] in Full Mode (ds9 Scale -&gt; Log, Zmax). 2014/11/16</li>
+<li>2014/11/17 Narrow Rectangle [684.83, 355.97, 26.41]</li>
+<li><i>NARROW CAM (Rectangle, Full) 2014/11/25: [690.05, 353.55, 21.96]</i></li>
+<li><i>NARROW CAM (Rectangle, Full) 2014/11/26: [684.25, 356, 23.09]</i></li>
+<ul>
+</ul>
+<li>Aligning Wide Camera: [401.9, 129.0] with radius 30 pixels in Strip mode (Put ds9 Scale -&gt; Linear, MinMax).</li>
+<li><i>WIDE CAM [416.02,127.82,23.55]</i></li>
+<li><i>WIDE CAM [411.82,128.71,23.14]</i></li>
+<li><i>WIDE CAM (OPEN FIELD STOP, STRIP MODE) 2014/11/17: [407.11, 127.53, 23.95]</i></li>
+<li><i>WIDE CAM (OPEN FIELD STOP, STRIP MODE) 2014/11/25: [414.61, 127.53, 23.15]</i></li>
+<li><i>WIDE CAM (OPEN FIELD STOP, STRIP MODE) 2014/11/26: [427.11, 128.78, 23.15]</i></li>
+</ul>
+<li>This is approx where the pupil stop goes. Then you align the collimator lens to match it, with the field stop in Open.</li>
+</ul>
+<ul>
+<ul>
+<ul>
+</ul>
+</ul>
+<li>When the motors are finished moving, the camera will be close to aligned but you have to fine tune it by hand.</li>
+<ul>
+<li>You will adjust the Pupil Stop (Wheel 2) and the Collimator Lens (Wheel 6). </li>
+<li>You move the Pupil Stop and the Collimator Lens by typing numbers in the box below "Next CCW", and by hitting "GO" after you type it.</li>
+<li>Wait for the guide probe to be out to align the Collimator Lens.</li>
+</ul>
+</ul>
+<blockquote>
+<blockquote>
+<div class="wiki_entry">
+<div>NOTE: For small changes (&lt;1000), be prepared for having to hit the motor move button several (maybe 7) times before it starts to move. Once it starts to move, it will respond accurately and immediately to the step command. If you switch directions, you will once again have to hit it multiple times before it responds.</div></div></blockquote></blockquote>
+<div class="wiki_entry">
+<div>
+<ul>
+<ol>
+<li>Start with Wheel 2 (Pupil Stop): <b>Positive</b> numbers move it <b>left</b></li>
+<ol>
+<li>Move in units of 100-200 steps to start. There is back-lash so it's easier if you start from one side and always come in from that side -- go back if you go too far, and start again with larger steps, then go to smaller steps, if you mess up.</li>
+<li>Move Wheel 2 until the Pupil Stop (dark circle with spiders) is at the circle you drew on ds9. </li>
+</ol>
+<li>Move Wheel 6 (Collimator Lens) to catch up with Pupil Stop.</li>
+</ol>
+<li>Leave pupil alignment mode and go to camera imaging with the following steps</li>
+<ul>
+<li>Move Camera Lens (Wheel 5) CW to the correct camera, by hitting ONLY "Next CW" <a href="05b9b/Image_Elongation.html">****DO NOT HOME WHEEL 5 IT WILL CAUSE VIGNETTING AND IMAGE ELONGATION***</a></li>
+<li>Warning: Do not move the motors any other way, because they will "Home" and you will lose your fine-tuning.</li>
+<ul>
+<li>You want: Camera Lens =</li>
+<ul>
+<li>f37.7 = Narrow camera</li>
+</ul>
+<ul>
+<li>f21.5 = Wide camera</li>
+</ul>
+</ul>
+<li>Then get ready for your observations:</li>
+<ul>
+<li>Change Image Plane -&gt; Open</li>
+</ul>
+<ul>
+<li>Choose desired Filter (and check AutoFocus if desired)</li>
+<li>Hit "Move Motors"</li>
+</ul>
+<ul>
+</ul>
+</ul>
+</ul>
+<div>Note: Clio must be looking at sky in order to see the alignment. So, you can not align while the telescope's Shack Hartmann guide probe is in. (Well, you can align the Pupil Stop, but not the Collimator Lens)<br class=""/></div></div>
+<div><br class=""/><br class=""/> <img alt="How it looks while you're aligning. These images show the Collimator Lens being moved to line up with the Pupil Stop. (Click for full-size image)" class="aligncenter thumbnail" longdesc="/groups/clio2usermanual/wiki/2d16d/images/9cbb5.jpg#2418x1013" name="/groups/clio2usermanual/wiki/2d16d/images/9cbb5.jpg#2418x1013" role="button" src="2d16d/images/__thumbs__/9cbb5.jpg" tabindex="0" title="How it looks while you're aligning. These images show the Collimator Lens being moved to line up with the Pupil Stop. (Click for full-size image)"/> <img alt="How it looks while you're aligning. These images show the Collimator Lens being moved to line up with the Pupil Stop. (Click for full-size image)" class="aligncenter thumbnail" longdesc="/groups/clio2usermanual/wiki/2d16d/images/4a64a.jpg#2550x1254" name="/groups/clio2usermanual/wiki/2d16d/images/4a64a.jpg#2550x1254" role="button" src="2d16d/images/__thumbs__/4a64a.jpg" tabindex="0" title="How it looks while you're aligning. These images show the Collimator Lens being moved to line up with the Pupil Stop. (Click for full-size image)"/> <img alt="How it looks while you're aligning. These images show the Collimator Lens being moved to line up with the Pupil Stop. (Click for full-size image)" class="aligncenter thumbnail" longdesc="/groups/clio2usermanual/wiki/2d16d/images/8b0e1.jpg#2262x1296" name="/groups/clio2usermanual/wiki/2d16d/images/8b0e1.jpg#2262x1296" role="button" src="2d16d/images/__thumbs__/8b0e1.jpg" tabindex="0" title="How it looks while you're aligning. These images show the Collimator Lens being moved to line up with the Pupil Stop. (Click for full-size image)"/>
+<h1><br class=""/></h1>
+<h1>To align the APP or NRM by hand<br class=""/></h1>
+<ul>
+<li>Select the pupil imaging lens for your desired plate scale in the Scale menu.</li>
+<li>Select the desired pupil mask (cold stop, APP, or NRM) in the Pupil Plane menu. For regular imaging, use the cold stop for the desired plate scale.</li>
+<li>Select the Rectangle field stop in the Image Plane menu.</li>
+<li>Select a thermal wavelength, preferably a narrowband such as 3.4 or 3.9um;</li>
+<ul>
+</ul>
+</ul>In the Advanced GUI (available by checking the Adv box in the lower right)<br class=""/>
+<ul>
+<li>Turn on the power to the motors by checking the Power button.</li>
+<li>Adjust the Pupil Stop (Wheel 2) and Collimator Lens (Wheel 6) left and right. Move by steps of 500-1000 until they're overlapped with the pupil mask central obscuration covering the pupil image central obscuration (ie: aligned both horizontally and vertically). Note that if there is a vertical misalignment, adjust the CL and PS left/right together. Both optics are on filter wheels, so their paths are curved.</li>
+<li>If you've adjusted the collimator lens, DO NOT use the Basic GUI Scale menu to go back to imaging mode, because it homes the collimator lens. Instead, return to imaging mode by using the "Next CW" button for the Cameral Lens in the Advanced GUI.</li>
+<ul>
+</ul>
+</ul>To decrease detector noise, turn off the power to the motors, if it's not off already.<br class=""/><br class=""/>Aligned NRM pictures:<br class=""/><br class=""/><img alt="" class="aligncenter" role="button" src="2d16d/images/a74a6.png" tabindex="0" title="Screen Shot 2012-11-25 at 7.49.35 PM.png"/><br class=""/><br class=""/><img alt="" class="aligncenter" role="button" src="2d16d/images/e2b9e.png" tabindex="0" title="Screen Shot 2012-11-25 at 7.50.17 PM.png"/><br class=""/><br class=""/>
+<ul>
+</ul></div></div><a href="05b9b/Image_Elongation.html"></a><a href="05b9b/Image_Elongation.html"></a><a href="05b9b/Image_Elongation.html"></a><a href="05b9b/Image_Elongation.html"></a></html>

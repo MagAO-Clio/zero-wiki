@@ -1,0 +1,131 @@
+<html>
+<head><title>Clio2_Initial_set_up_for_Magellan_Telescope</title><base href="../"/></head>
+<h2><span>Summary</span></h2>
+<div class="wiki_entry">
+<div>
+<p> </p>
+<ul>
+<li><span>3 days ahead of time: Begin vacuum pumping. Continue until pressure is &lt;1x10^-3 Torr.</span></li>
+<li><span>1 day ahead of time: Once pressure is &lt;1E-3 Torr, begin cooldown. </span></li>
+<ul>
+<li><span>Attach temperature sensor cable</span></li>
+<li><span>Begin cooling outer vessel </span></li>
+<li><span>Once outer vessel is &lt;150K, begin cooling inner vessel as well.</span></li>
+<li><span>Once both vessels are &lt;80K, begin pumping on inner vessel</span></li>
+</ul>
+<li>Optional: Attach other components, including detector electronics and filter wheels</li>
+<ul>
+</ul>
+</ul>
+<p></p></div>
+<div><i>Based on initial draft by Manny Montoya and Richard Sosa November 7, 2012</i></div>
+<div><i><br class=""/></i></div>
+<h2><span><br class=""/></span></h2>
+<h2><span>I. Vacuum</span></h2>
+<p class="MsoListParagraphCxSpFirst"> </p> Three days before Clio2
+is to be cooled, a vacuum pump must be put on.<br class=""/>
+<ol>
+<li>Remove NW40 Blank
+off.</li>
+<li>Connect vacuum hose
+to NW40 connector on Clio</li>
+<li>Turn on vacuum pump: both turbo and scroll. (Vacuum pump should be connected to UPS power, so that if there is a power outage, it doesn't abruptly lose the vacuum. UPS outlets are red/orange. In 2014B we pumped it down in the Aux building, with Clio in the office at the end, and the pump plugged via an extension cable to the power strip that says ALWAYS ON in the Instrument Specialist office on the bench that has a long metal power strip plugged into the UPS in the wall.)</li>
+<li>Confirm there is no leak on vacuum hose between Clio and the pump</li>
+<li>Turn valve on Clio CCW slowly until fully open (to avoid fluctuations in pressure)</li>
+<li>Let vacuum for about two
+days, until vacuum is &lt; 1.0 x 10^-3 Torr.</li>
+</ol>
+<div>Once vacuum is &lt;10^-3 Torr, it is safe to cool Clio. Leave the vacuum pump on during the first cooldown.</div>
+<div><br class=""/></div>
+<div><b>To disconnect the pump:</b></div>
+<ol>
+<li>Close the Clio vacuum valve (turn CW)</li>
+<li>Disconnect vacuum
+hose</li>
+<li>Reinstall NW40 blank</li>
+</ol>
+<p></p>
+<h2><span><br class=""/></span></h2>
+<h2><span>II. Attach Temperature Sensors</span></h2>
+<ol>
+<li>Position rack close enough to CLIO for umbilical to reach</li>
+<li>Unroll the umbilical from the rack and attach its triangle flange to the two posts on CLIO. <span class="custom_forecolor_emphasis">Careful with fibers!</span></li>
+<li>On Clio, connect the temperature connector (round connector)</li>
+<li>On the rack, attach both clean (UPS) and dirty (Direct) power cords to an AC source</li>
+<li>On the rack, turn on the Lakeshore temperature controller and verify that the temperature is reading ~ 290K on both A and B channel. A = inner vessel/detector, B = outer vessel</li>
+</ol>
+<div><br class=""/></div>
+<h2><span>III. Cool</span></h2>
+<div>Cooldown takes &lt;12hr, but should be completed at least 1 day ahead of time, to allow Clio to equilibrate.</div>
+<ol>
+<li>Leave vacuum pump running.</li>
+<li><span>Turn cold
+switch CCW two turns to disengage</span></li>
+<li>Begin
+cooling outer vessel first with funnel+canteen or with the stinger directly from the LN2 dewar. You'll need at least 20-30L to complete the cooldown.</li>
+<ol>
+<li>Note on using the funnel: Prop the funnel up (ex: on a small box) so it is not resting on top of the fill tube; otherwise, the evaporating vapor can only escape back out the funnel, causing LN to splash! The vessel is full when liquid bubbles out of the fill tube (ie: not a strong jet from vapor pressure).</li>
+<li>Note: At the beginning (above ~200K) the LN evaporates so quickly upon contact with the dewar that the vapor rushing out of the tube will also force out some liquid. This does not mean the vessel is full. Continue filling slowly; you may need to nearly continuously attend to Clio for the first 30min - 1hr of the fill. Once the outer vessel has cooled below ~200K, the evaporation will be slower, and you will be able to completely fill the vessel.</li>
+<ol>
+</ol>
+<li>Fill outer vessel again when vapor stops coming out of the tube. (It's OK if the outer and inner vessels are not the same temperature)</li>
+<li>Repeat this
+until outer vessel gets below 150K (This guarantees that the getters are
+working)</li>
+</ol>
+<li>After the outer vessel has reached <span class="custom_forecolor_emphasis">150K,</span> begin filling the inner vessel. </li>
+<ol>
+<li>Fill both the inner and outer vessels. The inner vessel is more likely to sputter/jet than the outer vessel, even below 200K. </li>
+<li>Refill once vapor is no longer coming out of the fill tubes</li>
+<li>After an hour of
+cooling of inner vessel, the cold switch can be closed by turning CW two turns.</li>
+<li>Continue filling until both the outer and inner vessels reach &lt; 80K</li>
+</ol>
+<li>Disconnect the vacuum pump (as described above)</li>
+<ol>
+</ol>
+<li>After both the inner and outer vessels are at <span class="custom_forecolor_emphasis">&lt; 80K</span>, begin pumping on the inner vessel using the "solid nitrogen pump."</li>
+<ol>
+<li>Put
+the Solid Nitrogen straw into the inner vessel and tighten lightly (enough to make seal)</li>
+<li>Make sure
+cork stop is secured on top</li>
+<li>Attach the transparent hose from the umbilical to the SN2 tube and tighten the hose clamp. </li>
+<li>Turn on the solid nitrogen pump on rack. Initially the tube at cryostat will ice up; after 30 minutes it will slowly melt.</li>
+</ol>
+<li>Final
+temperature will be ~55K for the inner vessel and ~80 K for the outer vessel. </li>
+<li>On the Lakeshore (same device as displays the temperature), set the heater setpoint to 55K and enable the heater on "low."</li>
+<ol>
+<li>Note for observers: If the inner dewar is below 60K but hasn't reached 55K by the time the observing night begins, put the temperature setpoint at whatever temperature Clio is at that time. It is better to have the Clio temperature be stable throughout the night than for it to reach 55K.</li>
+</ol>
+</ol>
+<div><br class=""/></div>
+<div>See the <a href="ce8a4/Refilling_Cryogens.html">Refilling Procedure</a> for instructions for subsequent fills.</div>
+<div><br class=""/></div>
+<div><br class=""/></div>
+<div><br class=""/></div>
+<div><br class=""/></div>
+<div>
+<h3><b>IV. Connect other Clio components (</b><b>optional - for observer)</b></h3>
+<div>Verify basic functionality of filter wheels and detector readout. Clio can be warm, cold, or in the process of cooling during these tests. However, you will not get an unsaturated image until the detector is cold.</div>
+<ol>
+<li>Plug the Clio computer into the network.</li>
+<li>Plug in filter wheels (D-sub connectors; 6 total).</li>
+<li>Plug in orange fiber to gold readout electronics box (red and black are labelled).</li>
+<li>Connect 2 D-sub cables from gray power supply to gold readout electronics.</li>
+<li>Verify the gray power supply switch is "off." Then plug the AC cord into the back of the gray power supply, and turn on.</li>
+<li>Check if the LED indicator light is green for the Detector ("Camera") channel of the Pulizzi power controller (in the rack). </li>
+<ol>
+<li>If the indicator light is not lit: log into Clio, go to ~/Programs and run "wish pulizzi_power.tcl" Turn on the detector power (hit the check box). The Pulizzi light should turn on. If it still doesn't turn on, you have to switch the USB ports that are dynamically allocated. See <a href="../../../http:/zero.as.arizona.edu/groups/clio2usermanual/wiki/66709/Troubleshooting_Pages.html">http://zero.as.arizona.edu/groups/clio2usermanual/wiki/66709/Troubleshooting_Pages.html</a>. Open "pulizzi_power.tcl" with emacs or gedit or vi, and uncomment/comment which USB (1 or 0) is used in this line: "#set portelectronics [open /dev/ttyUSB0 r+]". Save and close the file, then run "wish pulizzi_power.tcl" again and hit the check box again. Now it should really work.</li>
+</ol>
+<li>If everything is hooked up correctly, you'll now see two green LEDs on the readout crate, next to the fiber connectors. </li>
+<li>You should now be able to initialize the detector and read frames (will be saturated of the detector is warm). You'll also be able to move the motors.</li>
+</ol>
+<p><br class=""/></p>
+<p><br class=""/></p>
+<p>-created by Manny/Vanessa/Phil, 2013-2014<br class=""/></p>
+<p>-modified 2014/10/26, Katie Morzinski<br class=""/></p>
+<ol>
+</ol></div>
+<p></p> </div></html>

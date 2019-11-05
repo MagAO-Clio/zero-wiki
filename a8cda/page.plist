@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>phinz</string>
+	<key>authorLongName</key>
+	<string>Phil Hinz</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/a8cda</string>
+	<key>content</key>
+	<string>
+&lt;div class="wiki_entry"&gt; 
+ &lt;p&gt;&lt;span class="Apple-style-span"&gt;&lt;b&gt;Astrometric parameters for the Clio2 array&lt;/b&gt; &lt;/span&gt;&lt;/p&gt;
+ &lt;div class="level1"&gt; 
+  &lt;p&gt;The Clio array is a 512×1024 array. It has 18.5 micron pixels, and operates with an f/20 final focal ratio.&lt;/p&gt;&lt;/div&gt; 
+ &lt;div class="secedit"&gt;&lt;/div&gt;&lt;a name="astrometric_standards"&gt;&lt;/a&gt; 
+ &lt;h2 class="wiki_unbold"&gt;Astrometric Standards&lt;/h2&gt; 
+ &lt;div class="level2"&gt; 
+  &lt;p&gt;The following double stars, provided by Vanessa Bailey, may be used for plate scale calibration.&lt;/p&gt; 
+  &lt;table class="inline __useTableEditor data"&gt;&lt;thead&gt;
+    &lt;tr&gt;
+     
+     &lt;th&gt;Object Name&lt;/th&gt;
+     
+     &lt;th&gt;RA&lt;/th&gt;
+     
+     &lt;th&gt;Dec&lt;/th&gt;
+     
+     &lt;th&gt;Epoch&lt;/th&gt;
+     
+     &lt;th&gt;Prop. Motion RA (mas/yr)&lt;/th&gt;
+     
+     &lt;th&gt;PM Dec (mas/yr)&lt;/th&gt;
+     
+     &lt;th&gt;Source&lt;/th&gt;
+     
+    &lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+    &lt;tr&gt;
+     
+     &lt;td&gt;HIP 56622 A&lt;/td&gt;
+     
+     &lt;td&gt;174.14950197&lt;/td&gt;
+     
+     &lt;td&gt;+ 56.13557459&lt;/td&gt;
+     
+     &lt;td&gt;1991.25&lt;/td&gt;
+     
+     &lt;td&gt;178.35&lt;/td&gt;
+     
+     &lt;td&gt;92.25&lt;/td&gt;
+     
+     &lt;td&gt;Hipparcos Double Star Catalogue&lt;/td&gt;
+     
+    &lt;/tr&gt;
+    &lt;tr&gt;
+     
+     &lt;td&gt;HIP 56622 B&lt;/td&gt;
+     
+     &lt;td&gt;174.15023083&lt;/td&gt;
+     
+     &lt;td&gt;+ 56.133 927 23&lt;/td&gt;
+     
+     &lt;td&gt;1991.25&lt;/td&gt;
+     
+     &lt;td&gt;179.09&lt;/td&gt;
+     
+     &lt;td&gt;109.06&lt;/td&gt;
+     
+     &lt;td&gt;Hipparcos Double Star Catalogue&lt;/td&gt;
+     
+    &lt;/tr&gt;
+    &lt;tr&gt;
+     
+     &lt;td&gt;&lt;/td&gt;
+     
+    &lt;/tr&gt;
+    &lt;tr&gt;
+     
+     &lt;td&gt;HIP 88817&lt;/td&gt;
+     
+     &lt;td&gt;271.95628810&lt;/td&gt;
+     
+     &lt;td&gt;+ 26.09726716&lt;/td&gt;
+     
+     &lt;td&gt;1991.25&lt;/td&gt;
+     
+     &lt;td&gt;10.47&lt;/td&gt;
+     
+     &lt;td&gt;29.79&lt;/td&gt;
+     
+     &lt;td&gt;Hipparcos Double Star Catalogue&lt;/td&gt;
+     
+    &lt;/tr&gt;
+    &lt;tr&gt;
+     
+     &lt;td&gt;HIP 88818&lt;/td&gt;
+     
+     &lt;td&gt;271.95651031&lt;/td&gt;
+     
+     &lt;td&gt;+ 26.10122114&lt;/td&gt;
+     
+     &lt;td&gt;1991.25&lt;/td&gt;
+     
+     &lt;td&gt;1.92&lt;/td&gt;
+     
+     &lt;td&gt;24.37&lt;/td&gt;
+     
+     &lt;td&gt;Hipparcos Double Star Catalogue&lt;/td&gt;
+     
+    &lt;/tr&gt;
+    &lt;tr&gt;
+     
+     &lt;td&gt;&lt;/td&gt;
+     
+    &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br class="" /&gt; 
+  &lt;ul&gt;
+    
+   &lt;li class="level1"&gt; 
+    &lt;div class="li wiki_unbold"&gt;HIP 88817 and 88818 form a 14.2” binary with a N-S separation.&lt;/div&gt;&lt;/li&gt;
+    
+   &lt;li class="level1"&gt; 
+    &lt;div class="li wiki_unbold"&gt;HIP 88818 has a faint companion ~0.2” away, seen in n100525 data that may affect its suitability as a good astrometric calibrator&lt;/div&gt;&lt;/li&gt;
+    
+  &lt;/ul&gt;&lt;/div&gt; 
+ &lt;div class="secedit"&gt;&lt;/div&gt;&lt;a name="ari_s_list"&gt;&lt;/a&gt; 
+ &lt;h2 class="wiki_unbold"&gt;Ari's list&lt;/h2&gt; 
+ &lt;div class="level2"&gt; 
+  &lt;p&gt;Clio was originally calibrated using a list of stars observed by Ari Heinze:&lt;/p&gt;&lt;pre class="code"&gt;HD 100831: Sep = 6.159 +/- 0.011 asec, PA = 165.79 +/- 0.15 deg
+RA = 11:36:35.6938, DEC = +56:08:07.261, V = 7.3&lt;/pre&gt;&lt;pre class="code"&gt;HD 115404: Sep = 7.532 +/- 0.050 asec, PA = 104.83 +/- 0.20 deg
+RA = 13:16:51.0523, DED = +17:01:01.857, V = 6.52&lt;/pre&gt;&lt;pre class="code"&gt;HR 3208: Sep = 6.095 +/- 0.026 asec, PA = 71.67 +/- 0.20 deg
+RA = 08 12 12.84, DEC = +17 38 52.6, V = 5.44&lt;/pre&gt;&lt;pre class="code"&gt;HD 71151: Sep = 5.202 +/- 0.020 asec, PA = 218.00 +/- 0.50 deg
+RA = 08 26 47.0694, DEC = +26 56 07.760, V = 6.169&lt;/pre&gt;&lt;pre class="code"&gt;HR 8549: Sep =  4.353 +/- 0.030 asec, PA =  0.35 +/- 0.20 deg
+RA = 22 26 45.557, DEC = +37 26 37.342, V = 6.46&lt;/pre&gt;&lt;pre class="code"&gt;HD 217890: Sep = 4.124 +/- 0.030 asec, PA = 150.48 +/- 0.20 deg
+RA = 23 03 52.182, DEC = +04 08 45.64, V = 8.95&lt;/pre&gt;&lt;pre class="code"&gt;HD 223718: Sep = 5.651 +/- 0.015 asec, PA = 86.23 +/- 0.15 deg
+RA = 23 51 52.4004, DEC = +37 53 28.426, V = 7.0&lt;/pre&gt;&lt;/div&gt; 
+ &lt;div class="secedit"&gt;&lt;/div&gt;&lt;a name="orientation"&gt;&lt;/a&gt; 
+ &lt;h2 class="wiki_unbold"&gt;Orientation&lt;/h2&gt; 
+ &lt;div class="level2"&gt; 
+  &lt;p&gt;The data acquisition software carries out several manipulations of the array data prior to saving the file in FITS format. The two output channels are deinterlaced. Each data value is manipulated to give new_data=65535-data. Also the image is flipped about the vertical axis.&lt;/p&gt; 
+  &lt;p&gt;After this manipulation, +elevation is up on the array. +azimuth is right on the array. This means that when the parallactic angle and rotator offset are set to zero, north will be up and east will be left on the array.&lt;/p&gt; 
+  &lt;p&gt;A positive change in the parallactic angle will cause the direction of North to rotate clockwise.&lt;/p&gt; 
+  &lt;p&gt;A negative change in the rotator angle will cause the direction of North to rotate clockwise.&lt;/p&gt; 
+  &lt;p&gt;It is expected that, similar to Clio1, Clio2 requires a small additional rotation to result in true North corresponding to the top of the array.&lt;/p&gt; 
+  &lt;p&gt;5/27/2010: T.J. Rodigas analyzed data taken for the binary star HD 223718 and found a rotational offset of 2.53 +/- 0.15 degrees. This means that data should be additionally rotated clockwise by this offset to get North up and East left. This need to be confirmed.&lt;/p&gt; 
+  &lt;p&gt;The amount of clockwise rotation to apply to the image is&lt;/p&gt; 
+  &lt;p&gt;clockwise_rotation = CAL + ROT - PAR&lt;/p&gt; 
+  &lt;p&gt;where ROT and PAR are the FITS keywords for the rotator angle and the parallactic angle. CAL is the calibration value listed above.&lt;/p&gt;&lt;/div&gt; 
+ &lt;div class="secedit"&gt;&lt;/div&gt;&lt;a name="pixel_size_and_fov"&gt;&lt;/a&gt; 
+ &lt;h2 class="wiki_unbold"&gt;Pixel Size and FOV&lt;/h2&gt; 
+ &lt;div class="level2"&gt; 
+  &lt;p&gt;Based on the Clio1 calibration of 0.0484”/pixel, and assuming the pixel sizes of each detector are accurate. We expect Clio to have a plate scale of 0.02985”/pixel.&lt;/p&gt; 
+  &lt;p&gt;5/27/2010: T.J. Rodigas analyzed the binary data taken for HD 223718 and measured a plate scale of 0.029914548798008 +/- 7.940510210053551e-05 “/pixel.&lt;/p&gt; 
+  &lt;p&gt;This results in a FOV for the full array of 15.3”x30.6”&lt;/p&gt;&lt;/div&gt;
+ &lt;p&gt;&lt;/p&gt;&lt;/div&gt;</string>
+	<key>createdDate</key>
+	<string>2010-10-07 18:14:13.453782+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>vbailey</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>vbailey</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2011-11-10 16:58:34</string>
+	<key>lastVersion</key>
+	<string>4</string>
+	<key>latestVersion</key>
+	<string>3</string>
+	<key>modifiedDate</key>
+	<date>2011-11-10T16:59:36Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Pixel Scale and Orientation</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/a8cda</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

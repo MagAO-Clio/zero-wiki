@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>ktmorz</string>
+	<key>authorLongName</key>
+	<string>Katie Morzinski</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/d017e</string>
+	<key>content</key>
+	<string>
+&lt;p&gt;Measured 2013 from Trapezium data from Dec. 2012:&lt;/p&gt;
+&lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt;
+&lt;h1&gt;Instrument Angle&lt;br class="" /&gt;&lt;/h1&gt;
+&lt;p&gt;Value for NORTHCLIO:&lt;/p&gt; 
+ NorthClio = -1.80 +/- 0.10 deg&lt;br class="" /&gt;&lt;br class="" /&gt;See how to rotate to get North up, East left at &lt;a href="/groups/clio2usermanual/wiki/07e7e/Orientation_true_North.html"&gt;Orientation-True North&lt;/a&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;
+&lt;h1&gt;&lt;br class="" /&gt;&lt;/h1&gt;
+&lt;h1&gt;Plate Scale&lt;br class="" /&gt;&lt;/h1&gt;&lt;br class="" /&gt;
+&lt;h2&gt;Wide Camera&lt;/h2&gt;&lt;br class="" /&gt;platescale = 0.02749 +/- 0.00012 arcsec/pix&lt;br class="" /&gt;&lt;br class="" /&gt;platescale = 27.49 +/- 0.12 mas/pix&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;
+&lt;h2&gt;Narrow Camera&lt;/h2&gt;&lt;br class="" /&gt;platescale = 0.01585 +/- 0.00004 arcsec/pix&lt;br class="" /&gt;&lt;br class="" /&gt;platescale = 15.85 +/- 0.04 mas/pix&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;2014/09/25, Katie Morzinski&lt;br class="" /&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;</string>
+	<key>createdDate</key>
+	<string>2014-09-26 02:13:17.670722+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2014-09-26 02:18:26</string>
+	<key>lastVersion</key>
+	<string>5</string>
+	<key>latestVersion</key>
+	<string>4</string>
+	<key>modifiedDate</key>
+	<date>2014-09-26T02:18:49Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Astrometric Calibration</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/d017e</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

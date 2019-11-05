@@ -1,0 +1,102 @@
+
+<div class="wiki_entry"> 
+ <p><span class="Apple-style-span"> </span></p> 
+ <div class="page"><b>Detector</b> 
+  <div class="level1"> 
+   <p>The detector for Clio as of April 2010 is a HAWAII-1 HgCdTe array. We use two quadrants of the array to give a 512×1024 FOV. Pixels are 18.5 microns on a side.</p></div> 
+  <div class="secedit"></div><a name="operational_parameters"></a> 
+  <h2 class="wiki_unbold">Operational Parameters</h2> 
+  <div><br class="" /></div> 
+  <div> 
+   <h2 class="wiki_unbold">Read Noise &amp; Dark Current (as of June 2012)</h2></div> 
+  <div>Images were taken on 6/21/2012, with MBE detector temperature at 56 K. Images were taken with exposure times of 1s, 3s, 10s, 30s, and 100s. From the 1s images, the read noise was estimated as follows:</div> 
+  <div>-subtract two successive images from each other.</div> 
+  <div>-in a good region of the detector (away from stationary artifacts), place a 10x10 pixel box and calculate the standard deviation of the difference image inside the box.</div> 
+  <div>-divide the result by sqrt(2)</div> 
+  <div>-repeat for each consecutive pair of images taken.</div> 
+  <div>-the read noise was measured to be 10 DN (49 e-) from the median of all of these values.</div> 
+  <div><br class="" /></div> 
+  <div>The dark current rate was measured by placing the same 10x10 box on all of the images taken (up to 100s exposure). the average pixel value in the box was then calculated, and plotted as a function of exposure time. the dark current rate, measured as the slope of the fitted line, was 5.9 DN/s (29 e-/s). the plot is shown below:</div> 
+  <div><br class="" /></div> 
+  <div><img src="/groups/clio2usermanual/wiki/73fa1/attachments/9fcd8/Clio2DarkCurrent.eps.png" alt="Download file &quot;Clio2DarkCurrent.eps&quot;" longdesc="/groups/clio2usermanual/wiki/73fa1/attachments/9fcd8/Clio2DarkCurrent.eps" class="attachment_handle_img" title="Download file &quot;Clio2DarkCurrent.eps&quot;" /><br class="" /></div> 
+  <div><br class="" /></div> 
+  <div>Bad regions of the detector:</div> 
+  <div><br class="" /></div> 
+  <div>The image below shows the regions to be avoided in the detector when taking low flux data. the regions marked in red are high in dark current rate (up to ~25 DN/s); the regions in blue are low (~ 6 DN/s).</div> 
+  <div><br class="" /></div> 
+  <div><img src="/groups/clio2usermanual/wiki/73fa1/attachments/49cb2/badregions.png.png" alt="Download file &quot;badregions.png&quot;" class="attachment_handle_img quicklookable" longdesc="/groups/clio2usermanual/wiki/73fa1/attachments/49cb2/badregions.png" title="Download file &quot;badregions.png&quot;" /><br class="" /></div> 
+  <div><br class="" /></div> 
+  <div class="level2"></div> 
+  <div class="secedit"></div><a name="detector_parameters"></a> 
+  <h2 class="wiki_unbold">Detector Parameters</h2> 
+  <div class="level2"> 
+   <p>The detector gain is 4.9 e-/dn.</p> 
+   <p>At the MMT, the temperature settles to 75.6 K on the detector, and the bias is 3700 dn (measured 101021).</p> 
+   <p>The approximate saturation level is 55,000 dn.</p> 
+   <p>This indicates that the full well capacity of the array is 51,000 dn or 250,000 e-</p></div>
+  <div class="level2"> 
+   <h3>Bad pixel mask</h3> 
+   <div>This is a minimal mask that rejects the nonsensitive areas of the Clio2 detector.</div> 
+   <div><img src="/groups/clio2usermanual/wiki/73fa1/attachments/00e57/Clio2mask101020.fits.png" alt="Download file &quot;Clio2mask101020.fits&quot;" longdesc="/groups/clio2usermanual/wiki/73fa1/attachments/00e57/Clio2mask101020.fits" class="attachment_handle_img" title="Download file &quot;Clio2mask101020.fits&quot;" /><br class="" /></div> 
+   <div><br class="" /></div></div> 
+  <div class="secedit"></div><a name="minimum_integration_time"></a> 
+  <h2 class="wiki_unbold">Minimum Integration Time</h2> 
+  <div class="level2"> 
+   <p>The minimum integration times are the following:</p> 
+   <table class="inline __useTableEditor data"><thead> 
+     <tr>
+       
+      <th>Format</th>
+       
+      <th>Array Size</th>
+       
+      <th>Minimum</th>
+       
+      <th>Max Coadds</th>
+       
+     </tr></thead><tbody> 
+     <tr>
+       
+      <td>Full array</td>
+       
+      <td>(512×1024)</td>
+       
+      <td>280 ms</td>
+       
+      <td>20</td>
+       
+     </tr> 
+     <tr>
+       
+      <td>Strip</td>
+       
+      <td>(300×1024)</td>
+       
+      <td>164 ms</td>
+       
+      <td>40</td>
+       
+     </tr> 
+     <tr>
+       
+      <td>Stamp</td>
+       
+      <td>(200×400)</td>
+       
+      <td>43 ms</td>
+       
+      <td>100</td>
+       
+     </tr></tbody></table><br class="" /></div> 
+  <div class="secedit"></div><a name="duty_cycle"></a> 
+  <h2 class="wiki_unbold">Duty Cycle</h2> 
+  <div class="level2"> 
+   <p>The dead time for an exposure is approximately 262 msec. This would give an expected efficiency of 50% for a minimum integration time of 262.</p> 
+   <p><br class="" /></p></div> 
+  <div class="secedit"></div></div> 
+ <div class="clearer"> </div> 
+ <div><br class="" /></div> 
+ <div class="stylefoot"> 
+  <div class="meta"> 
+   <div class="user"></div></div></div> 
+ <p></p></div>

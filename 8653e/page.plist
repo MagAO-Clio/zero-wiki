@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>ktmorz</string>
+	<key>authorLongName</key>
+	<string>Katie Morzinski</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/8653e</string>
+	<key>content</key>
+	<string>
+
+&lt;div class="wiki_entry"&gt; 
+ &lt;p&gt;Clio is a 1-5 micron imager, coronagraph, and low spectral resolution spectrometer built to exploit the unique sensitivity and resolution of deformable secondary AO systems. It was used from 2006-2011 on the MMT. In 2012, it was moved to Magellan, to be used with the &lt;a href="http://magao.as.arizona.edu"&gt;MagAO&lt;/a&gt; system.&lt;br class="" /&gt;&lt;/p&gt; 
+ &lt;p&gt;Clio2 was upgraded with a new 512x1024 HAWAII-1 array in May 2010. The camera is currently available on a collaborative basis. Inquiries into the availability of the instrument should be made to Phil Hinz.&lt;/p&gt; 
+ &lt;h2&gt;Observer Information&lt;/h2&gt; 
+ &lt;p&gt;&lt;a href="/groups/clio2usermanual/wiki/6d927/Calibration_Data.html"&gt;Calibration data&lt;br class="" /&gt;&lt;/a&gt;&lt;/p&gt;&lt;a href="/groups/clio2usermanual/wiki/6d927/Calibration_Data.html"&gt; &lt;/a&gt; 
+ &lt;h2&gt;Additional Information&lt;/h2&gt; 
+ &lt;div&gt;This section provides information that is used in routine setup, operation and data reduction with Clio.&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/9192e/Camera_control_GUI_info.html"&gt;Camera control GUI info&lt;/a&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;Beginning of the Run Checklist&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/33b3c/Beginning_of_the_Night_Checklist.html"&gt;Beginning of the Night Checklist&lt;/a&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/15d15/Using_Clio_Cookbook.html"&gt;Using Clio: Observing Cookbook&lt;/a&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/de452/Camera_Details.html"&gt;Camera Details&lt;/a&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/3f15c/PSF_Switching.html"&gt;PSF Switching&lt;/a&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/5bd63/Observing_Scripts.html"&gt;Observing Scripts&lt;/a&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;h2&gt;Camera Operation&lt;/h2&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;1. Choice of array / subarray size:&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;table class="inline __useTableEditor data"&gt;&lt;thead&gt; 
+    &lt;tr&gt;
+      
+     &lt;th&gt;Format&lt;/th&gt;
+      
+     &lt;th&gt;Array Size&lt;/th&gt;
+      
+     &lt;th&gt;Minimum Integr. &lt;br class="" /&gt;(and readout time)&lt;/th&gt;
+      
+     &lt;th&gt;Max Coadds&lt;/th&gt;
+      
+    &lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt; 
+    &lt;tr&gt;
+      
+     &lt;td&gt;Full array&lt;/td&gt;
+      
+     &lt;td&gt;(1024x512)&lt;/td&gt;
+      
+     &lt;td&gt;280 ms&lt;/td&gt;
+      
+     &lt;td&gt;20&lt;/td&gt;
+      
+    &lt;/tr&gt; 
+    &lt;tr&gt;
+      
+     &lt;td&gt;Strip&lt;/td&gt;
+      
+     &lt;td&gt;(1024x300)&lt;/td&gt;
+      
+     &lt;td&gt;164 ms&lt;/td&gt;
+      
+     &lt;td&gt;40&lt;/td&gt;
+      
+    &lt;/tr&gt; 
+    &lt;tr&gt;
+      
+     &lt;td&gt;Stamp&lt;/td&gt;
+      
+     &lt;td&gt;(400x200)&lt;/td&gt;
+      
+     &lt;td&gt;43 ms&lt;/td&gt;
+      
+     &lt;td&gt;100&lt;/td&gt;
+      
+    &lt;/tr&gt; 
+    &lt;tr&gt;
+      
+     &lt;td&gt;Substamp&lt;/td&gt;
+      
+     &lt;td&gt;(100x50)&lt;/td&gt;
+      
+     &lt;td&gt;3 ms&lt;/td&gt;
+      
+     &lt;td&gt;??&lt;/td&gt;
+      
+    &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;u&gt;&lt;b&gt;&lt;br class="" /&gt;&lt;/b&gt;&lt;/u&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;span&gt;Strip is composed of the full width (1024 pix) and the top 300 pixels of the array.&lt;/span&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;span&gt;&lt;br class="" /&gt;&lt;/span&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;span&gt;Stamp is composed of two 200x200 square sets of pixels, located in the upper left of each half of the detector, which are saved together as a 400x200 pixel image.&lt;/span&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;span&gt;&lt;br class="" /&gt;&lt;/span&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;span&gt;SubStamp is composed of two 50x50 square sets of pixels, located in upper left of each half of the detector, which are saved together as a 100x50 pixel image.&lt;/span&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;u&gt;&lt;b&gt;&lt;br class="" /&gt;&lt;/b&gt;&lt;/u&gt;&lt;/div&gt; 
+ &lt;div&gt;2. Software / GUI Descriptions&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;b&gt;I) Clio Camera Control Program GUI&lt;/b&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;b&gt;&lt;br class="" /&gt;&lt;/b&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;span&gt;This is the main GUI for setting the observation parameters. &lt;/span&gt;To set up an imaging sequence, select an integration time (must be greater than the minimum time for the selected read-out format), number of coadds, number of images per nod, and number of nod cycles.&lt;b&gt; After entering values in the boxes, press &amp;lt;RETURN&amp;gt;.&lt;/b&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;Integration time per nod [ms] = Integration [ms] * Coadds * Images per Nod&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;No changes may be made to any of the values in this GUI while data taking is in progress. To make changes, you must first press the &amp;quot;Stop&amp;quot; button and wait for the current image to complete.&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;u&gt;Startup Buttons:&lt;/u&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;ul&gt;
+    
+   &lt;li&gt;&lt;b&gt;Reset&lt;/b&gt;: resets Clio2 electronics&lt;/li&gt;
+    
+   &lt;li&gt;&lt;b&gt;Init&lt;/b&gt;: [done automatically at startup] Allows GUI to interact with the instrument&lt;/li&gt;
+    
+  &lt;/ul&gt; 
+  &lt;div&gt;&lt;u&gt;Detector:&lt;/u&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;ul&gt;
+    
+   &lt;li&gt;&lt;b&gt;Format&lt;/b&gt;: Choose read-out format for detector (Full, strip, stamp, substamp)&lt;/li&gt;
+    
+  &lt;/ul&gt; 
+  &lt;div&gt;&lt;u&gt;Taking Data:&lt;/u&gt;&lt;/div&gt; 
+  &lt;ul&gt;
+    
+   &lt;li&gt;&lt;b&gt;Take Back&lt;/b&gt;.: Saves a sky image with current values of integration time and coadds&lt;/li&gt;
+    
+  &lt;/ul&gt;There are two way of taking continuous unsaved images (useful for acquiring/centering target and setting integration times)&lt;br class="" /&gt; 
+  &lt;ul&gt;
+    
+   &lt;li&gt;&lt;b&gt;Video&lt;/b&gt;: Uses current values (integration and coadds) and takes continuous unsaved images&lt;/li&gt;
+    
+   &lt;li&gt;&lt;b&gt;Quick Video&lt;/b&gt;: sets integration to minimum for the read-out format and coadds to 1, then takes continuous unsaved images. Stop button will return time parameters to previous values.&lt;/li&gt;
+    
+  &lt;/ul&gt; 
+  &lt;div&gt; 
+   &lt;div&gt;There are three buttons for taking data that will be saved:&lt;/div&gt; 
+   &lt;div&gt; 
+    &lt;ul&gt;
+      
+     &lt;li&gt;&lt;b&gt;Take Images&lt;/b&gt;: At the current position, takes the number of images set by &amp;quot;Images per Nod&amp;quot; where each image is taken with the current values of integration time and number of coadds&lt;/li&gt;
+      
+     &lt;li&gt;&lt;b&gt;Take Images (Nod AB)&lt;/b&gt;: Executes two sets of images. Nod A will be the current position of the target on the detector. Nod B will be xnod,ynod arcseconds away. In each position, &amp;quot;Images per Nod&amp;quot; will be saved, where each image is taken with the current values of integration time and number of coadds. After the nod, Clio will wait to take data until the AO loop closes.&lt;/li&gt;
+      
+     &lt;li&gt;&lt;b&gt;Take Images (Nod ABBA)&lt;/b&gt;: Executes four sets of images starting at the current position of the target on the detector. Nod B will be xnod,ynod arcseconds away. In each position, &amp;quot;Images per Nod&amp;quot; will be saved, where each image is taken with the current values of integration time and number of coadds. After each nod, Clio will wait to take data until the AO loop closes.&lt;/li&gt;
+      
+    &lt;/ul&gt;&lt;/div&gt; 
+   &lt;div&gt;All three types of Take Images are repeated &amp;quot;Nod cycles&amp;quot; times.&lt;/div&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;u&gt;To end data acquisition:&lt;/u&gt;&lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;ul&gt;
+     
+    &lt;li&gt;Stop: button appears after starting data acquisition (either video, taking images or a script); stops video mode or imaging (including aborting a script)&lt;/li&gt;
+     
+   &lt;/ul&gt;&lt;/div&gt;&lt;u&gt;Check Boxes:&lt;/u&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;ul&gt;
+    
+   &lt;li&gt;Use Back: In Video and Imaging mode, subtract the saved sky image before displaying&lt;/li&gt;
+    
+   &lt;li&gt;Save Data in Cubes: save every coadd in naxis3 of a single output FITS file instead of saving each coadd in its own FITS file&lt;/li&gt;
+    
+   &lt;li&gt;Take Cal. Frame: after every nod, save an image (called Prefix_calxxxxxx.fit) with the minimum integration time and current value of coadds (useful for getting unsaturated images of a target once every nod)&lt;/li&gt;
+    
+   &lt;li&gt;Tel. info in header: THIS SHOULD ALWAYS BE CHECKED WHEN CLIO IS AT THE TELESCOPE. It puts the TCS information (e.g. RA, DEC) in the Clio FITS headers&lt;/li&gt;
+    
+  &lt;/ul&gt; 
+  &lt;div&gt;&lt;u&gt;File Saving Boxes:&lt;/u&gt;&lt;/div&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;ul&gt;
+    
+   &lt;li&gt;Set Directory: choses output directory for image FITS files [note that this is done automatically for you when you start Clio, setting the directory to the current UT date, with the prefix &amp;quot;n&amp;quot;].&lt;/li&gt;
+    
+   &lt;li&gt;Set Prefix: sets the file name prefix; names will be of the form Prefixnnnnn.fit and will be numbered sequentially starting with 1 for every unique Prefix, and the ns are 0s (ie, StarName00001.fit is the first file saved).&lt;/li&gt;
+    
+   &lt;li&gt;Next Image Number: used for setting the next image number by hand instead of letting the Clio2 software use the next sequential number&lt;/li&gt;
+    
+  &lt;/ul&gt; 
+  &lt;div&gt;&lt;u&gt;Nod Parameter Boxes:&lt;/u&gt;&lt;/div&gt;&lt;/div&gt; 
+ &lt;div&gt;The current values of the nod distance are shown and may be set in the boxes:&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;ul&gt;
+    
+   &lt;li&gt;xnod (arsec)&lt;/li&gt;
+    
+   &lt;li&gt;ynod (arsec)&lt;/li&gt;
+    
+  &lt;/ul&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;span&gt;&lt;b&gt;NOTE: -x moves the star to the right on the detector; -y moves the star up on the detector&lt;/b&gt;&lt;/span&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;span&gt;&lt;b&gt;NOTE2: This is NOT the same sign convention as in the Star nudger!&lt;/b&gt;&lt;/span&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;u&gt;&lt;br class="" /&gt;&lt;/u&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;u&gt;Script:&lt;/u&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;Pushing the green Script button brings up the buttons for selecting and executing a .tcl observing script&lt;/div&gt; 
+  &lt;div&gt;&lt;b&gt;&lt;u&gt;&lt;br class="" /&gt;&lt;/u&gt;&lt;/b&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;b&gt;II) Star Nudger GUI&lt;/b&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;This is the GUI for moving the telescope. There are currently two ways to use it:&lt;/div&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;ol&gt;
+    
+   &lt;li&gt;left/right or up/down: enter the distance (in arcsec) into the box and press the appropriate button. The button indicates the way the &lt;b&gt;target &lt;/b&gt;moves, not the way the telescope moves.&lt;/li&gt;
+    
+   &lt;li&gt;AutoStar: Waits for two mouse clicks in the ds9 display. The first mouse click is on the current position of the target (and displays a green circle) and the second mouse click is on the desired location of the target (and displays a blue circle). The GUI calculates the offset and presents it to the user. Then the green &amp;quot;Move&amp;quot; button will execute the offset. NOTE: +x is right on the detector and +y is up on the detector (not the same as the Nod vector convention)&lt;/li&gt;
+    
+   &lt;li&gt;Go to focus button: sets focus to the entered value&lt;/li&gt;
+    
+  &lt;/ol&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;b&gt;III) CLIO Motor Control GUI&lt;/b&gt;&lt;b&gt;&lt;u&gt;&lt;br class="" /&gt;&lt;/u&gt;&lt;/b&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;span&gt;This is the GUI for selecting the camera plate scale, filter, and pupil mask. &lt;/span&gt;The boxes turn yellow while the wheels are turning and become green when done moving. The status bar at the bottom of the GUI is also yellow when things are moving. It's fine to move multiple wheels at once, though once you click on &amp;quot;Move motors&amp;quot;, all other buttons become disabled until the movements are done.&lt;/div&gt; 
+ &lt;div&gt;&lt;span&gt;&lt;br class="" /&gt;&lt;/span&gt;&lt;/div&gt; 
+ &lt;div&gt;1. Select a camera: Hit the &amp;quot;Align Wide Camera&amp;quot; or &amp;quot;Align Narrow Camera&amp;quot; button. This will get you very close to being aligned, but extra tweeking may be necessary. See Section &lt;a href="/groups/clio2usermanual/wiki/de452/Observation_Guidelines.html"&gt;Observation Guidelines&lt;/a&gt; for instructions on how to complete the alignment.&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;ul&gt;
+    
+   &lt;li&gt;The align button will automatically choose the camera (pupil plane) and corresponding Scale. After all the wheels move, you will be left in pupil imaging mode.&lt;/li&gt;
+    
+   &lt;li&gt;When you are done aligning, to return to regular imaging, click &amp;quot;Next CW&amp;quot; on wheel 5 (Camera Lens) until you reach your desired camera (f/37.7 for narrow or f/21.5 for wide). &lt;b&gt;NOTE: Do not select the &amp;quot;Scale&amp;quot; from the button menu because that will ruin your alignment.&lt;/b&gt;&lt;/li&gt;
+    
+   &lt;li&gt;When you click &amp;quot;Align ...&amp;quot;, a window will pop up that will ask you if you're sure you want to Align.&lt;/li&gt;
+    
+   &lt;li&gt;If you change the camera by hand in the &amp;quot;Pupil Plane&amp;quot; menu, the wheel will not move until you press &amp;quot;Move motors&amp;quot;. You also then need to align by hand (see &amp;quot;Observation Guidelines&amp;quot;).&lt;/li&gt;
+    
+  &lt;/ul&gt;&lt;/div&gt; 
+ &lt;div&gt;2. To change filters, choose the &amp;quot;wavelength&amp;quot; button and select the desired filter. Then press &amp;quot;Move motors.&amp;quot; Note: If the &amp;quot;Auto Focus&amp;quot; button is checked, this should move to the correct focus as well (but sometimes it will not if AO is not accepting bayside commands). Check the focus!&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;3. Focus button: Sets the focus to the correct value for the current filter&lt;/div&gt; 
+ &lt;div&gt;&lt;span&gt;&lt;br class="" /&gt;&lt;/span&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;div&gt;&lt;b&gt;IV) Quick Analysis (cliocurrentstats GUI)&lt;/b&gt;&lt;/div&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;span&gt;This Matlab tool uses the image currently displayed in ds9 and computes and display some statistics.&lt;/span&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;b&gt;&lt;u&gt;&lt;br class="" /&gt;&lt;/u&gt;&lt;/b&gt;&lt;/div&gt; 
+ &lt;h2&gt;&lt;a href="/groups/clio2usermanual/wiki/926ba/User_Requests.html"&gt;User Requests&lt;/a&gt;&lt;/h2&gt; 
+ &lt;div&gt;&lt;b&gt;&lt;u&gt;&lt;br class="" /&gt;&lt;/u&gt;&lt;/b&gt;&lt;/div&gt; 
+ &lt;h2&gt;Troubleshooting&lt;/h2&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;div&gt;&lt;b&gt;&lt;u&gt;1. Reset Clio Component GUI&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;span&gt;Each button will restart the corresponding component (e.g. Camera Control, Motor Control, and Star Nudger).&lt;/span&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;b&gt;&lt;u&gt;2. killclio&lt;/u&gt;&lt;/b&gt;&lt;span&gt;&lt;br class="" /&gt;&lt;/span&gt;&lt;/div&gt; 
+ &lt;div&gt;Typed into the Terminal connected to clio1.lco.cl; this will shutdown all of the Clio GUIs. Type&lt;i&gt; runclio &lt;/i&gt;to start them all again.&lt;/div&gt; 
+ &lt;div&gt;&lt;b&gt;&lt;u&gt;3. Reboot clio1.lco.cl&lt;/u&gt;&lt;/b&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;span&gt;&lt;br class="" /&gt;&lt;/span&gt;&lt;/div&gt; 
+ &lt;h2&gt;Camera Specifications&lt;br class="" /&gt;&lt;/h2&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/52ac4/Filters.html"&gt;Filters&lt;/a&gt;&lt;/div&gt; 
+ &lt;div&gt;Prism and Slits&lt;/div&gt; 
+ &lt;div&gt;Optics&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/d481f/Pupil_Stops.html"&gt;Pupil Stops&lt;/a&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/07e7e/Orientation_true_North.html"&gt;Orientation (true North)&lt;/a&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;Pixel Scale and Orientation&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;h3&gt;Camera Performance&lt;/h3&gt; 
+ &lt;div&gt;Sensitivity&lt;/div&gt; 
+ &lt;div&gt;Contrast&lt;/div&gt; 
+ &lt;div&gt;Non-linearity/Saturation: Pixels above 27000 DN are non-linear and must be corrected. Conservatively, pixels above ~45000 should be considered saturated because they can not be corrected to high precision.&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;h3&gt;&lt;a href="/groups/clio2usermanual/wiki/1b57d/Software_advanced_users_only.html"&gt;Software (advanced users only)&lt;/a&gt;&lt;br class="" /&gt;&lt;/h3&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="Apple-interchange-newline" /&gt;&lt;u&gt;Magellan Weather Info&lt;/u&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;L' and M' photometric standards: &lt;img src="/groups/clio2usermanual/wiki/welcome/attachments/fda56/Leggett2003.pdf.png" alt="Download file &amp;quot;Leggett2003.pdf&amp;quot;" longdesc="/groups/clio2usermanual/wiki/welcome/attachments/fda56/Leggett2003.pdf" class="attachment_handle_img quicklookable" title="Download file &amp;quot;Leggett2003.pdf&amp;quot;" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;h3&gt;Clio &amp;quot;To Do&amp;quot; List&lt;/h3&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/140af/Clio_To_Do_List.html"&gt;Clio To Do List&lt;/a&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;h2&gt;Instrument Setup and Maintenance at Magellan&lt;/h2&gt; 
+ &lt;p&gt;This section describes the setup and checkout for Clio at Magellan, as well as step for removing it from the telescope.&lt;/p&gt; 
+ &lt;div&gt; &lt;a href="/groups/clio2usermanual/wiki/eeb73/CLIO2_Initial_set_up_Set_up_for_Magellan_Telescope.html"&gt;Preparing Clio for Observing&lt;/a&gt; (3-5 days before run) &lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/ec890/Mounting_CLIO_to_MagAO.html"&gt;Mounting Clio to MagAO&lt;/a&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/ce8a4/Refilling_Cryogens.html"&gt;Refilling Cryogens&lt;/a&gt;&lt;/div&gt; 
+ &lt;p&gt;&lt;/p&gt; 
+ &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt;&lt;br class="" /&gt; 
+ &lt;div&gt; 
+  &lt;h2&gt;Engineering Logs&lt;/h2&gt; 
+  &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/53636/NovDec_2012_Observing_Block.html"&gt;Nov.-Dec. 2012 Observing Block&lt;/a&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;p&gt; &lt;/p&gt; 
+  &lt;h2&gt;Reference&lt;/h2&gt; 
+  &lt;p&gt;&lt;/p&gt;&lt;/div&gt; 
+ &lt;h2&gt;&lt;a href="/groups/clio2usermanual/wiki/ed3d0/MMT_Clio_Information.html"&gt;MMT Clio Information&lt;/a&gt; &lt;/h2&gt; 
+ &lt;h2&gt;&lt;a href="/groups/clio2usermanual/wiki/70bc5/Clio2_PreShip_Review_Documentation.html"&gt;Clio2 Pre-Ship Review Documentation&lt;/a&gt;&lt;br class="" /&gt;&lt;/h2&gt; 
+ &lt;h2&gt;Clio Instrument Papers&lt;/h2&gt; 
+ &lt;div&gt;&lt;img src="/groups/clio2usermanual/wiki/welcome/attachments/51d89/Freed2004.pdf.png" alt="Download file &amp;quot;Freed2004.pdf&amp;quot;" longdesc="/groups/clio2usermanual/wiki/welcome/attachments/51d89/Freed2004.pdf" class="attachment_handle_img quicklookable" title="Download file &amp;quot;Freed2004.pdf&amp;quot;" /&gt; Instrument Design Paper&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;img src="/groups/clio2usermanual/wiki/welcome/attachments/d339a/Sivanandam2006.pdf.png" alt="Download file &amp;quot;Sivanandam2006.pdf&amp;quot;" longdesc="/groups/clio2usermanual/wiki/welcome/attachments/d339a/Sivanandam2006.pdf" class="attachment_handle_img quicklookable" title="Download file &amp;quot;Sivanandam2006.pdf&amp;quot;" /&gt; Instrument Performance Paper&lt;/div&gt; 
+ &lt;div&gt;&lt;img src="/groups/clio2usermanual/wiki/welcome/attachments/1c76a/Heinze2006.pdf.png" alt="Download file &amp;quot;Heinze2006.pdf&amp;quot;" title="Download file &amp;quot;Heinze2006.pdf&amp;quot;" longdesc="/groups/clio2usermanual/wiki/welcome/attachments/1c76a/Heinze2006.pdf" class="attachment_handle_img quicklookable" /&gt; High Contrast Performance&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;h2&gt;Clio Science Papers&lt;/h2&gt; 
+ &lt;div&gt;&lt;img src="/groups/clio2usermanual/wiki/welcome/attachments/2a46e/Hinz2006.pdf.png" alt="Download file &amp;quot;Hinz2006.pdf&amp;quot;" class="attachment_handle_img quicklookable" longdesc="/groups/clio2usermanual/wiki/welcome/attachments/2a46e/Hinz2006.pdf" title="Download file &amp;quot;Hinz2006.pdf&amp;quot;" /&gt; Constraints on a companions to Vega&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;img src="/groups/clio2usermanual/wiki/welcome/attachments/9970f/Kenworthy2007.pdf.png" alt="Download file &amp;quot;Kenworthy2007.pdf&amp;quot;" class="attachment_handle_img quicklookable" longdesc="/groups/clio2usermanual/wiki/welcome/attachments/9970f/Kenworthy2007.pdf" title="Download file &amp;quot;Kenworthy2007.pdf&amp;quot;" /&gt; First Coronagraphic Phase Plate on-sky results&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;img src="/groups/clio2usermanual/wiki/welcome/attachments/59783/Heinze2008.pdf.png" alt="Download file &amp;quot;Heinze2008.pdf&amp;quot;" class="attachment_handle_img quicklookable" longdesc="/groups/clio2usermanual/wiki/welcome/attachments/59783/Heinze2008.pdf" title="Download file &amp;quot;Heinze2008.pdf&amp;quot;" /&gt; Deep Constraints to Companions of eps Eri and Vega&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;img src="/groups/clio2usermanual/wiki/welcome/attachments/e6631/Kenworthy2009.pdf.png" alt="Download file &amp;quot;Kenworthy2009.pdf&amp;quot;" class="attachment_handle_img quicklookable" longdesc="/groups/clio2usermanual/wiki/welcome/attachments/e6631/Kenworthy2009.pdf" title="Download file &amp;quot;Kenworthy2009.pdf&amp;quot;" /&gt; Constraints to inner companions for Fomalhaut&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;img src="/groups/clio2usermanual/wiki/welcome/attachments/32399/Mamajek2010.pdf.png" alt="Download file &amp;quot;Mamajek2010.pdf&amp;quot;" class="attachment_handle_img quicklookable" longdesc="/groups/clio2usermanual/wiki/welcome/attachments/32399/Mamajek2010.pdf" title="Download file &amp;quot;Mamajek2010.pdf&amp;quot;" /&gt; Discovery of Faint Alcor companion&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;img src="/groups/clio2usermanual/wiki/welcome/attachments/d73bf/Heinze2010a.pdf.png" alt="Download file &amp;quot;Heinze2010a.pdf&amp;quot;" class="attachment_handle_img quicklookable" longdesc="/groups/clio2usermanual/wiki/welcome/attachments/d73bf/Heinze2010a.pdf" title="Download file &amp;quot;Heinze2010a.pdf&amp;quot;" /&gt;Observational Results from 50 star FGK type survey&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;img src="/groups/clio2usermanual/wiki/welcome/attachments/cc73a/Heinze2010b.pdf.png" alt="Download file &amp;quot;Heinze2010b.pdf&amp;quot;" class="attachment_handle_img quicklookable" longdesc="/groups/clio2usermanual/wiki/welcome/attachments/cc73a/Heinze2010b.pdf" title="Download file &amp;quot;Heinze2010b.pdf&amp;quot;" /&gt; Constraints on planets from 50 star survey&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;img src="/groups/clio2usermanual/wiki/welcome/attachments/69c1e/Hinz2010.pdf.png" alt="Download file &amp;quot;Hinz2010.pdf&amp;quot;" class="attachment_handle_img quicklookable" longdesc="/groups/clio2usermanual/wiki/welcome/attachments/69c1e/Hinz2010.pdf" title="Download file &amp;quot;Hinz2010.pdf&amp;quot;" /&gt; L' and 3.3 um imaging of HR 8799&lt;/div&gt; 
+ &lt;div&gt;&lt;img src="/groups/clio2usermanual/wiki/welcome/attachments/8708a/Currie2010.pdf.png" alt="Download file &amp;quot;Currie2010.pdf&amp;quot;" class="attachment_handle_img quicklookable" longdesc="/groups/clio2usermanual/wiki/welcome/attachments/8708a/Currie2010.pdf" title="Download file &amp;quot;Currie2010.pdf&amp;quot;" /&gt; imaging of GJ 758&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;img src="/groups/clio2usermanual/wiki/welcome/attachments/8c441/Currie2011.pdf.png" alt="Download file &amp;quot;Currie2011.pdf&amp;quot;" class="attachment_handle_img quicklookable" longdesc="/groups/clio2usermanual/wiki/welcome/attachments/8c441/Currie2011.pdf" title="Download file &amp;quot;Currie2011.pdf&amp;quot;" /&gt; Reanalysis of HR 8799 observations&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;img src="/groups/clio2usermanual/wiki/welcome/attachments/e0207/Rodigas2011.pdf.png" alt="Download file &amp;quot;Rodigas2011.pdf&amp;quot;" class="attachment_handle_img quicklookable" longdesc="/groups/clio2usermanual/wiki/welcome/attachments/e0207/Rodigas2011.pdf" title="Download file &amp;quot;Rodigas2011.pdf&amp;quot;" /&gt; Constraints to planets around 14 Her&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;img src="/groups/clio2usermanual/wiki/welcome/attachments/324a5/Thalmann2011.pdf.png" alt="Download file &amp;quot;Thalmann2011.pdf&amp;quot;" class="attachment_handle_img quicklookable" longdesc="/groups/clio2usermanual/wiki/welcome/attachments/324a5/Thalmann2011.pdf" title="Download file &amp;quot;Thalmann2011.pdf&amp;quot;" /&gt; Constraints to companions of Sirius&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;Modifications to this manual:&lt;/div&gt; 
+ &lt;div&gt;4/10/2013 - A. J. Weinberger&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;&lt;/div&gt;</string>
+	<key>createdDate</key>
+	<string>2014-04-16 01:52:08.573480+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2014-04-16 01:52:34</string>
+	<key>lastVersion</key>
+	<string>4</string>
+	<key>latestVersion</key>
+	<string>3</string>
+	<key>modifiedDate</key>
+	<date>2014-04-16T02:05:31Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Clio2 User Manual Old Home Page</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/8653e</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>ktmorz</string>
+	<key>authorLongName</key>
+	<string>Katie Morzinski</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/92355</string>
+	<key>content</key>
+	<string>
+&lt;div class="wiki_entry"&gt; 
+ &lt;h1&gt;What's here:&lt;/h1&gt; 
+ &lt;div&gt;All FITS files with no stars or targets in the image, as found by searching for FITS files with the AO loop open (AO off), then deleting open-loop user images, and also deleting all identifying info from FITS headers.&lt;/div&gt; 
+ &lt;div&gt;A table and text file lists the contents of each date's FITS files, which can be downloaded as gzipped-FITS in a zipped-up directory. Contact Katie Morzinski for help.&lt;/div&gt; 
+ &lt;h2&gt;NOTES:&lt;/h2&gt; 
+ &lt;div&gt; 
+  &lt;ul&gt;
+    
+   &lt;li&gt;&lt;span&gt;I've ordered the files by timestamp so that you can see if the Flats were taken at the beginning or the end of the night (times are in UT).&lt;/span&gt;&lt;/li&gt;
+    
+   &lt;li&gt;&lt;span&gt;I've listed the filter and camera so that you can decide if it's the right Flat or Dark.&lt;/span&gt;&lt;/li&gt;
+    
+   &lt;li&gt;&lt;span&gt;I've listed the x-y-z dimensions, integration time, and coadds so that you can determine if it's the right Dark, or if it will work to create a good Flat.&lt;/span&gt;&lt;/li&gt;
+    
+   &lt;li&gt;&lt;span&gt;I've listed the average number of counts per coadd (or per frame in cubes) for each file, so that you can assess whether it is a useful &amp;quot;lights-on&amp;quot; or &amp;quot;lights-off&amp;quot; type Flat.&lt;/span&gt;&lt;/li&gt;
+    
+   &lt;li&gt;&lt;span&gt;I've listed the detector temperature (keyword TEMP1 in header) and the optics temperature (TEMP2) so that you can compare them to the temperature of your data, to decide whether it's a valid Dark for your data.&lt;/span&gt;&lt;/li&gt;
+    
+  &lt;/ul&gt;&lt;/div&gt; 
+ &lt;h1&gt;Raw Calibration Files By Date&lt;/h1&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/2af66/Calibration_Data_clio_20141101_02.html"&gt;Calibration Data clio_20141101_02&lt;/a&gt; - Darks.&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/696f3/Calibration_Data_clio_20141102_03.html"&gt;Calibration Data clio_20141102_03&lt;/a&gt; - Darks; H Narrow Flats (Dusk) - start ~8000, end ~1000 counts/GOOD.&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/1f229/Calibration_Data_clio_20141103_04.html"&gt;Calibration Data clio_20141103_04&lt;/a&gt; - Darks; Linearity; 3.3 Narrow Flats (Dusk) - counts not falling/BAD - try Darks?&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/5f595/Calibration_Data_clio20141105_06.html"&gt;Calibration Data clio_20141105_06&lt;/a&gt; - Darks; 3.3um Narrow Flats (Dawn) - start ~15,000, end ~18,000 counts/BAD.&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/ccc2a/Calibration_Data_clio_20141106_07.html"&gt;Calibration Data clio_20141106_07&lt;/a&gt; - Darks; H Narrow Flats (Dusk) - start saturated, eventually/OK-BAD.&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/3553c/Calibration_Data_clio_20141107_08.html"&gt;Calibration Data clio_20141107_08&lt;/a&gt; - Darks.&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/1365c/Calibration_Data_clio_20141108_09.html"&gt;Calibration Data clio_20141108_09&lt;/a&gt; - Darks.&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/b5c44/Calibration_Data_clio_20141109_10.html"&gt;Calibration Data clio_20141109_10&lt;/a&gt; - Darks.&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/e08c5/Calibration_Data_clio_20141110_11.html"&gt;Calibration Data clio_20141110_11&lt;/a&gt; - Darks; L' Narrow Flats (Dusk) - counts didn't fall but took brighter (longer exposure) and fainter (shorter exposure) with corresponding Darks so could still use /OK; Ks Narrow Flats (Dawn) - #s 22-28 ~13,000-15,000 counts, falling to #s 11-17 ~5000-8000 counts/GOOD. &lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/32e42/Calibration_Data_clio_20141111_12.html"&gt;Calibration Data clio_20141111_12&lt;/a&gt; - Darks; Linearity; Ks Narrow Flats (Dusk) - only got bias counts/BAD; L' Narrow Flats (Dusk) - count levels not falling (also took darks)/BAD-OK; H Narrow Flats (Dawn) - start ~6000 counts, end ~37,000 counts (and more - saturated later)/GOOD; Ks Narrow Flats (Dawn) - 13,000 counts - can subtract one from Dusk for &amp;quot;lights off&amp;quot;/GOOD.&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/962be/Calibration_Data_clio_20141112_13.html"&gt;Calibration Data clio_20141112_13&lt;/a&gt; - Darks; Ks Narrow Flats/OK.&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/1e48d/Calibration_Data_clio_20141113_14.html"&gt;Calibration Data clio_20141113_14&lt;/a&gt; - Darks; Experimental attempts at spectral flats (Dawn); L' Wide Flats (Dusk) - close to non-linear at minimum integration, no changing brightness levels possible/BAD; 3.1um Wide Flats (Dusk) - counts didn't fall/BAD; 3.1 um Wide Flats (Dawn) - counts didn't fall/BAD.&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/5f217/Calibration_Data_clio_20141114_15.html"&gt;Calibration Data clio_20141114_15&lt;/a&gt; - Darks; 3.1um Wide Flats (Dusk) - counts fell slightly but not to very low level/BAD-OK (also took Darks adjacently).&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/f63bd/Calibration_Data_clio_20141115_16.html"&gt;Calibration Data clio_20141115_16&lt;/a&gt; - Darks.&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/3085c/Calibration_Data_clio_20141116_17.html"&gt;Calibration Data clio_20141116_17&lt;/a&gt; - Darks.&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/fdd05/Calibration_Data_clio_20141117_18.html"&gt;Calibration Data clio_20141117_18&lt;/a&gt; - Darks.&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/f0e64/Calibration_Data_clio_20141118_19.html"&gt;Calibration Data clio_20141118_19&lt;/a&gt; - Darks.&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/7f725/Calibration_Data_clio_20141119_20.html"&gt;Calibration Data clio_20141119_20&lt;/a&gt; - Darks; Linearity; Experimental: L' Wide Sky; M' Wide Sky - non-linear/BAD.&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/4f002/Calibration_Data_clio_20141120_21.html"&gt;Calibration Data clio_20141120_21&lt;/a&gt; - Darks; Linearity; Experimental: 3.1um, 3.3um, 3.9um, L', M' Wide Sky.&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/adbd4/Calibration_Data_clio_20141125_26.html"&gt;Calibration Data clio_20141125_26&lt;/a&gt; - Darks; Experimental: L' Wide Sky - saturated/BAD; L' Narrow Sky.&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/cd820/Calibration_Data_clio_20141126_27.html"&gt;Calibration Data clio_20141126_27&lt;/a&gt; - Darks; H Narrow Flats (Dawn) - counts didn't change but took Darks/OK.&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/e1699/Calibration_Data_clio_20141127_28.html"&gt;Calibration Data clio_20141127_28&lt;/a&gt; - Darks; J, H, Ks Narrow Flats (Dusk) - counts did fall a bit as cycling between filters, also took corresponding Darks adjacently/GOOD-OK.&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/6de81/Calibration_Data_clio_20141128_29.html"&gt;Calibration Data clio_20141128_29&lt;/a&gt; - Darks; Experimental 3.1um, 3.3um, 3.9um Narrow Sky.&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/1f7e3/Calibration_Data_clio_20141129_30.html"&gt;Calibration Data clio_20141129_30&lt;/a&gt; - Darks.&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/981d9/Calibration_Data_clio_20141130_01.html"&gt;Calibration Data clio_20141130_01&lt;/a&gt; - Darks.&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/81a02/Calibration_Data_clio_20141201_02.html"&gt;Calibration Data clio_20141201_02&lt;/a&gt; - Darks; H Narrow Flats; Ks Narrow Flats (Dusk) - counts did fall a bit and also took adjacent Darks/GOOD-OK.&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/56b1c/Calibration_Data_clio_20141202_03.html"&gt;Calibration Data clio_20141202_03&lt;/a&gt; - Darks; Linearity.&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;NOTE: GOOD/BAD/OK designations of Flat data sets is according to the method I learned from Bruce Macintosh &amp;amp; Henry Roe of &amp;quot;Lights-on&amp;quot; minus &amp;quot;Lights-off&amp;quot; flats (at Keck where there are dome lamps) -- so to do it with Twilight Flats you want a set of brighter ones = &amp;quot;lights-on&amp;quot; and a set of darker ones = &amp;quot;lights-off&amp;quot; but with the same integration time so that you can subtract off the dome/sky thermal floor of scattered light from the on-axis flatfield.&lt;/div&gt; 
+ &lt;div&gt;Users may have other ways they wish to build flats, and may have their own opinions as to GOOD/BAD/OK.&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;h2&gt;How to prepare files for this page (note to self:)&lt;/h2&gt; 
+  &lt;div&gt;Use write_clio_summary_calibrations.pro :&lt;/div&gt; 
+  &lt;div&gt;It reads in all the data for a particular directory, and only writes a summary of the files with AO loop open. It also deletes all identifying info from header, including all telescope pointing info, all user info, all catalog info.&lt;/div&gt; 
+  &lt;div&gt;Then check that file and cull it for user's data that was when the loop was open.&lt;/div&gt; 
+  &lt;div&gt;And post the zipped-FITS files here, remaining. These are the calibration files. (500 MB limit)&lt;/div&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;DETAILED STEPS (NOTE TO SELF:)&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;div&gt;Prepare these calibration files as follows:&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;(Note: Takes about ~0.5-1 hour per day -- including waiting for computer to Zip up all the FITS files, and how slow it makes my computer - especially Finder - while it's doing this.)&lt;/div&gt; 
+  &lt;div&gt;(Maybe try turning off various backups - CrashPlan, TimeMachine - so that the backing up doesn't slow us down.)&lt;/div&gt; 
+  &lt;div&gt; 
+   &lt;div&gt;(Also: Occasionally restart computer when Finder starts to slow down, that seems to help a lot.)&lt;/div&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;1) In IDL:&lt;/div&gt; 
+  &lt;div&gt;cd,'/Users/ktmorz/home/research/astronomy/magao/clio/n2014B'&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;2) In IDL:&lt;/div&gt; 
+  &lt;div&gt;write_clio_summary_calibrations, 'clio_20141103_04', 'clio_20141103_04cal.dat', '~/home/research/astronomy/magao/clio/calibrations/2014B/clio_20141103_04/'&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;3) Open the new text file called &amp;quot;clio_20141103_04cal.datwiki.dat&amp;quot; that was created in the above step. Delete all lines that contain a star/target name. Also scan the listing (it's in TimeStamp order) and check anything unusual like a lot of &amp;quot;Test&amp;quot; images that are actual data but we forgot to change the file name -- delete those too (check logs if necessary).&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;4) Go to the directory where the FITS files were zipped. Delete all of the FITS files for which you deleted the lines above (someday: re-write the SPAWN part of the code that Zips up the FITS files so that this happens automatically).&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;5) In IDL:&lt;/div&gt; 
+  &lt;div&gt;table2html, read='clio_20141103_04cal.datwiki.dat', write='clio_20141103_04cal.datwiki.html', /select&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;span class="Apple-tab-span"&gt;	&lt;/span&gt;How to do the ASCII Template that pops up:&lt;/div&gt; 
+  &lt;div&gt;a) Click &amp;quot;2&amp;quot; for starting row (to get full data - right number of columns per cell --- and this also tells it the first row is the header)&lt;/div&gt; 
+  &lt;div&gt;&lt;span&gt;b) Leave it checked on &amp;quot;Delimited&amp;quot;&lt;/span&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;span class="Apple-tab-span"&gt;	&lt;/span&gt;c) Click &amp;quot;Next 100 rows&amp;quot; until that button grays out.&lt;/div&gt; 
+  &lt;div&gt;&lt;span class="Apple-tab-span"&gt;	&lt;/span&gt;d) Click NEXT NEXT FINISH (You only have to select things on the first screen.)&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;6) Edit header to read:&lt;/div&gt; 
+  &lt;div&gt;&amp;lt;TABLE CLASS=&amp;quot;data __useTableEditor&amp;quot;&amp;gt;&lt;/div&gt; 
+  &lt;div&gt;&amp;lt;TR&amp;gt; &amp;lt;TH&amp;gt;TimeStamp &amp;lt;/TH&amp;gt; &amp;lt;TH&amp;gt; FileName &amp;lt;/TH&amp;gt; &amp;lt;TH&amp;gt; Filter &amp;lt;/TH&amp;gt; &amp;lt;TH&amp;gt; Camera &amp;lt;/TH&amp;gt; &amp;lt;TH&amp;gt; Nx &amp;lt;/TH&amp;gt; &amp;lt;TH&amp;gt; Ny &amp;lt;/TH&amp;gt; &amp;lt;TH&amp;gt; Nz &amp;lt;/TH&amp;gt; &amp;lt;TH&amp;gt; Int [ms] &amp;lt;/TH&amp;gt; &amp;lt;TH&amp;gt; Number of Coadds &amp;lt;/TH&amp;gt; &amp;lt;TH&amp;gt; Counts per Coadd &amp;lt;/TH&amp;gt; &amp;lt;TH&amp;gt; Detector Temp [K] &amp;lt;/TH&amp;gt; &amp;lt;TH&amp;gt; Optics Temp [K]&amp;lt;/TH&amp;gt; &amp;lt;/TR&amp;gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;7) Go to the directory where the FITS files were zipped. Zip them into one or more archive (max size: 500 MB).&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;8) Post to the wiki:&lt;/div&gt; 
+  &lt;div&gt;&lt;span class="Apple-tab-span"&gt;	&lt;/span&gt;a) Create a new page linked from &lt;a href="/groups/clio2usermanual/wiki/92355/Calibration_Data__2014B.html"&gt;http://zero.as.arizona.edu/groups/clio2usermanual/wiki/92355/Calibration_Data__2014B.html&lt;/a&gt;&lt;/div&gt; 
+  &lt;div&gt;&lt;span class="Apple-tab-span"&gt;	&lt;/span&gt;b) Post the text file, the FITS files Zip Archive, and the table from the HTML.&lt;/div&gt; 
+  &lt;div&gt;Example Template for the Top Matter in the wiki page:&lt;/div&gt; 
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+  &lt;div&gt;&amp;lt;h1&amp;gt;clio_20141103_04&amp;lt;/h1&amp;gt;&lt;/div&gt; 
+  &lt;div&gt;&amp;lt;div&amp;gt; &lt;/div&gt; 
+  &lt;div&gt; &amp;lt;h2&amp;gt;FITS Files:&amp;lt;/h2&amp;gt;&amp;lt;/div&amp;gt;&lt;/div&gt; 
+  &lt;div&gt;&amp;lt;div&amp;gt; &lt;/div&gt; 
+  &lt;div&gt; &amp;lt;h2&amp;gt;File Listing:&amp;lt;/h2&amp;gt;&amp;lt;/div&amp;gt;&lt;/div&gt; 
+  &lt;div&gt;&amp;lt;div&amp;gt;Get this table as a text file:&amp;lt;/div&amp;gt;&lt;/div&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;-Katie Morzinski, 2015 Jan. 13&lt;/div&gt; &lt;/div&gt;</string>
+	<key>createdDate</key>
+	<string>2014-11-25 09:16:01.493865+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2015-01-16 23:13:33</string>
+	<key>lastVersion</key>
+	<string>109</string>
+	<key>latestVersion</key>
+	<string>108</string>
+	<key>modifiedDate</key>
+	<date>2015-01-16T23:13:47Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Calibration Data - 2014B</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/92355</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

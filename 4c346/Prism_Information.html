@@ -1,0 +1,35 @@
+<html>
+<head><title>Prism_Information</title><base href="../"/></head>
+<div class="wiki_entry">
+<p></p>
+<p>The Clio prism is a direct-vision design prism, which means it has three wedges that make up the overall prism. The undeviated wavelength is 2 microns. Because it is a prism (not a grating) the dispersion is nonlinear. </p>
+<h2>Spectral Resolution</h2>
+<p>The spectral resolution as a function of wavelength for a 0.2" image is</p>
+<table class="data __useTableEditor"><thead>
+<tr>
+<th>Wavelength</th>
+<th>R (for 0.2" image)</th>
+</tr></thead><tbody>
+<tr>
+<td>1.65</td>
+<td>8</td>
+</tr>
+<tr>
+<td>2.2</td>
+<td>34</td>
+</tr>
+<tr>
+<td>3.5</td>
+<td>126</td>
+</tr>
+<tr>
+<td>4.0</td>
+<td>157</td>
+</tr></tbody></table><br class=""/><br class=""/>ZEMAX model of the wavelength vs. position for the Clio direct vision prism: <br class=""/><br class=""/><img alt="" class="aligncenter thumbnail" longdesc="/groups/clio2usermanual/wiki/4c346/images/c8d25.JPG#1440x645" name="/groups/clio2usermanual/wiki/4c346/images/c8d25.JPG#1440x645" role="button" src="4c346/images/__thumbs__/c8d25.JPG" tabindex="0" title=""/><br class=""/>
+<h2>Wavelength Solution</h2>
+<div>The nonlinear dispersion of the direct vision prism is well fit by a quadratic equation with wavelength as the independent variable. Fitting the ZEMAX model image positions, expressed in pixels, and solving the quadratic give s the wavelength solution of:</div>
+<div><img alt="Wavelength solution" class="aligncenter" role="button" src="4c346/images/165e2.png" tabindex="0" title="Clio_wvl_soln.png"/></div>
+<div>where y is in pixel rows on the detector, and <i>slit</i> is the row position of the slit in imaging mode (260 for the medium slit).<br class=""/></div>
+<div><br class=""/></div>
+<div>Comparison of this model with filters in front of the prism (data in n101022), suggests it is approximately correct for the L band, but may be inaccurate for H and K band. </div>
+<div><br class=""/></div><br class=""/></div></html>

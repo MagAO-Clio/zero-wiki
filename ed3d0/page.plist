@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>phinz</string>
+	<key>authorLongName</key>
+	<string>Phil Hinz</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/ed3d0</string>
+	<key>content</key>
+	<string>
+&lt;div class="wiki_entry"&gt; 
+ &lt;p&gt; &lt;/p&gt;
+ &lt;h3&gt;&lt;br class="" /&gt;&lt;/h3&gt;
+ &lt;p&gt;&lt;/p&gt; 
+ &lt;p&gt;The information below was the operational and setup information for Clio2 at the MMT. It is preserved here for reference, but has not been updated since 2011, when Clio was last used with the MMT.&lt;/p&gt; 
+ &lt;h3&gt;&lt;br class="" /&gt;&lt;/h3&gt; 
+ &lt;h3&gt;Camera Operation&lt;/h3&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/69b68/Beginning_of_the_Run_Setup.html"&gt;Beginning of the Run Setup&lt;/a&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/4fe34/Beginning_of_Night_Setup.html"&gt;Beginning of Night Setup&lt;/a&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/dd411/Observation_Guidelines.html"&gt;Observation Guidelines&lt;/a&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/57038/Using_the_Spectral_mode_of_Clio.html"&gt;Using the Spectral mode of Clio&lt;/a&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/d9496/Using_the_APP_mode_of_Clio.html"&gt;Using the APP mode of Clio&lt;/a&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/e65aa/Refilling_Cryogens.html"&gt;Refilling Cryogens&lt;/a&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;h3&gt;Camera Specifications&lt;/h3&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/73fa1/Detector_Information.html"&gt;Detector Information&lt;/a&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/5293a/Optics_Information.html"&gt;Filter Information&lt;/a&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/4c346/Prism_Information.html"&gt;Prism Information&lt;/a&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/44f88/Image_and_Pupil__Stop_Information.html"&gt;Image and Pupil Stop Information&lt;/a&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/681e0/Optics.html"&gt;Optics&lt;/a&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/a8cda/Pixel_Scale_and_Orientation.html"&gt;Pixel Scale and Orientation&lt;/a&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;h3&gt;Camera Performance&lt;/h3&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/5293a/Optics_Information.html"&gt;&lt;/a&gt;&lt;a href="/groups/clio2usermanual/wiki/84031/Sensitivity.html"&gt;Sensitivity&lt;/a&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;h2&gt;Instrument Setup Information&lt;/h2&gt; 
+ &lt;div&gt;This section describes the setup and checkout for Clio on the MMT, as well as step for removing it from the telescope.&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/9212e/Installation_and_Setup.html"&gt;Installation and Setup&lt;/a&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/9212e/Installation_and_Setup.html"&gt;&lt;/a&gt;&lt;a href="/groups/clio2usermanual/wiki/6d047/Cool_Down_Instructions.html"&gt;Cool Down Instruction&lt;/a&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/6d047/Cool_Down_Instructions.html"&gt;&lt;/a&gt;&lt;a href="/groups/clio2usermanual/wiki/705f9/Removal_from_the_Telescope.html"&gt;Removal from the Telescope&lt;/a&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;
+ &lt;div&gt;
+  &lt;h2&gt;Maintenance/Upgrades&lt;/h2&gt;
+  &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/5f884/Filter_Exchange_Instrctions.html"&gt;Filter Exchange Instru&lt;/a&gt;&lt;a href="/groups/clio2usermanual/wiki/5f884/Filter_Exchange_Instrctions.html"&gt;ctions&lt;/a&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/8108c/Known_Bugs_and_Feature_Requests.html"&gt;Known Bugs and Feature Requests&lt;/a&gt;&lt;br class="" /&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;a href="/groups/clio2usermanual/wiki/f6702/Past_Bugs_that_have_been_resolved.html"&gt;Past Bugs that have been resolved&lt;/a&gt;&lt;br class="" /&gt;&lt;/div&gt;&lt;/div&gt;
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;&lt;/div&gt;</string>
+	<key>createdDate</key>
+	<string>2012-11-20 04:37:17.944667+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>phinz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>phinz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2012-11-20 04:47:49</string>
+	<key>lastVersion</key>
+	<string>4</string>
+	<key>latestVersion</key>
+	<string>3</string>
+	<key>modifiedDate</key>
+	<date>2012-11-21T12:47:57Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>MMT Clio Information</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/ed3d0</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

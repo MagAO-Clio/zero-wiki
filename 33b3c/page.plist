@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>phinz</string>
+	<key>authorLongName</key>
+	<string>Phil Hinz</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/33b3c</string>
+	<key>content</key>
+	<string>
+&lt;div class="wiki_entry"&gt; 
+ &lt;h3&gt;Log in to Clio computer&lt;/h3&gt; 
+ &lt;p&gt;1. IF there is not already a Terminal logged into clio1, then use ssh to remotely log into the clio computer:&lt;/p&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+ &lt;div class="wiki_entry"&gt;
+  &lt;p&gt;ssh obs@clio1.lco.cl -YC&lt;/p&gt;&lt;/div&gt;&lt;/blockquote&gt;2. If you are already running clio, you have the option of killing it. In the Terminal window in which you are logged onto Clio, type&lt;br class="" /&gt;
+&lt;blockquote&gt;
+ &lt;div class="wiki_entry"&gt;
+  &lt;p&gt;[obs@clio1 ]$ killclio&lt;/p&gt;&lt;/div&gt;&lt;/blockquote&gt;
+&lt;div class="wiki_entry"&gt; 
+ &lt;div&gt;3. At the prompt in the clio1 Terminal, run the script to start up all of the Clio programs.&lt;/div&gt; 
+ &lt;div&gt; 
+  &lt;ul&gt;
+    
+   &lt;li&gt;[obs@clio1 ]$ runclio&lt;/li&gt;
+    
+  &lt;/ul&gt; 
+  &lt;div&gt; This will start up ~9 windows to allow control and monitoring of Clio. It also sets the directory name on clio1 to be the UT date for 5 hr after the current date.&lt;/div&gt;&lt;/div&gt;
+ &lt;div&gt;
+  &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;
+  &lt;div&gt;Note: If you didn't do a runclio command, then you need to set the directory name in the Clio Camera Control Program. The directory should be of the form /home/obs/Data/nyymmdd where the dd is the UT day of most of the night (not UT at start).&lt;/div&gt;&lt;/div&gt;
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;4. Press the &amp;quot;Star Nudger&amp;quot; Button on the &amp;quot;Reset Clio Component&amp;quot; GUI to start the star nudger GUI&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;h3&gt;&lt;br class="" /&gt;&lt;/h3&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt; 
+ &lt;p&gt;&lt;/p&gt;&lt;/div&gt;</string>
+	<key>createdDate</key>
+	<string>2012-11-29 04:19:15.805446+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>aweinberger</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>aweinberger</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2014-04-13 23:17:17</string>
+	<key>lastVersion</key>
+	<string>8</string>
+	<key>latestVersion</key>
+	<string>7</string>
+	<key>modifiedDate</key>
+	<date>2014-04-13T23:18:49Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Beginning of the Night Checklist</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/33b3c</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>phinz</string>
+	<key>authorLongName</key>
+	<string>Phil Hinz</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/5293a</string>
+	<key>content</key>
+	<string>&lt;br class="" /&gt;
+&lt;div class="wiki_entry"&gt;
+ &lt;div class="page"&gt;
+  &lt;h2 class="wiki_unbold"&gt;THIS PAGE IS DEPRECATED. PLEASE SEE &lt;a href="http://zero.as.arizona.edu/groups/clio2usermanual/wiki/52ac4/Filters.html"&gt;http://zero.as.arizona.edu/groups/clio2usermanual/wiki/52ac4/Filters.html&lt;/a&gt; INSTEAD.&lt;br class="" /&gt;&lt;/h2&gt;
+  &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt;
+  &lt;h2 class="wiki_unbold"&gt;Filter Wheels&lt;/h2&gt; 
+  &lt;div class="level2"&gt; 
+   &lt;p&gt;There are two filter wheels in Clio2 placed just after the pupil stop. Each wheel is capable of holding 8 one inch filters. The depth of the receptacles is approximately 0.33 inches. As of March 2014 the filter wheels contain the following filters. Listings below are in unknown starting point. &lt;/p&gt;&lt;a name="wheel_1"&gt;&lt;/a&gt;&lt;b&gt;Wheel 1&lt;/b&gt; 
+   &lt;ol&gt;
+     
+    &lt;li&gt;3.9 micron filter (JDSU N039042-8E)&lt;/li&gt;
+     
+    &lt;li class="level1"&gt;3.1 um filter (JDSU N03095-8E)&lt;/li&gt;
+     
+    &lt;li class="level1"&gt;Barr L’&lt;/li&gt;
+     
+    &lt;li class="level1"&gt;3.3 um filter (JDSU W03311-6E passband 3.12-3.53 um)&lt;/li&gt;
+     
+    &lt;li class="level1"&gt;MKO M'&lt;/li&gt;
+     
+    &lt;li class="level1"&gt;Direct vision prism (narrow edge toward cold plate)&lt;/li&gt;
+     
+    &lt;li class="level1"&gt;Open&lt;/li&gt;
+     
+    &lt;li class="level1"&gt;PK50 (new as of 2014A; this is a long-wavelength blocker that must be used concurrently with J, H, and Ks)&lt;/li&gt;
+     
+   &lt;/ol&gt; 
+   &lt;p&gt;Removed prior to 2014A: Barr M; 3.4 micron filter (JDSU N03401-6E).&lt;/p&gt; 
+   &lt;p&gt; &lt;/p&gt; 
+   &lt;div class="page"&gt;&lt;b&gt;Wheel 2&lt;/b&gt; 
+    &lt;div class="level3"&gt; 
+     &lt;ol&gt;
+       
+      &lt;li&gt;Clio2 H (new as of 2014A) (Must use with PK50) (Approximately similar to MKO H, so about the same FWHM and lambda-0, but see detailed filter curve info below)&lt;/li&gt;
+       
+      &lt;li class="level1"&gt;Barr Ks (Note: Co-mounted Uncoated 5mm thick BK7 window - Was removed prior to 2014A; Now must use with PK50)&lt;/li&gt;
+       
+      &lt;li class="level1"&gt;MKO J (BK7 removed; Now must use with PK50)&lt;/li&gt;
+       
+      &lt;li class="level1"&gt;Lspec (New as of 2014A)&lt;/li&gt;
+       
+      &lt;li class="level1"&gt;Blocked&lt;/li&gt;
+       
+      &lt;li class="level1"&gt;?? 1% transmissive ND (Janostech P/N FX90-0098)&lt;/li&gt;
+       
+      &lt;li class="level1"&gt;0.1% transmissive ND (Janostech P/N FX90-0099)&lt;/li&gt;
+       
+      &lt;li class="level1"&gt;Open&lt;/li&gt;
+       
+     &lt;/ol&gt;&lt;/div&gt; &lt;/div&gt; 
+   &lt;p&gt;Removed prior to 2014A: Barr H + Thorlabs AR-coated 5mm thick BK7 window&lt;/p&gt; 
+   &lt;p&gt;&lt;/p&gt;&lt;/div&gt; 
+  &lt;div class="level3"&gt; 
+   &lt;p&gt;&lt;img src="/groups/clio2usermanual/wiki/5293a/images/__thumbs__/e083a.png" name="/groups/clio2usermanual/wiki/5293a/images/e083a.png#792.4272005395148x612" title="" class="aligncenter thumbnail" role="button" alt="" longdesc="/groups/clio2usermanual/wiki/5293a/images/e083a.png#792.4272005395148x612" tabindex="0" /&gt;&lt;/p&gt; 
+   &lt;p&gt;The associated text files for the filter transmission curves are in this tarball:&lt;/p&gt; 
+   &lt;p&gt;&lt;img src="/groups/clio2usermanual/wiki/5293a/attachments/57d74/clio_filters_v3.tar.gz.png" alt="Download file &amp;quot;clio_filters_v3.tar.gz&amp;quot;" title="Download file &amp;quot;clio_filters_v3.tar.gz&amp;quot;" class="attachment_handle_img" longdesc="/groups/clio2usermanual/wiki/5293a/attachments/57d74/clio_filters_v3.tar.gz" /&gt;&lt;/p&gt; 
+   &lt;p&gt;In Fall 2008, a 3.1-3.5 micron filter was added:&lt;/p&gt; 
+   &lt;p&gt;&lt;img src="/groups/clio2usermanual/wiki/5293a/images/__thumbs__/d7f99.png" name="/groups/clio2usermanual/wiki/5293a/images/d7f99.png#842.1445341821383x612.643344137063" title="" class="aligncenter thumbnail" role="button" alt="" longdesc="/groups/clio2usermanual/wiki/5293a/images/d7f99.png#842.1445341821383x612.643344137063" tabindex="0" /&gt;&lt;br class="" /&gt;Around the same time, an Ice band filter was added:&lt;/p&gt; 
+   &lt;p&gt;&lt;img src="/groups/clio2usermanual/wiki/5293a/images/__thumbs__/c935e.png" name="/groups/clio2usermanual/wiki/5293a/images/c935e.png#842.1445341821383x612.643344137063" title="" class="aligncenter thumbnail" role="button" alt="" longdesc="/groups/clio2usermanual/wiki/5293a/images/c935e.png#842.1445341821383x612.643344137063" tabindex="0" /&gt;&lt;/p&gt; 
+   &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+   &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+   &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+   &lt;p&gt;New H-band filter as of 2014/03/14: (From Asahi Spectra)&lt;br class="" /&gt;&lt;/p&gt; 
+   &lt;p&gt;&lt;img src="/groups/clio2usermanual/wiki/5293a/attachments/2ec35/Clio2_H_2014.png.png" alt="Download file &amp;quot;Clio2_H_2014.png&amp;quot;" title="Download file &amp;quot;Clio2_H_2014.png&amp;quot;" longdesc="/groups/clio2usermanual/wiki/5293a/attachments/2ec35/Clio2_H_2014.png" class="attachment_handle_img quicklookable" /&gt;&lt;/p&gt; 
+   &lt;p&gt;Data: &lt;img src="/groups/clio2usermanual/wiki/5293a/attachments/f29c5/H%20filter.xls.png" alt="Download file &amp;quot;H filter.xls&amp;quot;" title="Download file &amp;quot;H filter.xls&amp;quot;" longdesc="/groups/clio2usermanual/wiki/5293a/attachments/f29c5/H%20filter.xls" class="attachment_handle_img quicklookable" /&gt;&lt;/p&gt; 
+   &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+   &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+   &lt;p&gt;Photo of Filter Wheel 1 as of 2012/08/22:&lt;/p&gt; 
+   &lt;p&gt;&lt;img src="/groups/clio2usermanual/wiki/5293a/images/8a0ec.jpg" title="IMG_0088b.jpg" role="button" alt="Filter Wheel 1" class="alignleft" tabindex="0" /&gt;&lt;/p&gt; 
+   &lt;p&gt;Clockwise from red arrow: MKO J, Blocked (for darks), Open (home), MKO M', Barr M, Direct vision prism, 3.1um, Barr L'.&lt;/p&gt; 
+   &lt;p&gt;Dated Summer 2012.&lt;br class="" /&gt;&lt;/p&gt; 
+   &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+   &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+   &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+   &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+   &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+   &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+   &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+   &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+   &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+   &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+   &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+   &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+   &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+   &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+   &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+   &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+   &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+   &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+   &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt; 
+   &lt;p&gt;&lt;span class="custom_forecolor_important"&gt;HISTORICAL FILTER INFORMATION&lt;br class="" /&gt;&lt;/span&gt;&lt;/p&gt; 
+   &lt;p&gt;As of October 2010 the filter wheels contain the following filters. Listings below are listed in clockwise order from the home position, as seen from filter wheel 1. &lt;/p&gt;&lt;a name="wheel_1"&gt;&lt;/a&gt;&lt;b&gt;Wheel 1&lt;/b&gt; 
+   &lt;ol&gt;
+     
+    &lt;li&gt;Open (home)&lt;/li&gt;
+     
+    &lt;li class="level1"&gt;MKO M’&lt;/li&gt;
+     
+    &lt;li class="level1"&gt;Barr M&lt;/li&gt;
+     
+    &lt;li class="level1"&gt;Direct vision prism (narrow edge toward cold plate)&lt;/li&gt;
+     
+    &lt;li class="level1"&gt;3.1 um filter (JDSU N03095-8E)&lt;/li&gt;
+     
+    &lt;li class="level1"&gt;Barr L’&lt;/li&gt;
+     
+    &lt;li class="level1"&gt;New: MKO J (2012/08/22) (Used to be 3-5 um Janostech, now Oli has it)&lt;/li&gt;
+     
+    &lt;li class="level1"&gt;Blocked&lt;/li&gt;
+     
+   &lt;/ol&gt; 
+   &lt;p&gt;Removed 11/20/08:Polarizer (Meadowlark Stock# C001151 Part# VL-100-IR-R)&lt;/p&gt; 
+   &lt;p&gt; &lt;/p&gt; 
+   &lt;div class="page"&gt;&lt;b&gt;Wheel 2&lt;/b&gt; 
+    &lt;div class="level3"&gt; 
+     &lt;ol&gt;
+       
+      &lt;li&gt;3.3 um filter (JDSU W03311-6E passband 3.12-3.53 um)&lt;/li&gt;
+       
+      &lt;li class="level1"&gt;0.1% transmissive ND (Janostech P/N FX90-0099)&lt;/li&gt;
+       
+      &lt;li class="level1"&gt;?? 1% transmissive ND (Janostech P/N FX90-0098)&lt;/li&gt;
+       
+      &lt;li class="level1"&gt;Open&lt;/li&gt;
+       
+      &lt;li class="level1"&gt;3.4 micron filter (JDSU N03401-6E)&lt;/li&gt;
+       
+      &lt;li class="level1"&gt;3.9 micron filter (JDSU N039042-8E)&lt;/li&gt;
+       
+      &lt;li class="level1"&gt;Barr Ks+uncoated 5mm thick BK7 window&lt;/li&gt;
+       
+      &lt;li class="level1"&gt;Barr H + Thorlabs AR-coated 5mm thick BK7 window&lt;/li&gt;
+       
+     &lt;/ol&gt;&lt;/div&gt; &lt;/div&gt; 
+   &lt;p&gt;&lt;br class="" /&gt;&lt;/p&gt;&lt;/div&gt; 
+  &lt;div class="secedit"&gt;&lt;/div&gt;&lt;a name="wheel_2"&gt;&lt;/a&gt;&lt;/div&gt; 
+ &lt;div class="stylefoot"&gt; 
+  &lt;div class="meta"&gt; 
+   &lt;div class="user"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt; 
+ &lt;p&gt;&lt;/p&gt;&lt;/div&gt;</string>
+	<key>createdDate</key>
+	<string>2010-10-07 18:13:37.134369+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2014-03-28 19:27:24</string>
+	<key>lastVersion</key>
+	<string>22</string>
+	<key>latestVersion</key>
+	<string>21</string>
+	<key>modifiedDate</key>
+	<date>2014-03-28T19:29:21Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Old Filter and Optics Information</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/5293a</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

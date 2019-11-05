@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>phinz</string>
+	<key>authorLongName</key>
+	<string>Phil Hinz</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/681e0</string>
+	<key>content</key>
+	<string>
+&lt;div class="wiki_entry"&gt;
+ &lt;p&gt;&lt;b&gt;Optics&lt;/b&gt;
+  &lt;div class="level1"&gt;
+   &lt;p&gt;The center of rotation for the Clio detector has been determined to be at 255, 590, as of May 25, 2010.&lt;/p&gt;
+   &lt;p&gt;Clio has two optics trains creating either an f/20 or f/35 final focal ratio. A pupil imaging lens is used as well for initial alignment.&lt;/p&gt;
+   &lt;div&gt;&lt;br class="" /&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div class="secedit"&gt;&lt;/div&gt;&lt;a name="filter_wheels"&gt;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</string>
+	<key>createdDate</key>
+	<string>2010-10-09 06:33:40.059364+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>phinz</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>phinz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2010-10-09 06:33:58</string>
+	<key>lastVersion</key>
+	<string>3</string>
+	<key>latestVersion</key>
+	<string>2</string>
+	<key>modifiedDate</key>
+	<date>2010-10-09T06:55:20Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+	</array>
+	<key>title</key>
+	<string>Optics</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/681e0</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>

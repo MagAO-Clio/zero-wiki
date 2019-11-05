@@ -1,0 +1,196 @@
+
+<div class="wiki_entry"> 
+ <p>It can be useful to use a script, for example, to take multiple nod sets with dithers in between or even take a nod set, change filter, take a nod set, dither, etc. Scripts for Clio are written in TCL.</p> 
+ <p><br class="" /></p> 
+ <p>Sample observing scripts are on clio1.lco.cl in the directory /home/obs/Programs/ObsScripts.</p> 
+ <p> </p> 
+ <ul>
+   
+  <li>ditherscript.tcl - a simple script you can use as a template. Here is what it does:</li>
+   
+  
+  <ul>
+    
+   <li>set filename prefix with <i>set previxtext &quot;name&quot; </i>[set to &quot;obj_&quot; in the template]</li>
+    
+   <li>set integration time with <i>set intent &lt;inttime&gt;</i> [set to 1500 ms in template]</li>
+    
+   <li>set number of coadds [10 in template]</li>
+    
+   <li>set number of images per nod [10 in template]</li>
+    
+   <li>set number of nod cycles [1 in template]</li>
+    
+   <li>set dither size (in arc sec) [0.3 in template]</li>
+    
+   <li>Loop n times [1 time in template], taking ABBA nods and dithering after each nod</li>
+    
+  </ul>
+   
+ </ul> 
+ <div><br class="" /></div> 
+ <h1>Script header</h1> 
+ <div> 
+  <div>#!/usr/bin/wish</div> 
+  <div># Declare variables:</div> 
+  <div>global calon coaddtext darkon datacubeon impernod_stored impernod inttext movestatus prefixtext queryaoon step timeout video xnodset ynodset<br class="" /></div></div> 
+ <div># Save TCS &amp; AO header info? 0=no, 1=yes<br class="" /></div> 
+ <div> 
+  <div>set useTCSAO 1</div> 
+  <div>if {$useTCSAO != $queryaoon} {QueryAO}</div></div> 
+ <div><br class="" /></div> 
+ <div> 
+  <h1>Change filter</h1> 
+  <div></div></div> 
+ <div> 
+  <div>##########################################################################</div> 
+  <div>## 1. Select filter (choose one below)</div> 
+  <div><br class="" /></div> 
+  <div>######### Blocked ########</div> 
+  <div>send CLIOMOTORS definepos 3 1</div> 
+  <div>######### J + PK50 ########</div> 
+  <div>send CLIOMOTORS definepos 3 2</div> 
+  <div>######### H + PK50 ########</div> 
+  <div>send CLIOMOTORS definepos 3 3</div> 
+  <div>######### Ks + PK50 ########</div> 
+  <div>send CLIOMOTORS definepos 3 4</div> 
+  <div>######### 3.1 um ########</div> 
+  <div>send CLIOMOTORS definepos 3 5</div> 
+  <div>######### 3.3 um ########</div> 
+  <div>send CLIOMOTORS definepos 3 6</div> 
+  <div>######### 3.9 um ########</div> 
+  <div>send CLIOMOTORS definepos 3 7</div> 
+  <div>######### L' ########</div> 
+  <div>send CLIOMOTORS definepos 3 8</div> 
+  <div>######### M' ########</div> 
+  <div>send CLIOMOTORS definepos 3 9</div> 
+  <div>######### Lspec+Clear #######</div> 
+  <div>send CLIOMOTORS definepos 3 10</div> 
+  <div>######### Prism+Lspec #######</div> 
+  <div>send CLIOMOTORS definepos 3 11</div> 
+  <div>######### Br Gamma ########</div> 
+  <div>send CLIOMOTORS definepos 3 12</div> 
+  <div><br class="" /></div> 
+  <div><br class="" /></div> 
+  <div>##########################################################################</div> 
+  <div>## 2. Move to selected filter</div> 
+  <div>send CLIOMOTORS movemotors</div> 
+  <div><br class="" /></div> 
+  <div><br class="" /></div> 
+  <div>##########################################################################</div> 
+  <div># 3. Focus in the selected filter</div> 
+  <div># Check the focus, and update if not in focus</div> 
+  <div>exec echo all | nc magadsecsup.lco.cl 7102 | grep BAYSIDE_Z &gt; /tmp/tmpfocus.txt</div> 
+  <div><span class="Apple-tab-span">	</span>set fi [open &quot;/tmp/tmpfocus.txt&quot;]</div> 
+  <div><span class="Apple-tab-span">	</span>set focusinfo [gets $fi]</div> 
+  <div><span class="Apple-tab-span">	</span>set currentfocus [lindex $focusinfo 1]</div> 
+  <div><span class="Apple-tab-span">	</span>set newfocus [send CLIOMOTORS checkfocus]</div> 
+  <div><span class="Apple-tab-span">	</span>set focusdiff [expr {$currentfocus - $newfocus}]</div> 
+  <div><span class="Apple-tab-span">	</span>if {$focusdiff != 0} {</div> 
+  <div><span class="Apple-tab-span"> </span>send CLIOMOTORS dofocus</div> 
+  <div><span class="Apple-tab-span"> </span>after 5000</div> 
+  <div><span class="Apple-tab-span">	</span>}</div> 
+  <div>##########################################################################</div></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div> 
+  <div> 
+   <h1>Select file name</h1> 
+   <div></div></div> 
+  <div></div> 
+  <div>##########################################################################</div> 
+  <div>## FITS files named:</div> 
+  <div>set prefixtext &quot;Achernar&quot;</div> 
+  <div>UpdatePrefix</div> 
+  <div><br class="" /></div> 
+  <div><br class="" /></div> 
+  <div> 
+   <div> 
+    <h1>Select integration time, coadds, cubes, cal</h1> 
+    <div></div></div> 
+   <div></div></div> 
+  <div>##########################################################################</div> 
+  <div>## Integration time, coadds, and cubes, and cal frames</div> 
+  <div>set inttext 0</div> 
+  <div>UpdateInt</div> 
+  <div><br class="" /></div> 
+  <div>set coaddtext 1</div> 
+  <div>UpdateCoadd</div> 
+  <div><br class="" /></div> 
+  <div>## 0 = No Cube (Data Co-added like normal Coadds)</div> 
+  <div>## 1 = Cube (Coadds saved as frames in 3-d cube)</div> 
+  <div>set useCube 0</div> 
+  <div>if {$useCube != $datacubeon} {CubeOn}</div> 
+  <div>## (It's actually a toggle)</div> 
+  <div><br class="" /></div> 
+  <div><br class="" /></div> 
+  <div> 
+   <div>## 0 = No Cal frames (Just the integration times you asked for)</div> 
+   <div>## 1 = Cal frames (Will save a 0-second 1-coadd file at each new Nod position)</div> 
+   <div>set useCal 0</div> 
+   <div>if {$useCal != $calon} {CalOn}</div></div> 
+  <div><br class="" /></div> 
+  <div><br class="" /></div> 
+  <div> 
+   <h1>Choose how many images to take at each position</h1> 
+   <div></div></div> 
+  <div></div> 
+  <div>##########################################################################</div> 
+  <div>## How many images do you want to take in each position?</div> 
+  <div>set impernod 5</div> 
+  <div>UpdateImperNod</div> 
+  <div><br class="" /></div> 
+  <div><br class="" /></div> 
+  <div> 
+   <div> 
+    <h1>Set up the nod/dither vector</h1> 
+    <div></div></div> 
+   <div></div></div> 
+  <div>##########################################################################</div> 
+  <div>## Set up the nod vector</div> 
+  <div>## Positive X makes the star move to the Left on the detector</div> 
+  <div>## Positive Y makes the star move Down on the detector</div> 
+  <div>## xy nod/dither sizes in arcseconds<br class="" /></div> 
+  <div>set xsize -1.1</div> 
+  <div>set ysize 0.4</div> 
+  <div>set xnodset $xsize<br class="" /></div> 
+  <div>set ynodset $ysize</div> 
+  <div>UpdateNodVector</div> 
+  <div><br class="" /></div> 
+  <div><br class="" /></div> 
+  <div> 
+   <h1>Send moves to the Bayside stages</h1> 
+   <div></div></div> 
+  <div></div> 
+  <div>##########################################################################</div> 
+  <div>## set dither .5</div> 
+  <div>## Left &amp; right moves the Y stage<br class="" /></div> 
+  <div>## right2 moves the star to the Right</div> 
+  <div>#send MOVEBAYSIDES right2 $dither</div> 
+  <div>#send MOVEBAYSIDES left2 $dither</div> 
+  <div>## Up &amp; down moves the X stage:</div> 
+  <div>#send MOVEBAYSIDES up2 $dither</div> 
+  <div>#send MOVEBAYSIDES down2 $dither</div> 
+  <div><br class="" /></div> 
+  <div><br class="" /></div> 
+  <div> 
+   <h1>Take data</h1> 
+   <div></div></div> 
+  <div></div> 
+  <div>##########################################################################</div> 
+  <div>## Take data</div> 
+  <div>## NImg = Take data here without moving</div> 
+  <div>#NImg</div> 
+  <div>## NNod = AB</div> 
+  <div>#NNod</div> 
+  <div>## NNod_ABBA = ABBA</div> 
+  <div>#NNod_abba</div></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div><br class="" /></div> 
+ <div>-Alycia Weinberger, 2014/04/13</div> 
+ <div>-Katie Morzinski, 2014/10/31</div> 
+ <p></p></div>

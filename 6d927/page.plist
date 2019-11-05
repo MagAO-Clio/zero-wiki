@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>ktmorz</string>
+	<key>authorLongName</key>
+	<string>Katie Morzinski</string>
+	<key>commentUID</key>
+	<string>groups/clio2usermanual/discussion/6d927</string>
+	<key>content</key>
+	<string>Here we put some relevant files for calibrating Clio2 data.&lt;br class="" /&gt;&lt;br class="" /&gt;
+&lt;h1&gt;General&lt;/h1&gt;&lt;br class="" /&gt;
+&lt;table class="data __useTableEditor"&gt;&lt;thead&gt;
+  &lt;tr&gt;
+   
+   &lt;th&gt;Description&lt;/th&gt;
+   
+   &lt;th&gt;File&lt;/th&gt;
+   
+   &lt;th&gt;Date&lt;/th&gt;
+   
+  &lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
+  &lt;tr&gt;
+   
+   &lt;td&gt;Bad pixel map. Value 1 = bad pixel.&lt;br class="" /&gt;&lt;br class="" /&gt;Full frame (1024x512)&lt;br class="" /&gt;Strip mode (1024x300)&lt;br class="" /&gt;Stamp mode (400x200)&lt;br class="" /&gt;Substamp mode (100x50)&lt;br class="" /&gt;&lt;br class="" /&gt;(Or see &lt;a href="/groups/clio2usermanual/wiki/3a7bb/Full_Frame_and_Sub_Frame_Formats.html"&gt;Full Frame and Sub Frame Formats&lt;/a&gt; for how to crop the full-frame images yourself.)&lt;/td&gt;
+   
+   &lt;td&gt;&lt;img src="/groups/clio2usermanual/wiki/6d927/attachments/1242c/badpix_fullframe.fit.png" alt="Download file &amp;quot;badpix_fullframe.fit&amp;quot;" longdesc="/groups/clio2usermanual/wiki/6d927/attachments/1242c/badpix_fullframe.fit" class="attachment_handle_img" title="Download file &amp;quot;badpix_fullframe.fit&amp;quot;" /&gt; &lt;br class="" /&gt; &lt;img src="/groups/clio2usermanual/wiki/6d927/attachments/ae61c/badpix_strip.fit.png" alt="Download file &amp;quot;badpix_strip.fit&amp;quot;" longdesc="/groups/clio2usermanual/wiki/6d927/attachments/ae61c/badpix_strip.fit" class="attachment_handle_img" title="Download file &amp;quot;badpix_strip.fit&amp;quot;" /&gt; &lt;br class="" /&gt; &lt;img src="/groups/clio2usermanual/wiki/6d927/attachments/c5553/badpix_stamp.fit.png" alt="Download file &amp;quot;badpix_stamp.fit&amp;quot;" longdesc="/groups/clio2usermanual/wiki/6d927/attachments/c5553/badpix_stamp.fit" class="attachment_handle_img" title="Download file &amp;quot;badpix_stamp.fit&amp;quot;" /&gt; &lt;br class="" /&gt;&lt;img src="/groups/clio2usermanual/wiki/6d927/attachments/82070/badpix_substamp.fit.png" alt="Download file &amp;quot;badpix_substamp.fit&amp;quot;" title="Download file &amp;quot;badpix_substamp.fit&amp;quot;" longdesc="/groups/clio2usermanual/wiki/6d927/attachments/82070/badpix_substamp.fit" class="attachment_handle_img" /&gt;&lt;/td&gt;
+   
+   &lt;td&gt;Calibrated 2013/02/13 from data from December 2012&lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td&gt;Linearity calibration. Documentation (PDF) and IDL code (.pro) to correct linearity.&lt;/td&gt;
+   
+   &lt;td&gt;&lt;img src="/groups/clio2usermanual/wiki/6d927/attachments/69b81/linearity_clio.pdf.png" alt="Download file &amp;quot;linearity_clio.pdf&amp;quot;" longdesc="/groups/clio2usermanual/wiki/6d927/attachments/69b81/linearity_clio.pdf" class="attachment_handle_img quicklookable" title="Download file &amp;quot;linearity_clio.pdf&amp;quot;" /&gt;&lt;br class="" /&gt;&lt;img src="/groups/clio2usermanual/wiki/6d927/attachments/b247d/linearize_clio2.pro.png" alt="Download file &amp;quot;linearize_clio2.pro&amp;quot;" longdesc="/groups/clio2usermanual/wiki/6d927/attachments/b247d/linearize_clio2.pro" class="attachment_handle_img" title="Download file &amp;quot;linearize_clio2.pro&amp;quot;" /&gt;&lt;br class="" /&gt;WARNING: YOU MUST FIRST DIVIDE BY THE NUMBER OF COADDS&lt;br class="" /&gt;WARNING2: LINEARITY DATA TAKEN FOR DETECTOR TEMP=55 K and BIAS VOLTAGE VOS=2.5 V. ONLY VALID FOR THESE VALUES - CHECK YOUR FITS HEADER.&lt;/td&gt;
+   
+   &lt;td&gt;Calibrated 2013/04/10 from data from April 2013 -- NOT VALID FOR 2014B DATA. Check your FITS header. The linearity data have Temp1=54.999K and VOS=2.5 Volts (Bias voltage). Only valid for these parameters.&lt;/td&gt;
+   
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td&gt;Plate scale and instrument angle (&amp;quot;North_Clio&amp;quot;), and IDL program to rotate North up (.pro).&lt;/td&gt;
+   
+   &lt;td&gt;Get Platescale and NorthClio instrument angle at &lt;a href="/groups/clio2usermanual/wiki/d017e/Astrometric_Calibration.html"&gt;Astrometric Calibration&lt;/a&gt;&lt;br class="" /&gt;DEROT = ROTOFF-180+NORTHCLIO&lt;br class="" /&gt;&lt;img src="/groups/clio2usermanual/wiki/6d927/attachments/63923/derot_clio.pro.png" alt="Download file &amp;quot;derot_clio.pro&amp;quot;" title="Download file &amp;quot;derot_clio.pro&amp;quot;" class="attachment_handle_img" longdesc="/groups/clio2usermanual/wiki/6d927/attachments/63923/derot_clio.pro" /&gt;&lt;br class="" /&gt;To rotate your images to get North up:&lt;br class="" /&gt;Rotate COUNTER-CLOCKWISE by angle DEROT.&lt;/td&gt;
+   
+   &lt;td&gt;Calibrated 2013 from data from December 2012&lt;/td&gt;
+   
+  &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;h2&gt;Linearity notes:&lt;/h2&gt;&lt;span class="custom_forecolor_important"&gt;Relevant lines of the linearity program, in IDL:&lt;br class="" /&gt;&lt;/span&gt;&lt;span class="custom_forecolor_emphasis"&gt;;; Linearity coefficients measured on Comm2 March-April 2013&lt;br class="" /&gt;&lt;/span&gt;&lt;span class="custom_backcolor_highlight"&gt;coeff3 = [112.575 , 1.00273 , -1.40776e-06 , 4.59015e-11]&lt;br class="" /&gt;&lt;/span&gt;&lt;span class="custom_forecolor_emphasis"&gt;;; Only apply to pixels above 27,000 counts in de-coadded frames.&lt;br class="" /&gt;&lt;/span&gt;&lt;span class="custom_backcolor_highlight"&gt;for n=0L,n_elements(im)-1 do if im[n] gt 2.7e4 then $&lt;/span&gt;&lt;br class="" /&gt;&lt;span class="custom_backcolor_highlight"&gt;&lt;/span&gt;
+&lt;blockquote&gt;&lt;span class="custom_backcolor_highlight"&gt;im[n] = coeff3[0] + coeff3[1]*im[n] + coeff3[2]*im[n]^2. + coeff3[3]*im[n]^3.&lt;/span&gt;&lt;br class="" /&gt;&lt;/blockquote&gt;&lt;span class="custom_backcolor_highlight"&gt;&lt;/span&gt;&lt;span class="custom_forecolor_important"&gt;LINEARITY WARNINGS:&lt;br class="" /&gt;The linearity correction is a correction to the raw pixel count. Therefore, it must be applied to the raw pixels, after data have been de-coadded (divided by the number of coadds). The FITS keyword is called COADDS.&lt;br class="" /&gt;&lt;/span&gt;Also, the linearity coefficients were only fit to counts at the higher end - therefore, also do NOT apply to counts below 27,000.  The best way is to divde your frames by the number of coadds, then apply the IDL function.&lt;br class="" /&gt;Note 2: While the linearity correction is applied to pixels above 27,000 counts, the significant linearity correction (if you look at the plots in the documentation) is only above ~40,000 counts.  Therefore, the linearity correction is a conservative approach, but when taking data, it is safe to have counts up to 40,000 for conservative linearity regime.&lt;br class="" /&gt;&lt;br class="" /&gt;
+&lt;h2&gt;Rotation notes:&lt;/h2&gt;&lt;span class="custom_forecolor_important"&gt;&lt;span class="custom_forecolor_emphasis"&gt;To rotate your images to get North up: Rotate COUNTERCLOCKWISE by the DEROT angle.&lt;/span&gt;&lt;/span&gt;&lt;span class="custom_forecolor_important"&gt;&lt;br class="" /&gt;&lt;/span&gt;(In IDL that means you have to multiply the angle by minus one)&lt;br class="" /&gt;&lt;span class="custom_forecolor_important"&gt;Relevant lines of the derot (rotate-north-up) program, in IDL:&lt;br class="" /&gt;&lt;/span&gt;&lt;span class="custom_backcolor_highlight"&gt;angle = rotoff - 180 + north_clio&lt;br class="" /&gt;derot_image = rot(image, -1.*angle, cubic=-0.5)&lt;br class="" /&gt;&lt;/span&gt;&lt;br class="" /&gt;
+&lt;h1&gt;Flats&lt;/h1&gt;
+&lt;table class="data __useTableEditor"&gt;&lt;thead&gt; 
+  &lt;tr&gt;
+    
+   &lt;th&gt;Camera&lt;/th&gt;
+    
+   &lt;th&gt;Filter&lt;/th&gt;
+    
+   &lt;th&gt;Flat field and Description&lt;/th&gt;
+    
+   &lt;th&gt;Date&lt;/th&gt;
+    
+   &lt;th&gt;Quality Note&lt;/th&gt;
+    
+  &lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt; 
+  &lt;tr&gt;
+    
+   &lt;td&gt;Narrow camera&lt;/td&gt;
+    
+  &lt;/tr&gt; 
+  &lt;tr&gt;
+    
+  &lt;/tr&gt; 
+  &lt;tr&gt;
+    
+   &lt;td&gt;Narrow&lt;/td&gt;
+    
+   &lt;td&gt;H + PK50&lt;/td&gt;
+    
+   &lt;td&gt;&lt;img src="/groups/clio2usermanual/wiki/6d927/attachments/e1515/HnarrowFlat_n140403_TwilightMinusDarks.fit.png" alt="Download file &amp;quot;HnarrowFlat_n140403_TwilightMinusDarks.fit&amp;quot;" title="Download file &amp;quot;HnarrowFlat_n140403_TwilightMinusDarks.fit&amp;quot;" longdesc="/groups/clio2usermanual/wiki/6d927/attachments/e1515/HnarrowFlat_n140403_TwilightMinusDarks.fit" class="attachment_handle_img" /&gt; &lt;br class="" /&gt; Took 9 images (60 sec, 1 coadd) of dawn sky, subtracted mean (of 10) 60-sec darks from each, normalized all to same median, then mean-combined all 9 into 1 image, finally made the median within the good pixel region equal to 1.&lt;/td&gt;
+    
+   &lt;td&gt;From twilight at end of night 2014/04/02-03 (UT 140403)&lt;/td&gt;
+    
+   &lt;td&gt;&lt;br class="" /&gt;&lt;/td&gt;
+    
+  &lt;/tr&gt; 
+  &lt;tr&gt;
+    
+   &lt;td&gt;Narrow&lt;/td&gt;
+    
+   &lt;td&gt;Ks + PK50&lt;/td&gt;
+    
+   &lt;td&gt;&lt;img src="/groups/clio2usermanual/wiki/6d927/attachments/69ad8/KsNarrowFlat_n140414_TwilightMinusTwidark.fit.png" alt="Download file &amp;quot;KsNarrowFlat_n140414_TwilightMinusTwidark.fit&amp;quot;" longdesc="/groups/clio2usermanual/wiki/6d927/attachments/69ad8/KsNarrowFlat_n140414_TwilightMinusTwidark.fit" class="attachment_handle_img" title="Download file &amp;quot;KsNarrowFlat_n140414_TwilightMinusTwidark.fit&amp;quot;" /&gt;&lt;br class="" /&gt;Took 5 images (120 sec, 1 coadd) of bright dusk sky, subtracted 5 images (120 sec, 1 coadd) of dark dusk sky, then mean combined and normalized so that the median within the good pixel region is equal to 1.&lt;/td&gt;
+    
+   &lt;td&gt;From twilight at start of night 2014/04/13-14 (UT 140414)&lt;/td&gt;
+    
+   &lt;td&gt;OK. Can still see thermal pupil glow in upper center. Need to try flats with mirror covers closed.&lt;/td&gt;
+    
+  &lt;/tr&gt; 
+  &lt;tr&gt;
+    
+   &lt;td&gt;Wide camera&lt;/td&gt;
+    
+  &lt;/tr&gt; 
+  &lt;tr&gt;
+    
+   &lt;td&gt;Wide&lt;/td&gt;
+    
+   &lt;td&gt;Ks + PK50&lt;/td&gt;
+    
+   &lt;td&gt;&lt;img src="/groups/clio2usermanual/wiki/6d927/attachments/9c769/Flat_Ks_Wide_Laird.fits.png" alt="Download file &amp;quot;Flat_Ks_Wide_Laird.fits&amp;quot;" class="attachment_handle_img" longdesc="/groups/clio2usermanual/wiki/6d927/attachments/9c769/Flat_Ks_Wide_Laird.fits" title="Download file &amp;quot;Flat_Ks_Wide_Laird.fits&amp;quot;" /&gt;&lt;/td&gt;
+    
+   &lt;td&gt;&lt;br class="" /&gt;&lt;/td&gt;
+    
+   &lt;td&gt;&lt;br class="" /&gt;&lt;/td&gt;
+    
+  &lt;/tr&gt; 
+  &lt;tr&gt;
+    
+   &lt;td&gt;Wide&lt;/td&gt;
+    
+   &lt;td&gt;Ks + PK50&lt;/td&gt;
+    
+   &lt;td&gt;&lt;img src="/groups/clio2usermanual/wiki/6d927/attachments/97e66/KsWideFlat_n140408_TwilightMinusDarks.fit.png" alt="Download file &amp;quot;KsWideFlat_n140408_TwilightMinusDarks.fit&amp;quot;" title="Download file &amp;quot;KsWideFlat_n140408_TwilightMinusDarks.fit&amp;quot;" longdesc="/groups/clio2usermanual/wiki/6d927/attachments/97e66/KsWideFlat_n140408_TwilightMinusDarks.fit" class="attachment_handle_img" /&gt; &lt;br class="" /&gt;Took 10 images (60 sec, 1 coadd) of dawn sky, subtracted mean (of 10) 60-sec darks from each, normalized all to same median, then mean-combined all 10 into 1 image, finally made the median within the good pixel region equal to 1.&lt;/td&gt;
+    
+   &lt;td&gt;From twilight at end of night 2014/04/07-08 (UT 140408)&lt;/td&gt;
+    
+   &lt;td&gt;Unfortunately, the darks are noisier than normal, so this set has extra noise at the high-spatial-frequencies.&lt;/td&gt;
+    
+  &lt;/tr&gt; 
+  &lt;tr&gt;
+    
+   &lt;td&gt;Wide&lt;/td&gt;
+    
+   &lt;td&gt;Ks + PK50&lt;/td&gt;
+    
+   &lt;td&gt;&lt;img src="/groups/clio2usermanual/wiki/6d927/attachments/561ab/KsWideFlat_n140408_TwilightMinusNarrowCamTwidark.fit.png" alt="Download file &amp;quot;KsWideFlat_n140408_TwilightMinusNarrowCamTwidark.fit&amp;quot;" title="Download file &amp;quot;KsWideFlat_n140408_TwilightMinusNarrowCamTwidark.fit&amp;quot;" class="attachment_handle_img" longdesc="/groups/clio2usermanual/wiki/6d927/attachments/561ab/KsWideFlat_n140408_TwilightMinusNarrowCamTwidark.fit" /&gt;&lt;br class="" /&gt;Took 10 images (60 sec, 1 coadd) of bright dawn sky, subtracted mean (of 10) 60-sec dark-twilight(dusk)-sky in Narrow camera (Note the wrong camera), then mean-combined all 10 into 1 image, finally made the median within the good pixel region equal to 1.&lt;/td&gt;
+    
+   &lt;td&gt;From twilight at end of night 2014/04/07-08 (UT 140408)&lt;/td&gt;
+    
+   &lt;td&gt;Not ideal. You can see the thermal pupil glow in upper center that didn't subtract out.&lt;/td&gt;
+    
+  &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;
+&lt;h1&gt;User-contributed calibrations:&lt;/h1&gt;Ks Wide -- Graeme Salter, Australia:&lt;br class="" /&gt;&lt;img src="/groups/clio2usermanual/wiki/6d927/attachments/bd336/Flat_Ks_Wide_Graeme.fits.png" alt="Download file &amp;quot;Flat_Ks_Wide_Graeme.fits&amp;quot;" class="attachment_handle_img" longdesc="/groups/clio2usermanual/wiki/6d927/attachments/bd336/Flat_Ks_Wide_Graeme.fits" title="Download file &amp;quot;Flat_Ks_Wide_Graeme.fits&amp;quot;" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;User-contributed bad pix map -- Graeme Salter, Australia:&lt;br class="" /&gt;&lt;img src="/groups/clio2usermanual/wiki/6d927/attachments/e1e3c/badpix_Master_Graeme.fits.png" alt="Download file &amp;quot;badpix_Master_Graeme.fits&amp;quot;" title="Download file &amp;quot;badpix_Master_Graeme.fits&amp;quot;" class="attachment_handle_img" longdesc="/groups/clio2usermanual/wiki/6d927/attachments/e1e3c/badpix_Master_Graeme.fits" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;Thanks to our users for supplying those.&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;
+&lt;h1&gt;All about Formats: Making Strip, Stamp, or Substamp images from Full-Frame images:&lt;/h1&gt;
+&lt;p&gt;Follow the diagrams here: &lt;a href="/groups/clio2usermanual/wiki/3a7bb/Full_Frame_and_Sub_Frame_Formats.html"&gt;Full Frame and Sub Frame Formats&lt;/a&gt;&lt;/p&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;br class="" /&gt;
+&lt;h1&gt;Raw Calibration Files&lt;/h1&gt;
+&lt;h2&gt;&lt;a href="/groups/clio2usermanual/wiki/6a22d/Calibration_Data__2014A.html"&gt;Calibration Data - 2014A&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;&lt;a href="/groups/clio2usermanual/wiki/92355/Calibration_Data__2014B.html"&gt;Calibration Data - 2014B&lt;/a&gt;&lt;/h2&gt;
+&lt;div&gt; 
+ &lt;h2&gt;&lt;a href="/groups/clio2usermanual/wiki/860fc/Calibration_Data__2015A.html"&gt;Calibration Data - 2015A&lt;/a&gt;&lt;/h2&gt;&lt;/div&gt;&lt;br class="" /&gt;Created 2014/04/13, Katie Morzinski.&lt;br class="" /&gt;&lt;br class="" /&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;&lt;a href="http://www.pinterest.com/pin/create/extension/"&gt;&lt;/a&gt;</string>
+	<key>createdDate</key>
+	<string>2014-04-13 06:12:45.645517+00:00</string>
+	<key>deleted</key>
+	<false/>
+	<key>disabled</key>
+	<integer>0</integer>
+	<key>edited</key>
+	<true/>
+	<key>entityPath</key>
+	<string>groups/clio2usermanual</string>
+	<key>kind</key>
+	<string>wiki</string>
+	<key>lastModifiedAuthor</key>
+	<string>ktmorz</string>
+	<key>lastModifiedAuthorLongName</key>
+	<string>Katie Morzinski</string>
+	<key>lastRelatedActivityAuthor</key>
+	<string>ktmorz</string>
+	<key>lastRelatedActivityDate</key>
+	<string>2015-07-17 21:07:26</string>
+	<key>lastVersion</key>
+	<string>127</string>
+	<key>latestVersion</key>
+	<string>126</string>
+	<key>modifiedDate</key>
+	<date>2015-07-17T21:09:07Z</date>
+	<key>tags</key>
+	<array>
+		<string></string>
+		<string>hot</string>
+	</array>
+	<key>title</key>
+	<string>Calibration Data</string>
+	<key>tombstoned</key>
+	<false/>
+	<key>uid</key>
+	<string>groups/clio2usermanual/wiki/6d927</string>
+	<key>versioned</key>
+	<integer>1</integer>
+</dict>
+</plist>
